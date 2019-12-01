@@ -5,9 +5,12 @@ using UnityEngine;
 public class CameraPositionFromCarPosition : MonoBehaviour
 {
     [SerializeField] private GameObject car;
+    private const int cameraZ = -10;
     
     private void LateUpdate()
     {
-        this.gameObject.transform.position = car.transform.position;
+        Vector3 carPosition = car.transform.position;
+        carPosition.z = cameraZ;
+        this.gameObject.transform.position = carPosition;
     }
 }
