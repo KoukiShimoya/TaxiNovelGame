@@ -4,44 +4,104 @@ using UnityEngine;
 
 public class CarMove : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
-    [SerializeField] private GameObject directionObj;
-    [SerializeField] private float moveRate;
-    [SerializeField] private float rotateRate;
+    [SerializeField] private float maxSpeed;
+    
+    [SerializeField] private float acceleration;
+    
+    /// <summary>
+    /// 回転速度
+    /// </summary>
+    [SerializeField] private float steering;
+ 
+    [SerializeField] private Rigidbody2D rb;
 
+    /// <summary>
+    /// 何度ズレていたら真正面や真横に自動的に修正するか
+    /// </summary>
+    [SerializeField] private float autoFixInclinationThresould;
+    
+    private float currentSpeed;
+ 
     private void Start()
     {
-        rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            this.rb = GetComponent<Rigidbody2D>();
+        }
     }
-    
-    private void Update()
+ 
+    private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
+        // Get input
+        float h = Input.GetAxis("Horizontal");
+        float v = -Input.GetAxis("Vertical");
+                 
+        // Calculate speed from input and acceleration (transform.up is forward)
+        Vector2 speed = transform.up * (v * acceleration);
+        rb.AddForce(speed);
+ 
+        // Create car rotation
+        float direction = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.up));
+        if (direction >= 0.0f)
         {
-            Debug.Log("W");
-            Vector3 direction = directionObj.transform.position - this.gameObject.transform.position;
-            rigidbody.AddForce(direction * moveRate);
+            rb.rotation += h * steering * (rb.velocity.magnitude / maxSpeed);
         }
-
-        if (Input.GetKey(KeyCode.S))
+        else
         {
-            Debug.Log("S");
-            Vector3 direction = this.gameObject.transform.position - directionObj.transform.position;
-            rigidbody.AddForce(direction * moveRate);
+            rb.rotation -= h * steering * (rb.velocity.magnitude / maxSpeed);
         }
-
-        if (Input.GetKey(KeyCode.A))
+ 
+        // Change velocity based on rotation
+        float driftForce = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.left)) * 2.0f;
+        Vector2 relativeForce = Vector2.right * driftForce;
+        EditorDebug.DrawLine(rb.position, rb.GetRelativePoint(relativeForce), Color.green);
+        rb.AddForce(rb.GetRelativeVector(relativeForce));
+ 
+        // Force max speed limit
+        if (rb.velocity.magnitude > maxSpeed)
         {
-            Debug.Log("A");
-            rigidbody.AddTorque(rotateRate, ForceMode2D.Force);
-            //this.gameObject.transform.Rotate(0, 0, rotateRate);
+            rb.velocity = rb.velocity.normalized * maxSpeed;
         }
         
-        if (Input.GetKey(KeyCode.D))
+        AutoFixInclination(h, v);
+        
+        currentSpeed = rb.velocity.magnitude;
+    }
+
+    private void AutoFixInclination(float h, float v)
+    {
+        if (Mathf.Abs(h) > 0.1f)
         {
-            Debug.Log("D");
-            rigidbody.AddTorque(-rotateRate, ForceMode2D.Force);
-            //this.gameObject.transform.Rotate(0, 0, -rotateRate);
+            return;
         }
+
+        float absRotationZ = this.gameObject.transform.eulerAngles.z;
+        
+        while (absRotationZ < 0f)
+        {
+            absRotationZ += 360;
+        }
+        
+        if (absRotationZ <= autoFixInclinationThresould || absRotationZ >= 360 - autoFixInclinationThresould)
+        {
+            AutoRotate(0);
+        }
+        else if (Mathf.Abs(absRotationZ - 90) <= autoFixInclinationThresould)
+        {
+            AutoRotate(90);
+        }
+        else if (Mathf.Abs(absRotationZ - 180) <= autoFixInclinationThresould)
+        {
+            AutoRotate(180);
+        }
+        else if (Mathf.Abs(absRotationZ - 270) <= autoFixInclinationThresould)
+        {
+            AutoRotate(270);
+        }
+    }
+    
+    private void AutoRotate(int z)
+    {
+        rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0,0,z) ,0.05f));
     }
 }
