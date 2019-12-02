@@ -32,6 +32,12 @@ public class CarMove : MonoBehaviour
  
     private void FixedUpdate()
     {
+
+        if (PlayerStateOwner.Instance.GetPlayerState == PlayerState.Stopping)
+        {
+            return;
+        }
+        
         // Get input
         float h = Input.GetAxis("Horizontal");
         float v = -Input.GetAxis("Vertical");
@@ -39,10 +45,11 @@ public class CarMove : MonoBehaviour
         // Calculate speed from input and acceleration (transform.up is forward)
         Vector2 speed = transform.up * (v * acceleration);
         rb.AddForce(speed);
- 
+        
+        
         // Create car rotation
         float direction = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.up));
-        if (direction >= 0.0f)
+        if (direction >= 0f)
         {
             rb.rotation += h * steering * (rb.velocity.magnitude / maxSpeed);
         }
@@ -50,6 +57,7 @@ public class CarMove : MonoBehaviour
         {
             rb.rotation -= h * steering * (rb.velocity.magnitude / maxSpeed);
         }
+        
  
         // Change velocity based on rotation
         float driftForce = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.left)) * 2.0f;
@@ -68,6 +76,11 @@ public class CarMove : MonoBehaviour
         currentSpeed = rb.velocity.magnitude;
     }
 
+    /// <summary>
+    /// 車体の微妙な回転を、自動的に修正
+    /// </summary>
+    /// <param name="h">Input Horizontal</param>
+    /// <param name="v">Input Vertical</param>
     private void AutoFixInclination(float h, float v)
     {
         if (Mathf.Abs(h) > 0.1f)
@@ -98,10 +111,10 @@ public class CarMove : MonoBehaviour
         {
             AutoRotate(270);
         }
-    }
-    
-    private void AutoRotate(int z)
-    {
-        rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0,0,z) ,0.05f));
+        
+        void AutoRotate(int z)
+        {
+            rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0,0,z) ,0.05f));
+        }
     }
 }
