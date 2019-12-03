@@ -308,9 +308,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 322356257}
+  - {fileID: 322356243}
   selectedCommands:
-  - {fileID: 322356256}
+  - {fileID: 322356242}
   variables: []
   description: 
   stepPause: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u5317\u306E\u8336\u8272\u3044\u5BB6\u307E\u3067\u9001\u3063\u3066\u304F\u3060\u3055\u3044"
+  storyText: "\u5317\u306E\u8336\u8272\u3044\u5BB6\u307E\u3067\u9001\u3063\u3066\u304F\u308C\u307E\u305B\u3093\u304B\uFF1F"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: "\u3042\u308A\u304C\u3068\u3046"
+  storyText: "\u9001\u3063\u3066\u304F\u308C\u3066\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3057\u305F\uFF01"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -826,7 +826,7 @@ MonoBehaviour:
   - {fileID: 322356254}
 --- !u!114 &322356256
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -865,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 66.20743
+    x: 121.43425
     y: 333.48032
     width: 120
     height: 40
@@ -879,7 +879,7 @@ MonoBehaviour:
   - {fileID: 322356256}
 --- !u!114 &322356258
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -970,8 +970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 0.93189716
-    y: 331.34015
+    x: -20.106888
+    y: 333.96997
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
