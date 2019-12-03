@@ -3,7 +3,9 @@
 
 using UnityEditor;
 using UnityEngine;
+using System;
 using System.IO;
+using System.Text;
 
 namespace Fungus.EditorUtils
 {
@@ -65,8 +67,14 @@ namespace Fungus.EditorUtils
                 return;
             }
 
-            string csvData = localization.GetCSVData();         
-            File.WriteAllText(path, csvData);
+            string csvData = localization.GetCSVData();
+            
+            ///
+            /// 日本語用に追記
+            var encoding = new UTF8Encoding(true);
+            ///
+            
+            File.WriteAllText(path, csvData, encoding);
             AssetDatabase.ImportAsset(path);
 
             TextAsset textAsset = AssetDatabase.LoadAssetAtPath(path, typeof(TextAsset)) as TextAsset;
