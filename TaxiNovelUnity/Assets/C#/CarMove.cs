@@ -13,7 +13,7 @@ public class CarMove : MonoBehaviour
     /// </summary>
     [SerializeField] private float steering;
  
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rigidbody;
 
     /// <summary>
     /// 何度ズレていたら真正面や真横に自動的に修正するか
@@ -24,9 +24,9 @@ public class CarMove : MonoBehaviour
  
     private void Start()
     {
-        if (rb == null)
+        if (rigidbody == null)
         {
-            this.rb = GetComponent<Rigidbody2D>();
+            this.rigidbody = GetComponent<Rigidbody2D>();
         }
     }
  
@@ -44,36 +44,36 @@ public class CarMove : MonoBehaviour
                  
         // Calculate speed from input and acceleration (transform.up is forward)
         Vector2 speed = transform.up * (v * acceleration);
-        rb.AddForce(speed);
+        rigidbody.AddForce(speed);
         
         
         // Create car rotation
-        float direction = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.up));
+        float direction = Vector2.Dot(rigidbody.velocity, rigidbody.GetRelativeVector(Vector2.up));
         if (direction >= 0f)
         {
-            rb.rotation += h * steering * (rb.velocity.magnitude / maxSpeed);
+            rigidbody.rotation += h * steering * (rigidbody.velocity.magnitude / maxSpeed);
         }
         else
         {
-            rb.rotation -= h * steering * (rb.velocity.magnitude / maxSpeed);
+            rigidbody.rotation -= h * steering * (rigidbody.velocity.magnitude / maxSpeed);
         }
         
  
         // Change velocity based on rotation
-        float driftForce = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.left)) * 2.0f;
+        float driftForce = Vector2.Dot(rigidbody.velocity, rigidbody.GetRelativeVector(Vector2.left)) * 2.0f;
         Vector2 relativeForce = Vector2.right * driftForce;
-        EditorDebug.DrawLine(rb.position, rb.GetRelativePoint(relativeForce), Color.green);
-        rb.AddForce(rb.GetRelativeVector(relativeForce));
+        EditorDebug.DrawLine(rigidbody.position, rigidbody.GetRelativePoint(relativeForce), Color.green);
+        rigidbody.AddForce(rigidbody.GetRelativeVector(relativeForce));
  
         // Force max speed limit
-        if (rb.velocity.magnitude > maxSpeed)
+        if (rigidbody.velocity.magnitude > maxSpeed)
         {
-            rb.velocity = rb.velocity.normalized * maxSpeed;
+            rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
         }
         
         AutoFixInclination(h, v);
         
-        currentSpeed = rb.velocity.magnitude;
+        currentSpeed = rigidbody.velocity.magnitude;
     }
 
     /// <summary>
@@ -114,7 +114,7 @@ public class CarMove : MonoBehaviour
         
         void AutoRotate(int z)
         {
-            rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0,0,z) ,0.05f));
+            rigidbody.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0,0,z) ,0.05f));
         }
     }
 }
