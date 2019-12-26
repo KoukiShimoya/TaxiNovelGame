@@ -122,7 +122,6 @@ public class CarMove : MonoBehaviour
         {
             absRotationZ += 360;
         }
-        EditorDebug.Log(absRotationZ);
         
         if (absRotationZ <= autoFixInclinationThresould || absRotationZ >= 360 - autoFixInclinationThresould)
         {
