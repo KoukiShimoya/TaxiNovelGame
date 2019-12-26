@@ -236,6 +236,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &99587767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99587769}
+  - component: {fileID: 99587768}
+  m_Layer: 0
+  m_Name: KeyInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &99587768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99587767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9188340d475b31419a6cad7cbd081ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyTypeList: 
+--- !u!4 &99587769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99587767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124894179
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,11 +712,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 150.53894, y: 115.5896}
+  scrollPos: {x: 112.709305, y: 59.53339}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.9100001
+  zoom: 0.8200002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -681,7 +725,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks: []
   selectedCommands:
-  - {fileID: 322356238}
+  - {fileID: 322356262}
   variables: []
   description: 
   stepPause: 0
@@ -736,7 +780,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -12.31782
     y: 113.775635
-    width: 132.41757
+    width: 135.36584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -828,7 +872,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.46317
     y: 198.30087
-    width: 176.37361
+    width: 181.70729
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -881,7 +925,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 353.98175
     y: 112.21457
-    width: 125.824165
+    width: 128.04877
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -943,7 +987,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 340.6181
     y: -63.659096
-    width: 145.60439
+    width: 149.99997
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1005,7 +1049,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -22.769552
     y: -72.40622
-    width: 152.19778
+    width: 157.31705
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1185,7 +1229,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 150.56697
     y: 31.9048
-    width: 188.46153
+    width: 191.46338
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1460,7 +1504,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -37.6143
     y: 261.42456
-    width: 193.95602
+    width: 196.34143
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1761,7 +1805,7 @@ MonoBehaviour:
   maxSpeed: 12
   acceleration: 15
   steering: 5
-  rigidbody: {fileID: 692926725}
+  rigidbody2d: {fileID: 0}
   autoFixInclinationThresould: 20
 --- !u!50 &692926725
 Rigidbody2D:
@@ -2278,8 +2322,8 @@ MonoBehaviour:
   m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
+  m_HorizontalAxis: TaxiNovel_Horizontal
+  m_VerticalAxis: TaxiNovel_Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
