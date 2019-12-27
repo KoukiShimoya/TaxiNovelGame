@@ -10,6 +10,11 @@ public static class EditorDebug
     {
         Debug.Log(message);
     }
+
+    public static void LogWarning(object message)
+    {
+        Debug.LogWarning(message);
+    }
     
     public static void DrawLine(Vector3 start, Vector3 end, Color color)
     {
