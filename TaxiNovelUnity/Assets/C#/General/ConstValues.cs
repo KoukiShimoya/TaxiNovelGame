@@ -32,6 +32,7 @@ namespace ConstValues
     public struct TagName
     {
         public const string Car = "Car";
+        public const string Signal = "Signal";
     }
 
     public class Path

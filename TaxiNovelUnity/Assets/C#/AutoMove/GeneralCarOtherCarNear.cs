@@ -5,7 +5,7 @@ using Constants;
 using UnityEngine;
 using ConstValues;
 
-public class OtherCarNear : MonoBehaviour
+public class GeneralCarOtherCarNear : MonoBehaviour
 {
     [SerializeField] private GameObject parent;
     private GeneralCarStateHolder generalCarStateHolder;
