@@ -60,3 +60,13 @@ public static class GameObjectExtensions
     //copy by http://baba-s.hatenablog.com/entry/2014/07/29/082441
     //copy by http://baba-s.hatenablog.com/entry/2014/07/14/101855
 }
+
+public static class TransformExtentions
+{
+    public static void LookAt2D(this Transform own, Vector2 destination)
+    {
+        Vector2 vec = (new Vector2(own.position.x - destination.x,  own.position.y - destination.y))
+            .normalized;
+        own.rotation = Quaternion.FromToRotation(Vector3.up, vec);
+    }
+}

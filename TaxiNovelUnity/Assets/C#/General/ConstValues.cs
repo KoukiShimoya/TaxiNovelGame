@@ -29,6 +29,11 @@ namespace ConstValues
         public const string InitializeScene = "InitializeScene";
     }
 
+    public struct TagName
+    {
+        public const string Car = "Car";
+    }
+
     public class Path
     {
         public static string ResourcesPath = MultiPathCombine.Combine(Application.dataPath, General.Resources);
