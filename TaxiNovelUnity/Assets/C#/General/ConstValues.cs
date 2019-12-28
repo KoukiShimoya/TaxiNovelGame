@@ -33,6 +33,7 @@ namespace ConstValues
     {
         public const string Car = "Car";
         public const string Signal = "Signal";
+        public const string Player = "Player";
     }
 
     public class Path

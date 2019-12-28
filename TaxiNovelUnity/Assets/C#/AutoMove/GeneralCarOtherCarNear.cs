@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Constants;
 using UnityEngine;
 using ConstValues;
 
@@ -23,10 +22,13 @@ public class GeneralCarOtherCarNear : MonoBehaviour
     /// <param name="collider2D"></param>
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (!collider2D.gameObject.CompareTag(TagName.Car))
+        bool tag = collider2D.gameObject.CompareTag(TagName.Car) || collider2D.gameObject.CompareTag(TagName.Player);
+
+        if (!tag)
         {
             return;
         }
+        
 
         if (collider2D.gameObject == parent)
         {
@@ -47,7 +49,9 @@ public class GeneralCarOtherCarNear : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D collider2D)
     {
-        if (!collider2D.gameObject.CompareTag(TagName.Car))
+        bool tag = collider2D.gameObject.CompareTag(TagName.Car) || collider2D.gameObject.CompareTag(TagName.Player);
+
+        if (!tag)
         {
             return;
         }

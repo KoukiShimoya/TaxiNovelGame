@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Constants;
+using ConstValues;
 
 public class FungusMessageSend : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class FungusMessageSend : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag(Tag.Player))
+        if (collider.CompareTag(TagName.Player))
         {
             flowchart.SendFungusMessage(message);
         }
