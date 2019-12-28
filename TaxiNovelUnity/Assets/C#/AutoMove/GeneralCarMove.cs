@@ -13,11 +13,13 @@ public class GeneralCarMove : MonoBehaviour
     private const float moveSpeed = 0.03f;
     private const float threshould = 0.1f;
     private GeneralCarStateHolder generalCarStateHolder;
+    private WorldStateHolder worldStateHolder;
 
     private void Start()
     {
         rigidbody2D = this.gameObject.GetComponent<Rigidbody2D>();
         generalCarStateHolder = this.gameObject.GetComponent<GeneralCarStateHolder>();
+        worldStateHolder = WorldStateHolder.Instance;
         
         if (checkPointGameObjectRoot.transform.childCount == 0)
         {
@@ -39,6 +41,11 @@ public class GeneralCarMove : MonoBehaviour
 
     private void Update()
     {
+        if (worldStateHolder.worldState == WorldStateHolder.WorldState.AllStopping)
+        {
+            return;
+        }
+        
         if (generalCarStateHolder.generalCarState == GeneralCarState.Stopping)
         {
             return;
