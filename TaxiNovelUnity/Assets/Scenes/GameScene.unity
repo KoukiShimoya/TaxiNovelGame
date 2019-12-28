@@ -192,6 +192,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowchart: {fileID: 322356235}
   message: EndTrigger
+--- !u!1 &67702848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67702850}
+  - component: {fileID: 67702849}
+  m_Layer: 0
+  m_Name: WorldStateHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &67702849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67702848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3117a1331cda0864d861dacc245d9252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldState: 0
+--- !u!4 &67702850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67702848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &70316653
 GameObject:
   m_ObjectHideFlags: 1
@@ -448,6 +492,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1502447867}
+  - {fileID: 724471709}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -624,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 794329588}
-  punchObject: {fileID: 1502447866}
+  punchObject: {fileID: 0}
   writingSpeed: 60
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
@@ -980,11 +1025,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 112.709305, y: 59.53339}
+  scrollPos: {x: 141.27592, y: 131.13373}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8200002
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -993,7 +1038,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks: []
   selectedCommands:
-  - {fileID: 322356262}
+  - {fileID: 322356236}
   variables: []
   description: 
   stepPause: 0
@@ -1048,7 +1093,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -12.31782
     y: 113.775635
-    width: 135.36584
+    width: 123.97258
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1140,7 +1185,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.46317
     y: 198.30087
-    width: 181.70729
+    width: 165.06845
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1193,7 +1238,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 353.98175
     y: 112.21457
-    width: 128.04877
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1255,7 +1300,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 340.6181
     y: -63.659096
-    width: 149.99997
+    width: 137.6712
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1317,7 +1362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -22.769552
     y: -72.40622
-    width: 157.31705
+    width: 143.15065
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1497,7 +1542,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 150.56697
     y: 31.9048
-    width: 191.46338
+    width: 174.6575
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1772,7 +1817,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -37.6143
     y: 261.42456
-    width: 196.34143
+    width: 178.76707
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2218,7 +2263,7 @@ GameObject:
   - component: {fileID: 692926726}
   m_Layer: 0
   m_Name: fomura_macine_28
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2449,6 +2494,76 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 721316880}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &724471708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724471709}
+  - component: {fileID: 724471710}
+  - component: {fileID: 724471711}
+  m_Layer: 0
+  m_Name: ClickBlocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724471709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724471708}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1066.6667, y: -600, z: 5.555556}
+  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
+  m_Children: []
+  m_Father: {fileID: 147229291}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &724471710
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724471708}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100}
+  m_EdgeRadius: 0
+--- !u!225 &724471711
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724471708}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &760362905
 GameObject:
   m_ObjectHideFlags: 0

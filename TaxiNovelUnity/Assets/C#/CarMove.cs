@@ -23,6 +23,8 @@ public class CarMove : MonoBehaviour
     private float currentSpeed; //現在速度メータなどが必要となった時に使う
 
     private KeyInput keyInput;
+
+    private WorldStateHolder worldStateHolder;
  
     private void Start()
     {
@@ -32,11 +34,16 @@ public class CarMove : MonoBehaviour
         }
 
         keyInput = KeyInput.Instance;
+        worldStateHolder = WorldStateHolder.Instance;
     }
  
     private void FixedUpdate()
     {
-
+        if (worldStateHolder.worldState == WorldStateHolder.WorldState.AllStopping)
+        {
+            return;
+        }
+        
         if (PlayerStateOwner.Instance.GetPlayerState == PlayerState.Stopping)
         {
             return;
