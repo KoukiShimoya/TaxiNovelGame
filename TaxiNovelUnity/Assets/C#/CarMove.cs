@@ -39,7 +39,7 @@ public class CarMove : MonoBehaviour
  
     private void FixedUpdate()
     {
-        if (worldStateHolder.worldState == WorldStateHolder.WorldState.AllStopping)
+        if (worldStateHolder.GetSetWorldState == WorldStateHolder.WorldState.ObjectStopping || worldStateHolder.GetSetWorldState == WorldStateHolder.WorldState.Settings)
         {
             return;
         }

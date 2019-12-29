@@ -60,7 +60,7 @@ public class Signal : MonoBehaviour
 
     private void Update()
     {
-        if (worldStateHolder.worldState == WorldStateHolder.WorldState.AllStopping)
+        if (worldStateHolder.GetSetWorldState == WorldStateHolder.WorldState.ObjectStopping || worldStateHolder.GetSetWorldState == WorldStateHolder.WorldState.Settings)
         {
             return;
         }
