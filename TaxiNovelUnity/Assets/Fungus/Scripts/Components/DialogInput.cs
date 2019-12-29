@@ -27,7 +27,7 @@ namespace Fungus
     public class DialogInput : MonoBehaviour
     {
         [Tooltip("Click to advance story")]
-        [SerializeField] protected ClickMode clickMode;
+        [SerializeField] public ClickMode clickMode;
 
         [Tooltip("Delay between consecutive clicks. Useful to prevent accidentally clicking through story.")]
         [SerializeField] protected float nextClickDelay = 0f;
@@ -98,6 +98,9 @@ namespace Fungus
             case ClickMode.Disabled:
                 break;
             case ClickMode.ClickAnywhere:
+                if(EventSystem.current.IsPointerOverGameObject()){
+                    break;
+                }
                 if (Input.GetMouseButtonDown(0))
                 {
                     SetNextLineFlag();

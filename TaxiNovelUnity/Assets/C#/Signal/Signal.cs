@@ -25,6 +25,8 @@ public class Signal : MonoBehaviour
     private bool verticalYellowToRed;
     private bool horizontalGreenToYellow;
 
+    private WorldStateHolder worldStateHolder;
+
     private void Start()
     {
         for (int i = 0; i < horizontalSignalObject.Count; i++)
@@ -52,10 +54,17 @@ public class Signal : MonoBehaviour
         elapsedTime = 0f;
         verticalGreenToYellow = false;
         verticalYellowToRed = false;
+
+        worldStateHolder = WorldStateHolder.Instance;
     }
 
     private void Update()
     {
+        if (worldStateHolder.GetSetWorldState == WorldStateHolder.WorldState.ObjectStopping || worldStateHolder.GetSetWorldState == WorldStateHolder.WorldState.Settings)
+        {
+            return;
+        }
+        
         elapsedTime += Time.deltaTime;
 
         if (elapsedTime > greenTime && !verticalGreenToYellow)
