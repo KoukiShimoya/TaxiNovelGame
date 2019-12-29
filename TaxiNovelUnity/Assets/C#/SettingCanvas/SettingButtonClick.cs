@@ -18,7 +18,10 @@ public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
         if (!settingCanvas.activeSelf)
         {
             settingCanvas.SetActive(true);
-            worldStateHolder.GetSetWorldState = WorldStateHolder.WorldState.Settings;
+            if (worldStateHolder != null)
+            {
+                worldStateHolder.GetSetWorldState = WorldStateHolder.WorldState.Settings;
+            }
         }
     }
 }
