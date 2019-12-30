@@ -28,7 +28,7 @@ public class PlayTime : SingletonMonoBehaviour<PlayTime>
     private float decimalPoint;
     private void Start()
     {
-        var loadPath = MultiPathCombine.Combine(Path.ResourcesFolder.TextData, Path.TextFolder.PlayTime);
+        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime);
         var timeStrings = SaveLoadCsvFile.LoadCsvData(loadPath)[0].Split(General.comma);
         hour = int.Parse(timeStrings[0]);
         minute = int.Parse(timeStrings[1]);
@@ -60,9 +60,6 @@ public class PlayTime : SingletonMonoBehaviour<PlayTime>
 
     private void ActiveSceneChanged(Scene preScene, Scene nextScene)
     {
-        var loadPath = MultiPathCombine.Combine(Path.ResourcesFolder.TextData, Path.TextFolder.PlayTime);
-        var savePath = MultiPathCombine.Combine(Path.ResourcesPath, Path.ResourcesFolder.TextData,
-            Path.TextFolder.PlayTime + General.csv);
-        SaveLoadCsvFile.SaveCsvFile(loadPath, savePath, SaveLoadCsvFile.SAVETYPE.Time);
+        SaveLoadCsvFile.SaveTime();
     }
 }

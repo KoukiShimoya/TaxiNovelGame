@@ -61,12 +61,40 @@ public static class GameObjectExtensions
     //copy by http://baba-s.hatenablog.com/entry/2014/07/14/101855
 }
 
-public static class TransformExtentions
+public static class TransformExtensions
 {
     public static void LookAt2D(this Transform own, Vector2 destination)
     {
         Vector2 vec = (new Vector2(own.position.x - destination.x,  own.position.y - destination.y))
             .normalized;
         own.rotation = Quaternion.FromToRotation(Vector3.up, vec);
+    }
+}
+
+public static class IntExtensions
+{
+    public static bool ToBool(this int own)
+    {
+        if (own == 0)
+        {
+            return false;
+        }
+        else if (own == 1)
+        {
+            return true;
+        }
+        else
+        {
+            EditorDebug.LogError("Int to Boolのint値が0でも1でもありません");
+            return false;
+        }
+    }
+}
+
+public static class BoolExtensions
+{
+    public static int ToInt(this bool own)
+    {
+        return own ? 1 : 0;
     }
 }
