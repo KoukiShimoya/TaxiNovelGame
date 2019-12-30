@@ -6,7 +6,7 @@ public class InitializeDontDestroyOnLoad : SingletonMonoBehaviour<InitializeDont
     private bool loadNextScene = false;
     private void Start()
     {
-        var ddolObject = Resources.LoadAll<GameObject>(Path.ResourcesFolder.DontDestroyOnLoad);
+        var ddolObject = Resources.LoadAll<GameObject>(PathData.ResourcesFolder.DontDestroyOnLoad);
         GameObject ddolRoot = null;
         foreach (var obj in ddolObject)
         {

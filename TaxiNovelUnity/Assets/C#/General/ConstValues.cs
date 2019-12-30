@@ -36,7 +36,7 @@ namespace ConstValues
         public const string Player = "Player";
     }
 
-    public class Path
+    public class PathData
     {
         public static string ResourcesPath = MultiPathCombine.Combine(Application.dataPath, General.Resources);
         public static string PluginsPath = MultiPathCombine.Combine(Application.dataPath, "Plugins");
@@ -55,6 +55,7 @@ namespace ConstValues
         public struct TextFolder
         {
             public const string PlayTime = "PlayTime";
+            public const string ChoiceData = "ChoiceData";
         }
     }
 

@@ -16,6 +16,11 @@ public static class EditorDebug
         Debug.LogWarning(message);
     }
     
+    public static void LogError(object message)
+    {
+        Debug.LogError(message);
+    }
+    
     public static void DrawLine(Vector3 start, Vector3 end, Color color)
     {
         Debug.DrawLine(start, end, color);
