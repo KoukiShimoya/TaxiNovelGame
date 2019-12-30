@@ -36,8 +36,26 @@ public static class SaveLoadCsvFile
         return csvChoiceDataList;
     }
 
-    /// <param name="loadPath">パスのみ</param>
-    /// <param name="savePath">末尾にGeneral.csvが必要</param>
+    private static List<QuestData> LoadQuestData()
+    {
+        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.QuestData);
+
+        var rowData = LoadCsvData(loadPath);
+
+        var csvQuestDataList = new List<QuestData>();
+
+        foreach (var oneRow in rowData)
+        {
+            var csvQuestData = oneRow.Split(General.comma);
+            
+            var oneRowQuestData = new QuestData(csvQuestData[0], int.Parse(csvQuestData[1]).ToBool());
+            
+            csvQuestDataList.Add(oneRowQuestData);
+        }
+
+        return csvQuestDataList;
+    }
+    
     public static void SaveTime()
     {
         var encoding = Encoding.GetEncoding(General.EncodingType);
@@ -64,7 +82,6 @@ public static class SaveLoadCsvFile
     {
         var encoding = Encoding.GetEncoding(General.EncodingType);
         
-        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.ChoiceData);
         var savePath = MultiPathCombine.Combine(PathData.ResourcesPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.ChoiceData + General.csv);
         
@@ -72,11 +89,16 @@ public static class SaveLoadCsvFile
 
         var csvChoiceDataList = LoadChoiceData();
 
+        var debugLogKey = "";
+        var debugLogValue = "";
+
         foreach (var csvChoiceData in csvChoiceDataList)
         {
             if (csvChoiceData.key == choiceData.key)
             {
                 csvChoiceData.choiceNumber = choiceData.choiceNumber;
+                debugLogKey = csvChoiceData.key;
+                debugLogValue = csvChoiceData.choiceNumber.ToString();
                 break;
             }
         }
@@ -85,7 +107,7 @@ public static class SaveLoadCsvFile
         
         foreach (var csvChoiceData in csvChoiceDataList)
         {
-            saveStr += choiceData.key + General.comma + choiceData.choiceNumber;
+            saveStr += csvChoiceData.key + General.comma + csvChoiceData.choiceNumber;
             saveStr += General.crlf;
         }
 
@@ -94,7 +116,48 @@ public static class SaveLoadCsvFile
         streamWriter.Write(saveStr);
         streamWriter.Flush();
         streamWriter.Close();
-        EditorDebug.Log("選択肢を保存しました");
+        EditorDebug.Log("選択肢を保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
+    }
+
+    public static void SaveQuest(QuestData questData)
+    {
+        var encoding = Encoding.GetEncoding(General.EncodingType);
+        
+        var savePath = MultiPathCombine.Combine(PathData.ResourcesPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.QuestData + General.csv);
+        
+        var streamWriter = new StreamWriter(savePath, false, encoding);
+
+        var csvQuestDataList = LoadQuestData();
+        
+        var debugLogKey = "";
+        var debugLogValue = "";
+
+        foreach (var csvQuestData in csvQuestDataList)
+        {
+            if (csvQuestData.key == questData.key)
+            {
+                csvQuestData.isClear = questData.isClear;
+                debugLogKey = csvQuestData.key;
+                debugLogValue = csvQuestData.isClear.ToInt().ToString();
+                break;
+            }
+        }
+
+        var saveStr = "";
+
+        foreach (var csvQuestData in csvQuestDataList)
+        {
+            saveStr += csvQuestData.key + General.comma + csvQuestData.isClear.ToInt();
+            saveStr += General.crlf;
+        }
+
+        saveStr = saveStr.Trim(General.crlf);
+        
+        streamWriter.Write(saveStr);
+        streamWriter.Flush();
+        streamWriter.Close();
+        EditorDebug.Log("クエストを保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
 }
 
@@ -108,5 +171,18 @@ public class ChoiceData
     {
         this.key = key;
         this.choiceNumber = choiceNumber;
+    }
+}
+
+[System.Serializable]
+public class QuestData
+{
+    public string key;
+    public bool isClear;
+
+    public QuestData(string key, bool isClear)
+    {
+        this.key = key;
+        this.isClear = isClear;
     }
 }
