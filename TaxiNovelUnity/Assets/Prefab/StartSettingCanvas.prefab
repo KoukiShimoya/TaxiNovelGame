@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 6888480180068857731}
   - component: {fileID: 6888480180068857757}
   - component: {fileID: 6888480180068857730}
+  - component: {fileID: 8576915177243874567}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -641,6 +642,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u64CD\u4F5C\u8AAC\u660E"
+--- !u!114 &8576915177243874567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888480180068857728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JP: "\u64CD\u4F5C\u8AAC\u660E"
+  EN: HowToUse
 --- !u!1 &6888480180074541149
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +874,7 @@ GameObject:
   - component: {fileID: 6888480180140475321}
   - component: {fileID: 6888480180140475323}
   - component: {fileID: 6888480180140475320}
+  - component: {fileID: 1018504192700148789}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -927,6 +943,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u8A2D\u5B9A"
+--- !u!114 &1018504192700148789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888480180140475326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JP: "\u8A2D\u5B9A"
+  EN: Setting
 --- !u!1 &6888480180256749973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2135,7 @@ GameObject:
   - component: {fileID: 6888480181253872461}
   - component: {fileID: 6888480181253872463}
   - component: {fileID: 6888480181253872460}
+  - component: {fileID: 5216711925738202697}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2173,6 +2204,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u30AF\u30EC\u30B8\u30C3\u30C8"
+--- !u!114 &5216711925738202697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888480181253872434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JP: "\u30AF\u30EC\u30B8\u30C3\u30C8"
+  EN: Credit
 --- !u!1 &6888480181279362285
 GameObject:
   m_ObjectHideFlags: 0

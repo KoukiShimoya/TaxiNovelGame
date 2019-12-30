@@ -57,7 +57,6 @@ public class SettingPanelUniqueOpen : MonoBehaviour
 
     private void Start()
     {
-        settingCanvas.SetActive(false);
         foreach (var buttonPanelSet in buttonPanelSetList)
         {
             buttonPanelSet.Panel.SetActive(false);
