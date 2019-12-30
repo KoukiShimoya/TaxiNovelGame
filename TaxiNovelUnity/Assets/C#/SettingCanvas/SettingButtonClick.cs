@@ -16,6 +16,7 @@ public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
         {
             worldStateHolder = WorldStateHolder.Instance;
         }
+        settingCanvas.SetActive(false);
     }
 
     public void OnClick()
