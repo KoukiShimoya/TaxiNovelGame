@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Fungus
 {
     [CommandInfo("Scripting", "Set Active Language", "StaticなActiveLanguageを変更する")]
-    public class SetActiveLanguage : Fungus.Command
+    public class SetActiveLanguage : Command
     {
         [SerializeField] private NowActiveLanguage.LanguageCode languageCode;
 
