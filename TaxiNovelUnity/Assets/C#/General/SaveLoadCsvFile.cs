@@ -4,6 +4,7 @@ using UnityEngine;
 using ConstValues;
 using System.Text;
 using System.IO;
+using System;
 using ConstValues;
 
 public static class SaveLoadCsvFile
@@ -16,7 +17,7 @@ public static class SaveLoadCsvFile
         return rowData;
     }
 
-    private static List<ChoiceData> LoadChoiceData()
+    public static List<ChoiceData> LoadChoiceData()
     {
         var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.ChoiceData);
         
@@ -28,7 +29,7 @@ public static class SaveLoadCsvFile
         {
             var csvChoiceData = oneRow.Split(General.comma);
             
-            var oneRowChoiceData = new ChoiceData(csvChoiceData[0], int.Parse(csvChoiceData[1]));
+            var oneRowChoiceData = new ChoiceData((ChoiceKey) Enum.Parse(typeof(ChoiceKey), csvChoiceData[0]), int.Parse(csvChoiceData[1]));
             
             csvChoiceDataList.Add(oneRowChoiceData);
         }
@@ -36,7 +37,7 @@ public static class SaveLoadCsvFile
         return csvChoiceDataList;
     }
 
-    private static List<QuestData> LoadQuestData()
+    public static List<QuestData> LoadQuestData()
     {
         var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.QuestData);
 
@@ -48,7 +49,7 @@ public static class SaveLoadCsvFile
         {
             var csvQuestData = oneRow.Split(General.comma);
             
-            var oneRowQuestData = new QuestData(csvQuestData[0], int.Parse(csvQuestData[1]).ToBool());
+            var oneRowQuestData = new QuestData((QuestKey) Enum.Parse(typeof(QuestKey), csvQuestData[0]), int.Parse(csvQuestData[1]).ToBool());
             
             csvQuestDataList.Add(oneRowQuestData);
         }
@@ -87,27 +88,31 @@ public static class SaveLoadCsvFile
         
         var streamWriter = new StreamWriter(savePath, false, encoding);
 
-        var csvChoiceDataList = LoadChoiceData();
+        var choiceDataHolder = ChoiceDataHolder.Instance;
+
+        var choiceDataHolderChoiceDataList = new List<ChoiceData>(choiceDataHolder.choiceDataList);
 
         var debugLogKey = "";
         var debugLogValue = "";
 
-        foreach (var csvChoiceData in csvChoiceDataList)
+        foreach (var choiceDataHolderChoiceData in choiceDataHolderChoiceDataList)
         {
-            if (csvChoiceData.key == choiceData.key)
+            if (choiceData.key == choiceDataHolderChoiceData.key)
             {
-                csvChoiceData.choiceNumber = choiceData.choiceNumber;
-                debugLogKey = csvChoiceData.key;
-                debugLogValue = csvChoiceData.choiceNumber.ToString();
+                choiceDataHolderChoiceData.choiceNumber = choiceData.choiceNumber;
+                debugLogKey = choiceData.key.ToString();
+                debugLogValue = choiceData.choiceNumber.ToString();
                 break;
             }
         }
 
+        choiceDataHolder.choiceDataList = choiceDataHolderChoiceDataList;
+
         var saveStr = "";
         
-        foreach (var csvChoiceData in csvChoiceDataList)
+        foreach (var choiceDataHolderChoiceData in choiceDataHolderChoiceDataList)
         {
-            saveStr += csvChoiceData.key + General.comma + csvChoiceData.choiceNumber;
+            saveStr += choiceDataHolderChoiceData.key.ToString() + General.comma + choiceDataHolderChoiceData.choiceNumber;
             saveStr += General.crlf;
         }
 
@@ -128,27 +133,29 @@ public static class SaveLoadCsvFile
         
         var streamWriter = new StreamWriter(savePath, false, encoding);
 
-        var csvQuestDataList = LoadQuestData();
+        var questDataHolder = QuestDataHolder.Instance;
+
+        var questDataHolderQuestDataList = new List<QuestData>(questDataHolder.questDataList);
         
         var debugLogKey = "";
         var debugLogValue = "";
 
-        foreach (var csvQuestData in csvQuestDataList)
+        foreach (var questDataHolderQuestData in questDataHolderQuestDataList)
         {
-            if (csvQuestData.key == questData.key)
+            if (questDataHolderQuestData.key == questData.key)
             {
-                csvQuestData.isClear = questData.isClear;
-                debugLogKey = csvQuestData.key;
-                debugLogValue = csvQuestData.isClear.ToInt().ToString();
+                questDataHolderQuestData.isClear = questData.isClear;
+                debugLogKey = questData.key.ToString();
+                debugLogValue = questData.isClear.ToInt().ToString();
                 break;
             }
         }
 
         var saveStr = "";
 
-        foreach (var csvQuestData in csvQuestDataList)
+        foreach (var questDataHolderQuestData in questDataHolderQuestDataList)
         {
-            saveStr += csvQuestData.key + General.comma + csvQuestData.isClear.ToInt();
+            saveStr += questDataHolderQuestData.key.ToString() + General.comma + questDataHolderQuestData.isClear.ToInt();
             saveStr += General.crlf;
         }
 
@@ -164,10 +171,10 @@ public static class SaveLoadCsvFile
 [System.Serializable]
 public class ChoiceData
 {
-    public string key;
+    public ChoiceKey key;
     public int choiceNumber;
 
-    public ChoiceData(string key, int choiceNumber)
+    public ChoiceData(ChoiceKey key, int choiceNumber)
     {
         this.key = key;
         this.choiceNumber = choiceNumber;
@@ -177,12 +184,26 @@ public class ChoiceData
 [System.Serializable]
 public class QuestData
 {
-    public string key;
+    public QuestKey key;
     public bool isClear;
 
-    public QuestData(string key, bool isClear)
+    public QuestData(QuestKey key, bool isClear)
     {
         this.key = key;
         this.isClear = isClear;
     }
+}
+
+[System.Serializable]
+public enum QuestKey
+{
+    None,
+    AnneSendToHouse
+}
+
+[System.Serializable]
+public enum ChoiceKey
+{
+    None,
+    ColorChoice
 }

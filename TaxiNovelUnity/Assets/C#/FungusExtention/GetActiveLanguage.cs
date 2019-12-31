@@ -3,22 +3,25 @@ using System.Collections.Generic;
 using Fungus;
 using UnityEngine;
 
-[CommandInfo("Scripting", "Set Active Language To Variable", "StaticなActiveLanguageを変更する")]
-public class SetActiveLanguageToVariable : Fungus.Command
+namespace Fungus
 {
-    [Tooltip("String variable to store the tex file contents in")]
-    [VariableProperty(typeof(StringVariable))]
-    [SerializeField] protected StringVariable stringVariable;
-
-    public override void OnEnter() 
+    [CommandInfo("Scripting", "Set Active Language To Variable", "StaticなActiveLanguageを変更する")]
+    public class SetActiveLanguageToVariable : Fungus.Command
     {
-        stringVariable.Value = NowActiveLanguage.GetSetLanguageCode.ToString();
+        [Tooltip("String variable to store the tex file contents in")]
+        [VariableProperty(typeof(StringVariable))]
+        [SerializeField] protected StringVariable stringVariable;
 
-        Continue();
-    }
+        public override void OnEnter() 
+        {
+            stringVariable.Value = NowActiveLanguage.GetSetLanguageCode.ToString();
+
+            Continue();
+        }
     
-    public override Color GetButtonColor()
-    {
-        return new Color32(235, 191, 217, 255);
+        public override Color GetButtonColor()
+        {
+            return new Color32(235, 191, 217, 255);
+        }
     }
 }
