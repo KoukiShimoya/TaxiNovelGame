@@ -7,6 +7,6 @@ public class StartSceneToGameScene : MonoBehaviour
 {
     public void SceneChangeToGameScene()
     {
-        SceneChange.Instance.NoPostEffectSceneChange(SceneName.GameScene);
+        SceneChange.Instance.NoPostEffectSceneChange(SceneName.TutorialScene);
     }
 }

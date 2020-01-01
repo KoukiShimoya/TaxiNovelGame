@@ -27,6 +27,7 @@ namespace ConstValues
         public const string GameScene = "GameScene";
         public const string StartScene = "StartScene";
         public const string InitializeScene = "InitializeScene";
+        public const string TutorialScene = "TutorialScene";
     }
 
     public struct TagName

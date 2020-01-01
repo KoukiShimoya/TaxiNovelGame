@@ -9,79 +9,37 @@ namespace Fungus
     public class SaveChoiceData : Command
     {
         [Tooltip("保存するキー名")]
-        [SerializeField] protected string key = "";
+        [SerializeField] protected ChoiceKey choiceKey;
         
         [Tooltip("保存する値")]
-        [VariableProperty(typeof(IntegerVariable))]
-        [SerializeField] protected Variable variable;
-
-        #region Public members
+        [SerializeField] protected int variable;
 
         public override void OnEnter()
         {
-            if (key == "" ||
-                variable == null)
+            if (variable == null)
             {
                 Continue();
                 return;
             }
             
-            var flowchart = GetFlowchart();
-            
-            // Prepend the current save profile (if any)
-            string prefsKey = SetSaveProfile.SaveProfile + "_" + flowchart.SubstituteVariables(key);
-            
-            System.Type variableType = variable.GetType();
-
-            if (variableType == typeof(IntegerVariable))
-            {
-                IntegerVariable integerVariable = variable as IntegerVariable;
-                if (integerVariable != null)
-                {
-                    SaveLoadCsvFile.SaveChoice(new ChoiceData(key, integerVariable.Value));
-                }
-            }
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(choiceKey, variable));
             
             Continue();
         }
         
         public override string GetSummary()
         {
-            if (key.Length == 0)
-            {
-                return "Error: No stored value key selected";
-            }
-            
-            if (variable == null)
-            {
-                return "Error: No variable selected";
-            }
-            
-            return variable.Key + " into '" + key + "'";
+            string summary = choiceKey.ToString();
+
+            summary += " : " + variable;
+
+            return summary;
         }
         
         public override Color GetButtonColor()
         {
             return new Color32(235, 191, 217, 255);
         }
-
-        public override bool HasReference(Variable in_variable)
-        {
-            return this.variable == in_variable || base.HasReference(in_variable);
-        }
-
-        #endregion
-        #region Editor caches
-#if UNITY_EDITOR
-        protected override void RefreshVariableCache()
-        {
-            base.RefreshVariableCache();
-
-            var f = GetFlowchart();
-
-            f.DetermineSubstituteVariables(key, referencedVariables);
-        }
-#endif
-        #endregion Editor caches
+        
     }
 }

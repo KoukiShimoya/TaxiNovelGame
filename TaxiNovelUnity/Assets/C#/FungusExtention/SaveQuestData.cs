@@ -9,21 +9,20 @@ namespace Fungus
     public class SaveQuestData : Command
     {
         [Tooltip("保存するキー名")]
-        [SerializeField] protected string key = "";
+        [SerializeField] protected QuestKey questKey;
         
         [Tooltip("保存する値")]
         [SerializeField] protected bool variable;
 
         public override void OnEnter()
         {
-            if (key == "" ||
-                variable == null)
+            if (variable == null)
             {
                 Continue();
                 return;
             }
 
-            SaveLoadCsvFile.SaveQuest(new QuestData(key, variable));
+            SaveLoadCsvFile.SaveQuest(new QuestData(questKey, variable));
             
             Continue();
         }
@@ -35,16 +34,7 @@ namespace Fungus
         
         public override string GetSummary()
         {
-            string summary = "";
-
-            if (key == null)
-            {
-                summary = "<None>";
-            }
-            else
-            {
-                summary = key;
-            }
+            string summary = questKey.ToString();
 
             summary += " : " + variable;
 
