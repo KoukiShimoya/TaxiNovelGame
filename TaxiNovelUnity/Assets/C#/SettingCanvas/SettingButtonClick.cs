@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ConstValues;
-using UnityEngine.SceneManagement;
+using IsGameSceneCheck;
 
 public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
 {
@@ -12,7 +12,7 @@ public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == SceneName.GameScene)
+        if (GameSceneCheck.Check())
         {
             worldStateHolder = WorldStateHolder.Instance;
         }
@@ -24,7 +24,7 @@ public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
         if (!settingCanvas.activeSelf)
         {
             settingCanvas.SetActive(true);
-            if (SceneManager.GetActiveScene().name == SceneName.GameScene)
+            if (GameSceneCheck.Check())
             {
                 worldStateHolder.GetSetWorldState = WorldStateHolder.WorldState.Settings;
             }

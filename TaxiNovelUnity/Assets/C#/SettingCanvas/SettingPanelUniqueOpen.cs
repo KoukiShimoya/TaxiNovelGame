@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using IsGameSceneCheck;
 using ConstValues;
 
 public class SettingPanelUniqueOpen : MonoBehaviour
@@ -43,14 +43,9 @@ public class SettingPanelUniqueOpen : MonoBehaviour
             buttonPanelSet.Panel.SetActive(false);
         }
         
-        if (SceneManager.GetActiveScene().name == SceneName.GameScene)
+        if (GameSceneCheck.Check())
         {
             worldStateHolder.GetSetWorldState = WorldStateHolder.WorldState.Standard;
-        }
-
-        if (SceneManager.GetActiveScene().name == SceneName.GameScene)
-        if (SceneManager.GetActiveScene().name == SceneName.GameScene)
-        {
             settingToStartScene.GetReturnStartPanel.SetActive(false);
         }
     }
@@ -62,7 +57,7 @@ public class SettingPanelUniqueOpen : MonoBehaviour
             buttonPanelSet.Panel.SetActive(false);
         }
 
-        if (SceneManager.GetActiveScene().name == SceneName.GameScene)
+        if (GameSceneCheck.Check())
         {
             worldStateHolder = WorldStateHolder.Instance;
             settingToStartScene = SettingToStartScene.Instance;
