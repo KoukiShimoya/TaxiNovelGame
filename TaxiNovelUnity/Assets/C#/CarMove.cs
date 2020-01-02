@@ -13,7 +13,7 @@ public class CarMove : MonoBehaviour
     /// </summary>
     [SerializeField] private float steering;
  
-    [SerializeField] private Rigidbody2D rigidbody2d;
+    private Rigidbody2D rigidbody2d;
 
     /// <summary>
     /// 何度ズレていたら真正面や真横に自動的に修正するか
@@ -28,10 +28,7 @@ public class CarMove : MonoBehaviour
  
     private void Start()
     {
-        if (rigidbody2d == null)
-        {
-            this.rigidbody2d = GetComponent<Rigidbody2D>();
-        }
+        rigidbody2d = GetComponent<Rigidbody2D>();
 
         keyInput = KeyInput.Instance;
         worldStateHolder = WorldStateHolder.Instance;
