@@ -7099,6 +7099,16 @@ PrefabInstance:
       propertyPath: toggle
       value: 
       objectReference: {fileID: 1143121432}
+    - target: {fileID: 3568907919350147936, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3568907919350147936, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
 --- !u!1001 &7061455275372435804

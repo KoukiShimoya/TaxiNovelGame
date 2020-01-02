@@ -24,7 +24,8 @@ public class DestinationToggleChanged : MonoBehaviour
             navigation4Tilemap.StopAllCoroutines();
             navigation4Tilemap.FindingPath(
                 new Vector2(navigation4Tilemap.player.transform.position.x,
-                    navigation4Tilemap.player.transform.position.y), Destination.Instance.destination);
+                    navigation4Tilemap.player.transform.position.y), 
+                new Vector2(Destination.Instance.transform.position.x, Destination.Instance.transform.position.y));
             navigation4Tilemap.StopFindAndStartCoroutine();
         }
         else
