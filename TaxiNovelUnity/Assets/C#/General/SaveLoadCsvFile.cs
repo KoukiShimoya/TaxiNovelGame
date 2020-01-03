@@ -56,17 +56,22 @@ public static class SaveLoadCsvFile
 
         return csvQuestDataList;
     }
+
+    public static int[] LoadTimeData()
+    {
+        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime);
+        var timeStrings = LoadCsvData(loadPath)[0].Split(General.comma);
+        return new int[] {int.Parse(timeStrings[0]), int.Parse(timeStrings[1]), int.Parse(timeStrings[2])};
+    }
     
     public static void SaveTime()
     {
         var encoding = Encoding.GetEncoding(General.EncodingType);
         
-        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime);
         var savePath = MultiPathCombine.Combine(PathData.ResourcesPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.PlayTime + General.csv);
         
         var streamWriter = new StreamWriter(savePath, false, encoding);
-        var rowData = LoadCsvData(loadPath);
         
         var playTime = PlayTime.Instance;
         var hourString = playTime.GetHour.ToString();
