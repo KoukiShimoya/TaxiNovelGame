@@ -28,11 +28,10 @@ public class PlayTime : SingletonMonoBehaviour<PlayTime>
     private float decimalPoint;
     private void Start()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime);
-        var timeStrings = SaveLoadCsvFile.LoadCsvData(loadPath)[0].Split(General.comma);
-        hour = int.Parse(timeStrings[0]);
-        minute = int.Parse(timeStrings[1]);
-        second = int.Parse(timeStrings[2]);
+        int[] timeData = SaveLoadCsvFile.LoadTimeData();
+        hour = timeData[0];
+        minute = timeData[1];
+        second = timeData[2];
         decimalPoint = 0f;
 
         SceneManager.activeSceneChanged += ActiveSceneChanged;
