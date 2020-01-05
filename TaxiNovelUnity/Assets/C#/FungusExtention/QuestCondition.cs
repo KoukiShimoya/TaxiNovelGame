@@ -23,7 +23,7 @@ namespace Fungus
             {
                 if (questData.key == this.questData.key)
                 {
-                    if (questData.isClear == this.questData.isClear)
+                    if (questData.progress == this.questData.progress)
                     {
                         condition = true;
                     }
@@ -51,7 +51,7 @@ namespace Fungus
                 return "Error: No variable selected";
             }
             
-            string summary = questData.key + " : " + questData.isClear;
+            string summary = questData.key + " : " + questData.progress;
 
             return summary;
         }

@@ -49,7 +49,7 @@ public static class SaveLoadCsvFile
         {
             var csvQuestData = oneRow.Split(General.comma);
             
-            var oneRowQuestData = new QuestData((QuestKey) Enum.Parse(typeof(QuestKey), csvQuestData[0]), int.Parse(csvQuestData[1]).ToBool());
+            var oneRowQuestData = new QuestData((QuestKey) Enum.Parse(typeof(QuestKey), csvQuestData[0]), int.Parse(csvQuestData[1]));
             
             csvQuestDataList.Add(oneRowQuestData);
         }
@@ -149,18 +149,20 @@ public static class SaveLoadCsvFile
         {
             if (questDataHolderQuestData.key == questData.key)
             {
-                questDataHolderQuestData.isClear = questData.isClear;
+                questDataHolderQuestData.progress = questData.progress;
                 debugLogKey = questData.key.ToString();
-                debugLogValue = questData.isClear.ToInt().ToString();
+                debugLogValue = questData.progress.ToString();
                 break;
             }
         }
+
+        questDataHolder.questDataList = questDataHolderQuestDataList;
 
         var saveStr = "";
 
         foreach (var questDataHolderQuestData in questDataHolderQuestDataList)
         {
-            saveStr += questDataHolderQuestData.key.ToString() + General.comma + questDataHolderQuestData.isClear.ToInt();
+            saveStr += questDataHolderQuestData.key.ToString() + General.comma + questDataHolderQuestData.progress;
             saveStr += General.crlf;
         }
 
@@ -190,12 +192,12 @@ public class ChoiceData
 public class QuestData
 {
     public QuestKey key;
-    public bool isClear;
+    public int progress;
 
-    public QuestData(QuestKey key, bool isClear)
+    public QuestData(QuestKey key, int progress)
     {
         this.key = key;
-        this.isClear = isClear;
+        this.progress = progress;
     }
 }
 

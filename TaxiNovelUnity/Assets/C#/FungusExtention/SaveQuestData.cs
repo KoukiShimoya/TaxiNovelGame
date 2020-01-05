@@ -12,7 +12,7 @@ namespace Fungus
         [SerializeField] protected QuestKey questKey;
         
         [Tooltip("保存する値")]
-        [SerializeField] protected bool variable;
+        [SerializeField] protected int variable;
 
         public override void OnEnter()
         {
