@@ -535,8 +535,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 322356271}
+  selectedBlocks: []
   selectedCommands:
   - {fileID: 322356274}
   variables: []
@@ -2149,18 +2148,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143121432 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4171835216743671730, guid: 2f1c5412b8d66e04ea901a818f68db96,
-    type: 3}
-  m_PrefabInstance: {fileID: 4171835215816601560}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1170434763
 GameObject:
   m_ObjectHideFlags: 0
@@ -6876,20 +6863,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4171835216743671731, guid: 2f1c5412b8d66e04ea901a818f68db96,
-        type: 3}
-      propertyPath: toggle
-      value: 
-      objectReference: {fileID: 1143121432}
-    - target: {fileID: 3568907919350147936, guid: 2f1c5412b8d66e04ea901a818f68db96,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.5
+    - target: {fileID: 1892790898, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_Name
+      value: BackGround
       objectReference: {fileID: 0}
-    - target: {fileID: 3568907919350147936, guid: 2f1c5412b8d66e04ea901a818f68db96,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.5
+    - target: {fileID: 1274153040, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_Name
+      value: MinimapTexture
+      objectReference: {fileID: 0}
+    - target: {fileID: 660875339, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_Name
+      value: Flame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
