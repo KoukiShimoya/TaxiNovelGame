@@ -8,6 +8,6 @@ public static class InitializeAlwaysFirst
     public static void RuntimeInitialize()
     {
         EditorDebug.Log("Accurate. Runtime Initialize.");
-        SceneManager.LoadScene(SceneName.InitializeScene);
+        SceneManager.LoadScene(SceneName.InitializeScene.ToString());
     }
 }

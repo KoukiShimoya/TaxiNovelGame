@@ -10,12 +10,12 @@ namespace IsGameSceneCheck
     {
         public static bool Check()
         {
-            if (SceneManager.GetActiveScene().name == SceneName.InitializeScene)
+            if (SceneManager.GetActiveScene().name == SceneName.InitializeScene.ToString())
             {
                 return false;
             }
 
-            if (SceneManager.GetActiveScene().name == SceneName.StartScene)
+            if (SceneManager.GetActiveScene().name == SceneName.StartScene.ToString())
             {
                 return false;
             }
