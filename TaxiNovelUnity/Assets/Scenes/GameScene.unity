@@ -2011,12 +2011,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4171835215816601560}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &692926723 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96,
-    type: 3}
-  m_PrefabInstance: {fileID: 4171835215816601560}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &807585780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,8 +2219,6 @@ GameObject:
   - component: {fileID: 1369754381}
   - component: {fileID: 1369754383}
   - component: {fileID: 1369754382}
-  - component: {fileID: 1369754384}
-  - component: {fileID: 1369754385}
   m_Layer: 9
   m_Name: Road
   m_TagString: Untagged
@@ -5250,50 +5242,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1369754384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369754380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 613662179a61abd4e8d734d78074e21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showWallMark: 1
-  showPath: 1
-  WallMark: {fileID: 0}
-  PathMark: {fileID: 0}
-  pathMode: 1
-  walkMode: 1
-  Radius: 0.4
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  player: {fileID: 692926723}
-  smoothMoveSpeed: 5
-  StepByStepInterval: 0.5
-  tilemapStart: {x: -8, y: -7}
-  tilemapEnd: {x: 12, y: 14}
-  walkDirec: 0
---- !u!19719996 &1369754385
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369754380}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!1 &1440612078
 GameObject:
   m_ObjectHideFlags: 0
