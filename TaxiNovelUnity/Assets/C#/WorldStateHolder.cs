@@ -43,7 +43,7 @@ public class WorldStateHolder : SingletonMonoBehaviour<WorldStateHolder>
     {
         Standard,
         /// <summary>
-        /// Settingsは全物体の時間が止まり、UIも止まる
+        /// Settingsは全物体の時間が止まり、Fungusの会話も止まる
         /// </summary>
         Settings,
         /// <summary>
