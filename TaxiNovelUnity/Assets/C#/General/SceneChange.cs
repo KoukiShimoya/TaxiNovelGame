@@ -10,7 +10,8 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     public enum FadeType
     {
         RightToLeftCircle,
-        CheckExpansion
+        CheckExpansion,
+        None
     }
 
     private FadeImage fadeImage;
@@ -23,13 +24,18 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     }
 
     /// <summary>
-    ///     シーン切り替えのコルーチンを起動
+    ///     画面全体をフェードさせた後、シーン切り替え
     /// </summary>
     /// <param name="fadeType"></param>
     /// <param name="fadeTime">フェード時間。ない場合はデフォルト値の1。</param>
     /// <param name="sceneName">ConstValues.SceneName。ない場合はシーン遷移なしでエフェクトだけ。</param>
-    public void FadeAllTextureDetect(FadeType fadeType, string sceneName = "", float fadeTime = 1f)
+    public void FadeTextureAndSceneChange(FadeType fadeType, SceneName sceneName, float fadeTime = 1f)
     {
+        if (fadeType == FadeType.None)
+        {
+            NoPostEffectSceneChange(sceneName);
+        }
+        
         for (var i = 0; i < fadeTypeAndTexture.Count; i++)
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
@@ -46,7 +52,7 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     /// <param name="fadeType"></param>
     /// <param name="fadeChangeRate">0~1まで。どこでフェードを切り替えるのか</param>
     /// <param name="fadeTime">フェード時間。デフォルト値は1。</param>
-    public void FadeMiddleTextureDetect(FadeType fadeType, float fadeChangeRate, float fadeTime = 1f)
+    public void FadeMiddleTexture(FadeType fadeType, float fadeChangeRate, float fadeTime = 1f)
     {
         for (var i = 0; i < fadeTypeAndTexture.Count; i++)
         {
@@ -59,7 +65,7 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     }
 
     ///指定時間かけてフェードをかける。その後sceneNameが入っている場合はシーン遷移。
-    private IEnumerator FadeAllTimeElapsed(Texture2D fadeTexture, float fadeTime, string sceneName)
+    private IEnumerator FadeAllTimeElapsed(Texture2D fadeTexture, float fadeTime, SceneName sceneName)
     {
         var processing = true;
         fadeImage.SetMaskTexture = fadeTexture;
@@ -72,14 +78,10 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
             {
                 fadeImage.Range = 1;
                 processing = false;
-                if (sceneName == "")
-                {
-                    yield break;
-                }
 
-                if (sceneName != SceneManager.GetActiveScene().name)
+                if (sceneName.ToString() != SceneManager.GetActiveScene().name)
                 {
-                    SceneManager.LoadScene(sceneName);
+                    SceneManager.LoadScene(sceneName.ToString());
                 }
 
                 yield break;
@@ -93,9 +95,9 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     ///     ポストエフェクト無しのシーン切り替え
     /// </summary>
     /// <param name="sceneName"></param>
-    public void NoPostEffectSceneChange(string sceneName)
+    private void NoPostEffectSceneChange(SceneName sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName.ToString());
     }
 
 

@@ -22,12 +22,12 @@ namespace ConstValues
         public const string DDOLRoot = "DDOLRoot";
     }
 
-    public struct SceneName
+    public enum SceneName
     {
-        public const string GameScene = "GameScene";
-        public const string StartScene = "StartScene";
-        public const string InitializeScene = "InitializeScene";
-        public const string TutorialScene = "TutorialScene";
+        GameScene,
+        StartScene,
+        InitializeScene,
+        TutorialScene
     }
 
     public struct TagName

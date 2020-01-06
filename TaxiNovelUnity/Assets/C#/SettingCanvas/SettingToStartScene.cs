@@ -30,6 +30,6 @@ public class SettingToStartScene : SingletonMonoBehaviour<SettingToStartScene>
 
     public void OnReturnStartSceneButtonClick()
     {
-        SceneChange.Instance.NoPostEffectSceneChange(SceneName.StartScene);
+        SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.StartScene);
     }
 }
