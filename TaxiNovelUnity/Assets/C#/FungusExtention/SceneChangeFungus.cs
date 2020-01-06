@@ -11,10 +11,11 @@ namespace Fungus
     {
         [Tooltip("移行先のシーン名")] [SerializeField] protected SceneName nextScene;
         [Tooltip("フェードタイプ")] [SerializeField] protected SceneChange.FadeType fadeType;
+        [Tooltip("フェード時間")] [SerializeField] protected float fadeTime = 1f;
 
         public override void OnEnter()
         {
-            //function();
+            SceneChange.Instance.FadeTextureAndSceneChange(fadeType, nextScene, fadeTime);
             Continue();
         }
 
@@ -25,7 +26,7 @@ namespace Fungus
         
         public override string GetSummary()
         {
-            string summary = "";
+            string summary = "フェードタイプ : " + fadeType.ToString() + ", シーン名 : " + nextScene.ToString() + ", フェード時間 : " + fadeTime ;
 
             return summary;
         }
