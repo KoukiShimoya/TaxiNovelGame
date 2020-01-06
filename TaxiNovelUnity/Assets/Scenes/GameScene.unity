@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 322356235}
+  selectedFlowchart: {fileID: 640724807}
 --- !u!4 &70316655
 Transform:
   m_ObjectHideFlags: 1
@@ -1913,6 +1913,18 @@ Transform:
   m_Father: {fileID: 1170434764}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640724807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
+    type: 3}
+  m_PrefabInstance: {fileID: 4171835215816601560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &644280795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4171835216321601027, guid: 2f1c5412b8d66e04ea901a818f68db96,
@@ -6810,18 +6822,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892790898, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
-      propertyPath: m_Name
-      value: BackGround
-      objectReference: {fileID: 0}
-    - target: {fileID: 1274153040, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
-      propertyPath: m_Name
-      value: MinimapTexture
-      objectReference: {fileID: 0}
-    - target: {fileID: 660875339, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
-      propertyPath: m_Name
-      value: Flame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
