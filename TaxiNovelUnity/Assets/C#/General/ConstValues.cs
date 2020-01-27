@@ -4,7 +4,6 @@ namespace ConstValues
 {
     public struct General
     {
-        public const string EncodingType = "UTF-8";
         public const string csv = ".csv";
         public const int cameraZ = -1;
         public const char crlf = '\n';
@@ -43,6 +42,7 @@ namespace ConstValues
     public class PathData
     {
         public static string ResourcesPath = MultiPathCombine.Combine(Application.dataPath ,General.Resources);
+        public static string TextDataPath = Application.dataPath;
         public static string PluginsPath = MultiPathCombine.Combine(Application.dataPath, "Plugins");
 
         public struct ResourcesFolder

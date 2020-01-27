@@ -11,15 +11,33 @@ public static class SaveLoadCsvFile
 {
     public static string[] LoadCsvData(string path)
     {
-        var textAsset = Resources.Load<TextAsset>(path);
-        var text = textAsset.text;
-        var rowData = text.Split(General.crlf);
+        var fileInfo = new FileInfo(path);
+
+        string readText = "";
+        
+        try {
+            using (StreamReader sr = new StreamReader(fileInfo.OpenRead(), Encoding.UTF8)) {
+                readText = sr.ReadToEnd();
+            }
+        } catch (Exception e) {
+            EditorDebug.Log(e);
+        }
+        
+        var rowData = readText.Split(General.crlf);
         return rowData;
+    }
+
+    public static void WriteCsvData(string path, string text)
+    {
+        var fileInfo = new FileInfo(path);
+        using (StreamWriter sw = fileInfo.CreateText()) {
+            sw.Write(text);
+        }
     }
 
     public static List<ChoiceData> LoadChoiceData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.ChoiceData);
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.ChoiceData + General.csv);
         
         var rowData = LoadCsvData(loadPath);
         
@@ -39,7 +57,7 @@ public static class SaveLoadCsvFile
 
     public static List<QuestData> LoadQuestData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.QuestData);
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.QuestData + General.csv);
 
         var rowData = LoadCsvData(loadPath);
 
@@ -59,39 +77,33 @@ public static class SaveLoadCsvFile
 
     public static int[] LoadTimeData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime);
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime + General.csv);
         var timeStrings = LoadCsvData(loadPath)[0].Split(General.comma);
         return new int[] {int.Parse(timeStrings[0]), int.Parse(timeStrings[1]), int.Parse(timeStrings[2])};
     }
     
     public static void SaveTime()
     {
-        var encoding = Encoding.GetEncoding(General.EncodingType);
+        var encoding = Encoding.UTF8;
         
-        var savePath = MultiPathCombine.Combine(PathData.ResourcesPath, PathData.ResourcesFolder.TextData,
+        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.PlayTime + General.csv);
-        
-        var streamWriter = new StreamWriter(savePath, false, encoding);
         
         var playTime = PlayTime.Instance;
         var hourString = playTime.GetHour.ToString();
         var minuteString = playTime.GetMinute.ToString();
         var secondString = playTime.GetSecond.ToString();
         
-        streamWriter.Write(hourString + General.comma + minuteString + General.comma + secondString);
-        streamWriter.Flush();
-        streamWriter.Close();
+        WriteCsvData(savePath, hourString + General.comma + minuteString + General.comma + secondString);
         EditorDebug.Log("プレイ時間を保存しました");
     }
 
     public static void SaveChoice(ChoiceData choiceData)
     {
-        var encoding = Encoding.GetEncoding(General.EncodingType);
+        var encoding = Encoding.UTF8;
         
-        var savePath = MultiPathCombine.Combine(PathData.ResourcesPath, PathData.ResourcesFolder.TextData,
+        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.ChoiceData + General.csv);
-        
-        var streamWriter = new StreamWriter(savePath, false, encoding);
 
         var choiceDataHolder = ChoiceDataHolder.Instance;
 
@@ -123,20 +135,16 @@ public static class SaveLoadCsvFile
 
         saveStr = saveStr.Trim(General.crlf);
         
-        streamWriter.Write(saveStr);
-        streamWriter.Flush();
-        streamWriter.Close();
+        WriteCsvData(savePath, saveStr);
         EditorDebug.Log("選択肢を保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
 
     public static void SaveQuest(QuestData questData)
     {
-        var encoding = Encoding.GetEncoding(General.EncodingType);
+        var encoding = Encoding.UTF8;
         
-        var savePath = MultiPathCombine.Combine(PathData.ResourcesPath, PathData.ResourcesFolder.TextData,
+        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.QuestData + General.csv);
-        
-        var streamWriter = new StreamWriter(savePath, false, encoding);
 
         var questDataHolder = QuestDataHolder.Instance;
 
@@ -168,9 +176,7 @@ public static class SaveLoadCsvFile
 
         saveStr = saveStr.Trim(General.crlf);
         
-        streamWriter.Write(saveStr);
-        streamWriter.Flush();
-        streamWriter.Close();
+        WriteCsvData(savePath, saveStr);
         EditorDebug.Log("クエストを保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
 }
