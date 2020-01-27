@@ -27,7 +27,8 @@ namespace ConstValues
         GameScene,
         StartScene,
         InitializeScene,
-        TutorialScene
+        TutorialScene,
+        JK_1_Scene
     }
 
     public struct TagName
