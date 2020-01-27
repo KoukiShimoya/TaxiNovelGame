@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CarChaseScene.unity
     guid: 88f815f6eece0c24ea8f285cebdd3322
+  - enabled: 1
+    path: Assets/Scenes/JK_Bridge_Scene.unity
+    guid: 32408abf8705f974982ed86d6f9e2b37
+  - enabled: 1
+    path: Assets/Scenes/JK_North_Scene.unity
+    guid: ebf4b0ed5573b9e4ea523078e86f2ec7
+  - enabled: 1
+    path: Assets/Scenes/JK_Central_Scene.unity
+    guid: 51fe986e5c88b5c42b8ce69751b32a92
   m_configObjects: {}

@@ -205,12 +205,17 @@ public class QuestData
 public enum QuestKey
 {
     None,
-    AnneSendToHouse
+    JK,
+    Elementary,
+    OL,
+    Thugs,
+    Clerk,
+    Worker
 }
 
 [System.Serializable]
 public enum ChoiceKey
 {
     None,
-    ColorChoice
+    Something_Book
 }

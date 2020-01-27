@@ -28,7 +28,9 @@ namespace ConstValues
         StartScene,
         InitializeScene,
         TutorialScene,
-        JK_1_Scene
+        JK_North_Scene,
+        JK_Bridge_Scene,
+        JK_Central_Scene
     }
 
     public struct TagName
@@ -40,7 +42,7 @@ namespace ConstValues
 
     public class PathData
     {
-        public static string ResourcesPath = MultiPathCombine.Combine(Application.dataPath, General.Resources);
+        public static string ResourcesPath = MultiPathCombine.Combine(Application.dataPath ,General.Resources);
         public static string PluginsPath = MultiPathCombine.Combine(Application.dataPath, "Plugins");
 
         public struct ResourcesFolder

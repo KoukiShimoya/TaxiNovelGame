@@ -20,7 +20,7 @@ public class KeyInput : SingletonMonoBehaviour<KeyInput>
         Space
     }
     
-    [SerializeField, ShowOnly] private List<KEYTYPE> keyTypeList;
+    [SerializeField] private List<KEYTYPE> keyTypeList;
 
     public List<KEYTYPE> GetKeyList
     {
