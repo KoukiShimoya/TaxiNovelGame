@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WorldStateHolder : SingletonMonoBehaviour<WorldStateHolder>
 {
-    [SerializeField, ShowOnly] private WorldState worldState;
+    [SerializeField] private WorldState worldState;
     [SerializeField] private DialogInput dialogInput;
 
     public WorldState GetSetWorldState

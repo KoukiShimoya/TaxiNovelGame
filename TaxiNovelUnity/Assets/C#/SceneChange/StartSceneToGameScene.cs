@@ -7,6 +7,6 @@ public class StartSceneToGameScene : MonoBehaviour
 {
     public void SceneChangeToGameScene()
     {
-        SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.TutorialScene);
+        SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_North_Scene);
     }
 }

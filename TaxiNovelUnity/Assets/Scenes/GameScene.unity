@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 640724807}
+  selectedFlowchart: {fileID: 322356235}
 --- !u!4 &70316655
 Transform:
   m_ObjectHideFlags: 1
@@ -458,18 +458,10 @@ GameObject:
   - component: {fileID: 322356236}
   - component: {fileID: 322356249}
   - component: {fileID: 322356248}
-  - component: {fileID: 322356247}
   - component: {fileID: 322356246}
   - component: {fileID: 322356245}
-  - component: {fileID: 322356244}
   - component: {fileID: 322356243}
   - component: {fileID: 322356242}
-  - component: {fileID: 322356255}
-  - component: {fileID: 322356241}
-  - component: {fileID: 322356254}
-  - component: {fileID: 322356250}
-  - component: {fileID: 322356253}
-  - component: {fileID: 322356252}
   - component: {fileID: 322356251}
   - component: {fileID: 322356239}
   - component: {fileID: 322356266}
@@ -497,12 +489,16 @@ GameObject:
   - component: {fileID: 322356278}
   - component: {fileID: 322356275}
   - component: {fileID: 322356272}
-  - component: {fileID: 322356284}
   - component: {fileID: 322356287}
   - component: {fileID: 322356288}
   - component: {fileID: 322356289}
   - component: {fileID: 322356270}
   - component: {fileID: 322356290}
+  - component: {fileID: 322356252}
+  - component: {fileID: 322356250}
+  - component: {fileID: 322356247}
+  - component: {fileID: 322356244}
+  - component: {fileID: 322356241}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -524,20 +520,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 21.866827, y: 108.54875}
+  scrollPos: {x: -203.74796, y: 17.641953}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7300002
+  zoom: 0.6100002
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands:
-  - {fileID: 322356274}
+  selectedBlocks:
+  - {fileID: 322356243}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -592,9 +588,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -12.31782
-    y: 113.775635
-    width: 123.97258
+    x: -9.817802
+    y: 98.77564
+    width: 120.81965
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -605,8 +601,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 322356236}
   - {fileID: 322356238}
-  - {fileID: 322356284}
-  - {fileID: 322356253}
+  - {fileID: 322356244}
   - {fileID: 322356264}
   - {fileID: 322356265}
 --- !u!114 &322356238
@@ -653,7 +648,7 @@ MonoBehaviour:
   itemId: 20
   indentLevel: 0
   targetFlowchart: {fileID: 322356235}
-  targetBlock: {fileID: 322356241}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -676,31 +671,19 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &322356241
 MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944973, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322356234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ffc235a2d672a144b87bcc402a428ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 149.46317
-    y: 198.30087
-    width: 165.06845
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 13
-  blockName: PlayerStateToDriving
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 322356250}
+  itemId: 73
+  indentLevel: 0
+  playerState: 0
 --- !u!114 &322356242
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -760,29 +743,23 @@ MonoBehaviour:
   - {fileID: 322356290}
   - {fileID: 322356288}
   - {fileID: 322356289}
+  - {fileID: 322356241}
   - {fileID: 322356239}
 --- !u!114 &322356244
 MonoBehaviour:
   m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944968, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322356234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ffc235a2d672a144b87bcc402a428ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 9
-  indentLevel: 1
-  targetFlowchart: {fileID: 322356235}
-  targetBlock: {fileID: 322356255}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 1
+  itemId: 72
+  indentLevel: 0
+  playerState: 0
 --- !u!114 &322356245
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -815,7 +792,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.75446
     y: -64.795456
-    width: 137.6712
+    width: 133.9344
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -825,30 +802,23 @@ MonoBehaviour:
   eventHandler: {fileID: 322356245}
   commandList:
   - {fileID: 322356287}
-  - {fileID: 322356244}
+  - {fileID: 322356247}
   - {fileID: 322356251}
 --- !u!114 &322356247
 MonoBehaviour:
   m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944971, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322356234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ffc235a2d672a144b87bcc402a428ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 7
+  itemId: 71
   indentLevel: 1
-  targetFlowchart: {fileID: 322356235}
-  targetBlock: {fileID: 322356255}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 1
+  playerState: 1
 --- !u!114 &322356248
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -881,7 +851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -16.519552
     y: -67.71872
-    width: 143.15067
+    width: 139.1803
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -891,53 +861,28 @@ MonoBehaviour:
   eventHandler: {fileID: 322356248}
   commandList:
   - {fileID: 322356270}
-  - {fileID: 322356247}
   - {fileID: 322356252}
+  - {fileID: 322356250}
 --- !u!114 &322356250
 MonoBehaviour:
   m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944966, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322356234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 15
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 692926721}
-  targetComponentAssemblyName: PlayerStateOwner, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerStateOwner
-  targetMethod: ChangePlayerState
-  targetMethodText: 'ChangePlayerState (PlayerState): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      typeFullname: PlayerState
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
+  itemId: 70
+  indentLevel: 1
+  targetFlowchart: {fileID: 322356235}
+  targetBlock: {fileID: 322356237}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
   callMode: 0
 --- !u!114 &322356251
 MonoBehaviour:
@@ -964,120 +909,18 @@ MonoBehaviour:
 --- !u!114 &322356252
 MonoBehaviour:
   m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944960, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322356234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ffc235a2d672a144b87bcc402a428ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 18
+  itemId: 69
   indentLevel: 1
-  targetFlowchart: {fileID: 322356235}
-  targetBlock: {fileID: 322356237}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &322356253
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944961, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322356234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 17
-  indentLevel: 0
-  targetFlowchart: {fileID: 322356235}
-  targetBlock: {fileID: 322356241}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 1
---- !u!114 &322356254
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944962, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322356234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 692926721}
-  targetComponentAssemblyName: PlayerStateOwner, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerStateOwner
-  targetMethod: ChangePlayerState
-  targetMethodText: 'ChangePlayerState (PlayerState): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      typeFullname: PlayerState
-      intValue: 1
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &322356255
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944963, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322356234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 150.56697
-    y: 31.9048
-    width: 174.6575
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 12
-  blockName: PlayerStateToStopping
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 322356254}
+  playerState: 1
 --- !u!114 &322356256
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1362,7 +1205,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -37.6143
     y: 261.42456
-    width: 178.76709
+    width: 173.27866
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1685,23 +1528,6 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &322356284
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 7061455275656944992, guid: f77475b3e70dc5441a2513ea761f510c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7061455275372435804}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322356234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f024172109bb3e49bb0cd2781ef57d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 57
-  indentLevel: 0
-  questKey: 1
-  variable: 0
 --- !u!114 &322356287
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1913,18 +1739,6 @@ Transform:
   m_Father: {fileID: 1170434764}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &640724807 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
-    type: 3}
-  m_PrefabInstance: {fileID: 4171835215816601560}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &644280795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4171835216321601027, guid: 2f1c5412b8d66e04ea901a818f68db96,
@@ -6823,6 +6637,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
 --- !u!1001 &7061455275372435804
@@ -6860,7 +6679,17 @@ PrefabInstance:
     - target: {fileID: 7061455275656944977, guid: f77475b3e70dc5441a2513ea761f510c,
         type: 3}
       propertyPath: commandList.Array.size
-      value: 6
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061455275656944977, guid: f77475b3e70dc5441a2513ea761f510c,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: -9.817802
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061455275656944977, guid: f77475b3e70dc5441a2513ea761f510c,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 98.77564
       objectReference: {fileID: 0}
     - target: {fileID: 7061455275656944978, guid: f77475b3e70dc5441a2513ea761f510c,
         type: 3}
@@ -6937,6 +6766,16 @@ PrefabInstance:
       propertyPath: nodeRect.width
       value: 157.46265
       objectReference: {fileID: 0}
+    - target: {fileID: 7061455275656944975, guid: f77475b3e70dc5441a2513ea761f510c,
+        type: 3}
+      propertyPath: commandList.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061455275656944975, guid: f77475b3e70dc5441a2513ea761f510c,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: 353.98175
+      objectReference: {fileID: 0}
     - target: {fileID: 7061455275656944970, guid: f77475b3e70dc5441a2513ea761f510c,
         type: 3}
       propertyPath: commandList.Array.size
@@ -6957,6 +6796,16 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 692926721}
+    - target: {fileID: 7061455275656944963, guid: f77475b3e70dc5441a2513ea761f510c,
+        type: 3}
+      propertyPath: commandList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061455275656944963, guid: f77475b3e70dc5441a2513ea761f510c,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: 148.64389
+      objectReference: {fileID: 0}
     - target: {fileID: 7061455275656945008, guid: f77475b3e70dc5441a2513ea761f510c,
         type: 3}
       propertyPath: _targetGameObject.gameObjectVal
