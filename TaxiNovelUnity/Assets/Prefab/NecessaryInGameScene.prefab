@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 692926725}
   - component: {fileID: 692926724}
   - component: {fileID: 692926727}
-  - component: {fileID: 692926726}
+  - component: {fileID: 4651501710153850235}
   m_Layer: 10
   m_Name: fomura_macine_28
   m_TagString: Player
@@ -386,8 +386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c41bd5bd7dc1d441b68e8ce41795134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &692926726
-PolygonCollider2D:
+--- !u!61 &4651501710153850235
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -409,16 +409,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.3125, y: 0.5}
-      - {x: -0.40625, y: 0.5}
-      - {x: -0.5, y: 0.34375}
-      - {x: -0.5, y: -0.46875}
-      - {x: -0.46875, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.4375}
-      - {x: 0.4375, y: 0.46875}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1274153040
 GameObject:
   m_ObjectHideFlags: 0

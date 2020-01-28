@@ -223,5 +223,6 @@ public enum QuestKey
 public enum ChoiceKey
 {
     None,
-    Something_Book
+    Something_Book,
+    FindThugs
 }
