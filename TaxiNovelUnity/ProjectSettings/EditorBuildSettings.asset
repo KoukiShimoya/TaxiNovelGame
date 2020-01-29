@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Element_BeforeThugs_Scene.unity
     guid: cf65eae09c51ac94fb1521824a0819c1
+  - enabled: 1
+    path: Assets/Scenes/Element_Bridge_Scene.unity
+    guid: 5497ee4ab217468438361bd00486e581
   m_configObjects: {}
