@@ -16,7 +16,6 @@ namespace Fungus
             PlayerStateOwner.Instance.ChangePlayerState(playerState);
 
             GameObject minimapUI = Minimap.Instance.gameObject;
-            EditorDebug.Log(minimapUI == null);
             
             if (playerState == PlayerState.Stopping)
             {

@@ -31,7 +31,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_Central_Scene);
+                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.Element_BeforeThugs_Scene);
                     return;
                 }
             }
