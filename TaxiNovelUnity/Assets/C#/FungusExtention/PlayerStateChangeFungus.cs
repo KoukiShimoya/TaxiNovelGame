@@ -14,6 +14,18 @@ namespace Fungus
         public override void OnEnter()
         {
             PlayerStateOwner.Instance.ChangePlayerState(playerState);
+
+            GameObject minimapUI = Minimap.Instance.gameObject;
+            EditorDebug.Log(minimapUI == null);
+            
+            if (playerState == PlayerState.Stopping)
+            {
+                minimapUI.SetActive(false);
+            }
+            else if (playerState == PlayerState.Driving)
+            {
+                minimapUI.SetActive(true);
+            }
             
             Continue();
         }
