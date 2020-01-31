@@ -73,7 +73,7 @@ Material:
     - _UVSec: 0
     - _XShift: 0.1
     - _XSpeed: 10
-    - _YShift: 0.1
+    - _YShift: 0.01
     - _YSpeed: 10
     - _ZWrite: 1
     m_Colors:

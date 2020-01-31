@@ -29,7 +29,9 @@ namespace ConstValues
         TutorialScene,
         JK_North_Scene,
         JK_Bridge_Scene,
-        JK_Central_Scene
+        JK_Central_Scene,
+        Element_BeforeThugs_Scene,
+        Element_Bridge_Scene
     }
 
     public struct TagName

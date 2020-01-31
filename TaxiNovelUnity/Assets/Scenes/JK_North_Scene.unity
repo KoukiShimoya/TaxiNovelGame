@@ -187,15 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4171835216194901848, guid: 2f1c5412b8d66e04ea901a818f68db96,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
 --- !u!1001 &727025700
@@ -265,32 +256,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6056214163711153358, guid: 30be85f85b1eccd47a044e960fe6ac4c,
-        type: 3}
-      propertyPath: m_Tiles.Array.data[658].second.m_TileSpriteIndex
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056214163711153358, guid: 30be85f85b1eccd47a044e960fe6ac4c,
-        type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[3].m_RefCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056214163711153358, guid: 30be85f85b1eccd47a044e960fe6ac4c,
-        type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[3].m_Data
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056214163711153358, guid: 30be85f85b1eccd47a044e960fe6ac4c,
-        type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[10].m_RefCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056214163711153358, guid: 30be85f85b1eccd47a044e960fe6ac4c,
-        type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[10].m_Data
-      value: 
-      objectReference: {fileID: -1068484245325676862, guid: bc2fe14c4ba0ea845a38967ac2627188,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30be85f85b1eccd47a044e960fe6ac4c, type: 3}
 --- !u!1 &956284046
@@ -413,7 +378,6 @@ GameObject:
   - component: {fileID: 1095961545}
   - component: {fileID: 1095961533}
   - component: {fileID: 1095961540}
-  - component: {fileID: 1095961539}
   - component: {fileID: 1095961547}
   - component: {fileID: 1095961546}
   - component: {fileID: 1095961514}
@@ -509,11 +473,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 47.369205, y: 31.353703}
+  scrollPos: {x: 104.40756, y: 36.196754}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7900002
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -521,8 +485,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1095961496}
-  selectedCommands: []
+  - {fileID: 1095961501}
+  selectedCommands:
+  - {fileID: 1095961499}
   variables:
   - {fileID: 1095961549}
   description: 
@@ -618,7 +583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 69.748474
     y: 146.27718
-    width: 125.94935
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -645,7 +610,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.72327
     y: 69.20429
-    width: 162.6582
+    width: 140.78944
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -700,7 +665,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.02896
     y: 150.79556
-    width: 133.54428
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1265,7 +1230,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.9178
     y: 143.88005
-    width: 147.46832
+    width: 127.63155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1414,7 +1379,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 570.5565
     y: 55.723785
-    width: 131.01263
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1444,7 +1409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 717.2022
     y: 312.21893
-    width: 124.683525
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1454,7 +1419,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1095961540}
-  - {fileID: 1095961539}
   - {fileID: 1095961514}
 --- !u!114 &1095961534
 MonoBehaviour:
@@ -1596,21 +1560,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1095961539
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095961493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffc235a2d672a144b87bcc402a428ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 52
-  indentLevel: 0
-  playerState: 0
 --- !u!114 &1095961540
 MonoBehaviour:
   m_ObjectHideFlags: 2

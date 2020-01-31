@@ -18,7 +18,7 @@ TagManager:
   - Obstacle
   - Road
   - Player
-  - 
+  - Icon
   - 
   - 
   - 
@@ -40,6 +40,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Island
+    uniqueID: 4196286457
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Car
+    uniqueID: 4018310103
+    locked: 0
+  - name: Front_back
+    uniqueID: 4099901547
+    locked: 0
+  - name: Front
+    uniqueID: 1123379777
+    locked: 0
+  - name: Signboard
+    uniqueID: 4160409057
+    locked: 0
+  - name: Icon
+    uniqueID: 2812768149
     locked: 0
