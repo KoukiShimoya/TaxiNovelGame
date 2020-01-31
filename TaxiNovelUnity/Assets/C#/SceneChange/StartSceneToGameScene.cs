@@ -60,7 +60,7 @@ public class StartSceneToGameScene : MonoBehaviour
                     List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
                     foreach (var choiceData in choiceDataList)
                     {
-                        if (choiceData.key == ChoiceKey.FindThugs)
+                        if (choiceData.key == ChoiceKey.MeetThugs)
                         {
                             if (choiceData.choiceNumber == 1)
                             {

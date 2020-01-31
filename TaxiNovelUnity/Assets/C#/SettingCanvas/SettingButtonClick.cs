@@ -10,15 +10,6 @@ public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
     [SerializeField] private GameObject settingCanvas;
     private WorldStateHolder worldStateHolder;
 
-    private void Start()
-    {
-        if (GameSceneCheck.Check())
-        {
-            worldStateHolder = WorldStateHolder.Instance;
-        }
-        settingCanvas.SetActive(false);
-    }
-
     public void OnClick()
     {
         if (!settingCanvas.activeSelf)

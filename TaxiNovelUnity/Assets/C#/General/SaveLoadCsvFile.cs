@@ -136,6 +136,12 @@ public static class SaveLoadCsvFile
         saveStr = saveStr.Trim(General.crlf);
         
         WriteCsvData(savePath, saveStr);
+        
+        if (IsGameSceneCheck.GameSceneCheck.Check())
+        {
+            SaveIcon.Instance.StartIconCoroutine();
+        }
+        
         EditorDebug.Log("選択肢を保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
 
@@ -177,6 +183,12 @@ public static class SaveLoadCsvFile
         saveStr = saveStr.Trim(General.crlf);
         
         WriteCsvData(savePath, saveStr);
+        
+        if (IsGameSceneCheck.GameSceneCheck.Check())
+        {
+            SaveIcon.Instance.StartIconCoroutine();
+        }
+        
         EditorDebug.Log("クエストを保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
 }
@@ -224,5 +236,6 @@ public enum ChoiceKey
 {
     None,
     Something_Book,
-    FindThugs
+    MeetThugs,
+    Letter_Courage
 }
