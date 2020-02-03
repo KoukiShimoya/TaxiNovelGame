@@ -316,6 +316,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JK_SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 8335931591735354335, guid: 1aca65529b0f93e4f91d427cd38552bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1880866206996280278, guid: 1aca65529b0f93e4f91d427cd38552bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -446,6 +451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Driver_Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906586102453201522, guid: 034799c90923dfd40be7c446228770ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8278687222896676606, guid: 034799c90923dfd40be7c446228770ad,
         type: 3}
@@ -646,6 +656,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Driver_SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 7947291190566937389, guid: 5e222063a01f8704ab03bf67bcf6c9b9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3842300107777955042, guid: 5e222063a01f8704ab03bf67bcf6c9b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -841,8 +856,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2040923076}
-  selectedCommands:
-  - {fileID: 2040923075}
+  selectedCommands: []
   variables:
   - {fileID: 2040923074}
   description: 
@@ -1691,6 +1705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JK_Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672009316041714841, guid: 58fe18e62b60dfb4ebddb997233b2d7a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3139503901125662821, guid: 58fe18e62b60dfb4ebddb997233b2d7a,
         type: 3}

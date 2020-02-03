@@ -6,7 +6,6 @@ using UnityEngine;
 public class WorldStateHolder : SingletonMonoBehaviour<WorldStateHolder>
 {
     [SerializeField] private WorldState worldState;
-    [SerializeField] private DialogInput dialogInput;
 
     public WorldState GetSetWorldState
     {
@@ -27,12 +26,20 @@ public class WorldStateHolder : SingletonMonoBehaviour<WorldStateHolder>
     {
         if (nextWorldState == WorldState.Settings)
         {
-            dialogInput.clickMode = ClickMode.Disabled;
+            DialogInput dialogInput = Object.FindObjectOfType<DialogInput>();
+            if (dialogInput != null)
+            {
+                dialogInput.clickMode = ClickMode.Disabled;
+            }
         }
 
         if (preWorldState == WorldState.Settings)
         {
-            dialogInput.clickMode = ClickMode.ClickAnywhere;
+            DialogInput dialogInput = Object.FindObjectOfType<DialogInput>();
+            if (dialogInput != null)
+            {
+                dialogInput.clickMode = ClickMode.ClickAnywhere;
+            }
         }
     }
     
