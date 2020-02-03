@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Element_Bridge_Scene.unity
     guid: 5497ee4ab217468438361bd00486e581
+  - enabled: 1
+    path: Assets/Scenes/Element_East_Scene.unity
+    guid: b84f4e5b62001c647a03715a235631fd
+  - enabled: 1
+    path: Assets/Scenes/Element_AfterThugs_Scene.unity
+    guid: dac50a2f86a56364eaecf031b5187387
+  - enabled: 1
+    path: Assets/Scenes/OL_Central_Scene.unity
+    guid: 1e8d27c1adf0f384984b366bf6caf03a
   m_configObjects: {}

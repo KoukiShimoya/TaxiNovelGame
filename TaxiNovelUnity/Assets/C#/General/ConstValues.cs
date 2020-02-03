@@ -31,7 +31,11 @@ namespace ConstValues
         JK_Bridge_Scene,
         JK_Central_Scene,
         Element_BeforeThugs_Scene,
-        Element_Bridge_Scene
+        Element_Bridge_Scene,
+        Element_East_Scene,
+        Element_AfterThugs_Scene,
+        OL_Central_Scene,
+        
     }
 
     public struct TagName

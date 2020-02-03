@@ -187,6 +187,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4171835216194901848, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
 --- !u!1001 &727025700
@@ -386,6 +407,7 @@ GameObject:
   - component: {fileID: 1095961552}
   - component: {fileID: 1095961551}
   - component: {fileID: 1095961550}
+  - component: {fileID: 1095961539}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -473,11 +495,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 104.40756, y: 36.196754}
+  scrollPos: {x: -427.5791, y: 31.555908}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7600002
+  zoom: 0.6700003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -485,9 +507,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1095961501}
-  selectedCommands:
-  - {fileID: 1095961499}
+  - {fileID: 1095961532}
+  selectedCommands: []
   variables:
   - {fileID: 1095961549}
   description: 
@@ -610,7 +631,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.72327
     y: 69.20429
-    width: 140.78944
+    width: 141.04474
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -679,6 +700,7 @@ MonoBehaviour:
   - {fileID: 1095961507}
   - {fileID: 1095961506}
   - {fileID: 1095961505}
+  - {fileID: 1095961539}
   - {fileID: 1095961550}
 --- !u!114 &1095961505
 MonoBehaviour:
@@ -1230,7 +1252,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.9178
     y: 143.88005
-    width: 127.63155
+    width: 127.6119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1560,6 +1582,22 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1095961539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095961493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca2ec9906f5f1941b401516c18fe705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 61
+  indentLevel: 0
+  JP: "\u672C\u5C4B"
+  EN: BookStore
 --- !u!114 &1095961540
 MonoBehaviour:
   m_ObjectHideFlags: 2

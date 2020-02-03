@@ -183,6 +183,9 @@ GameObject:
   - component: {fileID: 96501212}
   - component: {fileID: 96501226}
   - component: {fileID: 96501227}
+  - component: {fileID: 96501230}
+  - component: {fileID: 96501229}
+  - component: {fileID: 96501228}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -203,19 +206,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -101.65248, y: 68.35655}
+  scrollPos: {x: -166.63676, y: 19.364859}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 435
-  zoom: 0.7600002
+  zoom: 0.6700003
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 96501208}
+  selectedCommands:
+  - {fileID: 96501228}
   variables:
   - {fileID: 96501174}
   - {fileID: 96501207}
@@ -406,7 +411,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 222.12839
     y: 164.619
-    width: 128.94734
+    width: 127.6119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -422,6 +427,7 @@ MonoBehaviour:
   - {fileID: 96501184}
   - {fileID: 96501183}
   - {fileID: 96501226}
+  - {fileID: 96501229}
   - {fileID: 96501182}
 --- !u!114 &96501182
 MonoBehaviour:
@@ -1021,6 +1027,7 @@ MonoBehaviour:
   - {fileID: 96501201}
   - {fileID: 96501200}
   - {fileID: 96501198}
+  - {fileID: 96501230}
   - {fileID: 96501197}
   - {fileID: 96501199}
 --- !u!4 &96501206
@@ -1086,6 +1093,7 @@ MonoBehaviour:
   - {fileID: 96501222}
   - {fileID: 96501221}
   - {fileID: 96501220}
+  - {fileID: 96501228}
   - {fileID: 96501218}
   - {fileID: 96501217}
 --- !u!114 &96501209
@@ -1454,7 +1462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 1
-  storyText: "\u3042\u2026\u3044\u3048\u3001\u3059\u307F\u307E\u305B\u3093\u3002\u6771\u30A8\u30EA\u30A2\u306B\u5411\u304B\u3063\u3066\u304F\u3060\u3055\u3044\u3002"
+  storyText: "\u3042\u2026\u3044\u3048\u3001\u3059\u307F\u307E\u305B\u3093\u3002\u897F\u30A8\u30EA\u30A2\u306B\u5411\u304B\u3063\u3066\u304F\u3060\u3055\u3044\u3002"
   description: 
   character: {fileID: 8700946393699388731, guid: 9feef45d08a12be4aa24f48296a38ad7,
     type: 3}
@@ -1617,6 +1625,54 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &96501228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca2ec9906f5f1941b401516c18fe705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 1
+  JP: "\u897F\u30A8\u30EA\u30A2\u3078\u306E\u6A4B"
+  EN: Bridge to East Area
+--- !u!114 &96501229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca2ec9906f5f1941b401516c18fe705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  JP: "\u3042\u305F\u308A\u3092\u63A2\u7D22\u3057\u3088\u3046"
+  EN: Let's Explore around here
+--- !u!114 &96501230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca2ec9906f5f1941b401516c18fe705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 1
+  JP: "\u3042\u305F\u308A\u3092\u63A2\u7D22\u3057\u3088\u3046"
+  EN: Let's Explore around here
 --- !u!1 &183983851
 GameObject:
   m_ObjectHideFlags: 0

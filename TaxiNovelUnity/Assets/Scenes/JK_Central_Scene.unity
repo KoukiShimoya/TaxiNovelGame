@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 4171835216194901848, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -27.86
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 4171835216194901848, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -27.86
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -297,15 +297,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
-        type: 3}
-      propertyPath: selectedCommands.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4171835216194901927, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: orthographic size
-      value: 3
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
@@ -464,6 +459,7 @@ GameObject:
   - component: {fileID: 2040923075}
   - component: {fileID: 2040923106}
   - component: {fileID: 2040923105}
+  - component: {fileID: 2040923107}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -484,19 +480,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 8.508093, y: 79.42627}
+  scrollPos: {x: -142.97354, y: 23.661041}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.85000014
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2040923092}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 2040923074}
@@ -558,7 +553,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 311.03424
     y: 68.23075
-    width: 127.64705
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -996,6 +991,7 @@ MonoBehaviour:
   - {fileID: 2040923085}
   - {fileID: 2040923084}
   - {fileID: 2040923080}
+  - {fileID: 2040923107}
   - {fileID: 2040923081}
 --- !u!114 &2040923093
 MonoBehaviour:
@@ -1013,7 +1009,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -13.524414
     y: 133.36584
-    width: 129.99998
+    width: 125.34244
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1325,3 +1321,19 @@ MonoBehaviour:
   indentLevel: 1
   questKey: 1
   variable: 1
+--- !u!114 &2040923107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040923072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca2ec9906f5f1941b401516c18fe705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  JP: "\u56F3\u66F8\u9928"
+  EN: Library
