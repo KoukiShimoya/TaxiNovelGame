@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Car
   - Signal
+  - Laser
+  - Enemy
+  - Shadow
   layers:
   - Default
   - TransparentFX
