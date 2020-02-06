@@ -61,6 +61,9 @@ TagManager:
   - name: Signboard
     uniqueID: 4160409057
     locked: 0
+  - name: Shadow
+    uniqueID: 8732109
+    locked: 0
   - name: Icon
     uniqueID: 2812768149
     locked: 0
