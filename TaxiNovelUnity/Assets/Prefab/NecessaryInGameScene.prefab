@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 692926727}
   - component: {fileID: 4651501710153850235}
   m_Layer: 10
-  m_Name: fomura_macine_28
+  m_Name: Taxi
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -297,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 692926721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.5, y: -28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4171835216482735504}
   m_RootOrder: 8
@@ -339,12 +339,12 @@ SpriteRenderer:
   m_SortingLayerID: -276657193
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9f08df74ec96c8d44b4094a10450a00e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be8efc46213b7c748b64f554cf9a0e0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -417,13 +417,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 4, y: 4}
+    newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.65}
   m_EdgeRadius: 0
 --- !u!1 &1274153040
 GameObject:
