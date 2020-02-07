@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 309922761}
   - component: {fileID: 309922762}
   - component: {fileID: 309922760}
+  - component: {fileID: 309922763}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -287,6 +288,7 @@ MonoBehaviour:
   - {fileID: 309922757}
   - {fileID: 309922756}
   - {fileID: 309922755}
+  - {fileID: 309922763}
   - {fileID: 309922754}
   - {fileID: 309922753}
   - {fileID: 309922752}
@@ -319,7 +321,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 309922746}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 309922763}
   variables: []
   description: 
   stepPause: 0
@@ -651,6 +654,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 309922761}
   message: EastBridge
+--- !u!114 &309922763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309922745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  storyText: "\u3061\u3087\u3063\u3068\u4E57\u305B\u3066\u3082\u3089\u3063\u3066\u3082\u3044\u3044\u304B\u306A\uFF1F"
+  description: 
+  character: {fileID: 1978977210}
+  portrait: {fileID: 21300000, guid: 28eac80028a085141a026e3af77f3c80, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &335542446
 PrefabInstance:
   m_ObjectHideFlags: 0
