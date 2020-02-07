@@ -35,7 +35,10 @@ namespace ConstValues
         Element_East_Scene,
         Element_AfterThugs_Scene,
         OL_Central_Scene,
-        
+        OL_Bridge_Scene,
+        OL_East_Scene,
+        Thugs_Central_Scene,
+        Clerk_Central_Scene
     }
 
     public struct TagName

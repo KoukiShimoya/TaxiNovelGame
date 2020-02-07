@@ -237,5 +237,6 @@ public enum ChoiceKey
     None,
     Something_Book,
     NoMeetThugs_MeetThugs,
-    Letter_Courage
+    Letter_Courage,
+    JapaneseSweets_Cake
 }

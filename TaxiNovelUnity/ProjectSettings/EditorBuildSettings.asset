@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OL_Central_Scene.unity
     guid: 1e8d27c1adf0f384984b366bf6caf03a
+  - enabled: 1
+    path: Assets/Scenes/OL_Bridge_Scene.unity
+    guid: 994993409b22ea84d9c093e52b1eac6a
+  - enabled: 1
+    path: Assets/Scenes/OL_East_Scene.unity
+    guid: 9d16066ea6595d741a54fd763996265c
   m_configObjects: {}
