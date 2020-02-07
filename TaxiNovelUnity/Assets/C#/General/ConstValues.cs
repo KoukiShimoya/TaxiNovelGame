@@ -38,6 +38,7 @@ namespace ConstValues
         OL_Bridge_Scene,
         OL_East_Scene,
         Thugs_Central_Scene,
+        Thugs_Bridge_Scene,
         Clerk_Central_Scene
     }
 
