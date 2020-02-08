@@ -32,13 +32,14 @@ namespace ConstValues
         JK_Central_Scene,
         Element_BeforeThugs_Scene,
         Element_Bridge_Scene,
-        Element_East_Scene,
+        Element_West_Scene,
         Element_AfterThugs_Scene,
         OL_Central_Scene,
         OL_Bridge_Scene,
         OL_East_Scene,
         Thugs_Central_Scene,
         Thugs_Bridge_Scene,
+        Thugs_West_Scene,
         Clerk_Central_Scene,
         Ending_1
     }

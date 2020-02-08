@@ -239,4 +239,5 @@ public enum ChoiceKey
     NoMeetThugs_MeetThugs,
     Letter_Courage,
     JapaneseSweets_Cake,
+    TastyCandy_SaveCandy
 }
