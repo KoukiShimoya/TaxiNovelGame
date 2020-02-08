@@ -33,6 +33,13 @@ public class UILanguageChange : MonoBehaviour
         }
     }
 
+    public void ChangeText(string JP, string EN)
+    {
+        this.JP = JP;
+        this.EN = EN;
+        ChangeLanguage();
+    }
+
     public void SetText()
     {
         if (text == null)

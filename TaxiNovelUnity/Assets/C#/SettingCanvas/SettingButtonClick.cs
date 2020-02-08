@@ -8,7 +8,6 @@ using IsGameSceneCheck;
 public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
 {
     [SerializeField] private GameObject settingCanvas;
-    private WorldStateHolder worldStateHolder;
 
     public void OnClick()
     {
@@ -17,7 +16,7 @@ public class SettingButtonClick : SingletonMonoBehaviour<SettingButtonClick>
             settingCanvas.SetActive(true);
             if (GameSceneCheck.Check())
             {
-                worldStateHolder.GetSetWorldState = WorldStateHolder.WorldState.Settings;
+                WorldStateHolder.Instance.GetSetWorldState = WorldStateHolder.WorldState.Settings;
             }
         }
     }

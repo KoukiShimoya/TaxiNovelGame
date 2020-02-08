@@ -94,11 +94,11 @@ public class CarMove : MonoBehaviour
         }
         else if (keyInput.GetKeyList.Contains(KeyInput.KEYTYPE.W))
         {
-            return -1;
+            return 1;
         }
         else if (keyInput.GetKeyList.Contains(KeyInput.KEYTYPE.S))
         {
-            return 1;
+            return -1;
         }
         else
         {

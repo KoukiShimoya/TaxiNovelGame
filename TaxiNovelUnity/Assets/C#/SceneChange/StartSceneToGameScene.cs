@@ -44,7 +44,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_North_Scene);
+                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.OL_Central_Scene);
                     return;
                 }
             }
@@ -60,11 +60,11 @@ public class StartSceneToGameScene : MonoBehaviour
                     List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
                     foreach (var choiceData in choiceDataList)
                     {
-                        if (choiceData.key == ChoiceKey.MeetThugs)
+                        if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
                         {
                             if (choiceData.choiceNumber == 1)
                             {
-                                SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_North_Scene);
+                                SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.Thugs_Central_Scene);
                                 return;
                             }
                         }
@@ -80,7 +80,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_North_Scene);
+                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.Clerk_Central_Scene);
                     return;
                 }
             }
