@@ -883,7 +883,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf000000000000000000000000000000000000000000000000000000000000000000000000
+      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -1327,6 +1327,7 @@ GameObject:
   - component: {fileID: 2080655912}
   - component: {fileID: 2080655911}
   - component: {fileID: 2080655910}
+  - component: {fileID: 2080655913}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -1362,6 +1363,7 @@ MonoBehaviour:
   - {fileID: 2080655891}
   - {fileID: 2080655888}
   - {fileID: 2080655892}
+  - {fileID: 2080655913}
   - {fileID: 2080655890}
 --- !u!114 &2080655886
 MonoBehaviour:
@@ -1388,9 +1390,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2080655896}
+  - {fileID: 2080655885}
   selectedCommands:
-  - {fileID: 2080655910}
+  - {fileID: 2080655913}
   variables: []
   description: 
   stepPause: 0
@@ -1974,6 +1976,22 @@ MonoBehaviour:
   itemId: 20
   indentLevel: 0
   playerState: 1
+--- !u!114 &2080655913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080655884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca2ec9906f5f1941b401516c18fe705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 23
+  indentLevel: 0
+  JP: "\u5C0F\u5B66\u6821 or \u4E2D\u5B66\u6821"
+  EN: Elementary School OR Juniour High School
 --- !u!1001 &2110655637
 PrefabInstance:
   m_ObjectHideFlags: 0
