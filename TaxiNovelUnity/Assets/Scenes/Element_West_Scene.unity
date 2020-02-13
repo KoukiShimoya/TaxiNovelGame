@@ -1169,6 +1169,7 @@ GameObject:
   - component: {fileID: 1586997559}
   - component: {fileID: 1586997558}
   - component: {fileID: 1586997557}
+  - component: {fileID: 1586997568}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -1378,6 +1379,7 @@ MonoBehaviour:
   - {fileID: 1586997490}
   - {fileID: 1586997489}
   - {fileID: 1586997557}
+  - {fileID: 1586997568}
 --- !u!114 &1586997499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,7 +1405,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1586997532}
+  - {fileID: 1586997498}
   selectedCommands: []
   variables: []
   description: 
@@ -3047,6 +3049,21 @@ MonoBehaviour:
   choiceData:
     key: 3
     choiceNumber: 0
+--- !u!114 &1586997568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586997488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffc235a2d672a144b87bcc402a428ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 103
+  indentLevel: 0
+  playerState: 0
 --- !u!1 &1678375825
 GameObject:
   m_ObjectHideFlags: 0
