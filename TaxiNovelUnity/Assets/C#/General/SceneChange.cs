@@ -23,25 +23,39 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         SceneManager.sceneLoaded += SceneLoadFinish;
     }
 
-    /// <summary>
-    ///     画面全体をフェードさせた後、シーン切り替え
-    /// </summary>
-    /// <param name="fadeType"></param>
-    /// <param name="fadeTime">フェード時間。ない場合はデフォルト値の1。</param>
-    /// <param name="sceneName">ConstValues.SceneName。ない場合はシーン遷移なしでエフェクトだけ。</param>
-    public void FadeTextureAndSceneChange(FadeType fadeType, SceneName sceneName, float fadeTime = 1f)
+    public void SceneChangeFunction(SceneName sceneName)
+    {
+        SceneManager.LoadScene(sceneName.ToString());
+    }
+
+    public void FadeOut(FadeType fadeType, float fadeTime)
     {
         if (fadeType == FadeType.None)
         {
-            NoPostEffectSceneChange(sceneName);
+            return;
         }
         
         for (var i = 0; i < fadeTypeAndTexture.Count; i++)
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
             {
-                StartCoroutine(FadeAllTimeElapsed(fadeTypeAndTexture[i].texture, fadeTime, sceneName));
-                break;
+                StartCoroutine(FadeOutAllTime(fadeTypeAndTexture[i].texture, fadeTime));
+            }
+        }
+    }
+
+    public void FadeIn(FadeType fadeType, float fadeTime)
+    {
+        if (fadeType == FadeType.None)
+        {
+            return;
+        }
+        
+        for (var i = 0; i < fadeTypeAndTexture.Count; i++)
+        {
+            if (fadeType == fadeTypeAndTexture[i].fadeType)
+            {
+                StartCoroutine(FadeInAllTime(fadeTypeAndTexture[i].texture, fadeTime));
             }
         }
     }
@@ -54,6 +68,11 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     /// <param name="fadeTime">フェード時間。デフォルト値は1。</param>
     public void FadeMiddleTexture(FadeType fadeType, float fadeChangeRate, float fadeTime = 1f)
     {
+        if (fadeType == FadeType.None)
+        {
+            return;
+        }
+        
         for (var i = 0; i < fadeTypeAndTexture.Count; i++)
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
@@ -64,25 +83,20 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         }
     }
 
-    ///指定時間かけてフェードをかける。その後sceneNameが入っている場合はシーン遷移。
-    private IEnumerator FadeAllTimeElapsed(Texture2D fadeTexture, float fadeTime, SceneName sceneName)
+    private IEnumerator FadeOutAllTime(Texture2D fadeTexture, float fadeTime)
     {
         var processing = true;
         fadeImage.SetMaskTexture = fadeTexture;
+        fadeImage.Range = 0f;
         while (processing)
         {
             var rate = Time.deltaTime / fadeTime;
             var postProcessPercentage = fadeImage.Range + rate;
             fadeImage.Range = postProcessPercentage;
-            if (postProcessPercentage > 1)
+            if (postProcessPercentage > 1f)
             {
-                fadeImage.Range = 1;
+                fadeImage.Range = 1f;
                 processing = false;
-
-                if (sceneName.ToString() != SceneManager.GetActiveScene().name)
-                {
-                    SceneManager.LoadScene(sceneName.ToString());
-                }
 
                 yield break;
             }
@@ -91,15 +105,27 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         }
     }
 
-    /// <summary>
-    ///     ポストエフェクト無しのシーン切り替え
-    /// </summary>
-    /// <param name="sceneName"></param>
-    private void NoPostEffectSceneChange(SceneName sceneName)
+    private IEnumerator FadeInAllTime(Texture2D fadeTexture, float fadeTime)
     {
-        SceneManager.LoadScene(sceneName.ToString());
-    }
+        var processing = true;
+        fadeImage.SetMaskTexture = fadeTexture;
+        fadeImage.Range = 1f;
+        while (processing)
+        {
+            var rate = Time.deltaTime / fadeTime;
+            var postProcessPercentage = fadeImage.Range - rate;
+            fadeImage.Range = postProcessPercentage;
+            if (postProcessPercentage <= 0)
+            {
+                fadeImage.Range = 0f;
+                processing = false;
 
+                yield break;
+            }
+
+            yield return null;
+        }
+    }
 
     /// <summary>
     ///     fadeChangeRateまではフェードアウト、それ以降はフェードイン

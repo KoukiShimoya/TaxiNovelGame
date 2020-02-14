@@ -4,18 +4,16 @@ using Fungus;
 using UnityEngine;
 using ConstValues;
 
-namespace Fungus
+namespace Fungusf
 {
     [CommandInfo("Scripting", "Scene Change Fungus", "Fungusでシーンを切り替える")]
     public class SceneChangeFungus : Command
     {
         [Tooltip("移行先のシーン名")] [SerializeField] protected SceneName nextScene;
-        [Tooltip("フェードタイプ")] [SerializeField] protected SceneChange.FadeType fadeType;
-        [Tooltip("フェード時間")] [SerializeField] protected float fadeTime = 1f;
 
         public override void OnEnter()
         {
-            SceneChange.Instance.FadeTextureAndSceneChange(fadeType, nextScene, fadeTime);
+            SceneChange.Instance.SceneChangeFunction(nextScene);
             Continue();
         }
 
@@ -26,7 +24,7 @@ namespace Fungus
         
         public override string GetSummary()
         {
-            string summary = "フェードタイプ : " + fadeType.ToString() + ", シーン名 : " + nextScene.ToString() + ", フェード時間 : " + fadeTime ;
+            string summary = "シーン名 : " + nextScene.ToString();
 
             return summary;
         }

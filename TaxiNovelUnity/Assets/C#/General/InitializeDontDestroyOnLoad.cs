@@ -37,7 +37,7 @@ public class InitializeDontDestroyOnLoad : SingletonMonoBehaviour<InitializeDont
         if (loadNextScene)
         {
             loadNextScene = false;
-            SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.StartScene);
+            SceneChange.Instance.SceneChangeFunction(SceneName.StartScene);
         }
     }
 }

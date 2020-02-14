@@ -1017,6 +1017,10 @@ GameObject:
   - component: {fileID: 1815920247}
   - component: {fileID: 1815920294}
   - component: {fileID: 1815920293}
+  - component: {fileID: 1815920298}
+  - component: {fileID: 1815920297}
+  - component: {fileID: 1815920296}
+  - component: {fileID: 1815920295}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -1063,6 +1067,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1815920243}
   commandList:
+  - {fileID: 1815920298}
+  - {fileID: 1815920297}
   - {fileID: 1815920292}
   - {fileID: 1815920290}
   - {fileID: 1815920291}
@@ -1091,20 +1097,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 41.04976, y: -7.422431}
+  scrollPos: {x: 166.94058, y: 21.00954}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.73000014
+  zoom: 0.7900001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1815920250}
-  selectedCommands: []
+  selectedBlocks: []
+  selectedCommands:
+  - {fileID: 1815920296}
   variables: []
   description: 
   stepPause: 0
@@ -1145,8 +1151,6 @@ MonoBehaviour:
   itemId: 46
   indentLevel: 0
   nextScene: 6
-  fadeType: 2
-  fadeTime: 0
 --- !u!114 &1815920248
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1205,7 +1209,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.67196
     y: 377.1135
-    width: 125.34245
+    width: 137.34177
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1214,6 +1218,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1815920296}
+  - {fileID: 1815920295}
   - {fileID: 1815920247}
 --- !u!114 &1815920251
 MonoBehaviour:
@@ -2377,6 +2383,74 @@ MonoBehaviour:
   indentLevel: 0
   choiceKey: 1
   variable: 0
+--- !u!114 &1815920295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815920242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 52
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1815920296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815920242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28568b386ff541f4a8ec339cf1391ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  fadeType: 2
+  fadeTime: 1
+--- !u!114 &1815920297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815920242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1815920298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815920242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554832ac72dcd364bba6ddc1b9853f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  fadeType: 2
+  fadeTime: 1
 --- !u!1001 &2021196851
 PrefabInstance:
   m_ObjectHideFlags: 0

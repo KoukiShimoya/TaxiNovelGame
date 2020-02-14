@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1221,6 +1221,10 @@ GameObject:
   - component: {fileID: 1603527305}
   - component: {fileID: 1603527304}
   - component: {fileID: 1603527303}
+  - component: {fileID: 1603527323}
+  - component: {fileID: 1603527322}
+  - component: {fileID: 1603527309}
+  - component: {fileID: 1603527321}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -1243,7 +1247,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 70
+    y: 69
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1254,6 +1258,8 @@ MonoBehaviour:
   eventHandler: {fileID: 1603527271}
   commandList:
   - {fileID: 1603527273}
+  - {fileID: 1603527323}
+  - {fileID: 1603527322}
   - {fileID: 1603527308}
   - {fileID: 1603527306}
   - {fileID: 1603527305}
@@ -1278,7 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -23.293098, y: -103.82258}
+  scrollPos: {x: 92.7069, y: -33.82258}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1292,7 +1298,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1603527278}
   selectedCommands:
-  - {fileID: 1603527315}
+  - {fileID: 1603527309}
   variables: []
   description: 
   stepPause: 0
@@ -1563,6 +1569,8 @@ MonoBehaviour:
   - {fileID: 1603527312}
   - {fileID: 1603527311}
   - {fileID: 1603527310}
+  - {fileID: 1603527309}
+  - {fileID: 1603527321}
   - {fileID: 1603527320}
   - {fileID: 1603527319}
   - {fileID: 1603527318}
@@ -2223,6 +2231,22 @@ MonoBehaviour:
   choiceData:
     key: 3
     choiceNumber: 1
+--- !u!114 &1603527309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603527264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28568b386ff541f4a8ec339cf1391ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 59
+  indentLevel: 0
+  fadeType: 2
+  fadeTime: 1
 --- !u!114 &1603527310
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2362,8 +2386,6 @@ MonoBehaviour:
   itemId: 49
   indentLevel: 1
   nextScene: 17
-  fadeType: 2
-  fadeTime: 0
 --- !u!114 &1603527316
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2424,8 +2446,6 @@ MonoBehaviour:
   itemId: 45
   indentLevel: 1
   nextScene: 14
-  fadeType: 2
-  fadeTime: 0
 --- !u!114 &1603527320
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2443,6 +2463,58 @@ MonoBehaviour:
   choiceData:
     key: 2
     choiceNumber: 0
+--- !u!114 &1603527321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603527264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1603527322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603527264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1603527323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603527264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554832ac72dcd364bba6ddc1b9853f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  fadeType: 2
+  fadeTime: 1
 --- !u!1001 &1614989812
 PrefabInstance:
   m_ObjectHideFlags: 0

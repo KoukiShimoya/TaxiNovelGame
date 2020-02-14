@@ -349,6 +349,10 @@ GameObject:
   - component: {fileID: 642108326}
   - component: {fileID: 642108325}
   - component: {fileID: 642108324}
+  - component: {fileID: 642108331}
+  - component: {fileID: 642108330}
+  - component: {fileID: 642108328}
+  - component: {fileID: 642108329}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -382,6 +386,8 @@ MonoBehaviour:
   eventHandler: {fileID: 642108289}
   commandList:
   - {fileID: 642108291}
+  - {fileID: 642108331}
+  - {fileID: 642108330}
   - {fileID: 642108288}
   - {fileID: 642108287}
   - {fileID: 642108286}
@@ -418,8 +424,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 642108323}
+  selectedCommands:
+  - {fileID: 642108328}
   variables:
   - {fileID: 642108293}
   description: 
@@ -1608,6 +1616,8 @@ MonoBehaviour:
   eventHandler: {fileID: 642108327}
   commandList:
   - {fileID: 642108326}
+  - {fileID: 642108328}
+  - {fileID: 642108329}
   - {fileID: 642108325}
   - {fileID: 642108324}
 --- !u!114 &642108324
@@ -1639,8 +1649,6 @@ MonoBehaviour:
   itemId: 46
   indentLevel: 1
   nextScene: 18
-  fadeType: 2
-  fadeTime: 0
 --- !u!114 &642108326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,6 +1727,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 642108323}
   message: SouthGate
+--- !u!114 &642108328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642108275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28568b386ff541f4a8ec339cf1391ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 1
+  fadeType: 2
+  fadeTime: 1
+--- !u!114 &642108329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642108275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 1
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &642108330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642108275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &642108331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642108275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554832ac72dcd364bba6ddc1b9853f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  fadeType: 2
+  fadeTime: 1
 --- !u!1 &658477157
 GameObject:
   m_ObjectHideFlags: 0
