@@ -1626,7 +1626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u76EE\u7684\u5730"
+  m_Text: 
 --- !u!114 &4171835216977351316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,8 +1639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u76EE\u7684\u5730"
-  EN: Destination
+  JP: 
+  EN: 
 --- !u!114 &8106384336335523453
 MonoBehaviour:
   m_ObjectHideFlags: 0

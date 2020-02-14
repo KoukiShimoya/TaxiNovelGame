@@ -42,6 +42,7 @@ namespace ConstValues
         Thugs_West_Scene,
         Clerk_Central_Scene,
         Clerk_Bridge_Scene,
+        Clerk_South_Scene,
         Ending_1
     }
 

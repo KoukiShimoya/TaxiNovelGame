@@ -45,6 +45,11 @@ public static class SaveLoadCsvFile
 
         foreach (var oneRow in rowData)
         {
+            if (oneRow == "")
+            {
+                continue;
+            }
+            
             var csvChoiceData = oneRow.Split(General.comma);
             
             var oneRowChoiceData = new ChoiceData((ChoiceKey) Enum.Parse(typeof(ChoiceKey), csvChoiceData[0]), int.Parse(csvChoiceData[1]));
@@ -65,6 +70,11 @@ public static class SaveLoadCsvFile
 
         foreach (var oneRow in rowData)
         {
+            if (oneRow == "")
+            {
+                continue;
+            }
+            
             var csvQuestData = oneRow.Split(General.comma);
             
             var oneRowQuestData = new QuestData((QuestKey) Enum.Parse(typeof(QuestKey), csvQuestData[0]), int.Parse(csvQuestData[1]));
@@ -239,5 +249,6 @@ public enum ChoiceKey
     NoMeetThugs_MeetThugs,
     Letter_Courage,
     JapaneseSweets_Cake,
-    TastyCandy_SaveCandy
+    TastyCandy_SaveCandy,
+    Cute_LowRisk
 }
