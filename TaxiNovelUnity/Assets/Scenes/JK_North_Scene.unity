@@ -489,6 +489,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3714359671366462114, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4171835216194901848, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1665,19 +1670,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -255.17644, y: 22.810051}
+  scrollPos: {x: -310.3996, y: -47.635986}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6700002
+  zoom: 0.7600001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1095961559}
+  selectedCommands:
+  - {fileID: 1095961558}
   variables:
   - {fileID: 1095961549}
   description: 
@@ -1799,7 +1806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.72327
     y: 69.20429
-    width: 141.04474
+    width: 140.78946
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2412,7 +2419,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.9178
     y: 143.88005
-    width: 127.611916
+    width: 127.63157
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3259,7 +3266,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 0.6
   durationOLD: 0
 --- !u!114 &1095961558
 MonoBehaviour:
@@ -3275,8 +3282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 71
   indentLevel: 0
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 0
+  fadeTime: 0.6
 --- !u!114 &1095961559
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3293,7 +3300,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 589.5047
     y: 415.99564
-    width: 120
+    width: 122.36841
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

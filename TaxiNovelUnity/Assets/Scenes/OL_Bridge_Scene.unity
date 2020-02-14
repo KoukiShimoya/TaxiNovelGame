@@ -983,7 +983,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1480607589}
   selectedCommands:
-  - {fileID: 1480607618}
+  - {fileID: 1480607617}
   variables: []
   description: 
   stepPause: 0
@@ -3302,7 +3302,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 1.2
   durationOLD: 0
 --- !u!114 &1480607618
 MonoBehaviour:
@@ -3318,8 +3318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 0
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 0
+  fadeTime: 1.2
 --- !u!114 &1480607619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,8 +3352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 0
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 0
+  fadeTime: 1.2
 --- !u!1001 &1647903141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3755,10 +3755,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 694930196620565256, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 694930196620565256, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
+        type: 3}
+      propertyPath: cutoutRange
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1144875656461590437, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
         type: 3}
       propertyPath: m_Name
       value: NecessaryInBridgeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358216560570281534, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2014367542346235019, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
         type: 3}

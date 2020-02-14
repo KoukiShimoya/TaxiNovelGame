@@ -9,8 +9,8 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
 {
     public enum FadeType
     {
-        RightToLeftCircle,
-        CheckExpansion,
+        CarConcentrateLine,
+        Circle,
         None
     }
 
@@ -19,7 +19,6 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
 
     private void Start()
     {
-        fadeImage = gameObject.GetComponent<FadeImage>();
         SceneManager.sceneLoaded += SceneLoadFinish;
     }
 
@@ -172,7 +171,7 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     /// <param name="mode"></param>
     private void SceneLoadFinish(Scene nextScnene, LoadSceneMode mode)
     {
-        fadeImage.Range = 0f;
+        fadeImage = FadeImageCanvas.Instance.gameObject.GetComponent<FadeImage>();
     }
 
     [Serializable]

@@ -784,10 +784,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 694930196620565256, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 694930196620565256, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
+        type: 3}
+      propertyPath: cutoutRange
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1144875656461590437, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
         type: 3}
       propertyPath: m_Name
       value: NecessaryInBridgeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358216560570281534, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2014367542346235019, guid: f73587e6b49b1ea43bb56e0bb1cb5de5,
         type: 3}
@@ -1074,11 +1089,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 90.497986, y: -781.35657}
+  scrollPos: {x: 187.15544, y: 1.2826519}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8199997
+  zoom: 0.75999975
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1086,9 +1101,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1612094738}
+  - {fileID: 1612094645}
   selectedCommands:
-  - {fileID: 1612094734}
+  - {fileID: 1612094740}
   variables:
   - {fileID: 1612094666}
   description: 
@@ -1221,7 +1236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.07149
     y: 594.283
-    width: 152.43906
+    width: 138.15793
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1306,7 +1321,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 240.64037
     y: 483.18164
-    width: 171.95126
+    width: 159.21057
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1333,7 +1348,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 55.63075
     y: 483.75735
-    width: 178.04883
+    width: 163.15793
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1688,7 +1703,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.5109
     y: 393.78027
-    width: 152.43906
+    width: 142.10529
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1718,7 +1733,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -106.617615
     y: 398.7461
-    width: 171.95126
+    width: 156.57898
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2612,7 +2627,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.65286
     y: 876.66565
-    width: 148.78052
+    width: 132.89476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2902,7 +2917,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 16.45076
     y: 685.7631
-    width: 121.95125
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3332,7 +3347,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.62402
     y: 944.28937
-    width: 123.17076
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3359,7 +3374,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 32.463364
     y: 946.6173
-    width: 128.04881
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3436,7 +3451,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 1.2
   durationOLD: 0
 --- !u!114 &1612094734
 MonoBehaviour:
@@ -3452,8 +3467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 0
+  fadeTime: 1.2
 --- !u!114 &1612094735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3527,7 +3542,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.38016
     y: 1059.4054
-    width: 134.14636
+    width: 122.36845
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3571,8 +3586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 92
   indentLevel: 0
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 0
+  fadeTime: 1.2
 --- !u!1001 &1614673694
 PrefabInstance:
   m_ObjectHideFlags: 0

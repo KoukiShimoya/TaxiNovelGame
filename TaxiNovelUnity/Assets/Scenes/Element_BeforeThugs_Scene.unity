@@ -133,8 +133,6 @@ GameObject:
   - component: {fileID: 96501205}
   - component: {fileID: 96501204}
   - component: {fileID: 96501203}
-  - component: {fileID: 96501202}
-  - component: {fileID: 96501200}
   - component: {fileID: 96501199}
   - component: {fileID: 96501198}
   - component: {fileID: 96501197}
@@ -190,6 +188,12 @@ GameObject:
   - component: {fileID: 96501233}
   - component: {fileID: 96501232}
   - component: {fileID: 96501214}
+  - component: {fileID: 96501238}
+  - component: {fileID: 96501237}
+  - component: {fileID: 96501236}
+  - component: {fileID: 96501235}
+  - component: {fileID: 96501202}
+  - component: {fileID: 96501200}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -210,11 +214,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -19.908836, y: 51.27058}
+  scrollPos: {x: -32.83868, y: 41.72955}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 435
-  zoom: 0.85000014
+  zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -224,7 +228,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 96501205}
   selectedCommands:
-  - {fileID: 96501214}
+  - {fileID: 96501227}
   variables:
   - {fileID: 96501174}
   - {fileID: 96501207}
@@ -413,7 +417,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 222.12839
     y: 164.619
-    width: 140.58823
+    width: 141.20879
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -917,19 +921,18 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &96501200
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96501172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d292025b5707914fba81d97ea3fd257, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 1
-  position: {x: 16.25, y: -71}
+  itemId: 62
+  indentLevel: 0
 --- !u!114 &96501201
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -949,7 +952,7 @@ MonoBehaviour:
     choiceNumber: 1
 --- !u!114 &96501202
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -959,9 +962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d292025b5707914fba81d97ea3fd257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 2
+  itemId: 61
   indentLevel: 1
-  position: {x: 3.5, y: -28}
+  position: {x: 16.25, y: -71}
 --- !u!114 &96501203
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1020,15 +1023,19 @@ MonoBehaviour:
   commandList:
   - {fileID: 96501196}
   - {fileID: 96501232}
+  - {fileID: 96501238}
+  - {fileID: 96501237}
+  - {fileID: 96501236}
+  - {fileID: 96501235}
+  - {fileID: 96501202}
+  - {fileID: 96501200}
   - {fileID: 96501214}
   - {fileID: 96501203}
-  - {fileID: 96501202}
   - {fileID: 96501198}
   - {fileID: 96501230}
   - {fileID: 96501197}
   - {fileID: 96501231}
   - {fileID: 96501201}
-  - {fileID: 96501200}
   - {fileID: 96501227}
   - {fileID: 96501199}
 --- !u!4 &96501206
@@ -1076,7 +1083,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 400.95178
     y: 72.76497
-    width: 127.64705
+    width: 129.12088
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1262,7 +1269,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 0.6
   durationOLD: 0
 --- !u!114 &96501215
 MonoBehaviour:
@@ -1698,8 +1705,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 1
+  fadeTime: 0.6
 --- !u!114 &96501233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1716,7 +1723,7 @@ MonoBehaviour:
   indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 0.6
   durationOLD: 0
 --- !u!114 &96501234
 MonoBehaviour:
@@ -1732,8 +1739,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 1
-  fadeType: 2
-  fadeTime: 1
+  fadeType: 0
+  fadeTime: 0.6
+--- !u!114 &96501235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569eb7ce76a96034492a8306e9165877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 0
+  choiceData:
+    key: 1
+    choiceNumber: 1
+--- !u!114 &96501236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 59
+  indentLevel: 0
+--- !u!114 &96501237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d292025b5707914fba81d97ea3fd257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 1
+  position: {x: 3.5, y: -28}
+--- !u!114 &96501238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96501172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569eb7ce76a96034492a8306e9165877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  choiceData:
+    key: 1
+    choiceNumber: 0
 --- !u!114 &171166079 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8539765886990263899, guid: 5e222063a01f8704ab03bf67bcf6c9b9,
@@ -2982,6 +3052,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 3714359671366462114, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4171835216482735504, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3041,6 +3116,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NecessaryInGameScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428926613240696677, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428926613240696677, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: cutoutRange
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
