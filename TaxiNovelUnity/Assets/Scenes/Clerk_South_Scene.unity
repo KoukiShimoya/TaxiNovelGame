@@ -299,6 +299,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NecessaryInGameScene
       objectReference: {fileID: 0}
+    - target: {fileID: 7428926613240696677, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428926613240696677, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: cutoutRange
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
 --- !u!1 &449206933
@@ -957,7 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: -11, y: -44}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -968,10 +978,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1469437387}
-  selectedCommands:
-  - {fileID: 1469437386}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -999,7 +1007,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1469437386
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1047,7 +1055,7 @@ MonoBehaviour:
   - {fileID: 1469437386}
 --- !u!114 &1469437388
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1063,7 +1071,7 @@ MonoBehaviour:
   variable: 1
 --- !u!114 &1469437389
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1090,7 +1098,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1469437390
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1117,7 +1125,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1469437391
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1144,7 +1152,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1469437392
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1156,7 +1164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "\u5230\u7740\u3057\u307E\u3057\u305F\u3002"
+  storyText: "\u5357\u30A8\u30EA\u30A2\u30C7\u30D1\u30FC\u30C8\u524D\u3001\u5230\u7740\u3057\u307E\u3057\u305F"
   description: 
   character: {fileID: 1947424251}
   portrait: {fileID: 0}
@@ -1171,7 +1179,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1469437393
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1230,7 +1238,7 @@ MonoBehaviour:
   playerState: 0
 --- !u!114 &1469437397
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1248,7 +1256,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1469437398
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1264,7 +1272,7 @@ MonoBehaviour:
   fadeTime: 0.6
 --- !u!114 &1469437399
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1282,7 +1290,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1469437400
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

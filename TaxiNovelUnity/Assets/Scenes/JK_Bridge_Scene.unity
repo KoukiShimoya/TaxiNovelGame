@@ -1036,6 +1036,7 @@ GameObject:
   - component: {fileID: 1815920297}
   - component: {fileID: 1815920296}
   - component: {fileID: 1815920295}
+  - component: {fileID: 1815920299}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -1112,19 +1113,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 218.76483, y: -134.66028}
+  scrollPos: {x: -28.576918, y: -240.92982}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.85000014
+  zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1815920263}
+  selectedCommands:
+  - {fileID: 1815920299}
   variables: []
   description: 
   stepPause: 0
@@ -1223,7 +1226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.67196
     y: 377.1135
-    width: 131.17645
+    width: 129.99997
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1249,7 +1252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 0
-  storyText: "\u305D\u308C\u306F\u3088\u304B\u3063\u305F\u3067\u3059\u3002"
+  storyText: "\u305D\u308C\u306F\u4F55\u3088\u308A\u3067\u3059"
   description: 
   character: {fileID: 2021196852}
   portrait: {fileID: 0}
@@ -1588,6 +1591,7 @@ MonoBehaviour:
   - {fileID: 1815920262}
   - {fileID: 1815920261}
   - {fileID: 1815920260}
+  - {fileID: 1815920299}
   - {fileID: 1815920249}
 --- !u!114 &1815920264
 MonoBehaviour:
@@ -2465,6 +2469,33 @@ MonoBehaviour:
   indentLevel: 0
   fadeType: 0
   fadeTime: 1.2
+--- !u!114 &1815920299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815920242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 53
+  indentLevel: 0
+  storyText: "\u305D\u308C\u306F\u4F55\u3088\u308A\u3067\u3059"
+  description: 
+  character: {fileID: 2021196852}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &2021196851
 PrefabInstance:
   m_ObjectHideFlags: 0

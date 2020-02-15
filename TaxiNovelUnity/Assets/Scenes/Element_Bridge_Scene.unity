@@ -1093,11 +1093,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 144.86435, y: -46.280716}
+  scrollPos: {x: 31.333918, y: -82.125206}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8200002
+  zoom: 0.64000034
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1800929402}
   selectedCommands:
-  - {fileID: 1800929379}
+  - {fileID: 1800929399}
   variables: []
   description: 
   stepPause: 0
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  text: "\u624B\u7D19\u3092\u4F7F\u3063\u3066\u307F\u308B\u306E\u3082\u3044\u3044\u304B\u3082\u3057\u308C\u307E\u305B\u3093\u3002"
+  text: "\u624B\u7D19\u3092\u4F7F\u3063\u3066\u307F\u308B\u306E\u3082\u3044\u3044\u304B\u3082\u3057\u308C\u307E\u305B\u3093\u306D"
   description: 
   targetBlock: {fileID: 1800929328}
   hideIfVisited: 0
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 25
   indentLevel: 0
-  storyText: "\u5927\u4E08\u592B\u3067\u3059\u3088"
+  storyText: "\u3044\u3048\u3044\u3048\u3001\u5927\u4E08\u592B\u3067\u3059\u3088"
   description: 
   character: {fileID: 426542130}
   portrait: {fileID: 0}
@@ -2052,7 +2052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "\u305D\u308C\u306F\u308F\u304B\u3063\u3066\u308B\u3093\u3067\u3059...\u3002\u4E8C\u4EBA\u3068\u3082\u3001\u308F\u305F\u3057\u306E\u305F\u3081\u306B\u9811\u5F35\u3063\u3066\u304F\u308C\u3066\u308B\u3093\u3060\u3063\u3066\u3002"
+  storyText: "\u308F\u304B\u3063\u3066\u306F\u3044\u308B\u3093\u3067\u3059...\u3002\u4E8C\u4EBA\u3068\u3082\u3001\u308F\u305F\u3057\u306E\u305F\u3081\u306B\u9811\u5F35\u3063\u3066\u304F\u308C\u3066\u308B\u3093\u3060\u3063\u3066\u3002"
   description: 
   character: {fileID: 1744534128}
   portrait: {fileID: 21300000, guid: bf2a7cdda7540a94ea3a124879f9b2aa, type: 3}
@@ -2079,7 +2079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: "\u304A\u533B\u8005\u3055\u3093\u306F\u5FD9\u3057\u3044\u3067\u3059\u3088\u306D\u3002"
+  storyText: "\u304A\u533B\u8005\u3055\u3093\u306F\u5FD9\u3057\u3044\u3067\u3059\u3088\u306D"
   description: 
   character: {fileID: 426542130}
   portrait: {fileID: 0}
@@ -2931,7 +2931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  storyText: "\u3053\u3046\u3084\u3063\u3066\u79C1\u306B\u76F8\u8AC7\u3067\u304D\u305F\u3093\u3067\u3059\u304B\u3089\u3001\u304D\u3063\u3068\u3054\u4E21\u89AA\u306B\u3082\u6C17\u6301\u3061\u304C\u4F1D\u308F\u308B\u3068\u601D\u3044\u307E\u3059\u3002"
+  storyText: "\u3053\u3046\u3084\u3063\u3066\u79C1\u306B\u76F8\u8AC7\u3067\u304D\u305F\u3093\u3067\u3059\u304B\u3089\u3001\u304D\u3063\u3068\u3054\u4E21\u89AA\u306B\u3082\u6C17\u6301\u3061\u304C\u4F1D\u308F\u308B\u3068\u601D\u3044\u307E\u3059\u3088"
   description: 
   character: {fileID: 426542130}
   portrait: {fileID: 0}
@@ -3002,7 +3002,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.292595
     y: 324.50726
-    width: 124.39023
+    width: 126.24996
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
