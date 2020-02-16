@@ -6,16 +6,22 @@ using ConstValues;
 
 namespace Fungus
 {
-    [CommandInfo("Scripting", "Fade In Fungus", "Fungusでフェードアウト")]
+    [CommandInfo("Scripting", "Fade In Fungus", "Fungusでフェードイン")]
     public class FadeInFungus : Command
     {
         [Tooltip("フェードタイプ")] [SerializeField] protected SceneChange.FadeType fadeType;
         
         [Tooltip("フェード時間")] [SerializeField] protected float fadeTime = 1f;
+        
+        [Tooltip("フェードインの始点")] [SerializeField] protected float fadeStartPosition = 1f;
+        
+        [Tooltip("フェードインの終点")] [SerializeField] protected float fadeFinishPosition = 0f;
+        
+        
 
         public override void OnEnter()
         {
-            SceneChange.Instance.FadeIn(fadeType, fadeTime);
+            SceneChange.Instance.FadeIn(fadeType, fadeTime, fadeStartPosition, fadeFinishPosition);
             Continue();
         }
 

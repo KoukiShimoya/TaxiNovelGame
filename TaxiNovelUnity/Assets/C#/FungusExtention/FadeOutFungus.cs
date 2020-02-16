@@ -12,10 +12,16 @@ namespace Fungus
         [Tooltip("フェードタイプ")] [SerializeField] protected SceneChange.FadeType fadeType;
         
         [Tooltip("フェード時間")] [SerializeField] protected float fadeTime = 1f;
+        
+        [Tooltip("フェードインの始点")] [SerializeField] protected float fadeStartPosition = 0f;
+        
+        [Tooltip("フェードアウトの終点")] [SerializeField] protected float fadeFinishPosition = 1f;
+        
+        
 
         public override void OnEnter()
         {
-            SceneChange.Instance.FadeOut(fadeType, fadeTime);
+            SceneChange.Instance.FadeOut(fadeType, fadeTime, fadeStartPosition, fadeFinishPosition);
             Continue();
         }
 

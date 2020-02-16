@@ -27,7 +27,7 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         SceneManager.LoadScene(sceneName.ToString());
     }
 
-    public void FadeOut(FadeType fadeType, float fadeTime)
+    public void FadeOut(FadeType fadeType, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
         if (fadeType == FadeType.None)
         {
@@ -38,12 +38,12 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
             {
-                StartCoroutine(FadeOutAllTime(fadeTypeAndTexture[i].texture, fadeTime));
+                StartCoroutine(FadeOutAllTime(fadeTypeAndTexture[i].texture, fadeTime, fadeStartPosition, fadeFinishPosition));
             }
         }
     }
 
-    public void FadeIn(FadeType fadeType, float fadeTime)
+    public void FadeIn(FadeType fadeType, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
         if (fadeType == FadeType.None)
         {
@@ -54,7 +54,7 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
             {
-                StartCoroutine(FadeInAllTime(fadeTypeAndTexture[i].texture, fadeTime));
+                StartCoroutine(FadeInAllTime(fadeTypeAndTexture[i].texture, fadeTime, fadeStartPosition, fadeFinishPosition));
             }
         }
     }
@@ -82,19 +82,19 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         }
     }
 
-    private IEnumerator FadeOutAllTime(Texture2D fadeTexture, float fadeTime)
+    private IEnumerator FadeOutAllTime(Texture2D fadeTexture, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
         var processing = true;
         fadeImage.SetMaskTexture = fadeTexture;
-        fadeImage.Range = 0f;
+        fadeImage.Range = fadeStartPosition;
         while (processing)
         {
             var rate = Time.deltaTime / fadeTime;
             var postProcessPercentage = fadeImage.Range + rate;
             fadeImage.Range = postProcessPercentage;
-            if (postProcessPercentage > 1f)
+            if (postProcessPercentage > fadeFinishPosition)
             {
-                fadeImage.Range = 1f;
+                fadeImage.Range = fadeFinishPosition;
                 processing = false;
 
                 yield break;
@@ -104,19 +104,19 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         }
     }
 
-    private IEnumerator FadeInAllTime(Texture2D fadeTexture, float fadeTime)
+    private IEnumerator FadeInAllTime(Texture2D fadeTexture, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
         var processing = true;
         fadeImage.SetMaskTexture = fadeTexture;
-        fadeImage.Range = 1f;
+        fadeImage.Range = fadeStartPosition;
         while (processing)
         {
             var rate = Time.deltaTime / fadeTime;
             var postProcessPercentage = fadeImage.Range - rate;
             fadeImage.Range = postProcessPercentage;
-            if (postProcessPercentage <= 0)
+            if (postProcessPercentage <= fadeFinishPosition)
             {
-                fadeImage.Range = 0f;
+                fadeImage.Range = fadeFinishPosition;
                 processing = false;
 
                 yield break;

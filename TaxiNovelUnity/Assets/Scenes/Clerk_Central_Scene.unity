@@ -413,11 +413,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 63.18971, y: -60.4989}
+  scrollPos: {x: 36.897247, y: 80.590126}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.5200004
+  zoom: 0.6100003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -425,9 +425,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 642108294}
+  - {fileID: 642108297}
   selectedCommands:
-  - {fileID: 642108300}
+  - {fileID: 642108322}
   variables:
   - {fileID: 642108293}
   description: 
@@ -882,7 +882,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 70.16171
     y: 246.63805
-    width: 122.30763
+    width: 127.04914
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1587,9 +1587,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  fadeType: 2
+  fadeType: 1
   sceneChangeRate: 0.5
-  fadeTime: 1
+  fadeTime: 1.2
 --- !u!114 &642108323
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2234,6 +2234,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 692926722, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be8efc46213b7c748b64f554cf9a0e0e,
+        type: 3}
     - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
       propertyPath: m_LocalRotation.z
       value: 1

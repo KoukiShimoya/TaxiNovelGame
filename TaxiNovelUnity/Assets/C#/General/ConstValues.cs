@@ -44,7 +44,10 @@ namespace ConstValues
         Clerk_Bridge_Scene,
         Clerk_South_Scene,
         Worker_South_Scene,
-        Ending_1
+        Worker_Bridge_Scene,
+        Worker_Central_Scene,
+        Ending_1,
+        Ending_2
     }
 
     public struct TagName
