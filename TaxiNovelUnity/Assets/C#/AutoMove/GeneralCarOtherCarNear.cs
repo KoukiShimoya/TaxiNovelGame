@@ -22,7 +22,7 @@ public class GeneralCarOtherCarNear : MonoBehaviour
     /// <param name="collider2D"></param>
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        bool tag = collider2D.gameObject.CompareTag(TagName.Car) || collider2D.gameObject.CompareTag(TagName.Player);
+        bool tag = collider2D.gameObject.CompareTag(TagName.Police) || collider2D.gameObject.CompareTag(TagName.Player);
 
         if (!tag)
         {
@@ -49,7 +49,7 @@ public class GeneralCarOtherCarNear : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D collider2D)
     {
-        bool tag = collider2D.gameObject.CompareTag(TagName.Car) || collider2D.gameObject.CompareTag(TagName.Player);
+        bool tag = collider2D.gameObject.CompareTag(TagName.Police) || collider2D.gameObject.CompareTag(TagName.Player);
 
         if (!tag)
         {

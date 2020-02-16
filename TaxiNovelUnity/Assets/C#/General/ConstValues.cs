@@ -52,7 +52,7 @@ namespace ConstValues
 
     public struct TagName
     {
-        public const string Car = "Car";
+        public const string Police = "Police";
         public const string Signal = "Signal";
         public const string Player = "Player";
     }
