@@ -43,6 +43,7 @@ namespace ConstValues
         Clerk_Central_Scene,
         Clerk_Bridge_Scene,
         Clerk_South_Scene,
+        Worker_South_Scene,
         Ending_1
     }
 
