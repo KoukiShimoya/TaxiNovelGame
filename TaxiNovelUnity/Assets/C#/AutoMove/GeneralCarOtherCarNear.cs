@@ -6,12 +6,13 @@ using ConstValues;
 
 public class GeneralCarOtherCarNear : MonoBehaviour
 {
-    [SerializeField] private GameObject parent;
+    private GameObject parent;
     private GeneralCarStateHolder generalCarStateHolder;
-    [SerializeField] private List<GameObject> enteringCars;
+    private List<GameObject> enteringCars;
 
     private void Start()
     {
+        parent = this.gameObject.transform.parent.gameObject;
         generalCarStateHolder = parent.GetComponent<GeneralCarStateHolder>();
         enteringCars = new List<GameObject>();
     }

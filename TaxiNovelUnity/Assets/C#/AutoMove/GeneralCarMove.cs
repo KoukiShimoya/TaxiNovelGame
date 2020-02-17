@@ -9,8 +9,8 @@ public class GeneralCarMove : MonoBehaviour
     private Vector2 destination;
     private int aimPointNumber;
     private Rigidbody2D rigidbody2D;
-    private const float moveSpeed = 0.03f;
-    private const float threshould = 0.1f;
+    private const float moveSpeed = 0.04f;
+    private const float threshould = 0.05f;
     private GeneralCarStateHolder generalCarStateHolder;
     private WorldStateHolder worldStateHolder;
 
