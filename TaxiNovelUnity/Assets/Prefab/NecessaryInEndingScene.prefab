@@ -679,6 +679,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: InBridgeCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2469509006458479282, guid: 15784bd7b1eb76643ab304ad51fc789d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 151e34ca44525a14e9a357ce71509e02,
+        type: 3}
+    - target: {fileID: 2484329727858653105, guid: 15784bd7b1eb76643ab304ad51fc789d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5020032682548139505, guid: 15784bd7b1eb76643ab304ad51fc789d,
         type: 3}
       propertyPath: m_LocalPosition.x
