@@ -11,11 +11,6 @@ namespace ConstValues
         public const string Resources = "Resources";
     }
 
-    public struct CharaName
-    {
-        //public const string Ally = "Ally";
-    }
-
     public struct ObjectName
     {
         public const string DDOLRoot = "DDOLRoot";
