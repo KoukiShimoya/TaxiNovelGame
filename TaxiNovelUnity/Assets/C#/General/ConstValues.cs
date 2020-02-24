@@ -42,7 +42,11 @@ namespace ConstValues
         Worker_Bridge_Scene,
         Worker_Central_Scene,
         Ending_1,
-        Ending_2
+        Ending_2,
+        Ending_3,
+        Ending_4,
+        Ending_5,
+        Ending_6
     }
 
     public struct TagName
