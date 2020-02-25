@@ -93,7 +93,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.SceneChangeFunction(SceneName.Worker_South_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Worker_Central_Scene);
                     return;
                 }
             }
