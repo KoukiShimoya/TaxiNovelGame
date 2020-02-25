@@ -16,8 +16,8 @@ namespace Fungus
         [Tooltip("Bool変数")]
         [VariableProperty(typeof(BooleanVariable))]
         [SerializeField] protected Variable variable;
-        [Tooltip("UIのText")]
-        [SerializeField] protected Text text;
+        [Tooltip("UI")]
+        [SerializeField] protected List<GameObject> uiList;
 
         public override void OnEnter()
         {
@@ -58,35 +58,96 @@ namespace Fungus
                 {
                     if (upDown)
                     {
-                        Color color = text.color;
-                        color.a += changeValue;
-                        if (color.a > 1)
+                        foreach (var gameObject in uiList)
                         {
-                            color.a = 1;
-                            upDown = false;
-                        }
+                            var image = gameObject.GetComponent<Image>();
+                            if (image != null)
+                            {
+                                Color color = image.color;
+                                color.a += changeValue;
 
-                        text.color = color;
+                                if (color.a > 1)
+                                {
+                                    color.a = 1;
+                                    upDown = false;
+                                }
+
+                                image.color = color;
+                            }
+
+                            var text = gameObject.GetComponent<Text>();
+                            if (text != null)
+                            {
+                                Color color = text.color;
+                                color.a += changeValue;
+
+                                if (color.a > 1)
+                                {
+                                    color.a = 1;
+                                    upDown = false;
+                                }
+
+                                text.color = color;
+                            }
+                        }
                     }
                     else
                     {
-                        Color color = text.color;
-                        color.a -= changeValue;
-                        if (color.a < 0)
+                        foreach (var gameObject in uiList)
                         {
-                            color.a = 0;
-                            upDown = true;
-                        }
+                            var image = gameObject.GetComponent<Image>();
+                            if (image != null)
+                            {
+                                Color color = image.color;
+                                color.a -= changeValue;
 
-                        text.color = color;
+                                if (color.a < 0)
+                                {
+                                    color.a = 0;
+                                    upDown = true;
+                                }
+
+                                image.color = color;
+                            }
+
+                            var text = gameObject.GetComponent<Text>();
+                            if (text != null)
+                            {
+                                Color color = text.color;
+                                color.a -= changeValue;
+
+                                if (color.a < 0)
+                                {
+                                    color.a = 0;
+                                    upDown = true;
+                                }
+
+                                text.color = color;
+                            }
+                        }
                     }
                     yield return null;
                 }
                 else
                 {
-                    Color color = text.color;
-                    color.a = 0;
-                    text.color = color;
+                    foreach (var gameObject in uiList)
+                    {
+                        var image = gameObject.GetComponent<Image>();
+                        if (image != null)
+                        {
+                            Color color = image.color;
+                            color.a = 0;
+                            image.color = color;
+                        }
+
+                        var text = gameObject.GetComponent<Text>();
+                        if (text != null)
+                        {
+                            Color color = text.color;
+                            color.a = 0;
+                            text.color = color;
+                        }
+                    }
                     yield break;
                 }
             }
@@ -95,6 +156,17 @@ namespace Fungus
         public override Color GetButtonColor()
         {
             return new Color32(180, 250, 250, 255);
+        }
+
+        public override string GetSummary()
+        {
+            string summary = "待機時間：" + waitTime + ", フェード速度：" + changeValue + ", ターゲット変数：" + variable.Key + ", ターゲットUI：";
+            foreach (var gameObject in uiList)
+            {
+                summary += gameObject.name + " ";
+            }
+
+            return summary;
         }
     }
 }
