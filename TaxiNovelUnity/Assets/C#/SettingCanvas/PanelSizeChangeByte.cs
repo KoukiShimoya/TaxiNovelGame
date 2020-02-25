@@ -4,12 +4,14 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DestinationTextBackPanel : MonoBehaviour
+public class PanelSizeChangeByte : MonoBehaviour
 {
     [SerializeField] private Text backPanelText;
     private int preByteCount = 0;
     private const string encodingType = "Shift_JIS";
     private RectTransform rectTransform;
+    [SerializeField] private int oneWordSize;
+    [SerializeField] private int defaultSize;
     
     private void Start()
     {
@@ -32,7 +34,7 @@ public class DestinationTextBackPanel : MonoBehaviour
 
     private void SizeChange(int byteCount)
     {
-        int width = byteCount * 25 + 50;
+        int width = byteCount * oneWordSize + defaultSize;
         if (byteCount == 0)
         {
             width = 0;

@@ -151,7 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowchart: {fileID: 2040923073}
-  message: ArriveLibrary
+  enterMessage: ArriveLibrary
+  exitMessage: 
 --- !u!61 &33290030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -238,6 +239,16 @@ PrefabInstance:
     - target: {fileID: 692926723, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3714359671366462114, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
@@ -345,18 +356,6 @@ PrefabInstance:
     - {fileID: 3630212068283448175, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
     - {fileID: 6590472184721847865, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
---- !u!114 &104422279 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2124071629517893488, guid: 2f1c5412b8d66e04ea901a818f68db96,
-    type: 3}
-  m_PrefabInstance: {fileID: 104422278}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!213 &206543194
 Sprite:
   m_ObjectHideFlags: 0
@@ -907,27 +906,27 @@ PrefabInstance:
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[2].m_RefCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[2].m_Data.r
-      value: NaN
+      value: 0.73928094
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[2].m_Data.g
-      value: NaN
+      value: 0.50587577
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[2].m_Data.b
-      value: NaN
+      value: 0.50765437
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[2].m_Data.a
-      value: NaN
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
@@ -947,7 +946,7 @@ PrefabInstance:
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[18].m_RefCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
@@ -1252,7 +1251,7 @@ PrefabInstance:
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[159].m_RefCount
-      value: 52
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
@@ -1316,7 +1315,68 @@ PrefabInstance:
     - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
-      value: 1585
+      value: 1583
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[753].second.m_TileSpriteIndex
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1560].second.m_TileSpriteIndex
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1560].second.m_TileColorIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1560].second.m_TileFlags
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1561].second.m_TileSpriteIndex
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1561].second.m_TileColorIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1561].second.m_TileFlags
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[18].m_Data
+      value: 
+      objectReference: {fileID: 206543194}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[30].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[30].m_Data
+      value: 
+      objectReference: {fileID: 5459724159108052175, guid: 3e34a1c174751154db2f8aacf61c7ce3,
+        type: 3}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[32].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056214163629206485, guid: 30be85f85b1eccd47a044e960fe6ac4c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[32].m_Data
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7369836737085546835, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
@@ -1409,7 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 104422279}
+  selectedFlowchart: {fileID: 2040923073}
 --- !u!4 &1567274982
 Transform:
   m_ObjectHideFlags: 1
@@ -1675,7 +1735,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2040923093}
+  - {fileID: 2040923076}
   selectedCommands: []
   variables:
   - {fileID: 2040923074}
@@ -1706,7 +1766,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &2040923075
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2376,7 +2436,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2040923101
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2391,7 +2451,7 @@ MonoBehaviour:
   nextScene: 7
 --- !u!114 &2040923102
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2424,7 +2484,7 @@ MonoBehaviour:
   playerState: 1
 --- !u!114 &2040923104
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2442,7 +2502,7 @@ MonoBehaviour:
   fadeFinishPosition: 1
 --- !u!114 &2040923105
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2458,7 +2518,7 @@ MonoBehaviour:
   variable: 1
 --- !u!114 &2040923106
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2495,7 +2555,7 @@ MonoBehaviour:
   EN: Go to Library
 --- !u!114 &2040923108
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2513,7 +2573,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2040923109
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2531,7 +2591,7 @@ MonoBehaviour:
   fadeFinishPosition: 0
 --- !u!114 &2040923110
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2549,7 +2609,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2040923111
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2566,7 +2626,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2040923112
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2584,7 +2644,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2040923113
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

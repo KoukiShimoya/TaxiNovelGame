@@ -10,9 +10,11 @@ namespace Fungus
     public class UIFadeInOut : Command
     {
         [Tooltip("最初に発火するまでの待ち時間")]
-        [SerializeField] protected float waitTime;
+        [SerializeField] protected float waitTime = 0f;
 
         [Tooltip("フェード速度")] [SerializeField] protected float changeValue = 0.02f;
+        [Tooltip("フェード下限")] [SerializeField] protected float fadeMin = 0f;
+        [Tooltip("フェード上限")] [SerializeField] protected float fadeMax = 1f;
         [Tooltip("Bool変数")]
         [VariableProperty(typeof(BooleanVariable))]
         [SerializeField] protected Variable variable;
@@ -29,32 +31,44 @@ namespace Fungus
         {
             bool upDown = true;
             float elapsedTime = 0f;
-            bool startFade = false;
+            BooleanVariable booleanVariable = (variable as BooleanVariable);
+            booleanVariable.Apply( SetOperator.Assign, true);
             
             while (true)
             {
-                BooleanVariable booleanVariable = (variable as BooleanVariable);
+                
                 if (elapsedTime < waitTime)
                 {
                     elapsedTime += Time.deltaTime;
+                    
+                    if (!booleanVariable.Value)
+                    {
+                        foreach (var gameObject in uiList)
+                        {
+                            var image = gameObject.GetComponent<Image>();
+                            if (image != null)
+                            {
+                                Color color = image.color;
+                                color.a = 0;
+                                image.color = color;
+                            }
+
+                            var text = gameObject.GetComponent<Text>();
+                            if (text != null)
+                            {
+                                Color color = text.color;
+                                color.a = 0;
+                                text.color = color;
+                            }
+                        }
+                        yield break;
+                    }
+                    
                     yield return null;
                     continue;
                 }
-                else
-                {
-                    if (!startFade)
-                    {
-                        if (variable == null)
-                        {
-                            EditorDebug.LogError("Bool変数がセットされていません");
-                        }
-                        booleanVariable.Apply( SetOperator.Assign, true);
-                        startFade = true;
-                    }
-                    startFade = true;
-                }
 
-                if (booleanVariable.Value)
+                if (booleanVariable.Value && elapsedTime > waitTime)
                 {
                     if (upDown)
                     {
@@ -66,9 +80,9 @@ namespace Fungus
                                 Color color = image.color;
                                 color.a += changeValue;
 
-                                if (color.a > 1)
+                                if (color.a > fadeMax)
                                 {
-                                    color.a = 1;
+                                    color.a = fadeMax;
                                     upDown = false;
                                 }
 
@@ -81,9 +95,9 @@ namespace Fungus
                                 Color color = text.color;
                                 color.a += changeValue;
 
-                                if (color.a > 1)
+                                if (color.a > fadeMax)
                                 {
-                                    color.a = 1;
+                                    color.a = fadeMax;
                                     upDown = false;
                                 }
 
@@ -101,9 +115,9 @@ namespace Fungus
                                 Color color = image.color;
                                 color.a -= changeValue;
 
-                                if (color.a < 0)
+                                if (color.a < fadeMin)
                                 {
-                                    color.a = 0;
+                                    color.a = fadeMin;
                                     upDown = true;
                                 }
 
@@ -116,9 +130,9 @@ namespace Fungus
                                 Color color = text.color;
                                 color.a -= changeValue;
 
-                                if (color.a < 0)
+                                if (color.a < fadeMin)
                                 {
-                                    color.a = 0;
+                                    color.a = fadeMin;
                                     upDown = true;
                                 }
 
@@ -160,13 +174,22 @@ namespace Fungus
 
         public override string GetSummary()
         {
-            string summary = "待機時間：" + waitTime + ", フェード速度：" + changeValue + ", ターゲット変数：" + variable.Key + ", ターゲットUI：";
+            string summary = "待機時間：" + waitTime + ", フェード速度：" + changeValue + ", ターゲットUI：";
             foreach (var gameObject in uiList)
             {
-                summary += gameObject.name + " ";
+                if (gameObject != null)
+                {
+                    summary += gameObject.name + " ";
+                }
+            }
+
+            if (variable != null)
+            {
+                summary += ", ターゲット変数：" + variable.Key;
             }
 
             return summary;
         }
+        
     }
 }

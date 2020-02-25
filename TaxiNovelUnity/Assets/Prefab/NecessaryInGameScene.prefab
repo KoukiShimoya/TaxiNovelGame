@@ -1924,6 +1924,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPanelText: {fileID: 4171835216977351317}
+  oneWordSize: 25
+  defaultSize: 50
 --- !u!1001 &3686470125295989710
 PrefabInstance:
   m_ObjectHideFlags: 0
