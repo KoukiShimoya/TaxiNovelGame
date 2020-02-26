@@ -1125,9 +1125,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1815920263}
+  - {fileID: 1815920250}
   selectedCommands:
-  - {fileID: 1815920299}
+  - {fileID: 1815920247}
   variables: []
   description: 
   stepPause: 0
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
-  nextScene: 6
+  nextScene: 4
 --- !u!114 &1815920248
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1226,7 +1226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.67196
     y: 377.1135
-    width: 129.99997
+    width: 137.34175
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2435,6 +2435,8 @@ MonoBehaviour:
   indentLevel: 0
   fadeType: 0
   fadeTime: 1.2
+  fadeStartPosition: 0
+  fadeFinishPosition: 1
 --- !u!114 &1815920297
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2469,6 +2471,8 @@ MonoBehaviour:
   indentLevel: 0
   fadeType: 0
   fadeTime: 1.2
+  fadeStartPosition: 1
+  fadeFinishPosition: 0
 --- !u!114 &1815920299
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ namespace Fungus
 
         public override Color GetButtonColor()
         {
-            return new Color32(184, 210, 235, 255);
+            return new Color32(235, 191, 217, 255);
         }
     }
 }

@@ -175,9 +175,9 @@ namespace Fungus
         public override string GetSummary()
         {
             string summary = "待機時間：" + waitTime + ", フェード速度：" + changeValue + ", ターゲットUI：";
-            foreach (var gameObject in uiList)
+            if (uiList != null)
             {
-                if (uiList != null)
+                foreach (var gameObject in uiList)
                 {
                     if (gameObject != null)
                     {

@@ -44,7 +44,9 @@ namespace ConstValues
         Ending_3,
         Ending_4,
         Ending_5,
-        Ending_6
+        Ending_6_1,
+        Ending_6_2,
+        Ending_6_3
     }
 
     public struct TagName

@@ -18,7 +18,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.SceneChangeFunction(SceneName.JK_North_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Thugs_Bridge_Scene);
                     return;
                 }
             }
@@ -93,7 +93,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.SceneChangeFunction(SceneName.Worker_Central_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Worker_South_Scene);
                     return;
                 }
             }

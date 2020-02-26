@@ -983,7 +983,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1480607589}
   selectedCommands:
-  - {fileID: 1480607554}
+  - {fileID: 1480607616}
   variables: []
   description: 
   stepPause: 0
@@ -2506,7 +2506,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63.891876
     y: 239.52397
-    width: 134.21051
+    width: 127.63155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3285,7 +3285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 87
   indentLevel: 0
-  nextScene: 13
+  nextScene: 11
 --- !u!114 &1480607617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3320,6 +3320,8 @@ MonoBehaviour:
   indentLevel: 0
   fadeType: 0
   fadeTime: 1.2
+  fadeStartPosition: 0
+  fadeFinishPosition: 1
 --- !u!114 &1480607619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3354,6 +3356,8 @@ MonoBehaviour:
   indentLevel: 0
   fadeType: 0
   fadeTime: 1.2
+  fadeStartPosition: 1
+  fadeFinishPosition: 0
 --- !u!1001 &1647903141
 PrefabInstance:
   m_ObjectHideFlags: 0

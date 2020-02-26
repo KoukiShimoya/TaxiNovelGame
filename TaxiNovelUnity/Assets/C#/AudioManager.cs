@@ -7,6 +7,11 @@ using ConstValues;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioSource[] audioSources = new AudioSource[7];
+
+    public AudioSource[] GetAudioSource
+    {
+        get { return audioSources; }
+    }
     
     private void Start()
     {

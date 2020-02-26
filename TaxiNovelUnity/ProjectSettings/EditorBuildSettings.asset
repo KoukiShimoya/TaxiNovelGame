@@ -12,15 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 9cab7d34238602843aea9dd8cd47409a
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 29e9f24585bab0e4dae13dd8fe241c36
-  - enabled: 1
-    path: Assets/Scenes/CarChaseScene.unity
-    guid: 88f815f6eece0c24ea8f285cebdd3322
-  - enabled: 1
     path: Assets/Scenes/JK_Bridge_Scene.unity
     guid: 32408abf8705f974982ed86d6f9e2b37
   - enabled: 1
@@ -90,6 +81,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Ending_5.unity
     guid: bdad4f9bb574259459bb39b5dc08c7dd
   - enabled: 1
-    path: Assets/Scenes/Ending_6.unity
+    path: Assets/Scenes/Ending_6_1.unity
     guid: 3d4fad33cb7b15947a39a5723b318f2e
+  - enabled: 1
+    path: Assets/Scenes/Ending_6_2.unity
+    guid: 70d2081ebae254740b6aa65dc2691d5b
+  - enabled: 1
+    path: Assets/Scenes/Ending_6_3.unity
+    guid: 8628e5e9ddc37364e84a55f80503c18b
   m_configObjects: {}
