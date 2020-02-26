@@ -18,10 +18,8 @@ namespace ConstValues
 
     public enum SceneName
     {
-        GameScene,
         StartScene,
         InitializeScene,
-        TutorialScene,
         JK_North_Scene,
         JK_Bridge_Scene,
         JK_Central_Scene,

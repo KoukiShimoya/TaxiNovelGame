@@ -10,7 +10,7 @@ namespace Fungus
     public class UIFadeInOut : Command
     {
         [Tooltip("最初に発火するまでの待ち時間")]
-        [SerializeField] protected float waitTime = 0f;
+        [SerializeField] protected float waitTime = 0.001f;
 
         [Tooltip("フェード速度")] [SerializeField] protected float changeValue = 0.02f;
         [Tooltip("フェード下限")] [SerializeField] protected float fadeMin = 0f;
@@ -177,9 +177,12 @@ namespace Fungus
             string summary = "待機時間：" + waitTime + ", フェード速度：" + changeValue + ", ターゲットUI：";
             foreach (var gameObject in uiList)
             {
-                if (gameObject != null)
+                if (uiList != null)
                 {
-                    summary += gameObject.name + " ";
+                    if (gameObject != null)
+                    {
+                        summary += gameObject.name + " ";
+                    }
                 }
             }
 
