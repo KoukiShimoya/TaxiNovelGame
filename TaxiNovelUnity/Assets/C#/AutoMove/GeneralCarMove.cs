@@ -9,8 +9,8 @@ public class GeneralCarMove : MonoBehaviour
     private Vector2 destination;
     private int aimPointNumber;
     private Rigidbody2D rigidbody2D;
-    private const float moveSpeed = 0.03f;
-    private const float threshould = 0.1f;
+    private const float moveSpeed = 0.04f;
+    private const float threshould = 0.05f;
     private GeneralCarStateHolder generalCarStateHolder;
     private WorldStateHolder worldStateHolder;
 
@@ -34,7 +34,10 @@ public class GeneralCarMove : MonoBehaviour
 
             destination = checkPointList[0];
             aimPointNumber = 0;
-            this.gameObject.transform.LookAt2D(destination);
+            
+            Quaternion target = TransformExtensions.LookAt2D(this.gameObject.transform, destination);
+            this.gameObject.transform.rotation = target;
+            //StartCoroutine(SlerpCoroutine(target));
         }
     }
 
@@ -60,10 +63,23 @@ public class GeneralCarMove : MonoBehaviour
 
             destination = checkPointList[aimPointNumber];
             
-            this.gameObject.transform.LookAt2D(destination);
+            Quaternion target = TransformExtensions.LookAt2D(this.gameObject.transform, destination);
+            this.gameObject.transform.rotation = target;
+            //StartCoroutine(SlerpCoroutine(target));
         }
         
         CarMove();
+    }
+
+    private IEnumerator SlerpCoroutine(Quaternion target)
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < 1f)
+        {
+            this.gameObject.transform.rotation = Quaternion.RotateTowards(this.gameObject.transform.rotation, target, 500f * Time.deltaTime);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
     }
 
     private void CarMove()

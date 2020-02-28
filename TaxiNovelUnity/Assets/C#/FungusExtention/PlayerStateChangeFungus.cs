@@ -9,7 +9,7 @@ namespace Fungus
     [CommandInfo("Scripting", "Player State Change Fungus", "Fungusで車のStateを切り替える")]
     public class PlayerStateChangeFungus : Command
     {
-        [Tooltip("移行先のシーン名")] [SerializeField] protected PlayerState playerState;
+        [Tooltip("移行先のState")] [SerializeField] protected PlayerState playerState;
 
         public override void OnEnter()
         {

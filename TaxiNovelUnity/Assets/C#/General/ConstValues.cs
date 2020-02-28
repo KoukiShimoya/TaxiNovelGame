@@ -11,11 +11,6 @@ namespace ConstValues
         public const string Resources = "Resources";
     }
 
-    public struct CharaName
-    {
-        //public const string Ally = "Ally";
-    }
-
     public struct ObjectName
     {
         public const string DDOLRoot = "DDOLRoot";
@@ -23,29 +18,40 @@ namespace ConstValues
 
     public enum SceneName
     {
-        GameScene,
         StartScene,
         InitializeScene,
-        TutorialScene,
         JK_North_Scene,
         JK_Bridge_Scene,
         JK_Central_Scene,
         Element_BeforeThugs_Scene,
         Element_Bridge_Scene,
-        Element_East_Scene,
+        Element_West_Scene,
         Element_AfterThugs_Scene,
         OL_Central_Scene,
         OL_Bridge_Scene,
         OL_East_Scene,
         Thugs_Central_Scene,
         Thugs_Bridge_Scene,
+        Thugs_West_Scene,
         Clerk_Central_Scene,
-        Ending_1
+        Clerk_Bridge_Scene,
+        Clerk_South_Scene,
+        Worker_South_Scene,
+        Worker_Bridge_Scene,
+        Worker_Central_Scene,
+        Ending_1,
+        Ending_2,
+        Ending_3,
+        Ending_4,
+        Ending_5,
+        Ending_6_1,
+        Ending_6_2,
+        Ending_6_3
     }
 
     public struct TagName
     {
-        public const string Car = "Car";
+        public const string Police = "Police";
         public const string Signal = "Signal";
         public const string Player = "Player";
     }

@@ -9,8 +9,8 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
 {
     public enum FadeType
     {
-        RightToLeftCircle,
-        CheckExpansion,
+        CarConcentrateLine,
+        Circle,
         None
     }
 
@@ -19,29 +19,42 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
 
     private void Start()
     {
-        fadeImage = gameObject.GetComponent<FadeImage>();
         SceneManager.sceneLoaded += SceneLoadFinish;
     }
 
-    /// <summary>
-    ///     画面全体をフェードさせた後、シーン切り替え
-    /// </summary>
-    /// <param name="fadeType"></param>
-    /// <param name="fadeTime">フェード時間。ない場合はデフォルト値の1。</param>
-    /// <param name="sceneName">ConstValues.SceneName。ない場合はシーン遷移なしでエフェクトだけ。</param>
-    public void FadeTextureAndSceneChange(FadeType fadeType, SceneName sceneName, float fadeTime = 1f)
+    public void SceneChangeFunction(SceneName sceneName)
+    {
+        SceneManager.LoadScene(sceneName.ToString());
+    }
+
+    public void FadeOut(FadeType fadeType, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
         if (fadeType == FadeType.None)
         {
-            NoPostEffectSceneChange(sceneName);
+            return;
         }
         
         for (var i = 0; i < fadeTypeAndTexture.Count; i++)
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
             {
-                StartCoroutine(FadeAllTimeElapsed(fadeTypeAndTexture[i].texture, fadeTime, sceneName));
-                break;
+                StartCoroutine(FadeOutAllTime(fadeTypeAndTexture[i].texture, fadeTime, fadeStartPosition, fadeFinishPosition));
+            }
+        }
+    }
+
+    public void FadeIn(FadeType fadeType, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
+    {
+        if (fadeType == FadeType.None)
+        {
+            return;
+        }
+        
+        for (var i = 0; i < fadeTypeAndTexture.Count; i++)
+        {
+            if (fadeType == fadeTypeAndTexture[i].fadeType)
+            {
+                StartCoroutine(FadeInAllTime(fadeTypeAndTexture[i].texture, fadeTime, fadeStartPosition, fadeFinishPosition));
             }
         }
     }
@@ -54,6 +67,11 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     /// <param name="fadeTime">フェード時間。デフォルト値は1。</param>
     public void FadeMiddleTexture(FadeType fadeType, float fadeChangeRate, float fadeTime = 1f)
     {
+        if (fadeType == FadeType.None)
+        {
+            return;
+        }
+        
         for (var i = 0; i < fadeTypeAndTexture.Count; i++)
         {
             if (fadeType == fadeTypeAndTexture[i].fadeType)
@@ -64,25 +82,20 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         }
     }
 
-    ///指定時間かけてフェードをかける。その後sceneNameが入っている場合はシーン遷移。
-    private IEnumerator FadeAllTimeElapsed(Texture2D fadeTexture, float fadeTime, SceneName sceneName)
+    private IEnumerator FadeOutAllTime(Texture2D fadeTexture, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
         var processing = true;
         fadeImage.SetMaskTexture = fadeTexture;
+        fadeImage.Range = fadeStartPosition;
         while (processing)
         {
             var rate = Time.deltaTime / fadeTime;
             var postProcessPercentage = fadeImage.Range + rate;
             fadeImage.Range = postProcessPercentage;
-            if (postProcessPercentage > 1)
+            if (postProcessPercentage > fadeFinishPosition)
             {
-                fadeImage.Range = 1;
+                fadeImage.Range = fadeFinishPosition;
                 processing = false;
-
-                if (sceneName.ToString() != SceneManager.GetActiveScene().name)
-                {
-                    SceneManager.LoadScene(sceneName.ToString());
-                }
 
                 yield break;
             }
@@ -91,15 +104,27 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
         }
     }
 
-    /// <summary>
-    ///     ポストエフェクト無しのシーン切り替え
-    /// </summary>
-    /// <param name="sceneName"></param>
-    private void NoPostEffectSceneChange(SceneName sceneName)
+    private IEnumerator FadeInAllTime(Texture2D fadeTexture, float fadeTime, float fadeStartPosition, float fadeFinishPosition)
     {
-        SceneManager.LoadScene(sceneName.ToString());
-    }
+        var processing = true;
+        fadeImage.SetMaskTexture = fadeTexture;
+        fadeImage.Range = fadeStartPosition;
+        while (processing)
+        {
+            var rate = Time.deltaTime / fadeTime;
+            var postProcessPercentage = fadeImage.Range - rate;
+            fadeImage.Range = postProcessPercentage;
+            if (postProcessPercentage <= fadeFinishPosition)
+            {
+                fadeImage.Range = fadeFinishPosition;
+                processing = false;
 
+                yield break;
+            }
+
+            yield return null;
+        }
+    }
 
     /// <summary>
     ///     fadeChangeRateまではフェードアウト、それ以降はフェードイン
@@ -146,7 +171,7 @@ public class SceneChange : SingletonMonoBehaviour<SceneChange>
     /// <param name="mode"></param>
     private void SceneLoadFinish(Scene nextScnene, LoadSceneMode mode)
     {
-        fadeImage.Range = 0f;
+        fadeImage = FadeImageCanvas.Instance.gameObject.GetComponent<FadeImage>();
     }
 
     [Serializable]

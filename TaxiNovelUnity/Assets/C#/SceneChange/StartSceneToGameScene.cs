@@ -18,7 +18,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_North_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.JK_North_Scene);
                     return;
                 }
             }
@@ -31,7 +31,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.Element_BeforeThugs_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Element_BeforeThugs_Scene);
                     return;
                 }
             }
@@ -44,7 +44,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.OL_Central_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.OL_Central_Scene);
                     return;
                 }
             }
@@ -64,7 +64,7 @@ public class StartSceneToGameScene : MonoBehaviour
                         {
                             if (choiceData.choiceNumber == 1)
                             {
-                                SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.Thugs_Central_Scene);
+                                SceneChange.Instance.SceneChangeFunction(SceneName.Thugs_Central_Scene);
                                 return;
                             }
                         }
@@ -80,7 +80,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.Clerk_Central_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Clerk_Central_Scene);
                     return;
                 }
             }
@@ -93,7 +93,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.FadeTextureAndSceneChange(SceneChange.FadeType.None, SceneName.JK_North_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Worker_South_Scene);
                     return;
                 }
             }

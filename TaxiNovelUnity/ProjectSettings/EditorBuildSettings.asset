@@ -12,15 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 9cab7d34238602843aea9dd8cd47409a
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 29e9f24585bab0e4dae13dd8fe241c36
-  - enabled: 1
-    path: Assets/Scenes/CarChaseScene.unity
-    guid: 88f815f6eece0c24ea8f285cebdd3322
-  - enabled: 1
     path: Assets/Scenes/JK_Bridge_Scene.unity
     guid: 32408abf8705f974982ed86d6f9e2b37
   - enabled: 1
@@ -36,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Element_Bridge_Scene.unity
     guid: 5497ee4ab217468438361bd00486e581
   - enabled: 1
-    path: Assets/Scenes/Element_East_Scene.unity
+    path: Assets/Scenes/Element_West_Scene.unity
     guid: b84f4e5b62001c647a03715a235631fd
   - enabled: 1
     path: Assets/Scenes/Element_AfterThugs_Scene.unity
@@ -54,12 +45,51 @@ EditorBuildSettings:
     path: Assets/Scenes/Clerk_Central_Scene.unity
     guid: e1a62f62b6e8069478ca16f74da0e27f
   - enabled: 1
+    path: Assets/Scenes/Clerk_Bridge_Scene.unity
+    guid: f4350e22901fe854ca65353b57d40f86
+  - enabled: 1
+    path: Assets/Scenes/Clerk_South_Scene.unity
+    guid: 4c3f73dd1b5baa1469b472fc51e3406a
+  - enabled: 1
     path: Assets/Scenes/Thugs_Central_Scene.unity
     guid: 0ca44b1d3e94fc54b905fad39559e331
   - enabled: 1
     path: Assets/Scenes/Thugs_Bridge_Scene.unity
     guid: 413ed0349e537e34699e137bfc55b20c
   - enabled: 1
+    path: Assets/Scenes/Thugs_West_Scene.unity
+    guid: e41502984c0dd6f4daf6f95997baafc0
+  - enabled: 1
+    path: Assets/Scenes/Worker_South_Scene.unity
+    guid: a864e4395d9c788469b89abacc1bcc52
+  - enabled: 1
+    path: Assets/Scenes/Worker_Bridge_Scene.unity
+    guid: 6833178a7f99b224cb9391c98272a722
+  - enabled: 1
+    path: Assets/Scenes/Worker_Central_Scene.unity
+    guid: afc817428874bdc45aa07dacba4fb346
+  - enabled: 1
     path: Assets/Scenes/Ending_1.unity
     guid: 19e414a292a8d4f4998297993a266c3a
+  - enabled: 1
+    path: Assets/Scenes/Ending_2.unity
+    guid: 5dd47b942963c864fb8300074c355bb0
+  - enabled: 1
+    path: Assets/Scenes/Ending_3.unity
+    guid: 8beb99d1fcb623944a53c265d1d3c685
+  - enabled: 1
+    path: Assets/Scenes/Ending_4.unity
+    guid: 0d3aed66e6f995a41bac5d38f7ea19ff
+  - enabled: 1
+    path: Assets/Scenes/Ending_5.unity
+    guid: bdad4f9bb574259459bb39b5dc08c7dd
+  - enabled: 1
+    path: Assets/Scenes/Ending_6_1.unity
+    guid: 3d4fad33cb7b15947a39a5723b318f2e
+  - enabled: 1
+    path: Assets/Scenes/Ending_6_2.unity
+    guid: 70d2081ebae254740b6aa65dc2691d5b
+  - enabled: 1
+    path: Assets/Scenes/Ending_6_3.unity
+    guid: 8628e5e9ddc37364e84a55f80503c18b
   m_configObjects: {}

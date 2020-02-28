@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Car
   - Signal
   - Laser
   - Enemy
   - Shadow
+  - Police
   layers:
   - Default
   - TransparentFX

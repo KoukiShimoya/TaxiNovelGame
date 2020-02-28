@@ -48,6 +48,12 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 28eac80028a085141a026e3af77f3c80, type: 3}
+  - {fileID: 21300000, guid: a0c14e5b11ae4a246bb6f409c8fbee98, type: 3}
+  - {fileID: 21300000, guid: 6c695757abb859646a7209a22c91a196, type: 3}
+  - {fileID: 21300000, guid: abd860abecae9c2458e56d649f61f2d7, type: 3}
+  - {fileID: 21300000, guid: ecb3657e5fd0d5b4b8cb60f5fc218e21, type: 3}
+  - {fileID: 21300000, guid: 8662e18099ecc124baa1e8f4d6b7c2cb, type: 3}
+  - {fileID: 21300000, guid: f1d2a90512cd47847929b98171937b6a, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 

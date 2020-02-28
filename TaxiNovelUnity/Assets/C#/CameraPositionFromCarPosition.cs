@@ -6,7 +6,7 @@ public class CameraPositionFromCarPosition : MonoBehaviour
 {
     [SerializeField] private GameObject car;
     private const int cameraZ = -10;
-    private const int carAboveY = -1;
+    private const int carAboveY = 0;
     
     private void LateUpdate()
     {

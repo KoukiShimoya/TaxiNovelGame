@@ -6,12 +6,13 @@ using ConstValues;
 
 public class GeneralCarOtherCarNear : MonoBehaviour
 {
-    [SerializeField] private GameObject parent;
+    private GameObject parent;
     private GeneralCarStateHolder generalCarStateHolder;
-    [SerializeField] private List<GameObject> enteringCars;
+    private List<GameObject> enteringCars;
 
     private void Start()
     {
+        parent = this.gameObject.transform.parent.gameObject;
         generalCarStateHolder = parent.GetComponent<GeneralCarStateHolder>();
         enteringCars = new List<GameObject>();
     }
@@ -22,7 +23,7 @@ public class GeneralCarOtherCarNear : MonoBehaviour
     /// <param name="collider2D"></param>
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        bool tag = collider2D.gameObject.CompareTag(TagName.Car) || collider2D.gameObject.CompareTag(TagName.Player);
+        bool tag = collider2D.gameObject.CompareTag(TagName.Police) || collider2D.gameObject.CompareTag(TagName.Player);
 
         if (!tag)
         {
@@ -49,7 +50,7 @@ public class GeneralCarOtherCarNear : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D collider2D)
     {
-        bool tag = collider2D.gameObject.CompareTag(TagName.Car) || collider2D.gameObject.CompareTag(TagName.Player);
+        bool tag = collider2D.gameObject.CompareTag(TagName.Police) || collider2D.gameObject.CompareTag(TagName.Player);
 
         if (!tag)
         {
