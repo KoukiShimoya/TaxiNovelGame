@@ -8,28 +8,27 @@ public class PanelSizeChangeByte : MonoBehaviour
 {
     [SerializeField] private Text backPanelText;
     private int preByteCount = 0;
-    private const string encodingType = "Shift_JIS";
     private RectTransform rectTransform;
     [SerializeField] private int oneWordSize;
     [SerializeField] private int defaultSize;
     
     private void Start()
     {
-        preByteCount = Encoding.GetEncoding(encodingType).GetByteCount(backPanelText.text);
+        preByteCount = CheckByte();
         rectTransform = this.gameObject.GetComponent<RectTransform>();
         SizeChange(preByteCount);
     }
     
     private void Update()
     {
-        int byteCount = Encoding.GetEncoding(encodingType).GetByteCount(backPanelText.text);
+        int nowByte = CheckByte();
 
-        if (byteCount != preByteCount)
+        if (nowByte != preByteCount)
         {
-            SizeChange(byteCount);
+            SizeChange(nowByte);
         }
         
-        preByteCount = Encoding.GetEncoding(encodingType).GetByteCount(backPanelText.text);
+        preByteCount = nowByte;
     }
 
     private void SizeChange(int byteCount)
@@ -40,5 +39,21 @@ public class PanelSizeChangeByte : MonoBehaviour
             width = 0;
         }
         rectTransform.sizeDelta = new Vector2(width, rectTransform.sizeDelta.y);
+    }
+
+    private int CheckByte()
+    {
+        if (NowActiveLanguage.GetSetLanguageCode == NowActiveLanguage.LanguageCode.JP)
+        {
+           return backPanelText.text.Length * 2;
+        }
+        else if (NowActiveLanguage.GetSetLanguageCode == NowActiveLanguage.LanguageCode.EN)
+        {
+            return backPanelText.text.Length;
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
