@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 159.32207, y: -49.659184}
+  scrollPos: {x: -6.467373, y: -73.34338}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1863,9 +1863,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1586997532}
+  - {fileID: 1586997498}
   selectedCommands:
-  - {fileID: 1586997497}
+  - {fileID: 1586997562}
   variables: []
   description: 
   stepPause: 0
@@ -3386,7 +3386,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: "\u304A\u9810\u304B\u308A\u3057\u307E\u3059\u306D"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 654984328}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1

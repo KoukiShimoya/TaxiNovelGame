@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -916,8 +916,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 940326944}
-  selectedCommands:
-  - {fileID: 940326947}
+  selectedCommands: []
   variables:
   - {fileID: 940326964}
   description: 
@@ -1884,6 +1883,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328281440608689725, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.078431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328281440608689725, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.078431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328281440608689725, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.078431375
       objectReference: {fileID: 0}
     - target: {fileID: 4502598846235014792, guid: 35b0e67d0d706464d844985d8263b59c,
         type: 3}

@@ -455,6 +455,8 @@ GameObject:
   - component: {fileID: 293042626}
   - component: {fileID: 293042625}
   - component: {fileID: 293042624}
+  - component: {fileID: 293042639}
+  - component: {fileID: 293042638}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -514,8 +516,10 @@ MonoBehaviour:
   - {fileID: 293042605}
   - {fileID: 293042602}
   - {fileID: 293042603}
+  - {fileID: 293042639}
   - {fileID: 293042601}
   - {fileID: 293042599}
+  - {fileID: 293042638}
   - {fileID: 293042600}
   - {fileID: 293042598}
   - {fileID: 293042597}
@@ -578,7 +582,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 293042584}
   selectedCommands:
-  - {fileID: 293042615}
+  - {fileID: 293042600}
   variables:
   - {fileID: 293042613}
   description: 
@@ -942,7 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 20
-  indentLevel: 0
+  indentLevel: 1
   storyText: "\u7537\u6027\u5E97\u54E1\u3001"
   description: 
   character: {fileID: 543007179}
@@ -996,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 18
-  indentLevel: 0
+  indentLevel: 1
   storyText: "OL\u3001"
   description: 
   character: {fileID: 1431691367}
@@ -1219,8 +1223,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\u3088\u304B\u3063\u305F\uFF01\u76EE\u304C\u899A\u3081\u305F\u3093\u3060\u306D\uFF01"
   description: 
-  character: {fileID: 1431691367}
-  portrait: {fileID: 21300000, guid: ecb3657e5fd0d5b4b8cb60f5fc218e21, type: 3}
+  character: {fileID: 1965393714}
+  portrait: {fileID: 21300000, guid: 99ad7ea0bb8f87d49a9a93edd1d321ce, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1746,6 +1750,37 @@ MonoBehaviour:
   indentLevel: 0
   commenterName: 
   commentText: Data Reset
+--- !u!114 &293042638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 73
+  indentLevel: 0
+--- !u!114 &293042639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569eb7ce76a96034492a8306e9165877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 72
+  indentLevel: 0
+  choiceData:
+    key: 2
+    choiceNumber: 0
 --- !u!1001 &487583839
 PrefabInstance:
   m_ObjectHideFlags: 0

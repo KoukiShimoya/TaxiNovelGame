@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Clerk_Bridge_Scene.unity
     guid: f4350e22901fe854ca65353b57d40f86
   - enabled: 1
+    path: Assets/Scenes/Clerk_South_Scene.unity
+    guid: 4c3f73dd1b5baa1469b472fc51e3406a
+  - enabled: 1
     path: Assets/Scenes/Thugs_Central_Scene.unity
     guid: 0ca44b1d3e94fc54b905fad39559e331
   - enabled: 1

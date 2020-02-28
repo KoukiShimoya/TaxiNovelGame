@@ -555,6 +555,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f984cd3a30e6c9542987c3a7aea0f485, type: 3}
+--- !u!114 &210597962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1242604358794197147, guid: f984cd3a30e6c9542987c3a7aea0f485,
+    type: 3}
+  m_PrefabInstance: {fileID: 210597961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8371d2b2fe14a9ca0a9465140027de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &365851174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1094,7 +1106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 144.36644, y: -119.106804}
+  scrollPos: {x: 160.82214, y: -58.3473}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1106,9 +1118,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 668743375}
+  - {fileID: 668743400}
   selectedCommands:
-  - {fileID: 668743374}
+  - {fileID: 668743383}
   variables: []
   description: 
   stepPause: 0
@@ -2053,7 +2065,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 210597962}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2078,7 +2090,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 210597962}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2309,7 +2321,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 210597962}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2334,7 +2346,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 210597962}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2797,7 +2809,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 210597962}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2822,7 +2834,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 210597962}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0

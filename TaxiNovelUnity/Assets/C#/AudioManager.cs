@@ -19,6 +19,48 @@ public class AudioManager : MonoBehaviour
         List<QuestData> questDataList = QuestDataHolder.Instance.questDataList;
         foreach (var questData in questDataList)
         {
+            if (SceneManager.GetActiveScene().name == SceneName.Ending_1.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_2.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_3.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_4.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_5.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_6_1.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_6_2.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            else if (SceneManager.GetActiveScene().name == SceneName.Ending_6_3.ToString())
+            {
+                audioSources[1].Play();
+                break;
+            }
+            
+            
             if (questData.key == QuestKey.JK)
             {
                 if (questData.progress == 1)

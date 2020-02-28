@@ -912,7 +912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u3067\u3082\u3001\u3082\u3046\u8A00\u8449\u306A\u3093\u304B\u3058\u3083\u4F1D\u308F\u3089\u306A\u3044\u3093\u3067\u3059\u3088\u3001\u3042\u306E\u4EBA\u305F\u3061\u306B\u306F"
+  storyText: "\u3067\u3082\u3001\u3082\u3046\u8A00\u8449\u306A\u3093\u304B\u3058\u3083\u4F1D\u308F\u3089\u306A\u3044\u3093\u3067\u3059\u3088\u3001\u3042\u306E\u4EBA\u305F\u3061\u306B\u306F\u3002"
   description: 
   character: {fileID: 201220172}
   portrait: {fileID: 21300000, guid: 9e0cfe127a0d03a4b801ae11577b36b3, type: 3}
@@ -1222,7 +1222,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 945068126}
   selectedCommands:
-  - {fileID: 945068129}
+  - {fileID: 945068164}
   variables: []
   description: 
   stepPause: 0
@@ -1989,9 +1989,9 @@ MonoBehaviour:
   itemId: 20
   indentLevel: 0
   fadeType: 1
-  fadeTime: 0.6
+  fadeTime: 1
   fadeStartPosition: 0
-  fadeFinishPosition: 0.45
+  fadeFinishPosition: 0.4
 --- !u!114 &945068165
 MonoBehaviour:
   m_ObjectHideFlags: 0

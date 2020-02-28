@@ -785,6 +785,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f984cd3a30e6c9542987c3a7aea0f485, type: 3}
+--- !u!114 &1424809786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1242604358794197147, guid: f984cd3a30e6c9542987c3a7aea0f485,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424809785}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8371d2b2fe14a9ca0a9465140027de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1480607527
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -12.403815, y: -65.79889}
+  scrollPos: {x: 78.38563, y: 47.35897}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -983,7 +995,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1480607589}
   selectedCommands:
-  - {fileID: 1480607616}
+  - {fileID: 1480607544}
   variables: []
   description: 
   stepPause: 0
@@ -1301,7 +1313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 1
-  storyText: "\u3053\u308C\u3001\u524D\u306E\u304A\u5BA2\u3055\u3093\u304B\u3089\u306E\u30D7\u30EC\u30BC\u30F3\u30C8\u3067\u3059"
+  storyText: "\u3053\u308C\u3001\u524D\u306E\u304A\u5BA2\u3055\u3093\u304B\u3089\u306E\u30D7\u30EC\u30BC\u30F3\u30C8\u3067\u3059\u3002"
   description: 
   character: {fileID: 1662441799}
   portrait: {fileID: 0}
@@ -2702,7 +2714,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1424809786}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2727,7 +2739,7 @@ MonoBehaviour:
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 1424809786}
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -3288,7 +3300,7 @@ MonoBehaviour:
   nextScene: 11
 --- !u!114 &1480607617
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3306,7 +3318,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1480607618
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3324,7 +3336,7 @@ MonoBehaviour:
   fadeFinishPosition: 1
 --- !u!114 &1480607619
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3342,7 +3354,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1480607620
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

@@ -1387,6 +1387,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3301724167557050727, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 3714359671366462114, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1462,15 +1467,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: NecessaryInGameScene
       objectReference: {fileID: 0}
+    - target: {fileID: 4171835216977351317, guid: 2f1c5412b8d66e04ea901a818f68db96,
+        type: 3}
+      propertyPath: m_Text
+      value: "\u56F3\u66F8\u9928\u306B\u5411\u304B\u304A\u3046"
+      objectReference: {fileID: 0}
     - target: {fileID: 7428926613240696677, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7428926613240696677, guid: 2f1c5412b8d66e04ea901a818f68db96,
         type: 3}
       propertyPath: cutoutRange
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1c5412b8d66e04ea901a818f68db96, type: 3}
@@ -2839,7 +2849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 49
   indentLevel: 1
-  nextScene: 15
+  nextScene: 12
 --- !u!114 &1603527316
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2899,7 +2909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 1
-  nextScene: 12
+  nextScene: 15
 --- !u!114 &1603527320
 MonoBehaviour:
   m_ObjectHideFlags: 2
