@@ -15,9 +15,6 @@ namespace Fungus
     [ExecuteInEditMode]
     public class AudioVolumeChangeFungus : Command
     {
-        [Tooltip("Audio Manager")] [SerializeField]
-        protected AudioManager audioManager;
-
         [Tooltip("Target Volume")] [SerializeField]
         protected float targetVolume;
 
@@ -25,12 +22,13 @@ namespace Fungus
         protected float speed;
         public override void OnEnter()
         {
-            StartCoroutine(AudioLerpCoroutine());
-
+            AudioManager audioManager = AudioManager.Instance;
+            StartCoroutine(AudioLerpCoroutine(audioManager));
+            
             Continue();
         }
 
-        private IEnumerator AudioLerpCoroutine()
+        private IEnumerator AudioLerpCoroutine(AudioManager audioManager)
         {
             while (true)
             {

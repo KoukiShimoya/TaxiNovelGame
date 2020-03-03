@@ -1710,18 +1710,6 @@ Transform:
   m_Father: {fileID: 275499403}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &680870743 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1283920398224147232, guid: 2f1c5412b8d66e04ea901a818f68db96,
-    type: 3}
-  m_PrefabInstance: {fileID: 235756574}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a86d7379562708f4e8de84561f87a3c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &694174838
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,6 +5038,9 @@ GameObject:
   - component: {fileID: 1992435617}
   - component: {fileID: 1992435620}
   - component: {fileID: 1992435554}
+  - component: {fileID: 1992435570}
+  - component: {fileID: 1992435621}
+  - component: {fileID: 1992435571}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -5198,7 +5189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -268.32156, y: -28.693338}
+  scrollPos: {x: -186.82156, y: 9.62093}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -6998,6 +6989,7 @@ MonoBehaviour:
   - {fileID: 1992435546}
   - {fileID: 1992435545}
   - {fileID: 1992435544}
+  - {fileID: 1992435571}
   - {fileID: 1992435543}
 --- !u!114 &1992435501
 MonoBehaviour:
@@ -7045,6 +7037,7 @@ MonoBehaviour:
   - {fileID: 1992435562}
   - {fileID: 1992435561}
   - {fileID: 1992435560}
+  - {fileID: 1992435621}
   - {fileID: 1992435559}
 --- !u!114 &1992435502
 MonoBehaviour:
@@ -7194,6 +7187,7 @@ MonoBehaviour:
   - {fileID: 1992435510}
   - {fileID: 1992435534}
   - {fileID: 1992435533}
+  - {fileID: 1992435570}
   - {fileID: 1992435532}
 --- !u!114 &1992435510
 MonoBehaviour:
@@ -8504,6 +8498,38 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1992435570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992435412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0761351024a1c6e458f0571a36b305a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 226
+  indentLevel: 0
+  targetVolume: 1
+  speed: 1
+--- !u!114 &1992435571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992435412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0761351024a1c6e458f0571a36b305a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 228
+  indentLevel: 0
+  targetVolume: 1
+  speed: 1
 --- !u!114 &1992435572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9212,7 +9238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 215
   indentLevel: 0
-  audioManager: {fileID: 680870743}
   targetVolume: 0.1
   speed: 0.005
 --- !u!114 &1992435613
@@ -9229,7 +9254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 217
   indentLevel: 0
-  audioManager: {fileID: 680870743}
   targetVolume: 0.1
   speed: 0.005
 --- !u!114 &1992435614
@@ -9246,7 +9270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 216
   indentLevel: 0
-  audioManager: {fileID: 680870743}
   targetVolume: 0.1
   speed: 0.005
 --- !u!114 &1992435615
@@ -9375,6 +9398,22 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1992435621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992435412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0761351024a1c6e458f0571a36b305a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 227
+  indentLevel: 0
+  targetVolume: 1
+  speed: 1
 --- !u!1 &2002796303
 GameObject:
   m_ObjectHideFlags: 0

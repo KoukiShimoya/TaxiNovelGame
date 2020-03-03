@@ -40,6 +40,8 @@ public static class ResolutionStateHolder
                     break;
 
                 case ResolutionState.FullScreen_Windowed:
+                    //見えてはいけない所が見えるので、実装しない
+                    
                     UniWinApi uniWin = new UniWinApi();
                     var window = UniWinApi.FindWindow();
                     uniWin.SetWindow(window);
@@ -80,6 +82,6 @@ public static class ResolutionStateHolder
 
     public static void Initialize()
     {
-        ResolutionStateChange(ResolutionState.FullScreen_Windowed);
+        ResolutionStateChange(ResolutionState.FullScreen);
     }
 }
