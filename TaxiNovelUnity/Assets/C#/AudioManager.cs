@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : SingletonMonoBehaviour<AudioManager>
 {
-    [SerializeField] private AudioSource[] audioSources = new AudioSource[8];
+    [SerializeField] private AudioSource[] audioSources = new AudioSource[9];
 
     public AudioSource[] GetAudioSource
     {
@@ -54,8 +54,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
         )
         {
             StopAllAudioSources();
-            audioSources[0].Play();
-            audioSources[1].Play();
+            audioSources[8].Play();
         }
         else if (loadedScene.name == SceneName.Ending_6_3.ToString())
         {

@@ -222,6 +222,9 @@ GameObject:
   - component: {fileID: 519693934}
   - component: {fileID: 519693933}
   - component: {fileID: 519693947}
+  - component: {fileID: 519693950}
+  - component: {fileID: 519693949}
+  - component: {fileID: 519693948}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -482,6 +485,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 519693908}
   commandList:
+  - {fileID: 519693950}
+  - {fileID: 519693949}
+  - {fileID: 519693948}
   - {fileID: 519693907}
   - {fileID: 519693947}
   - {fileID: 519693905}
@@ -551,8 +557,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 519693909}
+  selectedCommands:
+  - {fileID: 519693950}
   variables:
   - {fileID: 519693924}
   description: 
@@ -1287,6 +1295,58 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: ac97513f0111e4d409bb2cf66fef49d3, type: 3}
   volume: 0.7
   waitUntilFinished: 1
+--- !u!114 &519693948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519693897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 77
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &519693949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519693897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0761351024a1c6e458f0571a36b305a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  targetVolume: 1
+  speed: 0.0009
+--- !u!114 &519693950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519693897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554832ac72dcd364bba6ddc1b9853f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
+  fadeType: 0
+  fadeTime: 1.2
+  fadeStartPosition: 1
+  fadeFinishPosition: 0
 --- !u!1001 &1838309916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1303,6 +1363,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NecessaryInEndingScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666632749803176894, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666632749803176894, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: cutoutRange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942830248472244326, guid: 35b0e67d0d706464d844985d8263b59c,
         type: 3}

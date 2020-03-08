@@ -167,6 +167,9 @@ GameObject:
   - component: {fileID: 110278236}
   - component: {fileID: 110278235}
   - component: {fileID: 110278234}
+  - component: {fileID: 110278250}
+  - component: {fileID: 110278249}
+  - component: {fileID: 110278248}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -199,6 +202,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 110278224}
   commandList:
+  - {fileID: 110278250}
+  - {fileID: 110278249}
+  - {fileID: 110278248}
   - {fileID: 110278223}
   - {fileID: 110278222}
   - {fileID: 110278220}
@@ -260,7 +266,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 110278209}
   selectedCommands:
-  - {fileID: 110278227}
+  - {fileID: 110278250}
   variables:
   - {fileID: 110278225}
   description: 
@@ -1051,6 +1057,58 @@ MonoBehaviour:
   indentLevel: 0
   commenterName: 
   commentText: Data Reset
+--- !u!114 &110278248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110278208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &110278249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110278208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0761351024a1c6e458f0571a36b305a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
+  targetVolume: 1
+  speed: 0.0009
+--- !u!114 &110278250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110278208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554832ac72dcd364bba6ddc1b9853f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  fadeType: 1
+  fadeTime: 1.2
+  fadeStartPosition: 1
+  fadeFinishPosition: 0
 --- !u!1001 &274760838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1383,6 +1441,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NecessaryInEndingScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666632749803176894, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666632749803176894, guid: 35b0e67d0d706464d844985d8263b59c,
+        type: 3}
+      propertyPath: cutoutRange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942830248472244326, guid: 35b0e67d0d706464d844985d8263b59c,
         type: 3}
