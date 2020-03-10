@@ -458,6 +458,8 @@ GameObject:
   - component: {fileID: 293042639}
   - component: {fileID: 293042638}
   - component: {fileID: 293042640}
+  - component: {fileID: 293042642}
+  - component: {fileID: 293042641}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -541,6 +543,8 @@ MonoBehaviour:
   - {fileID: 293042618}
   - {fileID: 293042617}
   - {fileID: 293042616}
+  - {fileID: 293042642}
+  - {fileID: 293042641}
   - {fileID: 293042615}
   - {fileID: 293042637}
   - {fileID: 293042636}
@@ -584,7 +588,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 293042584}
   selectedCommands:
-  - {fileID: 293042640}
+  - {fileID: 293042641}
   variables:
   - {fileID: 293042613}
   description: 
@@ -1799,6 +1803,36 @@ MonoBehaviour:
   indentLevel: 0
   targetVolume: 1
   speed: 0.0009
+--- !u!114 &293042641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf93c58f94ab90549b90414ceced472d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  statsType: 3
+--- !u!114 &293042642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf93c58f94ab90549b90414ceced472d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
+  statsType: 1
 --- !u!1001 &487583839
 PrefabInstance:
   m_ObjectHideFlags: 0

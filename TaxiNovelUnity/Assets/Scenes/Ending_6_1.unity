@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -442,6 +442,8 @@ GameObject:
   - component: {fileID: 293042611}
   - component: {fileID: 293042610}
   - component: {fileID: 293042624}
+  - component: {fileID: 293042626}
+  - component: {fileID: 293042625}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -509,6 +511,8 @@ MonoBehaviour:
   - {fileID: 293042605}
   - {fileID: 293042604}
   - {fileID: 293042603}
+  - {fileID: 293042626}
+  - {fileID: 293042625}
   - {fileID: 293042602}
   - {fileID: 293042623}
   - {fileID: 293042622}
@@ -552,7 +556,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 293042584}
   selectedCommands:
-  - {fileID: 293042624}
+  - {fileID: 293042625}
   variables:
   - {fileID: 293042609}
   description: 
@@ -1381,6 +1385,36 @@ MonoBehaviour:
   indentLevel: 0
   targetVolume: 1
   speed: 0.0009
+--- !u!114 &293042625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf93c58f94ab90549b90414ceced472d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  statsType: 3
+--- !u!114 &293042626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf93c58f94ab90549b90414ceced472d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 73
+  indentLevel: 0
+  statsType: 1
 --- !u!1001 &487583839
 PrefabInstance:
   m_ObjectHideFlags: 0
