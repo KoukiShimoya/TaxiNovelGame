@@ -14,6 +14,19 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         if(SteamManager.Initialized) {
             string name = SteamFriends.GetPersonaName();
             EditorDebug.Log(SteamUtils.GetAppID());
+            
+            //SteamUserStats.ResetAllStats(true);
+            //SteamUserStats.RequestCurrentStats();
+            bool end1Achieved = false;
+            bool end6Achieved = false;
+            bool end6_3Achieved = false;
+            bool anyendAchieved = false;
+            SteamUserStats.GetAchievement(END1_Stats, out end1Achieved);
+            SteamUserStats.GetAchievement(END6_Stats, out end6Achieved);
+            SteamUserStats.GetAchievement(END6_3_Stats, out end6_3Achieved);
+            SteamUserStats.GetAchievement(AnyEnd_Stats, out anyendAchieved);
+            EditorDebug.Log("End1 : " + end1Achieved + ", End6 : " + end6Achieved + ", End6_3 : " + end6_3Achieved +
+                            ", AnyEnd :" + anyendAchieved);
         }
     }
 
@@ -23,6 +36,7 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         SteamUserStats.GetAchievement(END1_Stats, out isAchieved);
         if (!isAchieved)
         {
+            EditorDebug.Log("End1実績を解放");
             SteamUserStats.SetAchievement(END1_Stats);
         }
     }
@@ -33,6 +47,7 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         SteamUserStats.GetAchievement(END6_Stats, out isAchieved);
         if (!isAchieved)
         {
+            EditorDebug.Log("End6実績を解放");
             SteamUserStats.SetAchievement(END6_Stats);
         }
     }
@@ -43,6 +58,7 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         SteamUserStats.GetAchievement(END6_3_Stats, out isAchieved);
         if (!isAchieved)
         {
+            EditorDebug.Log("End6_3実績を解放");
             SteamUserStats.SetAchievement(END6_3_Stats);
         }
     }
@@ -53,6 +69,7 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         SteamUserStats.GetAchievement(AnyEnd_Stats, out isAchieved);
         if (!isAchieved)
         {
+            EditorDebug.Log("AnyEnd実績を解放");
             SteamUserStats.SetAchievement(AnyEnd_Stats);
         }
     }
