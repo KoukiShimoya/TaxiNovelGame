@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -785,6 +785,8 @@ GameObject:
   - component: {fileID: 940326967}
   - component: {fileID: 940326966}
   - component: {fileID: 940326980}
+  - component: {fileID: 940326981}
+  - component: {fileID: 940326982}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -859,6 +861,8 @@ MonoBehaviour:
   eventHandler: {fileID: 940326943}
   commandList:
   - {fileID: 940326980}
+  - {fileID: 940326982}
+  - {fileID: 940326981}
   - {fileID: 940326942}
   - {fileID: 940326956}
   - {fileID: 940326957}
@@ -919,7 +923,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 940326944}
   selectedCommands:
-  - {fileID: 940326980}
+  - {fileID: 940326981}
   variables:
   - {fileID: 940326964}
   description: 
@@ -1658,6 +1662,42 @@ MonoBehaviour:
   indentLevel: 0
   targetVolume: 1
   speed: 1
+--- !u!114 &940326981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940326941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.8
+  durationOLD: 0
+--- !u!114 &940326982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940326941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554832ac72dcd364bba6ddc1b9853f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
+  fadeType: 1
+  fadeTime: 0.8
+  fadeStartPosition: 1
+  fadeFinishPosition: 0
 --- !u!1 &1236160117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8795993401499161121, guid: 35b0e67d0d706464d844985d8263b59c,
