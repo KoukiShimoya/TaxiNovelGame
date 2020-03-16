@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u30B2\u30FC\u30E0\u3092\u7D42\u4E86"
+  JA: "\u30B2\u30FC\u30E0\u3092\u7D42\u4E86"
   EN: Quit Game
 --- !u!114 &12081410
 MonoBehaviour:
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u64CD\u4F5C\u65B9\u6CD5"
+  JA: "\u64CD\u4F5C\u65B9\u6CD5"
   EN: How to Play
 --- !u!114 &82601093
 MonoBehaviour:
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: ":  \u4F1A\u8A71\u3092\u9032\u3081\u308B"
+  JA: ":  \u4F1A\u8A71\u3092\u9032\u3081\u308B"
   EN: ':  Continue Conversation'
 --- !u!114 &429383592
 MonoBehaviour:
@@ -1808,7 +1808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: ":  \u524D\u306B\u9032\u3080"
+  JA: ":  \u524D\u306B\u9032\u3080"
   EN: ':  Go Straight'
 --- !u!114 &656724031
 MonoBehaviour:
@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: ":  \u53F3\u306B\u66F2\u304C\u308B"
+  JA: ":  \u53F3\u306B\u66F2\u304C\u308B"
   EN: ':  Turn Right'
 --- !u!114 &708807590
 MonoBehaviour:
@@ -2366,7 +2366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u8A00\u8A9E\u5207\u308A\u66FF\u3048\uFF08\u30C6\u30B9\u30C8\uFF09"
+  JA: "\u8A00\u8A9E\u5207\u308A\u66FF\u3048\uFF08\u30C6\u30B9\u30C8\uFF09"
   EN: Language Change (Test)
 --- !u!114 &739510086
 MonoBehaviour:
@@ -2412,10 +2412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 1
-  _languageCode:
-    stringRef: {fileID: 0}
-    stringVal: EN
-  languageCodeOLD: 
+  languageCode: 1
 --- !u!114 &739510089
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2552,10 +2549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 1
-  _languageCode:
-    stringRef: {fileID: 0}
-    stringVal: JP
-  languageCodeOLD: 
+  languageCode: 0
 --- !u!114 &739510094
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2656,7 +2650,7 @@ MonoBehaviour:
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: Toggle_JP
+  blockName: Toggle_JA
   description: 
   eventHandler: {fileID: 739510095}
   commandList:
@@ -2676,7 +2670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: JP
+  key: JA
   value: 0
 --- !u!114 &739510098
 MonoBehaviour:
@@ -2691,19 +2685,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -118.361855, y: 31.446438}
+  scrollPos: {x: -74.85721, y: 10.24478}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8800001
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 739510092}
+  selectedCommands:
+  - {fileID: 739510088}
   variables:
   - {fileID: 739510097}
   - {fileID: 739510090}
@@ -9053,7 +9049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u8A2D\u5B9A\u753B\u9762\u3092\u958B\u304F"
+  JA: "\u8A2D\u5B9A\u753B\u9762\u3092\u958B\u304F"
   EN: Open Setting
 --- !u!1 &1341954995
 GameObject:
@@ -9178,7 +9174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u5DE6\u30AF\u30EA\u30C3\u30AF"
+  JA: "\u5DE6\u30AF\u30EA\u30C3\u30AF"
   EN: Left Click
 --- !u!114 &1395878483
 MonoBehaviour:
@@ -9574,7 +9570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u30DC\u30BF\u30F3\u3092\u62BC\u3057\u3066\u30B9\u30BF\u30FC\u30C8"
+  JA: "\u30DC\u30BF\u30F3\u3092\u62BC\u3057\u3066\u30B9\u30BF\u30FC\u30C8"
   EN: Press Start
 --- !u!1 &1469057482
 GameObject:
@@ -9703,7 +9699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u30D5\u30EB\u30B9\u30AF\u30EA\u30FC\u30F3"
+  JA: "\u30D5\u30EB\u30B9\u30AF\u30EA\u30FC\u30F3"
   EN: Full Screen
 --- !u!114 &1529847072
 MonoBehaviour:
@@ -9795,7 +9791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: ":  \u5DE6\u306B\u66F2\u304C\u308B"
+  JA: ":  \u5DE6\u306B\u66F2\u304C\u308B"
   EN: ':  Turn Left'
 --- !u!114 &1579907757
 MonoBehaviour:
@@ -10204,7 +10200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u89E3\u50CF\u5EA6\u5909\u66F4"
+  JA: "\u89E3\u50CF\u5EA6\u5909\u66F4"
   EN: Change Display Resolution
 --- !u!114 &1624114202
 MonoBehaviour:
@@ -10935,7 +10931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: ":  \u5F8C\u308D\u306B\u9032\u3080"
+  JA: ":  \u5F8C\u308D\u306B\u9032\u3080"
   EN: ':  Go Back'
 --- !u!114 &1914607875
 MonoBehaviour:
@@ -11494,7 +11490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u8A2D\u5B9A"
+  JA: "\u8A2D\u5B9A"
   EN: Setting
 --- !u!114 &2988191607816330487
 MonoBehaviour:
@@ -12708,7 +12704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u30AF\u30EC\u30B8\u30C3\u30C8"
+  JA: "\u30AF\u30EC\u30B8\u30C3\u30C8"
   EN: Credit
 --- !u!114 &7224277925066706025
 MonoBehaviour:
@@ -12722,7 +12718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JP: "\u64CD\u4F5C\u8AAC\u660E"
+  JA: "\u64CD\u4F5C\u8AAC\u660E"
   EN: HowToUse
 --- !u!222 &8423786237979853675
 CanvasRenderer:

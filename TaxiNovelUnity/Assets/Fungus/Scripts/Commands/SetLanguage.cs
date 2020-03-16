@@ -17,7 +17,7 @@ namespace Fungus
     public class SetLanguage : Command
     {
         [Tooltip("Code of the language to set. e.g. ES, DE, JA")]
-        [SerializeField] protected StringData _languageCode = new StringData(); 
+        [SerializeField] protected NowActiveLanguage.LanguageCode languageCode; 
 
         #region Public members
 
@@ -28,11 +28,11 @@ namespace Fungus
             Localization localization = GameObject.FindObjectOfType<Localization>();
             if (localization != null)
             {
-                localization.SetActiveLanguage(_languageCode.Value, true);
+                localization.SetActiveLanguage(languageCode.ToString(), true);
 
                 // Cache the most recently set language code so we can continue to 
                 // use the same language in subsequent scenes.
-                mostRecentLanguage = _languageCode.Value;
+                mostRecentLanguage = languageCode.ToString();
             }
 
             Continue();
@@ -40,32 +40,12 @@ namespace Fungus
 
         public override string GetSummary()
         {
-            return _languageCode.Value;
+            return languageCode.ToString();
         }
 
         public override Color GetButtonColor()
         {
             return new Color32(184, 210, 235, 255);
-        }
-
-        public override bool HasReference(Variable variable)
-        {
-            return _languageCode.stringRef == variable || base.HasReference(variable);
-        }
-
-        #endregion
-
-        #region Backwards compatibility
-
-        [HideInInspector] [FormerlySerializedAs("languageCode")] public string languageCodeOLD = "";
-
-        protected virtual void OnEnable()
-        {
-            if (languageCodeOLD != "")
-            {
-                _languageCode.Value = languageCodeOLD;
-                languageCodeOLD = "";
-            }
         }
 
         #endregion

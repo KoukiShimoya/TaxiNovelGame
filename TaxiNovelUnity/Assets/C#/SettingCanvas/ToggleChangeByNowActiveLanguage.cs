@@ -29,7 +29,7 @@ public class ToggleChangeByNowActiveLanguage : MonoBehaviour
     {
         switch (NowActiveLanguage.GetSetLanguageCode)
         {
-            case NowActiveLanguage.LanguageCode.JP:
+            case NowActiveLanguage.LanguageCode.JA:
                 toggleList[0].isOn = true;
                 break;
             case NowActiveLanguage.LanguageCode.EN:

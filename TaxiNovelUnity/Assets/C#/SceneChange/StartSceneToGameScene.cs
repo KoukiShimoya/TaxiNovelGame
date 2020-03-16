@@ -18,7 +18,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.SceneChangeFunction(SceneName.JK_North_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Clerk_Bridge_Scene);
                     return;
                 }
             }

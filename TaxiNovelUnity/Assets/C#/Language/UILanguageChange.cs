@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UILanguageChange : MonoBehaviour
 {
-    [SerializeField] private string JP;
+    [SerializeField] private string JA;
     [SerializeField] private string EN;
     private Text text;
 
@@ -21,8 +21,8 @@ public class UILanguageChange : MonoBehaviour
     {
         switch (NowActiveLanguage.GetSetLanguageCode)
         {
-            case NowActiveLanguage.LanguageCode.JP:
-                text.text = JP;
+            case NowActiveLanguage.LanguageCode.JA:
+                text.text = JA;
                 break;
             case NowActiveLanguage.LanguageCode.EN:
                 text.text = EN;
@@ -33,9 +33,9 @@ public class UILanguageChange : MonoBehaviour
         }
     }
 
-    public void ChangeText(string JP, string EN)
+    public void ChangeText(string JA, string EN)
     {
-        this.JP = JP;
+        this.JA = JA;
         this.EN = EN;
         ChangeLanguage();
     }
