@@ -1,0 +1,15 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.チンピラ,,おいおい、マジかよ！,Wow! Really?
+SAY.Flowchart_1.3.チンピラ,,あんた、えらくノリいいじゃねえか！,You're so cool!
+SAY.Flowchart_1.2.チンピラ,,ますます気に入ったぜ！,I like you more and more!
+SAY.Flowchart_1.8.運転手,,ありがとうございます！,Thank you!
+SAY.Flowchart_1.7.チンピラ,,じゃ、さっそくいくか！相棒！！,"Let's go now! Hey, buddy!"
+SAY.Flowchart_1.6.ナレーション,,こうして、タクシー運転手からチンピラの道へと進むことになった…。,This led me from the taxi driver to the hooligan ...
+SAY.Flowchart_1.5.ナレーション,,ちょっとした選択で人生は変わる。,A little choice changes life.
+SAY.Flowchart_1.4.ナレーション,,まさかこんなことになるとは思いもよらなかった。,I never thought this would happen.
+SAY.Flowchart_1.10.ナレーション,,それでも、彼、いや相棒と一緒なら、きっとなんとかなるだろう。,"But with him, or my partner, I'm sure I can manage."
+SAY.Flowchart_1.9.ナレーション,,エンジンがブゥーンと低く唸る音がした。,There was a low hum of the engine.
+SAY.Flowchart_1.11.ナレーション,,Happy End…?,Happy End ..?
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.チンピラ,,チンピラ,Hooligan

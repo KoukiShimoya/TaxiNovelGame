@@ -18,7 +18,7 @@ public class StartSceneToGameScene : MonoBehaviour
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {
-                    SceneChange.Instance.SceneChangeFunction(SceneName.Clerk_Bridge_Scene);
+                    SceneChange.Instance.SceneChangeFunction(SceneName.Element_BeforeThugs_Scene);
                     return;
                 }
             }

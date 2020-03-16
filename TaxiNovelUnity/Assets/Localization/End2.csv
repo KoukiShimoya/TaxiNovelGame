@@ -1,0 +1,18 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.警察官,,おまえ…通報された奴に格好が似ているな！,You look like the guy who called ...!
+SAY.Flowchart_1.4.ナレーション,,男は、タクシーの外に引きずり出された。,Worker was dragged out of the taxi.
+SAY.Flowchart_1.3.ナレーション,,一瞬だけこちらを見るその顔と、ミラー越しに目があった。,"He looked at me for a moment, and his eyes crossed over the mirror."
+SAY.Flowchart_1.2.警察官,,信山さん、こいつ爆弾持ってます！！,"Mr.Sinzan, this guy has a bomb!!"
+SAY.Flowchart_1.5.警察官,,17時25分、現行犯で逮捕する！,"17:25, caught in the act!"
+SAY.Flowchart_1.6.ナレーション,,…,...
+SAY.Flowchart_1.8.ナレーション,,……,......
+SAY.Flowchart_1.7.ナレーション,,…‥…,........
+SAY.Flowchart_1.14.ナレーション,,結局、サラリーマンの彼は爆発物所持の罪で起訴されたらしい。,"In the end, the office worker was indicted for possession of explosives."
+SAY.Flowchart_1.13.ナレーション,,「このタクシーの中で話したことは、決して口外しない」…,"""Never tell someone what we talked about in this taxi"" ..."
+SAY.Flowchart_1.12.ナレーション,,この約束を、自ら破ってしまった。,I broke this promise myself.
+SAY.Flowchart_1.11.ナレーション,,逮捕される直前、こちらを向いた彼の恨みとも諦めとも、悲しみとも取れない表情が脳裏にこびりついて離れない。,"Just before he was arrested, he looked at me with resentment, resignation, and sadness."
+SAY.Flowchart_1.10.ナレーション,,どこで選択を間違えたのだろう。,Where did I make the wrong choice?
+SAY.Flowchart_1.9.ナレーション,,彼をどうにか救う方法があったんじゃないか。,There must have been a way to save him somehow.
+SAY.Flowchart_1.15.ナレーション,,自責の念にかられ、運転手の職を引退することにした…,"Feeling guilty, I decided to retire as a driver ..."
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.警察官,,警察官,Police
