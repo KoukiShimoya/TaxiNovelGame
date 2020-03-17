@@ -1,0 +1,61 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.4.ナレーション,,突然、スーツ姿の男が車のそばに立っているのが見えた。,Suddenly I saw a man in a suit standing by the car.
+SAY.Flowchart_1.5.運転手,,お客さんですか？ご乗車になりますか？,Are you a customer? Would you like a ride?
+SAY.Flowchart_1.6.サラリーマン,,ああ…こんにちは！まさか今日会えるなんて！,Oh ... hello! Fancy meeting you today!
+SAY.Flowchart_1.8.サラリーマン,,こちら、お悩みを聞いてくださるタクシーさんですね！？,This is the taxi that listens to my worries!?
+SAY.Flowchart_1.7.サラリーマン,,ふふ…,Hee hee ...
+SAY.Flowchart_1.10.サラリーマン,,ぜひ、わたしの話を聞いてくださいな！,Please listen to my tale!
+SAY.Flowchart_1.9.サラリーマン,,わたしね…,"I'm, ..."
+SAY.Flowchart_1.12.サラリーマン,,これから全てを壊しに行くんですよ！！！,I'm going to destroy everything!!!
+SAY.Flowchart_1.11.運転手,,！？,!?
+SAY.Flowchart_1.16.サラリーマン,,わたしはね、ただのサラリーマンなんですよ。,I'm just an office worker.
+SAY.Flowchart_1.15.サラリーマン,,毎日毎日、同じ仕事をするだけの、ね？,"Just do the same job every day, right?"
+SAY.Flowchart_1.14.サラリーマン,,それなのに、上司はいつもいつも難癖をつけて責めるんですよ。,"Even so, my boss always finds fault with me."
+SAY.Flowchart_1.13.サラリーマン,,手際が悪いだの、愛想がないだの、同じことを聞くなだの…,"""You are clumsy"", ""You are unfriendly"", ""You don't ask the same thing"" ..."
+SAY.Flowchart_1.21.サラリーマン,,挙句に舐めたツラしてんじゃねえって殴られましたよ、ふふふ。,"At last, I was punched, saying that ""Don't make light of me""."
+SAY.Flowchart_1.20.サラリーマン,,ああもちろん、職場のすべてが憎いというわけではないんですけどね。,"Oh, of course, I don't hate everything in the office."
+SAY.Flowchart_1.19.サラリーマン,,ただ…みんなみんな、おかしいんですよ。あそこは。,But ... everyone is crazy. What about there?
+SAY.Flowchart_1.18.サラリーマン,,死んだ目をして笑顔を浮かべて、必死に働いて。それでも報われない。,Work hard with dead eyes and smiles. But our efforts are ineffectual .
+SAY.Flowchart_1.17.サラリーマン,,知ってますか？中央エリアの真ん中にあるタワーの1階。,Do you know? The first floor of the tower in the middle of the central area.
+SAY.Flowchart_1.24.サラリーマン,,街の管理機関とは別に、あそこだけ普通の会社が入っているんですよ。,"Apart from the city management organization, there are only ordinary companies there."
+SAY.Flowchart_1.23.サラリーマン,,そう、普通の、なんてことのない、悪夢のようなブラック企業が！！！,"Yes, a normal, unremarkable, nightmarish exploitative enterprise!!!"
+SAY.Flowchart_1.22.サラリーマン,,…,...
+SAY.Flowchart_1.26.サラリーマン,,わたしが…すべて終わらせる。,I will finish all ....
+SAY.Flowchart_1.25.サラリーマン,,あなたはどう思いますか？運転手さん？,What do you think? Driver?
+MENU.Flowchart_1.27,,だからと言って壊すのは…,But breaking your office is  ...
+MENU.Flowchart_1.28,,会社の人を巻き込んでしまう,Get someone involved in the company
+SAY.Flowchart_1.30.サラリーマン,,では、皆が苦しんでいても、ただ生きることが正義だと？,"So even if everyone is suffering, just living is justice?"
+SAY.Flowchart_1.34.サラリーマン,,わたしには、そうは思えない。,I don't think so.
+SAY.Flowchart_1.31.サラリーマン,,わたしたちの苦しみは…わたしたちにしかわからない。,Our suffering is ... only known to us.
+SAY.Flowchart_1.33.サラリーマン,,わたしがすべて終わらせる。,I'll finish everything.
+SAY.Flowchart_1.32.ナレーション,,男はそれきり黙ってしまった。,The man kept silent.
+SAY.Flowchart_1.37.ナレーション,,男の瞳は爛々と輝いている。,The man's eyes are shining brightly.
+SAY.Flowchart_1.41.ナレーション,,……道に警察がいるのが見えた。,...... I saw the police on the street.
+SAY.Flowchart_1.42.ナレーション,,どうやら、検問をしているようだ。,It looks like they're censorshipping.
+SAY.Flowchart_1.44.警察官,,すみません、この辺りに爆弾を持った男がいるという通報を受けましてね。,"Excuse me, I got a report that there is a man with a bomb around here."
+SAY.Flowchart_1.48.警察官,,何かご存知のことはありませんか？,Do you know anything about it?
+SAY.Flowchart_1.47.警察官,,変なことがあったとか、怪しい人を見たとか。,"Something strange happened, or you saw a suspicious person."
+MENU.Flowchart_1.49,,タクシーに怪しい人が乗っています,There is a suspicious person in the taxi.
+MENU.Flowchart_1.50,,特に何も見ていないです,I haven't seen anything in particular.
+SAY.Flowchart_1.53.警察官,,なんだって…！？大丈夫ですか！,What ...!? Are you all right!
+SAY.Flowchart_1.56.警察官,,おい、平田、ちょっと手を貸してくれ！,"Hey, Mr.Hirata police, give me a hand!"
+SAY.Flowchart_1.55.サラリーマン,,ああ……,"Oh, ......"
+SAY.Flowchart_1.60.サラリーマン,,このタクシーは、客のことは秘密厳守なんでしょう…？,"This taxi keeps its customers confidential, doesn't it ...?"
+SAY.Flowchart_1.59.サラリーマン,,…ふふ。何を言っても無駄か…。,... haha. It is useless to say anything …
+SAY.Flowchart_1.58.サラリーマン,,あなたのことは、一生覚えていますよ。,I'll remember you forever.
+SAY.Flowchart_1.64.警察官,,そうですか。ご協力ありがとうございます！,I see. Thank you for your cooperation!
+SAY.Flowchart_1.66.警察官,,何かありましたら、連絡をお願いします。,"If there is anything, please contact me."
+SAY.Flowchart_1.65.サラリーマン,,…,...
+SAY.Flowchart_1.69.サラリーマン,,「このタクシーの中で話したことは、決して口外しない」,"""Never tell someone what we talked about in this taxi"""
+SAY.Flowchart_1.68.サラリーマン,,あなたは、約束を守る人なんですね。,"You keep your promise, don't you?"
+SAY.Flowchart_1.67.サラリーマン,,わたしが、ここで爆弾を爆発させるかもしれないとは思わなかったんですか？,Didn't you think I might explode a bomb here?
+MENU.Flowchart_1.70,,わからないけど、約束は守るものだと思ったので,"I don't know, but I thought I have to kept the promise."
+MENU.Flowchart_1.71,,そんなこと、考えもしませんでした,I never thought about that.
+SAY.Flowchart_1.73.サラリーマン,,あなたは…。,You are …
+SAY.Flowchart_1.76.サラリーマン,,…セントラルタワーに向かってください。,Go to Central Tower …
+SAY.Flowchart_1.75.サラリーマン,,話はそれからだ。,I can talk after that.
+SAY.Flowchart_1.74.サラリーマン,,…,...
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.警察官,,警察官,Police
+CHARACTER.サラリーマン,,サラリーマン,Office Worker

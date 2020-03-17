@@ -1,0 +1,37 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.サラリーマン,,運転手さん、わたしはね。,"Well, driver."
+SAY.Flowchart_1.9.サラリーマン,,わたしたちを苦しめたあいつらに、その苦しみを伝えたいんですよ。,I want to tell them the pain we suffered.
+SAY.Flowchart_1.8.サラリーマン,,でも、もう言葉なんかじゃ伝わらないんですよ、あの人たちには。,But words don't make sense to them anymore.
+SAY.Flowchart_1.7.サラリーマン,,だからといって、罪を感じさせるのも楽じゃない。,"However, it is not easy to make people feel guilty."
+SAY.Flowchart_1.6.サラリーマン,,それにわたしはもう…疲れてしまったんですよ。,And I'm already ... tired.
+SAY.Flowchart_1.5.サラリーマン,,悩んで悩んで、これを全部解決する方法を思いついた。,"Worried and worried, thought of a way to solve all this."
+SAY.Flowchart_1.4.サラリーマン,,あのビルの前で、わたしは死ぬんです。,I'm going to die in front of that building.
+SAY.Flowchart_1.14.サラリーマン,,わたしが死んだとき、自宅に残した遺書を見て警察は動くでしょうね。,"When I die, the police will start the research after seeing the will left at home."
+SAY.Flowchart_1.13.サラリーマン,,そこに全て書いたんですよ、あの人たちがしでかしたことを。,I wrote everything they did.
+SAY.Flowchart_1.12.サラリーマン,,あいつらが…何人殺したかを！！！,How many people did they kill on ...!!!
+SAY.Flowchart_1.11.運転手,,…,...
+SAY.Flowchart_1.10.サラリーマン,,あなたは、ただわたしを送り届けてくれればいいんです。,All you have to do is deliver me.
+SAY.Flowchart_1.17.サラリーマン,,あとはわたしが、この爆弾で全てを終わらせる。,I'll finish everything with this bomb.
+SAY.Flowchart_1.16.サラリーマン,,自分の身をもって、示すんだ…。,Set a personal example myself ...
+SAY.Flowchart_1.15.運転手,,そんなことをしたら、無関係の人まで巻き込んでしまう,"If you do that, you'll get people involved."
+SAY.Flowchart_1.19.サラリーマン,,そうですね…それだけの人数を巻き込まなければ、上層部は何もわかってくれないでしょう。,"Well, ... if I don't get that many people involved, the management won't understand anything."
+SAY.Flowchart_1.18.サラリーマン,,（話が通じない…）,(We are not on the same wavelength ...)
+SAY.Flowchart_1.21.運転手,,そういえば…,"By the way, ..."
+SAY.Flowchart_1.22.運転手,,今日のせた客の中に、タワー付近にいる人たちがいるはずだ。,Some of the customers I picked up today must be around the tower.
+SAY.Flowchart_1.30.運転手,,女子高生は…,The high school girl is ...
+SAY.Flowchart_1.24.運転手,,中央エリアにいるはずだ…巻き込まれる可能性がある！,She is in the central area ... and she might get caught in explosion!
+SAY.Flowchart_1.27.運転手,,図書館にいるはずだ…！巻き込まれる可能性がある！,She is in the library ...! She might get caught in explosion!
+SAY.Flowchart_1.29.運転手,,小学生は…,The elementary school student is ...
+SAY.Flowchart_1.32.運転手,,西エリアの小学校の近くにいるはずだ。危険はないだろう。,She is near the elementary school in the west area. There will be no danger.
+SAY.Flowchart_1.35.運転手,,中央エリアの病院にいるはずだ…！巻き込まれる可能性がある！,She is in the hospital in the central area ...! She might get caught in explosion!
+SAY.Flowchart_1.37.運転手,,OLは…,The business person is ...
+SAY.Flowchart_1.60.運転手,,東エリアの洋菓子店にいるはずだ。おそらく、離れた場所にいるだろう。,She is in the cake shop in the east area. She is probably far away.
+SAY.Flowchart_1.39.運転手,,東エリアの洋菓子店にいるはずだ。おそらく、離れた場所にいるだろう。,She is in the cake shop in the east area. She is probably far away.
+SAY.Flowchart_1.42.運転手,,イベント会場に行くと言っていた…！巻き込まれる可能性がある！,She said she was going to the event ...! She might get caught in explosion!
+SAY.Flowchart_1.45.運転手,,チンピラは…,The hooligan is ...
+SAY.Flowchart_1.46.運転手,,病院に戻ると言っていた…！巻き込まれるかもしれない！,He said he was going back to the hospital ...! He might get caught in explosion!
+SAY.Flowchart_1.51.運転手,,男性店員は…,The clerk is ...
+SAY.Flowchart_1.53.運転手,,イベント会場に向かったはずだ…！巻き込まれる可能性がある！,He should be heading to the event ...! He might get caught in explosion!
+SAY.Flowchart_1.49.運転手,,まだ南エリアのデパートにいるはずだ。危険はないだろう。,He should still be in the department store in the south area. There will be no danger.
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.サラリーマン,,サラリーマン,Office Worker

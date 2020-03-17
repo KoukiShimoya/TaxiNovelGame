@@ -1,0 +1,37 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.62.ナレーション,,「この街には、相談に乗ってくれる放浪のタクシーがある」,"""There is a taxi to give some advice in this town."""
+SAY.Flowchart_1.64.ナレーション,,「悩みは秘密厳守。島同士を繋ぐ長い橋を渡る間だけ、話を聞いてくれるらしい」,"""Confidentiality of customer's worries. It only consult while It crosses the long bridge that connects the islands."""
+SAY.Flowchart_1.63.ナレーション,,「そのタクシーは目が覚めるような黄色をしていて、いつもどこかのエリアをうろうろしている」,"""The taxi has a waking yellow color and is always wandering around some area."""
+SAY.Flowchart_1.65.ナレーション,,人々がそんなことを噂するなか、一台のタクシーがのんびりと走っていく。,"As people talk about it, a taxi runs leisurely."
+MENU.Flowchart_1.1,,今日もいい天気だ,It's nice weather today.
+MENU.Flowchart_1.2,,今日は仕事が多そうな気がする,I feel like I have a lot of work today.
+SAY.Flowchart_1.5.運転手,,肩慣らしに、少し辺りを運転してみよう。,Let's try driving around a bit to break in. 
+SAY.Flowchart_1.8.女子高生,,こんにちは。あの…これって相談に乗ってもらえるタクシーさんであってますか…？,"Hello. Excuse me, ... is this a taxi that I can consult with? ...?"
+MENU.Flowchart_1.9,,そうですよ,That's right.
+MENU.Flowchart_1.10,,お客さんですね、どうぞ,Here you are.
+SAY.Flowchart_1.12.女子高生,,よかった…！ありがとうございます。,Good ...! Thank you.
+SAY.Flowchart_1.13.女子高生,,島同士を繋ぐ大橋を通っている間だけ、相談できるんですよね。,We can consult only while we are passing the bridge connecting the islands.
+SAY.Flowchart_1.14.女子高生,,先に北エリアのなかで寄りたいところがあるので、お願いします。,I'd like to go to a place in the north area first.
+SAY.Flowchart_1.15.女子高生,,本屋に寄ってください。少し本を買いたくて。,Please stop at the bookstore. I want to buy some books.
+SAY.Flowchart_1.18.女子高生,,ありがとうございました。,Thank you very much.
+MENU.Flowchart_1.19,,何の本を買ったんですか,What book did you buy?
+MENU.Flowchart_1.20,,すぐに中央エリアに向かいましょうか,Shall we head to the central area right now?
+SAY.Flowchart_1.25.女子高生,,はい、お願いします。,"Yes, please."
+SAY.Flowchart_1.26.運転手,,それでは向かいますね,Then I will go.
+SAY.Flowchart_1.49.女子高生,,ええ、英語の参考書と小説を。,"Yes, French reference books and novels."
+MENU.Flowchart_1.23,,参考書…真面目なんですね,Reference book ... You are serious.
+MENU.Flowchart_1.24,,小説…どんなお話ですか？,What is the story of the novel ...?
+SAY.Flowchart_1.29.女子高生,,あはは…受験生なもので。,Ha ha ha ... I'm examinee.
+SAY.Flowchart_1.30.運転手,,なるほど、大変そうですね…,I see. That sounds tough ...
+SAY.Flowchart_1.32.女子高生,,ふふ。運転手さんが学生の頃は大変じゃなかったんですか？,Ha ha. Wasn't it hard when you were a student?
+SAY.Flowchart_1.31.運転手,,いつも課題に追われていました,I was always busy with my assignments.
+SAY.Flowchart_1.33.女子高生,,いつの時代も変わらないんですね。,It doesn't change at all times.
+SAY.Flowchart_1.35.女子高生,,夏目漱石の「吾輩は猫である」です。学校の課題で、感想文を書くんです。,"It's ""The Little Prince"" by Antonie de Saint-Exupery. I write a report on my school assignment."
+SAY.Flowchart_1.36.運転手,,なるほど、大変そうですね…,I see. That sounds tough ...
+SAY.Flowchart_1.37.女子高生,,ふふ。運転手さんが学生の頃は大変じゃなかったんですか？,Ha ha. Wasn't it hard when you were a student?
+SAY.Flowchart_1.38.運転手,,今の子たちほどでは…,... Not so much as now.
+SAY.Flowchart_1.39.女子高生,,ええ、本当ですか？ふふっ…,"Oh, really? Hu hu ..."
+SAY.Flowchart_1.51.女子高生,,それじゃあ、中央エリアにお願いします。,"Then, I'd like to go to the central area."
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.女子高生,,女子高生,High School Girl

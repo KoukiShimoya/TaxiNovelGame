@@ -1,0 +1,39 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.運転手,,それで、ご相談とは？,"So, what do you want to talk about?"
+SAY.Flowchart_1.3.女子高生,,…はい。,... Yes.
+SAY.Flowchart_1.2.女子高生,,なんというか、そんなに大した悩みじゃないんです。結構よくある悩みというか。,"Well, it's not such a big problem. It's a pretty common problem, I think."
+SAY.Flowchart_1.4.女子高生,,わたし、いつも真面目だねって言われるんです。それもみんなに。,I'm always told I'm serious. That's for everyone.
+SAY.Flowchart_1.6.女子高生,,確かに、言われたことはちゃんとやろうと思ってるし、大体こなしているつもりです。,"I'm sure I'll do what I'm told, and I think I've done most of it."
+SAY.Flowchart_1.5.女子高生,,でも、本当にそれでいいのかなって。,But is it really all right?
+SAY.Flowchart_1.7.女子高生,,これって、ただ人の言うことに従ってるだけなんじゃないかって思って。,I thought it was just obedience.
+SAY.Flowchart_1.8.運転手,,なるほど…,I see ...
+SAY.Flowchart_1.9.女子高生,,最近、自分のしたいことがなんなのかわからないんです。,I don't know what I want to do recently.
+SAY.Flowchart_1.10.女子高生,,高校生にもなると、自分の進路を考えろって言われる機会がかなりあって。,"When I was a high school student, I have a lot of opportunities to be told to think about my future."
+SAY.Flowchart_1.11.女子高生,,これまでは、ただ先生に従えばよかったはずなのに。,I should have just followed my teacher until now.
+SAY.Flowchart_1.12.女子高生,,…ふふ。こんなのって、本当によくある悩みなんだろうなあ。,... haha. This must be a really common problem.
+SAY.Flowchart_1.13.女子高生,,やっぱり、ちゃんと意思を持った方が良いですよね…？,"After all, it's better to have a will, isn't it ...?"
+MENU.Flowchart_1.16,,言われたことをきちんとやり遂げるのも実力ですよ,It is also strength to do what you are told.
+MENU.Flowchart_1.17,,自分のやりたいことは、本当にないんですか？,Is there really nothing you want to do?
+SAY.Flowchart_1.18.女子高生,,そんな、ありがとうございます。ただやってるだけなんですけどね。,"Oh, thank you. I'm just doing it."
+SAY.Flowchart_1.19.女子高生,,やりたいことがないというよりは、何をやっていいのか検討がつかなくて…,"Rather than having nothing to do, I couldn't figure out what to do ..."
+SAY.Flowchart_1.23.女子高生,,みんな、どうやって自分のやりたいことを見つけてるんだろう…？,How do people find what they want to do ...?
+SAY.Flowchart_1.24.運転手,,悩む人も多いですよね,There are many people worried.
+SAY.Flowchart_1.25.女子高生,,そうなんですかね…。みんなやりたいことが決まってるような気がしてました。,Is that so? I felt that everyone had decided what they wanted to do.
+SAY.Flowchart_1.26.女子高生,,わたしばっかり、なにもできなくて…,I am the only one who can't do anything ...
+MENU.Flowchart_1.27,,とりあえず、何かやってみるのはいかがですか？,How about trying something for now?
+MENU.Flowchart_1.28,,本で見聞を広めるのもいいかもしれないですね,It might be a good idea to expand your knowledge through books.
+SAY.Flowchart_1.34.女子高生,,本ですか…！,A book ...!?
+SAY.Flowchart_1.35.女子高生,,今まで、課題図書くらいしか読んだことないかもしれないです。,I may have read only the assignment books.
+SAY.Flowchart_1.36.女子高生,,何かおもしろいもの、探してみようかな…？,Let's find something interesting books ...?
+SAY.Flowchart_1.37.女子高生,,興味が持てるものがないか、図書館で本でも探してみます！,I will look for something interesting in the library.
+SAY.Flowchart_1.38.女子高生,,図書館まで、行ってもらえますか？,Can you take me to the library?
+SAY.Flowchart_1.39.女子高生,,ふふ、さっき本屋に寄ったばかりだけど…,"Ha ha, I just stopped by the bookstore ..."
+SAY.Flowchart_1.40.女子高生,,こんな日も、きっとありですよね？,"There must be days like this, right?"
+SAY.Flowchart_1.41.女子高生,,なんだか、心が軽くなった気がします。,"Somehow, I feel I'm relieved."
+SAY.Flowchart_1.42.運転手,,それは何よりです,I'm glad to hear that.
+SAY.Flowchart_1.31.女子高生,,確かに、とりあえずやってみないとわからないですよね。,I see. We won't know until we try it.
+SAY.Flowchart_1.32.女子高生,,なんでもいいから、始めてみるのもいいかも…？,"It doesn't matter what it is, maybe I should try it out ...?"
+SAY.Flowchart_1.33.女子高生,,…ちょっとだけ、そういうのも楽しそうに思えてきました。,... I'm starting to think that's kind of fun.
+SAY.Flowchart_1.53.運転手,,それは何よりです,I'm glad to hear that.
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.女子高生,,女子高生,High School Girl

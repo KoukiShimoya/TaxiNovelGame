@@ -1,0 +1,70 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.5.運転手,,…,...
+SAY.Flowchart_1.8.運転手,,中央エリアに到着しました,We've arrived in the central area.
+SAY.Flowchart_1.7.サラリーマン,,運転手さん、あなたにしていただきたいことはただ一つ。,"Driver, there's only one thing you need to do."
+SAY.Flowchart_1.12.サラリーマン,,この爆弾が爆発するまでに、エリアの中心にあるセントラルエリア前の道路に辿り着くことです。,"Before the bomb explodes, you have to reach in front of the central tower in the center of the area."
+SAY.Flowchart_1.11.サラリーマン,,ただ…,But ...
+SAY.Flowchart_1.10.サラリーマン,,どうやら、あちこちで警察車両が警戒をしているようですね。,It seems that police cars are on guard here and there.
+SAY.Flowchart_1.9.サラリーマン,,くれぐれも、警察には見つからないようにお願いしますね。,Please make sure that the police won't find it.
+SAY.Flowchart_1.13.運転手,,このまま中央エリアで爆発させてしまえば、たくさんの人が犠牲になる。,"If the explosion continues in the central area, many people will be sacrificed."
+SAY.Flowchart_1.17.運転手,,何か方法はないだろうか…？,Is there any way ...?
+SAY.Flowchart_1.16.運転手,,…,...
+SAY.Flowchart_1.15.運転手,,…そういえば、病院に向かったときにタワー前の広場をみた。,"... Come to think of it, I saw the square in front of the tower when I went to the hospital."
+SAY.Flowchart_1.14.運転手,,広場には確か、大きな池があったはずだ。,There must have been a big pond in the square.
+SAY.Flowchart_1.20.運転手,,そこに爆弾を投げ込めば、爆弾の威力を抑えられるかもしれない！,"If I throw a bomb there, it might be able to control the power of the bomb!"
+SAY.Flowchart_1.19.運転手,,爆弾が爆発するまで、あと約80秒…,About 80 seconds until the bomb explodes ...
+SAY.Flowchart_1.18.運転手,,急いで、広場に向かおう。,Let's hurry and head for the square.
+SAY.Flowchart_1.21.ナレーション,,警察を避けつつ、制限時間内に爆弾を処理しろ,Get rid of the bomb within the time limit while avoiding the police.
+SAY.Flowchart_1.40.警察官,,すみません。少しお話いいですかね。,Excuse me. Can I ask something with you?
+SAY.Flowchart_1.44.警察官,,この辺りでちょっと…,Just around here ...
+SAY.Flowchart_1.43.警察官,,…ん？お前、まさか！,...? Could it be you are!
+SAY.Flowchart_1.42.警察官,,至急、応援要請頼む！,Please support immediately!
+SAY.Flowchart_1.41.警察官,,運転手さん、ちょっと失礼しますね！,"Excuse me, driver!"
+SAY.Flowchart_1.47.サラリーマン,,ああ…セントラルタワー前ですね。,"Oh, ... in front of the Central Tower."
+SAY.Flowchart_1.49.サラリーマン,,ありがとうございます、運転手さん。,"Thank you, driver."
+SAY.Flowchart_1.48.ナレーション,,サラリーマンは不気味に笑うと、ゆっくりとタクシーから降りて行った。,The office worker laughed creepily and slowly got out of the taxi.
+SAY.Flowchart_1.50.ナレーション,,ゆっくりと爆弾を持った手を掲げるのが見えた、その次の瞬間。,"Slowly I saw the hand holding the bomb, the next moment."
+SAY.Flowchart_1.126.ナレーション,,なんとか、爆発する前に広場に辿りついたようだ。,"Somehow, I managed to get to the square before it exploded."
+SAY.Flowchart_1.127.ナレーション,,運転席から飛び出し、後部座席のドアを勢いよく開ける。,I jumped out of the driver's seat and opened the rear door.
+SAY.Flowchart_1.128.ナレーション,,呆然としているサラリーマンの手から爆弾をそっと掴みとり、急いで池に向かう。,He grabbed the bomb from the hand of a stunned office worker and hurried toward the pond.
+SAY.Flowchart_1.129.ナレーション,,池に投げ込もうとしたそのとき、爆弾に書かれた数字が0になるのが見えた。,"When I was about to throw it into the pond , I saw the number on the bomb go to zero."
+SAY.Flowchart_1.130.ナレーション,,次の瞬間、爆音とともに衝撃が身体に走った。,"The next moment, the sound of the explosion heard and shock waves through my body."
+SAY.Flowchart_1.135.女子高生,,運転手さん！,Driver!
+SAY.Flowchart_1.131.ナレーション,,女子高生の悲鳴が後ろから聞こえた。,I heard the scream of a high school girl from behind.
+SAY.Flowchart_1.132.ナレーション,,間に合わなかったのだ、と理解するまでに時間がかかった。,It took me a long time to realize that I was late.
+SAY.Flowchart_1.133.ナレーション,,せめて、怪我人が少なければいいのだが…。,It would be nice if there were fewer people injured ...
+SAY.Flowchart_1.134.ナレーション,,そんなことを考えながら意識を失った。,I lost consciousness thinking about that.
+SAY.Flowchart_1.145.ナレーション,,なんとか、爆発する前に広場に辿りついたようだ。,"Somehow, I managed to get to the square before it exploded."
+SAY.Flowchart_1.146.ナレーション,,だが、このままだと間に合わない…！,"But at this rate, I won't be able to make it in time ...!"
+SAY.Flowchart_1.148.ナレーション,,そのとき、今日乗せたあのチンピラが何事か叫びながら走ってくるのが見えた。,Then I saw the hooligan I had picked up today come running screaming.
+SAY.Flowchart_1.153.チンピラ,,後部座席の窓を開けろ！！,Open the backseat window!
+SAY.Flowchart_1.151.ナレーション,,そのとき、今日乗せたあの男性店員が何事か叫びながら走ってくるのが見えた。,Then I saw the clerk I picked up today come running screaming.
+SAY.Flowchart_1.156.店員,,後部座席の窓を開けて！！,Open the rear seat window!!
+SAY.Flowchart_1.157.ナレーション,,急いで窓を開け、運転席から飛び出す。,I hurriedly opened the window and jumped out of the driver's seat.
+SAY.Flowchart_1.162.ナレーション,,彼は一足先に、呆然としているサラリーマンの手から爆弾をとり、池に向かって走って行く。,He takes a bomb from the hand of a stunned office worker and runs toward the pond.
+SAY.Flowchart_1.161.ナレーション,,爆発までの残り時間が1秒を切っているのが見える。,I can see that there's less than a second left before the explosion.
+SAY.Flowchart_1.160.ナレーション,,爆弾を池に投げ込み、体を伏せた彼を庇うように覆いかぶさって衝撃を待ち構える。,"He throws a bomb into the pond, covers his body to protect him, and waits for a shock."
+SAY.Flowchart_1.159.ナレーション,,次の瞬間、後ろでくぐもった轟音とともに大きな水しぶきが派手に上がった。,"The next moment, there was a loud splash of water with a thunderous roar behind us."
+SAY.Flowchart_1.158.ナレーション,,なんとか間に合ったようだ…。,Somehow we made it …
+SAY.Flowchart_1.163.ナレーション,,安堵の気持ちからか、体から一気に力が抜け、意識が遠のいていった。,"Perhaps because of a sense of relief, my body suddenly lost strength and consciousness faded away."
+SAY.Flowchart_1.167.ナレーション,,なんとか、爆発する前に広場に辿りついたようだ。,"Somehow, I managed to get to the square before it exploded."
+SAY.Flowchart_1.173.ナレーション,,だが、このままだと間に合わない…！,"But at this rate, I won't be able to make it in time ...!"
+SAY.Flowchart_1.172.ナレーション,,そのとき、今日乗せたあのチンピラが何事か叫びながら走ってくるのが見えた。,Then I saw the hooligan I had picked up today come running screaming.
+SAY.Flowchart_1.225.チンピラ,,後部座席の窓を開けろ！！,Open the backseat window!
+SAY.Flowchart_1.170.ナレーション,,急いで窓を開け、運転席から飛び出す。,I hurriedly opened the window and jumped out of the driver's seat.
+SAY.Flowchart_1.169.ナレーション,,彼は一足先に、呆然としているサラリーマンの手から爆弾をとり、池に向かって走って行く。,He takes a bomb from the hand of a stunned office worker and runs toward the pond.
+SAY.Flowchart_1.168.ナレーション,,その先には、先ほど乗せた男性店員が、金属の箱のようなものを持って待ち構えていた。,"A male clerk, who had just been carrying him, was waiting with something like a metal box."
+SAY.Flowchart_1.177.ナレーション,,スローモーションのように周りの世界がゆっくりと動いているように思えた。,The world seemed to move slowly like slow motion.
+SAY.Flowchart_1.174.ナレーション,,箱が爆弾に被せられ、そのまま池に投げ込まれる。,"The bomb is covered by metal box, and thrown directly into the pond."
+SAY.Flowchart_1.178.ナレーション,,耳をふさぎ、体を伏せた彼らを庇うように覆いかぶさって衝撃を待ち構える。,"We cover our ears, cover themselves to protect them, and wait for a shock."
+SAY.Flowchart_1.176.ナレーション,,次の瞬間、後ろでくぐもった轟音とともに大きな水しぶきが派手に上がった。,The next moment there was a loud splash of water with a thunderous roar behind us.
+SAY.Flowchart_1.175.ナレーション,,なんとか間に合ったようだ…。,Somehow we made it …
+SAY.Flowchart_1.179.ナレーション,,安堵の気持ちからか、体から一気に力が抜け、意識が遠のいていった。,"Perhaps because of a sense of relief, my body suddenly lost strength and consciousness faded away."
+CHARACTER.OL,,OL,Business Person
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.女子高生,,女子高生,High School Girl
+CHARACTER.店員,,店員,Clerk
+CHARACTER.チンピラ,,チンピラ,Hooligan
+CHARACTER.警察官,,警察官,Police
+CHARACTER.サラリーマン,,サラリーマン,Office Worker

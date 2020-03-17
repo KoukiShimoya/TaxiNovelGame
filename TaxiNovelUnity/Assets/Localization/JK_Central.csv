@@ -1,0 +1,10 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.運転手,,それでは、中央エリアに到着になります,"Then, it arrives at the central area."
+SAY.Flowchart_1.2.女子高生,,ありがとうございました。,Thank you very much.
+SAY.Flowchart_1.11.女子高生,,また、何かの機会にお願いします。,I look forward to the next opportunity.
+SAY.Flowchart_1.12.女子高生,,図書館で自習しながら、普段見ない場所を回ろうと思います。,I will study by myself at the library and go around places I don't usually see.
+SAY.Flowchart_1.13.運転手,,図書館まで送りましょう,I'll take you to the library.
+SAY.Flowchart_1.14.女子高生,,本当ですか！ありがとうございます！,Really? Thank you!
+SAY.Flowchart_1.21.女子高生,,ありがとうございました。相談にも乗っていただいて…。わたし、がんばってみます！,Thank you very much. Thanks for your advice ... I will try my best!
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.女子高生,,女子高生,High School Girl

@@ -1,0 +1,12 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.ナレーション,,客がいないか、エリア内を見てまわろう。,Let's look around the area to see if there are any customers.
+SAY.Flowchart_1.2.OL,,おっと…これ、もしかして相談乗ってくれるタクシー？,Oops ... Is this a taxi I can consult?
+SAY.Flowchart_1.8.OL,,まさかこんなところで会えるなんてね！ラッキー！,Fancy meeting you here! Lucky you!
+SAY.Flowchart_1.14.OL,,ちょっと乗せてもらってもいいかな？,Could you give me a ride?
+SAY.Flowchart_1.7.運転手,,もちろんです,Of course.
+SAY.Flowchart_1.6.OL,,ありがとう！,Thank you!
+SAY.Flowchart_1.5.OL,,えーっと、そしたら東エリアに向かってもらえる？会社に寄りたくて。,"Well, can you take me to the east area? I want to stop by the office."
+SAY.Flowchart_1.4.運転手,,承知しました,"Yes, sir."
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.OL,,OL,Business Person
