@@ -6,7 +6,7 @@ SAY.Flowchart_1.65.ナレーション,,人々がそんなことを噂するな�
 MENU.Flowchart_1.1,,今日もいい天気だ,It's nice weather today.
 MENU.Flowchart_1.2,,今日は仕事が多そうな気がする,I feel like I have a lot of work today.
 SAY.Flowchart_1.5.運転手,,肩慣らしに、少し辺りを運転してみよう。,Let's try driving around a bit to break in. 
-SAY.Flowchart_1.8.女子高生,,こんにちは。あの…これって相談に乗ってもらえるタクシーさんであってますか…？,"Hello. Excuse me, ... is this a taxi that I can consult with? ...?"
+SAY.Flowchart_1.8.女子高生,,こんにちは。あの…これって相談に乗ってもらえるタクシーさんであってますか…？,Hello. Excuse me ... Is this a taxi that I can consult with ...?
 MENU.Flowchart_1.9,,そうですよ,That's right.
 MENU.Flowchart_1.10,,お客さんですね、どうぞ,Here you are.
 SAY.Flowchart_1.12.女子高生,,よかった…！ありがとうございます。,Good ...! Thank you.
@@ -30,7 +30,7 @@ SAY.Flowchart_1.35.女子高生,,夏目漱石の「吾輩は猫である」で�
 SAY.Flowchart_1.36.運転手,,なるほど、大変そうですね…,I see. That sounds tough ...
 SAY.Flowchart_1.37.女子高生,,ふふ。運転手さんが学生の頃は大変じゃなかったんですか？,Ha ha. Wasn't it hard when you were a student?
 SAY.Flowchart_1.38.運転手,,今の子たちほどでは…,... Not so much as now.
-SAY.Flowchart_1.39.女子高生,,ええ、本当ですか？ふふっ…,"Oh, really? Hu hu ..."
+SAY.Flowchart_1.39.女子高生,,ええ、本当ですか？ふふっ…,"Oh, really? Ha ha ..."
 SAY.Flowchart_1.51.女子高生,,それじゃあ、中央エリアにお願いします。,"Then, I'd like to go to the central area."
 CHARACTER.運転手,,運転手,Driver
 CHARACTER.ナレーション,,ナレーション,Narration

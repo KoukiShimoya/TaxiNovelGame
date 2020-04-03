@@ -1221,7 +1221,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 945068126}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 945068145}
   variables: []
   description: 
   stepPause: 0
@@ -1576,7 +1577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 1
-  storyText: "\u6771\u30A8\u30EA\u30A2\u306E\u6D0B\u83D3\u5B50\u5E97\u306B\u3044\u308B\u306F\u305A\u3060\u3002\u304A\u305D\u3089\u304F\u3001\u96E2\u308C\u305F\u5834\u6240\u306B\u3044\u308B\u3060\u308D\u3046\u3002"
+  storyText: "\u307E\u3060\u6771\u30A8\u30EA\u30A2\u306B\u3044\u308B\u306F\u305A\u3060\u3002\u304A\u305D\u3089\u304F\u3001\u96E2\u308C\u305F\u5834\u6240\u306B\u3044\u308B\u3060\u308D\u3046\u3002"
   description: 
   character: {fileID: 125486744}
   portrait: {fileID: 0}
@@ -2041,7 +2042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 60
   indentLevel: 1
-  storyText: "\u6771\u30A8\u30EA\u30A2\u306E\u6D0B\u83D3\u5B50\u5E97\u306B\u3044\u308B\u306F\u305A\u3060\u3002\u304A\u305D\u3089\u304F\u3001\u96E2\u308C\u305F\u5834\u6240\u306B\u3044\u308B\u3060\u308D\u3046\u3002"
+  storyText: "\u307E\u3060\u6771\u30A8\u30EA\u30A2\u306B\u3044\u308B\u306F\u305A\u3060\u3002\u304A\u305D\u3089\u304F\u3001\u96E2\u308C\u305F\u5834\u6240\u306B\u3044\u308B\u3060\u308D\u3046\u3002"
   description: 
   character: {fileID: 125486744}
   portrait: {fileID: 0}

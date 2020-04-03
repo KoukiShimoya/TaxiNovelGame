@@ -12719,7 +12719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u64CD\u4F5C\u8AAC\u660E"
-  EN: HowToUse
+  EN: How To Use
 --- !u!222 &8423786237979853675
 CanvasRenderer:
   m_ObjectHideFlags: 0

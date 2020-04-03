@@ -1,12 +1,12 @@
 ﻿Key,Description,JA,EN
 SAY.Flowchart_1.1.小学生,,…,...
 SAY.Flowchart_1.2.運転手,,大丈夫ですか？,Are you all right?
-SAY.Flowchart_1.3.小学生,,突然変なこと言っちゃってごめんなさい…。,Sorry for saying such a strange thing suddenly …
+SAY.Flowchart_1.3.小学生,,突然変なこと言っちゃってごめんなさい…。,Sorry for saying such a strange thing suddenly ...
 SAY.Flowchart_1.4.小学生,,えっと、相談したいことがあるんです。,"Well, I have something to ask you."
 SAY.Flowchart_1.5.運転手,,なんでもお聞きしますよ,I'll ask you anything.
 SAY.Flowchart_1.6.小学生,,ありがとうございます。わたしの家族のことなんですけど…,Thank you. About my family ...
 SAY.Flowchart_1.7.小学生,,みんな、わたしのことが嫌いなんじゃないかって。,I think they don't like me.
-SAY.Flowchart_1.8.小学生,,家族の邪魔なんじゃないかって…,I thought I'm disturbing my family …
+SAY.Flowchart_1.8.小学生,,家族の邪魔なんじゃないかって…,I thought I'm disturbing my family ...
 SAY.Flowchart_1.9.運転手,,どうしてそんなことを？,Why would you think?
 SAY.Flowchart_1.10.小学生,,わたしのおとうさんとおかあさんは、お医者さんなんです。,My father and mother are doctors.
 SAY.Flowchart_1.11.小学生,,家が病院なんですけど、いつも二人とも忙しそうで…,"My house is the hospital, but father and mother are busy all the time ..."
@@ -14,8 +14,8 @@ SAY.Flowchart_1.12.運転手,,お医者さんは忙しいですよね,"Doctors a
 SAY.Flowchart_1.13.小学生,,わかってはいるんです...。二人とも、わたしのために頑張ってくれてるんだって。,I know ... They're both working hard for me.
 SAY.Flowchart_1.14.小学生,,でもときどき、わたしに隠しごとしてるみたいで…。,But sometimes it seems like they're keeping secrets from me ...
 SAY.Flowchart_1.15.小学生,,わたしに聞こえないように、二人でこそこそ話してるんです。,They're whispering so I can't hear them.
-SAY.Flowchart_1.16.運転手,,そうなんですか…,Really …?
-SAY.Flowchart_1.17.小学生,,そんなところを見ると、わたしはこの家にいて欲しくないのかなって思っちゃって…。,"When I see it, I wonder if I don't need in this house …"
+SAY.Flowchart_1.16.運転手,,そうなんですか…,Really ...?
+SAY.Flowchart_1.17.小学生,,そんなところを見ると、わたしはこの家にいて欲しくないのかなって思っちゃって…。,"When I see it, I wonder if I don't need in this house ..."
 SAY.Flowchart_1.18.小学生,,怖くなって、飛び出してきちゃったんです。,I got scared and ran out.
 SAY.Flowchart_1.19.小学生,,わたし、本当に何してるんだろう…,What am I really doing ...
 SAY.Flowchart_1.20.ナレーション,,車内にすすり上げるような声が響く,Hear a sob in the car
@@ -23,14 +23,14 @@ MENU.Flowchart_1.21,,ハンカチを渡す,Give a handkerchief
 MENU.Flowchart_1.22,,黙って話し始めるのを待つ,Wait to start talking in silence
 SAY.Flowchart_1.24.小学生,,ごめんなさい、こんなこと話されても困りますよね。,"I'm sorry, You are troubling aren't you?"
 SAY.Flowchart_1.25.運転手,,いえいえ、大丈夫ですよ,"No, I'm fine."
-SAY.Flowchart_1.26.小学生,,ありがとうございます…運転手さんは、優しいんですね。,Thank you ... You are kind driver.
+SAY.Flowchart_1.26.小学生,,ありがとうございます…運転手さんは、優しいんですね。,Thank you ... You are so kind.
 SAY.Flowchart_1.27.運転手,,ご両親があなたを邪魔に思ってるんじゃないかって心配なんですよね。,You are worried that your parents might be bothering you.
-SAY.Flowchart_1.28.小学生,,…はい。でも...。,... Yes. But …
+SAY.Flowchart_1.28.小学生,,…はい。でも...。,... Yes. But ...
 SAY.Flowchart_1.29.運転手,,お客さん自身は、どうしたいと思うんですか？,What do you want to do?
 SAY.Flowchart_1.30.小学生,,えっと…わたしは…,Um ... I'm ...
 SAY.Flowchart_1.31.小学生,,…,...
 SAY.Flowchart_1.32.小学生,,家族と仲良くしたいです。,I want to get along with my family.
-SAY.Flowchart_1.33.運転手,,ふふ、そうですよね。,"Hee hee, right?"
+SAY.Flowchart_1.33.運転手,,ふふ、そうですよね。,"Ha ha, right?"
 SAY.Flowchart_1.34.運転手,,ご両親は、きっとお客さんのことを大事に思っていますよ。,Your parents must care about you.
 SAY.Flowchart_1.35.小学生,,そうなんでしょうか…？,Is that so ...?
 SAY.Flowchart_1.36.運転手,,自分がどう思っているかを、伝えたことはありますか？,Have you ever told them how you feel?

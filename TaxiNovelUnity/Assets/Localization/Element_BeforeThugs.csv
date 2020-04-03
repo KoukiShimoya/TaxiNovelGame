@@ -2,20 +2,20 @@
 SAY.Flowchart_1.6.ナレーション,,客がいないか、辺りを見てみよう。,Let's check around to see to find any customers.
 SAY.Flowchart_1.13.ナレーション,,少しあたりが騒がしいようだ。,It seems a little noisy around here.
 SAY.Flowchart_1.14.ナレーション,,怪我をしたチンピラが座り込んでいる。,An injured hooligan is sitting down.
-SAY.Flowchart_1.12.チンピラ,,なんだ…お前？見せモンじゃねえぞ。,"What are you, ...? I'm not on exhibition."
+SAY.Flowchart_1.12.チンピラ,,なんだ…お前？見せモンじゃねえぞ。,What are you ...? I'm not on exhibition.
 MENU.Flowchart_1.15,,救急車を呼びましょうか？,Shall I call an ambulance?
 MENU.Flowchart_1.16,,（携帯で119番に電話しようとする）,(try to call 119 on one's cell-phone)
 SAY.Flowchart_1.27.チンピラ,,なんだお前…また来たのか。,"What, you ... come again?"
 SAY.Flowchart_1.28.チンピラ,,見せ物じゃないって言ったろうが。,I told you it wasn't a show.
 SAY.Flowchart_1.19.チンピラ,,おい、やめろ。,"Hey, stop it."
 SAY.Flowchart_1.20.チンピラ,,俺みたいなやつが普通の病院に行けるわけねえだろ。,How can a guy like me go to a regular hospital?
-SAY.Flowchart_1.18.チンピラ,,…っ痛って…,... Ouch . ...
+SAY.Flowchart_1.18.チンピラ,,…っ痛って…,... Ouch ...
 SAY.Flowchart_1.21.ナレーション,,痛々しい怪我をしているようだが、このままでは病院に連れて行けなさそうだ…,"He seems to have a painful injury, but I can't take him to the hospital at this time ..."
 SAY.Flowchart_1.22.ナレーション,,対策を考えてからまた来よう。,I'll come back after I think about the measures.
 SAY.Flowchart_1.32.ナレーション,,小学生くらいの女の子が、タクシーに乗りたそうにしている。,An elementary school girl looks like she wants to take a taxi.
 SAY.Flowchart_1.33.小学生,,えっと…わたしの悩み…聞いてもらえますか？,Umm ... my worries ... can you listen to me?
 SAY.Flowchart_1.34.運転手,,もちろんですよ。どちらに向かいますか？,Of course. Where are you going?
-SAY.Flowchart_1.35.小学生,,あの…,"Um, ..."
+SAY.Flowchart_1.35.小学生,,あの…,Um ...
 SAY.Flowchart_1.36.小学生,,どこか遠くへ…,Somewhere far away ...
 SAY.Flowchart_1.37.小学生,,あ…いえ、すみません。西エリアに向かってください。,"Oh, ... no, sorry. To the west area, please."
 SAY.Flowchart_1.79.運転手,,公園の周りにはお客が多い...。向かってみよう,There are many people around the park. Let's go to …
