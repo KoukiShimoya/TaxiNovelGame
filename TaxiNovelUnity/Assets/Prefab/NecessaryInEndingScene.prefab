@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JA: 
+  JA: "\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B"
   EN: Go to Title
 --- !u!1001 &748224991578042086
 PrefabInstance:
