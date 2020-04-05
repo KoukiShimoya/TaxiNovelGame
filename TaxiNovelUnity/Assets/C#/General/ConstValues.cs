@@ -78,6 +78,7 @@ namespace ConstValues
             public const string PlayTime = "PlayTime";
             public const string ChoiceData = "ChoiceData";
             public const string QuestData = "QuestData";
+            public const string EndingData = "EndingData";
         }
     }
 

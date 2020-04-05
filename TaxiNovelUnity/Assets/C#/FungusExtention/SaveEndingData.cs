@@ -3,13 +3,13 @@
 namespace Fungus
 {
     [CommandInfo("Save", 
-                 "Save Quest Data", 
-                 "クエストのクリア状況を保存する")]
+        "Save Ending Data", 
+        "エンディングのクリア状況を保存する")]
     [AddComponentMenu("")]
-    public class SaveQuestData : Command
+    public class SaveEndingData : Command
     {
         [Tooltip("保存するキー名")]
-        [SerializeField] protected QuestKey questKey;
+        [SerializeField] protected EndingKey endingKey;
         
         [Tooltip("保存する値")]
         [SerializeField] protected int variable;
@@ -22,7 +22,7 @@ namespace Fungus
                 return;
             }
 
-            SaveLoadCsvFile.SaveQuest(new QuestData(questKey, variable));
+            SaveLoadCsvFile.SaveEnding(new EndingData(endingKey, variable));
             
             Continue();
         }
@@ -34,7 +34,7 @@ namespace Fungus
         
         public override string GetSummary()
         {
-            string summary = questKey.ToString();
+            string summary = endingKey.ToString();
 
             summary += " : " + variable;
 

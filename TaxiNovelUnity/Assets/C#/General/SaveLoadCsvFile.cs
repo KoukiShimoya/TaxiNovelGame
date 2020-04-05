@@ -6,6 +6,7 @@ using System.Text;
 using System.IO;
 using System;
 using ConstValues;
+using Fungus;
 
 public static class SaveLoadCsvFile
 {
@@ -85,6 +86,31 @@ public static class SaveLoadCsvFile
         return csvQuestDataList;
     }
 
+    public static List<EndingData> LoadEndingData()
+    {
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.EndingData + General.csv);
+
+        var rowData = LoadCsvData(loadPath);
+
+        var csvEndingDataList = new List<EndingData>();
+
+        foreach (var oneRow in rowData)
+        {
+            if (oneRow == "")
+            {
+                continue;
+            }
+
+            var csvEndingData = oneRow.Split(General.comma);
+            
+            var oneRowEndingData = new EndingData((EndingKey)Enum.Parse(typeof(EndingKey), csvEndingData[0]), int.Parse(csvEndingData[1]));
+            
+            csvEndingDataList.Add(oneRowEndingData);
+        }
+
+        return csvEndingDataList;
+    }
+
     public static int[] LoadTimeData()
     {
         var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime + General.csv);
@@ -94,8 +120,6 @@ public static class SaveLoadCsvFile
     
     public static void SaveTime()
     {
-        var encoding = Encoding.UTF8;
-        
         var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.PlayTime + General.csv);
         
@@ -110,8 +134,6 @@ public static class SaveLoadCsvFile
 
     public static void SaveChoice(ChoiceData choiceData)
     {
-        var encoding = Encoding.UTF8;
-        
         var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.ChoiceData + General.csv);
 
@@ -147,18 +169,19 @@ public static class SaveLoadCsvFile
         
         WriteCsvData(savePath, saveStr);
         
+        //セーブアイコン表示時のコード
+        /*
         if (IsGameSceneCheck.GameSceneCheck.Check())
         {
             SaveIcon.Instance.StartIconCoroutine();
         }
+        */
         
         EditorDebug.Log("選択肢を保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
 
     public static void SaveQuest(QuestData questData)
     {
-        var encoding = Encoding.UTF8;
-        
         var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
             PathData.TextFolder.QuestData + General.csv);
 
@@ -194,61 +217,54 @@ public static class SaveLoadCsvFile
         
         WriteCsvData(savePath, saveStr);
         
+        //セーブアイコン表示時のコード
+        /*
         if (IsGameSceneCheck.GameSceneCheck.Check())
         {
             SaveIcon.Instance.StartIconCoroutine();
         }
+        */
         
         EditorDebug.Log("クエストを保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
     }
-}
 
-[System.Serializable]
-public class ChoiceData
-{
-    public ChoiceKey key;
-    public int choiceNumber;
-
-    public ChoiceData(ChoiceKey key, int choiceNumber)
+    public static void SaveEnding(EndingData endingData)
     {
-        this.key = key;
-        this.choiceNumber = choiceNumber;
+        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.EndingData + General.csv);
+
+        var endingDataHolder = EndingDataHolder.Instance;
+
+        var endingDataHolderEndingDataList = new List<EndingData>(endingDataHolder.endingDataList);
+        
+        var debugLogKey = "";
+        var debugLogValue = "";
+
+        foreach (var endingDataHolderEndingData in endingDataHolderEndingDataList)
+        {
+            if (endingDataHolderEndingData.key == endingData.key)
+            {
+                endingDataHolderEndingData.progress = endingData.progress;
+                debugLogKey = endingData.key.ToString();
+                debugLogValue = endingData.progress.ToString();
+                break;
+            }
+        }
+
+        endingDataHolder.endingDataList = endingDataHolderEndingDataList;
+
+        var saveStr = "";
+
+        foreach (var endingDataHolderEndingData in endingDataHolderEndingDataList)
+        {
+            saveStr += endingDataHolderEndingData.key.ToString() + General.comma + endingDataHolderEndingData.progress;
+            saveStr += General.crlf;
+        }
+
+        saveStr = saveStr.Trim(General.crlf);
+        
+        WriteCsvData(savePath, saveStr);
+
+        EditorDebug.Log("エンディングデータを保存しました・Key：" + debugLogKey + ", Value：" + debugLogValue);
     }
-}
-
-[System.Serializable]
-public class QuestData
-{
-    public QuestKey key;
-    public int progress;
-
-    public QuestData(QuestKey key, int progress)
-    {
-        this.key = key;
-        this.progress = progress;
-    }
-}
-
-[System.Serializable]
-public enum QuestKey
-{
-    None,
-    JK,
-    Elementary,
-    OL,
-    Thugs,
-    Clerk,
-    Worker
-}
-
-[System.Serializable]
-public enum ChoiceKey
-{
-    None,
-    Something_Book,
-    NoMeetThugs_MeetThugs,
-    Letter_Courage,
-    JapaneseSweets_Cake,
-    TastyCandy_SaveCandy,
-    Cute_LowRisk
 }

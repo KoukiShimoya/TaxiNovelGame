@@ -209,6 +209,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!115 &378993157
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: SavEndingData
+  m_Namespace: Fungus
 --- !u!1 &519693897
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,6 +285,9 @@ GameObject:
   - component: {fileID: 519693949}
   - component: {fileID: 519693948}
   - component: {fileID: 519693951}
+  - component: {fileID: 519693952}
+  - component: {fileID: 519693953}
+  - component: {fileID: 519693954}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -565,6 +582,7 @@ MonoBehaviour:
   - {fileID: 519693927}
   - {fileID: 519693951}
   - {fileID: 519693926}
+  - {fileID: 519693954}
   - {fileID: 519693946}
   - {fileID: 519693945}
   - {fileID: 519693944}
@@ -604,9 +622,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 519693909}
   selectedCommands:
-  - {fileID: 519693951}
+  - {fileID: 519693954}
   variables:
   - {fileID: 519693924}
   description: 
@@ -1408,6 +1427,68 @@ MonoBehaviour:
   itemId: 78
   indentLevel: 0
   statsType: 3
+--- !u!114 &519693952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519693897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 565615924}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  endingKey: 2
+  variable: 1
+--- !u!114 &519693953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519693897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 378993157}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  endingKey: 2
+  variable: 1
+--- !u!114 &519693954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519693897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1042fc487beadd4ba5dde5e5574fff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  endingKey: 2
+  variable: 1
+--- !u!115 &565615924
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: SavEndingData
+  m_Namespace: Fungus
 --- !u!1001 &1838309916
 PrefabInstance:
   m_ObjectHideFlags: 0

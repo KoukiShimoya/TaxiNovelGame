@@ -120,6 +120,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!115 &117814517
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: SavEndingData
+  m_Namespace: Fungus
 --- !u!1001 &148108999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,6 +803,9 @@ GameObject:
   - component: {fileID: 940326982}
   - component: {fileID: 940326984}
   - component: {fileID: 940326983}
+  - component: {fileID: 940326985}
+  - component: {fileID: 940326986}
+  - component: {fileID: 940326987}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -885,6 +902,7 @@ MonoBehaviour:
   - {fileID: 940326984}
   - {fileID: 940326983}
   - {fileID: 940326947}
+  - {fileID: 940326987}
   - {fileID: 940326979}
   - {fileID: 940326978}
   - {fileID: 940326977}
@@ -924,9 +942,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 940326944}
   selectedCommands:
-  - {fileID: 940326983}
+  - {fileID: 940326987}
   variables:
   - {fileID: 940326964}
   description: 
@@ -1731,6 +1750,54 @@ MonoBehaviour:
   itemId: 76
   indentLevel: 0
   statsType: 0
+--- !u!114 &940326985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940326941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301852197}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 78
+  indentLevel: 0
+  endingKey: 0
+  variable: 1
+--- !u!114 &940326986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940326941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 117814517}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 78
+  indentLevel: 0
+  endingKey: 0
+  variable: 1
+--- !u!114 &940326987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940326941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1042fc487beadd4ba5dde5e5574fff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 78
+  indentLevel: 0
+  endingKey: 0
+  variable: 1
 --- !u!1 &1064760327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,6 +1849,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7059509750880921885}
   m_PrefabAsset: {fileID: 0}
+--- !u!115 &1301852197
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: SavEndingData
+  m_Namespace: Fungus
 --- !u!1001 &1804461413
 PrefabInstance:
   m_ObjectHideFlags: 0

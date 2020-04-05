@@ -2,8 +2,8 @@
 
 namespace Fungus
 {
-    [CommandInfo("Scripting", 
-        "Save Steam Stats", 
+    [CommandInfo("Steam", 
+        "Save Steam Stats Fungus", 
         "Steamの実績を解除する")]
     [AddComponentMenu("")]
     public class SaveSteamStatsFungus : Command
@@ -37,7 +37,7 @@ namespace Fungus
 
         public override Color GetButtonColor()
         {
-            return new Color32(235, 191, 217, 255);
+            return new Color32(190,140, 245, 255);
         }
         
         public override string GetSummary()
