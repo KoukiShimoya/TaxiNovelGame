@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 namespace Fungus
 {
@@ -28,6 +29,25 @@ namespace Fungus
                 case StatsType.AnyEnd:
                     saveSteamStats.Save_AnyEnd();
                     break;
+                case StatsType.AllEnd:
+                    List<EndingData> endingDataList = EndingDataHolder.Instance.endingDataList;
+                    bool isAllEndingCompleted = true;
+                    
+                    foreach (var endingData in endingDataList)
+                    {
+                        if (endingData.progress == -1)
+                        {
+                            isAllEndingCompleted = false;
+                            break;
+                        }
+                    }
+
+                    if (isAllEndingCompleted)
+                    {
+                        saveSteamStats.Save_AllEnd();
+                    }
+
+                    break;
                 default:
                     break;
             }
@@ -52,7 +72,8 @@ namespace Fungus
             End1,
             End6,
             End6_3,
-            AnyEnd
+            AnyEnd,
+            AllEnd
         }
     }
 }

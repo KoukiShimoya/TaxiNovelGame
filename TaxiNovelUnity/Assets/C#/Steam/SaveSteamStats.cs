@@ -9,9 +9,12 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
     private const string END6_Stats = "END6_Stats";
     private const string END6_3_Stats = "End6-3_Stats";
     private const string AnyEnd_Stats = "AnyEnd_Stats";
+    private const string AllEnd_Stats = "AllEnd_Stats";
     
     private void Start() {
-        if(SteamManager.Initialized) {
+        
+        if (SteamManager.Initialized) 
+        {
             string name = SteamFriends.GetPersonaName();
             EditorDebug.Log(SteamUtils.GetAppID());
             
@@ -21,13 +24,16 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
             bool end6Achieved = false;
             bool end6_3Achieved = false;
             bool anyendAchieved = false;
+            bool allEndAchieved = false;
             SteamUserStats.GetAchievement(END1_Stats, out end1Achieved);
             SteamUserStats.GetAchievement(END6_Stats, out end6Achieved);
             SteamUserStats.GetAchievement(END6_3_Stats, out end6_3Achieved);
             SteamUserStats.GetAchievement(AnyEnd_Stats, out anyendAchieved);
+            SteamUserStats.GetAchievement(AllEnd_Stats, out allEndAchieved);
             EditorDebug.Log("End1 : " + end1Achieved + ", End6 : " + end6Achieved + ", End6_3 : " + end6_3Achieved +
-                            ", AnyEnd :" + anyendAchieved);
+                            ", AnyEnd :" + anyendAchieved + ", AllEnd : " + allEndAchieved);
         }
+        
     }
 
     public void Save_End1()
@@ -71,6 +77,17 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         {
             EditorDebug.Log("AnyEnd実績を解放");
             SteamUserStats.SetAchievement(AnyEnd_Stats);
+        }
+    }
+
+    public void Save_AllEnd()
+    {
+        bool isAchieved = false;
+        SteamUserStats.GetAchievement(AllEnd_Stats, out isAchieved);
+        if (!isAchieved)
+        {
+            EditorDebug.Log("AllEnd実績を解放");
+            SteamUserStats.SetAchievement(AllEnd_Stats);
         }
     }
 }

@@ -1224,9 +1224,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 668743334}
+  - {fileID: 668743371}
   selectedCommands:
-  - {fileID: 668743358}
+  - {fileID: 668743364}
   variables: []
   description: 
   stepPause: 0
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  JP: "\u4E2D\u592E\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u304A\u3046"
+  JP: "\u4E2D\u592E\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
   EN: Go to Bridge in which connected to Central Area
 --- !u!114 &668743365
 MonoBehaviour:

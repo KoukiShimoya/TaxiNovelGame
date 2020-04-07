@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "W\u30AD\u30FC\u3067\u524D\u9032"
-  EN: Press W key to advance
+  EN: Press W Key to move forward
 --- !u!114 &195397442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u30DE\u30A6\u30B9\u3092\u52D5\u304B\u3057\u9078\u629E\u80A2\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B"
-  EN: Move mouse and Click choice
+  EN: Move mouse and Click the choice
 --- !u!114 &437528535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,8 +1558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2af473a743860d47a237537a1fe3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JA: "\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u9032\u3080"
-  EN: Press left click to move forward
+  JA: "\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u4F1A\u8A71\u3092\u9032\u3081\u308B"
+  EN: Left Click to Continue Conversation
 --- !u!114 &745772779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,7 +1591,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u9032\u3080"
+  m_Text: "\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u4F1A\u8A71\u3092\u9032\u3081\u308B"
 --- !u!222 &745772780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2430,21 +2430,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 169.66135, y: 14.357099}
+  scrollPos: {x: -48.14823, y: 75.38314}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7600002
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1095961501}
+  selectedBlocks: []
   selectedCommands:
-  - {fileID: 1095961499}
+  - {fileID: 1095961539}
   variables:
   - {fileID: 1095961549}
   - {fileID: 1095961562}
@@ -2542,7 +2541,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.39554
     y: 149.80658
-    width: 120
+    width: 120.58823
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2573,7 +2572,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.72327
     y: 69.20429
-    width: 140.78944
+    width: 154.70587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2629,7 +2628,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.02896
     y: 150.79556
-    width: 120
+    width: 127.64705
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3188,7 +3187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.9178
     y: 143.88005
-    width: 127.63155
+    width: 140.58823
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3335,7 +3334,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 570.5565
     y: 55.723785
-    width: 120
+    width: 125.294106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3526,7 +3525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  JP: "\u672C\u5C4B\u3078\u5411\u304B\u304A\u3046"
+  JP: "\u672C\u5C4B\u3078\u5411\u304B\u3046"
   EN: Go to BookStore
 --- !u!114 &1095961540
 MonoBehaviour:
@@ -4072,7 +4071,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 589.5047
     y: 415.99564
-    width: 122.3684
+    width: 131.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4121,7 +4120,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -140.16956
     y: 149.591
-    width: 122.3684
+    width: 137.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4539,7 +4538,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -143.17691
     y: 70.38773
-    width: 120
+    width: 126.47057
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5341,7 +5340,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -128.6886
     y: 482.96942
-    width: 143.42102
+    width: 155.88232
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5353,7 +5352,7 @@ MonoBehaviour:
   - {fileID: 1095961618}
 --- !u!114 &1095961611
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5402,7 +5401,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -299.0531
     y: 439.7868
-    width: 121.05261
+    width: 127.64705
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5414,7 +5413,7 @@ MonoBehaviour:
   - {fileID: 1095961614}
 --- !u!114 &1095961614
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5464,7 +5463,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -131.11331
     y: 404.09265
-    width: 132.89471
+    width: 145.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5541,7 +5540,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1095961618
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5605,7 +5604,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1095961619
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5622,7 +5621,7 @@ MonoBehaviour:
   gameObject: {fileID: 1307334846}
 --- !u!114 &1095961620
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5639,7 +5638,7 @@ MonoBehaviour:
   gameObject: {fileID: 321639629}
 --- !u!114 &1095961621
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5656,7 +5655,7 @@ MonoBehaviour:
   gameObject: {fileID: 321639629}
 --- !u!114 &1095961622
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5673,7 +5672,7 @@ MonoBehaviour:
   gameObject: {fileID: 278314538}
 --- !u!114 &1095961623
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5690,7 +5689,7 @@ MonoBehaviour:
   gameObject: {fileID: 278314538}
 --- !u!114 &1095961624
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5800,7 +5799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "D\u30AD\u30FC\u3067\u53F3\u6298"
-  EN: Press D key to turn right
+  EN: Press D Key to turn right
 --- !u!114 &1250458979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6399,7 +6398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "A\u30AD\u30FC\u3067\u5DE6\u6298"
-  EN: Press A key to turn left
+  EN: Press A Key to turn left
 --- !u!114 &1636076511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6560,12 +6559,12 @@ PrefabInstance:
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_Tiles.Array.data[6225].second.m_TileSpriteIndex
-      value: 114
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_Tiles.Array.data[6232].second.m_TileSpriteIndex
-      value: 113
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
@@ -6581,24 +6580,24 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[113].m_Data
       value: 
-      objectReference: {fileID: -7575653657314917657, guid: 84bd7c8baed984246b4e64ed5c0c8589,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[114].m_Data
       value: 
-      objectReference: {fileID: 4716099167143379846, guid: 84bd7c8baed984246b4e64ed5c0c8589,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[116].m_Data
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -7575653657314917657, guid: 84bd7c8baed984246b4e64ed5c0c8589,
+        type: 3}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[117].m_Data
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4716099167143379846, guid: 84bd7c8baed984246b4e64ed5c0c8589,
+        type: 3}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[123].m_Data
@@ -6727,22 +6726,22 @@ PrefabInstance:
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[113].m_RefCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[114].m_RefCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[116].m_RefCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[117].m_RefCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6056214162576458559, guid: 30be85f85b1eccd47a044e960fe6ac4c,
         type: 3}

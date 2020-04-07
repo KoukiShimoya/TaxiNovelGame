@@ -292,9 +292,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 309922746}
   selectedCommands:
-  - {fileID: 309922760}
+  - {fileID: 309922750}
   variables: []
   description: 
   stepPause: 0
@@ -349,7 +350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  JP: "\u6771\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u304A\u3046"
+  JP: "\u6771\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
   EN: Go to Bridge in which connected to East Area
 --- !u!114 &309922751
 MonoBehaviour:

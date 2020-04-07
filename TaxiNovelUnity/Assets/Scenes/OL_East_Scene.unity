@@ -979,21 +979,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 67.7069, y: -34.82258}
+  scrollPos: {x: 38.728153, y: -0.6523726}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1603527265}
-  selectedCommands:
-  - {fileID: 1603527274}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1158,7 +1156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 1
-  JP: "\u30B1\u30FC\u30AD\u5C4B\u304B\u548C\u83D3\u5B50\u5C4B\u3078\u9023\u308C\u3066\u884C\u3053\u3046"
+  JP: "\u30B1\u30FC\u30AD\u5C4B\u304B\u548C\u83D3\u5B50\u5C4B\u3078\u9023\u308C\u3066\u884C\u304F"
   EN: Go to Cake Shop or Japanese Sweets Shop
 --- !u!114 &1603527275
 MonoBehaviour:
@@ -1736,7 +1734,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.956041
     y: 178.30219
-    width: 144
+    width: 146.8085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

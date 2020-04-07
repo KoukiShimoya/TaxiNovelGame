@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 1
-  JP: "\u5C0F\u5B66\u6821\u3078\u5411\u304B\u304A\u3046"
+  JP: "\u5C0F\u5B66\u6821\u3078\u5411\u304B\u3046"
   EN: Go to Elementary School
 --- !u!114 &1586997491
 MonoBehaviour:
@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 1
-  JP: "\u6587\u5177\u5C4B\u3078\u5411\u304B\u304A\u3046"
+  JP: "\u6587\u5177\u5C4B\u3078\u5411\u304B\u3046"
   EN: Go to Stationery
 --- !u!114 &1586997493
 MonoBehaviour:
@@ -2070,21 +2070,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 67.069664, y: -29.565704}
+  scrollPos: {x: 17.494484, y: -16.67347}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.97
+  zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1586997498}
-  selectedCommands:
-  - {fileID: 1586997490}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3839,7 +3837,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 55.54123
     y: 381.05234
-    width: 146.90721
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

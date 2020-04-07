@@ -3047,7 +3047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u8A2D\u5B9A"
-  EN: Setting
+  EN: Settings
 --- !u!1 &5538957689578448789
 GameObject:
   m_ObjectHideFlags: 0
