@@ -84,7 +84,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
                     audioSources[1].Play();
                 }
             }
-            else if (questData.key == QuestKey.Elementary)
+            else if (questData.key == QuestKey.Element)
             {
                 if (questData.progress == 1)
                 {

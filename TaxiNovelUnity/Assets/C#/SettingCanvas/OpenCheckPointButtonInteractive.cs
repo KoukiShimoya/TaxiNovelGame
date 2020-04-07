@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class OpenCheckPointButtonInteractive : MonoBehaviour
 {
-    [SerializeField] private string noAchieveAnyEnd;
-    [SerializeField] private string achieveAnyEnd_JA;
-    [SerializeField] private string achieveAnyEnd_EN;
     [SerializeField] private GameObject buttonTextObject;
     
     private void Start()
@@ -27,12 +24,12 @@ public class OpenCheckPointButtonInteractive : MonoBehaviour
 
         if (achieveAnyEnd)
         {
-            buttonTextObject.GetComponent<UILanguageChange>().ChangeText(achieveAnyEnd_JA, achieveAnyEnd_EN);
+            buttonTextObject.GetComponent<UILanguageChange>().SetHiddenElement(false);
             this.gameObject.GetComponent<Button>().interactable = true;
         }
         else
         {
-            buttonTextObject.GetComponent<UILanguageChange>().ChangeText(noAchieveAnyEnd, noAchieveAnyEnd);
+            buttonTextObject.GetComponent<UILanguageChange>().SetHiddenElement(true);
             this.gameObject.GetComponent<Button>().interactable = false;
         }
     }

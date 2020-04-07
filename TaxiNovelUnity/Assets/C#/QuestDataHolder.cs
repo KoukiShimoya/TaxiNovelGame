@@ -31,7 +31,7 @@ public enum QuestKey
 {
     None,
     JK,
-    Elementary,
+    Element,
     OL,
     Thugs,
     Clerk,

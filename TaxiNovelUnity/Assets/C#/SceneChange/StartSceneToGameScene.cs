@@ -27,7 +27,7 @@ public class StartSceneToGameScene : MonoBehaviour
         //小学生
         foreach (var questData in questDataList)
         {
-            if (questData.key == QuestKey.Elementary)
+            if (questData.key == QuestKey.Element)
             {
                 if (questData.progress == -1 || questData.progress == 0)
                 {

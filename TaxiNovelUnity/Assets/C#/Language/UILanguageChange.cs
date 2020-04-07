@@ -8,6 +8,16 @@ public class UILanguageChange : MonoBehaviour
 {
     [SerializeField] private string JA;
     [SerializeField] private string EN;
+    private bool hiddenElement = false;
+    private const string hiddenWord = "???";
+
+    public void SetHiddenElement(bool element)
+    {
+        hiddenElement = element;
+        SetText();
+        ChangeLanguage();
+    }
+    
     private Text text;
 
     private void Start()
@@ -19,6 +29,12 @@ public class UILanguageChange : MonoBehaviour
 
     public void ChangeLanguage()
     {
+        if (hiddenElement)
+        {
+            text.text = hiddenWord;
+            return;
+        }
+        
         switch (NowActiveLanguage.GetSetLanguageCode)
         {
             case NowActiveLanguage.LanguageCode.JA:
