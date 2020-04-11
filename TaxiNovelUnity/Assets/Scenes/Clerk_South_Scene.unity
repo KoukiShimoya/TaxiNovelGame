@@ -1136,7 +1136,7 @@ MonoBehaviour:
   itemId: 2
   indentLevel: 0
   JP: "\u30C7\u30D1\u30FC\u30C8\u3078\u5411\u304B\u3046"
-  EN: Go to Department Store
+  EN: Go to the department Store
 --- !u!114 &1469437395
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -957,7 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -50.550762, y: 18.389795}
+  scrollPos: {x: -47.359272, y: 36.47489}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -969,8 +969,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1728589240}
-  selectedCommands: []
+  - {fileID: 1728589269}
+  selectedCommands:
+  - {fileID: 1728589255}
   variables:
   - {fileID: 1728589238}
   description: 
@@ -1438,7 +1439,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 1
   JP: "\u75C5\u9662\u3078\u5411\u304B\u3046"
-  EN: Go to Hospital
+  EN: Go to the hospital
 --- !u!114 &1728589256
 MonoBehaviour:
   m_ObjectHideFlags: 2

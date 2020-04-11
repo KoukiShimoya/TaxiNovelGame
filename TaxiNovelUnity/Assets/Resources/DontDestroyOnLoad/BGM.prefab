@@ -446,6 +446,7 @@ MonoBehaviour:
   - {fileID: 8022514860499882331}
   - {fileID: 8334560937477187287}
   - {fileID: 3470289119436341699}
+  audioMixer: {fileID: 24100000, guid: 6aa8accf1af3ea546ae045816de08f33, type: 2}
 --- !u!1 &8022514860486907098
 GameObject:
   m_ObjectHideFlags: 0

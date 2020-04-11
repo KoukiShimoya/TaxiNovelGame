@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -151.35095, y: 148.32005}
+  scrollPos: {x: -52.616776, y: 117.94029}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -958,8 +958,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2040923076}
-  selectedCommands: []
+  - {fileID: 2040923092}
+  selectedCommands:
+  - {fileID: 2040923107}
   variables:
   - {fileID: 2040923074}
   description: 
@@ -1775,7 +1776,7 @@ MonoBehaviour:
   itemId: 30
   indentLevel: 0
   JP: "\u56F3\u66F8\u9928\u3078\u5411\u304B\u3046"
-  EN: Go to Library
+  EN: Go to the library
 --- !u!114 &2040923108
 MonoBehaviour:
   m_ObjectHideFlags: 2

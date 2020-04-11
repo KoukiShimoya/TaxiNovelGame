@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 309922766}
   - component: {fileID: 309922764}
   - component: {fileID: 309922765}
+  - component: {fileID: 309922768}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -255,6 +256,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 309922759}
   commandList:
+  - {fileID: 309922768}
   - {fileID: 309922758}
   - {fileID: 309922767}
   - {fileID: 309922766}
@@ -351,7 +353,7 @@ MonoBehaviour:
   itemId: 11
   indentLevel: 0
   JP: "\u6771\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to Bridge in which connected to East Area
+  EN: Go to the bridge leading to the East Area
 --- !u!114 &309922751
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -726,6 +728,22 @@ MonoBehaviour:
   fadeTime: 0.6
   fadeStartPosition: 1
   fadeFinishPosition: 0
+--- !u!114 &309922768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309922745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f024172109bb3e49bb0cd2781ef57d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  questKey: 3
+  variable: 0
 --- !u!1001 &335542446
 PrefabInstance:
   m_ObjectHideFlags: 0

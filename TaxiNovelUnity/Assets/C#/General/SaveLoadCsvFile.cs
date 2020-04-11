@@ -15,15 +15,19 @@ public static class SaveLoadCsvFile
         var fileInfo = new FileInfo(path);
 
         string readText = "";
-        
-        try {
-            using (StreamReader sr = new StreamReader(fileInfo.OpenRead(), Encoding.UTF8)) {
+
+        try
+        {
+            using (StreamReader sr = new StreamReader(fileInfo.OpenRead(), Encoding.UTF8))
+            {
                 readText = sr.ReadToEnd();
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             EditorDebug.Log(e);
         }
-        
+
         var rowData = readText.Split(General.crlf);
         return rowData;
     }
@@ -31,17 +35,19 @@ public static class SaveLoadCsvFile
     public static void WriteCsvData(string path, string text)
     {
         var fileInfo = new FileInfo(path);
-        using (StreamWriter sw = fileInfo.CreateText()) {
+        using (StreamWriter sw = fileInfo.CreateText())
+        {
             sw.Write(text);
         }
     }
 
     public static List<ChoiceData> LoadChoiceData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.ChoiceData + General.csv);
-        
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.ChoiceData + General.csv);
+
         var rowData = LoadCsvData(loadPath);
-        
+
         var csvChoiceDataList = new List<ChoiceData>();
 
         foreach (var oneRow in rowData)
@@ -50,11 +56,12 @@ public static class SaveLoadCsvFile
             {
                 continue;
             }
-            
+
             var csvChoiceData = oneRow.Split(General.comma);
-            
-            var oneRowChoiceData = new ChoiceData((ChoiceKey) Enum.Parse(typeof(ChoiceKey), csvChoiceData[0]), int.Parse(csvChoiceData[1]));
-            
+
+            var oneRowChoiceData = new ChoiceData((ChoiceKey) Enum.Parse(typeof(ChoiceKey), csvChoiceData[0]),
+                int.Parse(csvChoiceData[1]));
+
             csvChoiceDataList.Add(oneRowChoiceData);
         }
 
@@ -63,7 +70,8 @@ public static class SaveLoadCsvFile
 
     public static List<QuestData> LoadQuestData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.QuestData + General.csv);
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.QuestData + General.csv);
 
         var rowData = LoadCsvData(loadPath);
 
@@ -75,11 +83,12 @@ public static class SaveLoadCsvFile
             {
                 continue;
             }
-            
+
             var csvQuestData = oneRow.Split(General.comma);
-            
-            var oneRowQuestData = new QuestData((QuestKey) Enum.Parse(typeof(QuestKey), csvQuestData[0]), int.Parse(csvQuestData[1]));
-            
+
+            var oneRowQuestData = new QuestData((QuestKey) Enum.Parse(typeof(QuestKey), csvQuestData[0]),
+                int.Parse(csvQuestData[1]));
+
             csvQuestDataList.Add(oneRowQuestData);
         }
 
@@ -88,7 +97,8 @@ public static class SaveLoadCsvFile
 
     public static List<EndingData> LoadEndingData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.EndingData + General.csv);
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.EndingData + General.csv);
 
         var rowData = LoadCsvData(loadPath);
 
@@ -102,9 +112,10 @@ public static class SaveLoadCsvFile
             }
 
             var csvEndingData = oneRow.Split(General.comma);
-            
-            var oneRowEndingData = new EndingData((EndingKey)Enum.Parse(typeof(EndingKey), csvEndingData[0]), int.Parse(csvEndingData[1]));
-            
+
+            var oneRowEndingData = new EndingData((EndingKey) Enum.Parse(typeof(EndingKey), csvEndingData[0]),
+                int.Parse(csvEndingData[1]));
+
             csvEndingDataList.Add(oneRowEndingData);
         }
 
@@ -113,24 +124,20 @@ public static class SaveLoadCsvFile
 
     public static int[] LoadTimeData()
     {
-        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData, PathData.TextFolder.PlayTime + General.csv);
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.PlayTime + General.csv);
         var timeStrings = LoadCsvData(loadPath)[0].Split(General.comma);
         return new int[] {int.Parse(timeStrings[0]), int.Parse(timeStrings[1]), int.Parse(timeStrings[2])};
     }
-    
-    public static void SaveTime()
+
+    public static float[] LoadAudioVolumeData()
     {
-        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
-            PathData.TextFolder.PlayTime + General.csv);
-        
-        var playTime = PlayTime.Instance;
-        var hourString = playTime.GetHour.ToString();
-        var minuteString = playTime.GetMinute.ToString();
-        var secondString = playTime.GetSecond.ToString();
-        
-        WriteCsvData(savePath, hourString + General.comma + minuteString + General.comma + secondString);
-        EditorDebug.Log("プレイ時間を保存しました");
+        var loadPath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.AudioVolumeData + General.csv);
+        var audioVolumeStrings = LoadCsvData(loadPath)[0].Split(General.comma);
+        return new float[] {float.Parse(audioVolumeStrings[0]), float.Parse(audioVolumeStrings[1])};
     }
+
 
     public static void SaveChoice(ChoiceData choiceData)
     {
@@ -158,17 +165,18 @@ public static class SaveLoadCsvFile
         choiceDataHolder.choiceDataList = choiceDataHolderChoiceDataList;
 
         var saveStr = "";
-        
+
         foreach (var choiceDataHolderChoiceData in choiceDataHolderChoiceDataList)
         {
-            saveStr += choiceDataHolderChoiceData.key.ToString() + General.comma + choiceDataHolderChoiceData.choiceNumber;
+            saveStr += choiceDataHolderChoiceData.key.ToString() + General.comma +
+                       choiceDataHolderChoiceData.choiceNumber;
             saveStr += General.crlf;
         }
 
         saveStr = saveStr.Trim(General.crlf);
-        
+
         WriteCsvData(savePath, saveStr);
-        
+
         //セーブアイコン表示時のコード
         /*
         if (IsGameSceneCheck.GameSceneCheck.Check())
@@ -176,8 +184,8 @@ public static class SaveLoadCsvFile
             SaveIcon.Instance.StartIconCoroutine();
         }
         */
-        
-        EditorDebug.Log("選択肢を保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
+
+        EditorDebug.Log("選択肢を保存しました。Key：" + debugLogKey + ", Value：" + debugLogValue);
     }
 
     public static void SaveQuest(QuestData questData)
@@ -188,7 +196,7 @@ public static class SaveLoadCsvFile
         var questDataHolder = QuestDataHolder.Instance;
 
         var questDataHolderQuestDataList = new List<QuestData>(questDataHolder.questDataList);
-        
+
         var debugLogKey = "";
         var debugLogValue = "";
 
@@ -214,9 +222,9 @@ public static class SaveLoadCsvFile
         }
 
         saveStr = saveStr.Trim(General.crlf);
-        
+
         WriteCsvData(savePath, saveStr);
-        
+
         //セーブアイコン表示時のコード
         /*
         if (IsGameSceneCheck.GameSceneCheck.Check())
@@ -224,8 +232,8 @@ public static class SaveLoadCsvFile
             SaveIcon.Instance.StartIconCoroutine();
         }
         */
-        
-        EditorDebug.Log("クエストを保存しました。Key：" + debugLogKey +", Value：" + debugLogValue);
+
+        EditorDebug.Log("クエストを保存しました。Key：" + debugLogKey + ", Value：" + debugLogValue);
     }
 
     public static void SaveEnding(EndingData endingData)
@@ -236,7 +244,7 @@ public static class SaveLoadCsvFile
         var endingDataHolder = EndingDataHolder.Instance;
 
         var endingDataHolderEndingDataList = new List<EndingData>(endingDataHolder.endingDataList);
-        
+
         var debugLogKey = "";
         var debugLogValue = "";
 
@@ -262,9 +270,35 @@ public static class SaveLoadCsvFile
         }
 
         saveStr = saveStr.Trim(General.crlf);
-        
+
         WriteCsvData(savePath, saveStr);
 
         EditorDebug.Log("エンディングデータを保存しました・Key：" + debugLogKey + ", Value：" + debugLogValue);
+    }
+
+    public static void SaveTime()
+    {
+        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.PlayTime + General.csv);
+
+        var playTime = PlayTime.Instance;
+        var hourString = playTime.GetHour.ToString();
+        var minuteString = playTime.GetMinute.ToString();
+        var secondString = playTime.GetSecond.ToString();
+
+        WriteCsvData(savePath, hourString + General.comma + minuteString + General.comma + secondString);
+        EditorDebug.Log("プレイ時間を保存しました");
+    }
+
+    public static void SaveAudioVolume()
+    {
+        var savePath = MultiPathCombine.Combine(PathData.TextDataPath, PathData.ResourcesFolder.TextData,
+            PathData.TextFolder.AudioVolumeData + General.csv);
+        var audioManager = AudioManager.Instance;
+        var bgmString = audioManager.GetBgmValue().ToString();
+        var seString = audioManager.GetSeValue().ToString();
+        
+        WriteCsvData(savePath, bgmString + General.comma + seString);
+        EditorDebug.Log("音量データを保存しました");
     }
 }

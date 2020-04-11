@@ -1880,7 +1880,7 @@ MonoBehaviour:
   itemId: 90
   indentLevel: 1
   JP: "\u5C0F\u5B66\u6821\u3078\u5411\u304B\u3046"
-  EN: Go to Elementary School
+  EN: Go to the elementary school
 --- !u!114 &1586997491
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1913,7 +1913,7 @@ MonoBehaviour:
   itemId: 88
   indentLevel: 1
   JP: "\u6587\u5177\u5C4B\u3078\u5411\u304B\u3046"
-  EN: Go to Stationery
+  EN: Go to the stationery
 --- !u!114 &1586997493
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2081,8 +2081,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1586997498}
+  selectedCommands:
+  - {fileID: 1586997490}
   variables: []
   description: 
   stepPause: 0

@@ -1113,8 +1113,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 2080655885}
+  selectedCommands:
+  - {fileID: 2080655913}
   variables: []
   description: 
   stepPause: 0
@@ -1727,7 +1729,7 @@ MonoBehaviour:
   itemId: 23
   indentLevel: 0
   JP: "\u5C0F\u5B66\u6821\u524D\u304B\u4E2D\u5B66\u6821\u524D\u306B\u9023\u308C\u3066\u884C\u304F"
-  EN: Go to Elementary School or Juniour High School
+  EN: Go to the elementary school or the junior high school
 --- !u!114 &2080655914
 MonoBehaviour:
   m_ObjectHideFlags: 2

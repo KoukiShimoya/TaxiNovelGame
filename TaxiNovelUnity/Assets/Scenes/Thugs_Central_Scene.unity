@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 912645024}
   - component: {fileID: 912645022}
   - component: {fileID: 912645023}
+  - component: {fileID: 912645026}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -445,6 +446,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 912644999}
   commandList:
+  - {fileID: 912645026}
   - {fileID: 912645002}
   - {fileID: 912645025}
   - {fileID: 912645024}
@@ -464,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 67.14677, y: 48.23953}
+  scrollPos: {x: 35.278656, y: 58.12963}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -475,8 +477,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 912645006}
+  selectedCommands:
+  - {fileID: 912645005}
   variables:
   - {fileID: 912645004}
   description: 
@@ -532,7 +536,7 @@ MonoBehaviour:
   itemId: 4
   indentLevel: 0
   JP: "\u75C5\u9662\u3078\u5411\u304B\u3046"
-  EN: Go to Hospital
+  EN: Go to the hospital
 --- !u!114 &912645001
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -620,7 +624,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 1
   JP: "\u897F\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to Bridge in which connected to West Area
+  EN: Go to the bridge leading to the West Area
 --- !u!114 &912645006
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1159,6 +1163,22 @@ MonoBehaviour:
   fadeTime: 0.6
   fadeStartPosition: 1
   fadeFinishPosition: 0
+--- !u!114 &912645026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912644995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f024172109bb3e49bb0cd2781ef57d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  questKey: 4
+  variable: 0
 --- !u!1 &944010578
 GameObject:
   m_ObjectHideFlags: 0

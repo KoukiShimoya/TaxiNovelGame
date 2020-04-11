@@ -5241,11 +5241,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -178.61089, y: 27.199493}
+  scrollPos: {x: 52.914776, y: 37.224747}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6400003
+  zoom: 0.7300002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5493,7 +5493,7 @@ MonoBehaviour:
   itemId: 22
   indentLevel: 0
   JP: "\u8B66\u5BDF\u3092\u907F\u3051\u3064\u3064\u3001\u516C\u5712\u306E\u6C60\u3078\u5411\u304B\u3048"
-  EN: Not be found from the Police, Go to Pond in Park
+  EN: Not be found from the police, go to the pond in the park
 --- !u!114 &1992435426
 MonoBehaviour:
   m_ObjectHideFlags: 2

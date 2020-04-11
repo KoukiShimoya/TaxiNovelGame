@@ -1,13 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using ConstValues;
+using UnityEditor.UI;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class AudioManager : SingletonMonoBehaviour<AudioManager>
 {
     [SerializeField] private AudioSource[] audioSources = new AudioSource[9];
+    private float bgmValue;
+    private float seValue;
+    [SerializeField] private AudioMixer audioMixer;
 
     public AudioSource[] GetAudioSource
     {
@@ -18,6 +24,15 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     {
         //InitializedSceneで発火
         SceneManager.sceneLoaded += SceneLoaded;
+    }
+
+    private void Start()
+    {
+        float[] audioValueData = SaveLoadCsvFile.LoadAudioVolumeData();
+        bgmValue = audioValueData[0];
+        SetBgmValue(bgmValue);
+        seValue = audioValueData[1];
+        SetSeValue(seValue);
     }
 
     private void SceneLoaded(Scene loadedScene, LoadSceneMode mode)
@@ -113,5 +128,43 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
                 }
             }
         }
+    }
+
+    public float GetBgmValue()
+    {
+        return bgmValue;
+    }
+
+    public float GetSeValue()
+    {
+        return seValue;
+    }
+
+    public void SetBgmValue(float value)
+    {
+        bgmValue = value;
+        float mixerValue = LinearVolumeTDecibel(value, -12);
+        audioMixer.SetFloat(AudioTag.BGM, mixerValue);
+    }
+
+    public void SetSeValue(float value)
+    {
+        seValue = value;
+        float mixerValue = LinearVolumeTDecibel(value, 4);
+        audioMixer.SetFloat(AudioTag.SE, mixerValue);
+    }
+    
+    private float LinearVolumeTDecibel(float linearVolume, int thresould)
+    {
+        float decibel = 20.0f * Mathf.Log10(linearVolume);
+
+        decibel += thresould;
+
+        if (float.IsNegativeInfinity(decibel))
+        {
+            decibel = -96f;
+        }
+
+        return decibel;
     }
 }

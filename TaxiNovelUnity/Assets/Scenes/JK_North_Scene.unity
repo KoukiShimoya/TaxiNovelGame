@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u4F1A\u8A71\u3092\u9032\u3081\u308B"
-  EN: Left Click to Continue Conversation
+  EN: Left click to continue conversation
 --- !u!114 &745772779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,6 +2327,7 @@ GameObject:
   - component: {fileID: 1095961622}
   - component: {fileID: 1095961621}
   - component: {fileID: 1095961620}
+  - component: {fileID: 1095961625}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -2398,6 +2399,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1095961495}
   commandList:
+  - {fileID: 1095961625}
   - {fileID: 1095961544}
   - {fileID: 1095961560}
   - {fileID: 1095961556}
@@ -2430,18 +2432,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -48.14823, y: 75.38314}
+  scrollPos: {x: -246.73134, y: 188.05597}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.85000014
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1095961504}
   selectedCommands:
   - {fileID: 1095961539}
   variables:
@@ -2541,7 +2544,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.39554
     y: 149.80658
-    width: 120.58823
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2572,7 +2575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.72327
     y: 69.20429
-    width: 154.70587
+    width: 144.52051
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2628,7 +2631,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.02896
     y: 150.79556
-    width: 127.64705
+    width: 121.23285
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3187,7 +3190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.9178
     y: 143.88005
-    width: 140.58823
+    width: 130.8219
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3334,7 +3337,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 570.5565
     y: 55.723785
-    width: 125.294106
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3526,7 +3529,7 @@ MonoBehaviour:
   itemId: 61
   indentLevel: 0
   JP: "\u672C\u5C4B\u3078\u5411\u304B\u3046"
-  EN: Go to BookStore
+  EN: Go to the bookStore
 --- !u!114 &1095961540
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4071,7 +4074,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 589.5047
     y: 415.99564
-    width: 131.17645
+    width: 125.34244
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4120,7 +4123,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -140.16956
     y: 149.591
-    width: 137.0588
+    width: 125.34244
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4538,7 +4541,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -143.17691
     y: 70.38773
-    width: 126.47057
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5340,7 +5343,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -128.6886
     y: 482.96942
-    width: 155.88232
+    width: 147.26024
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5401,7 +5404,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -299.0531
     y: 439.7868
-    width: 127.64705
+    width: 123.97258
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5463,7 +5466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -131.11331
     y: 404.09265
-    width: 145.2941
+    width: 136.30133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5704,6 +5707,22 @@ MonoBehaviour:
   changeValue: 0.04
   fadeTargetValue: 0
   gameObject: {fileID: 1307334846}
+--- !u!114 &1095961625
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095961493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f024172109bb3e49bb0cd2781ef57d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 206
+  indentLevel: 0
+  questKey: 1
+  variable: 0
 --- !u!1 &1107655139
 GameObject:
   m_ObjectHideFlags: 1

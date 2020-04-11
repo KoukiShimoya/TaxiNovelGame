@@ -1123,6 +1123,7 @@ GameObject:
   - component: {fileID: 668743413}
   - component: {fileID: 668743412}
   - component: {fileID: 668743411}
+  - component: {fileID: 668743415}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 668743333}
   commandList:
+  - {fileID: 668743415}
   - {fileID: 668743360}
   - {fileID: 668743362}
   - {fileID: 668743361}
@@ -1954,7 +1956,7 @@ MonoBehaviour:
   itemId: 38
   indentLevel: 0
   JP: "\u4E2D\u592E\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to Bridge in which connected to Central Area
+  EN: Go to the bridge leading to the Central Area
 --- !u!114 &668743365
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3196,6 +3198,22 @@ MonoBehaviour:
   fadeTime: 2
   fadeStartPosition: 0
   fadeFinishPosition: 1
+--- !u!114 &668743415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668743332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f024172109bb3e49bb0cd2781ef57d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 236
+  indentLevel: 0
+  questKey: 6
+  variable: 0
 --- !u!1001 &1041120638
 PrefabInstance:
   m_ObjectHideFlags: 0

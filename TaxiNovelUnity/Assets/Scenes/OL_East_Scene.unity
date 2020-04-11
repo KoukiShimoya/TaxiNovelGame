@@ -990,8 +990,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1603527265}
+  selectedCommands:
+  - {fileID: 1603527274}
   variables: []
   description: 
   stepPause: 0
@@ -1157,7 +1159,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 1
   JP: "\u30B1\u30FC\u30AD\u5C4B\u304B\u548C\u83D3\u5B50\u5C4B\u3078\u9023\u308C\u3066\u884C\u304F"
-  EN: Go to Cake Shop or Japanese Sweets Shop
+  EN: Go to the cake shop or the Japanese sweets shop
 --- !u!114 &1603527275
 MonoBehaviour:
   m_ObjectHideFlags: 2
