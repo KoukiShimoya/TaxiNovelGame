@@ -1956,7 +1956,7 @@ MonoBehaviour:
   itemId: 38
   indentLevel: 0
   JP: "\u4E2D\u592E\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to the bridge leading to the Central Area
+  EN: go to the bridge leading to the Central Area
 --- !u!114 &668743365
 MonoBehaviour:
   m_ObjectHideFlags: 2

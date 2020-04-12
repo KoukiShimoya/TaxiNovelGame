@@ -3007,7 +3007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u306B\u623B\u308A\u307E\u3059\u304B\uFF1F"
-  EN: Do you want to return to the Title?
+  EN: Do you want to return to the title?
 --- !u!1 &3068285787729335141
 GameObject:
   m_ObjectHideFlags: 0
@@ -5382,7 +5382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u64CD\u4F5C\u8AAC\u660E"
-  EN: How to Use
+  EN: How to Play
 --- !u!1 &3870650530106106895
 GameObject:
   m_ObjectHideFlags: 0

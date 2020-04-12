@@ -1776,7 +1776,7 @@ MonoBehaviour:
   itemId: 30
   indentLevel: 0
   JP: "\u56F3\u66F8\u9928\u3078\u5411\u304B\u3046"
-  EN: Go to the library
+  EN: go to the library
 --- !u!114 &2040923108
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "W\u30AD\u30FC\u3067\u524D\u9032"
-  EN: Press W Key to move forward
+  EN: press W to move forward
 --- !u!114 &195397442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u30DE\u30A6\u30B9\u3092\u52D5\u304B\u3057\u9078\u629E\u80A2\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B"
-  EN: Move mouse and Click the choice
+  EN: move the mouse and click on the choice
 --- !u!114 &437528535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u4F1A\u8A71\u3092\u9032\u3081\u308B"
-  EN: Left click to continue conversation
+  EN: left click to continue conversation
 --- !u!114 &745772779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u4E3B\u8981\u76EE\u7684\u5730\u306E\u30A2\u30A4\u30B3\u30F3\u306F\u30AB\u30FC\u30CA\u30D3\u306B\u8868\u793A"
-  EN: Icons for main destinations are displayed on the car navigation system
+  EN: icons for main destinations are displayed on the car navigation system
 --- !u!114 &1024682797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,11 +2432,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -246.73134, y: 188.05597}
+  scrollPos: {x: -82.63087, y: 148.20673}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.73000026
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2575,7 +2575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.72327
     y: 69.20429
-    width: 144.52051
+    width: 140.78944
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2631,7 +2631,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.02896
     y: 150.79556
-    width: 121.23285
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3190,7 +3190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 709.9178
     y: 143.88005
-    width: 130.8219
+    width: 127.63155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3529,7 +3529,7 @@ MonoBehaviour:
   itemId: 61
   indentLevel: 0
   JP: "\u672C\u5C4B\u3078\u5411\u304B\u3046"
-  EN: Go to the bookStore
+  EN: go to the bookstore
 --- !u!114 &1095961540
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4074,7 +4074,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 589.5047
     y: 415.99564
-    width: 125.34244
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4123,7 +4123,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -140.16956
     y: 149.591
-    width: 125.34244
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5343,7 +5343,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -128.6886
     y: 482.96942
-    width: 147.26024
+    width: 143.42102
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5404,7 +5404,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -299.0531
     y: 439.7868
-    width: 123.97258
+    width: 121.05261
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5466,7 +5466,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -131.11331
     y: 404.09265
-    width: 136.30133
+    width: 132.89471
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5818,7 +5818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "D\u30AD\u30FC\u3067\u53F3\u6298"
-  EN: Press D Key to turn right
+  EN: press D to turn right
 --- !u!114 &1250458979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6417,7 +6417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "A\u30AD\u30FC\u3067\u5DE6\u6298"
-  EN: Press A Key to turn left
+  EN: press A to turn left
 --- !u!114 &1636076511
 MonoBehaviour:
   m_ObjectHideFlags: 0

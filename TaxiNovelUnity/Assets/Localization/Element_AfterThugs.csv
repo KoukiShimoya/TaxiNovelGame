@@ -1,20 +1,20 @@
 ﻿Key,Description,JA,EN
-SAY.Flowchart_1.2.ナレーション,,チンピラがいた場所に行ってみよう。,Let's go where the hooligan used to be.
-SAY.Flowchart_1.7.チンピラ,,なんだお前…また来たのか。,"What, you ... come again?"
-SAY.Flowchart_1.6.チンピラ,,ん？そのお嬢ちゃんは…,Huh? The girl is ...
+SAY.Flowchart_1.2.ナレーション,,チンピラがいた場所に行ってみよう。,Let's go where the hooligan was.
+SAY.Flowchart_1.7.チンピラ,,なんだお前...また来たのか。,"What, you...come again?"
+SAY.Flowchart_1.6.チンピラ,,ん？そのお嬢ちゃんは...,"Oh, the girl is...?"
 SAY.Flowchart_1.8.チンピラ,,もしかして、先生んところの子か？,Are you the doctor's girl?
 SAY.Flowchart_1.9.運転手,,お知り合いですか？,Do you know each other?
-SAY.Flowchart_1.10.小学生,,えっと、たまに来る方です…！,"Well, he comes sometimes ...!"
+SAY.Flowchart_1.10.小学生,,えっと、たまに来る方です...！,"Well, he comes sometimes...!"
 SAY.Flowchart_1.11.チンピラ,,嬢ちゃんところなら大丈夫だ！連れてってもらえるか？,I can go if your hospital! Can you take me there?
-SAY.Flowchart_1.12.チンピラ,,ちょーっと手当てしてくれりゃ済む話なんだが…,It would be great if you could treat a bit ...
-SAY.Flowchart_1.13.小学生,,運転手さん、お願いします！ご案内します…！,"Driver, please! I will guide you ...!"
+SAY.Flowchart_1.12.チンピラ,,ちょーっと手当てしてくれりゃ済む話なんだが...,It would be great if you could treat a bit...
+SAY.Flowchart_1.13.小学生,,運転手さん、お願いします！ご案内します...！,"Driver, please! I will guide you...!"
 SAY.Flowchart_1.14.運転手,,かしこまりました。すぐ向かいましょう,Certainly. Let's go right away.
 SAY.Flowchart_1.23.運転手,,ここですね！到着しました,Here it is! Here we are.
-SAY.Flowchart_1.22.小学生,,運転手さん、いろいろありがとうございました…！,"Thank you very much, driver ...!"
-SAY.Flowchart_1.24.チンピラ,,あ〜…。悪かったな。,Oh~... I'm sorry.
-SAY.Flowchart_1.25.チンピラ,,気づかなかったんだが、こいつは例のタクシーか…,I didn't realize this is the rumored taxi ...
+SAY.Flowchart_1.22.小学生,,運転手さん、いろいろありがとうございました…！,"Thank you very much, driver...!"
+SAY.Flowchart_1.24.チンピラ,,あ〜...。悪かったな。,Ah...thanks.
+SAY.Flowchart_1.25.チンピラ,,気づかなかったんだが、こいつは例のタクシーか…,I didn't realize this is the rumored taxi...
 SAY.Flowchart_1.26.チンピラ,,もしあんたが暇だったら、後で病院に戻って来てくれねえか？,"If you have some time, can you come back to the hospital later?"
-SAY.Flowchart_1.27.チンピラ,,ちょっと聞いて欲しいことがあんだけど…,I've got something to talk ...
+SAY.Flowchart_1.27.チンピラ,,ちょっと聞いて欲しいことがあんだけど…,I've got something to talk.
 SAY.Flowchart_1.28.運転手,,承知しました,"Yes, sir."
 SAY.Flowchart_1.29.チンピラ,,おう、ありがとよ。,"Oh, thanks."
 CHARACTER.小学生,,小学生,Elementary School Student

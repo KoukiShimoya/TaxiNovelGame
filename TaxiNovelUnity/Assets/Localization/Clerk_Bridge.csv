@@ -1,46 +1,46 @@
 ﻿Key,Description,JA,EN
 SAY.Flowchart_1.1.店員,,あ！ねえねえ、タバコ吸っていい？,"Oh! Hey, can I smoke?"
 SAY.Flowchart_1.2.店員,,匂いとか気になるならやめとくけど。,"If you don't like the smell, I won't."
-SAY.Flowchart_1.3.運転手,,できれば控えていただけると…申し訳ありません,I am sorry for ... if you can refrain from it.
-SAY.Flowchart_1.4.店員,,おっけ〜。ま、室内だしね。,"Whoops ~. Well, it's indoors."
-SAY.Flowchart_1.7.運転手,,代わりと言ってはなんですが、飴ならありますよ,We have candies instead.
+SAY.Flowchart_1.3.運転手,,できれば控えていただけると...申し訳ありません,I am sorry for...if you can refrain from it.
+SAY.Flowchart_1.4.店員,,おっけ〜。ま、室内だしね。,"Whoops...well, it's indoors."
+SAY.Flowchart_1.7.運転手,,代わりと言ってはなんですが、飴ならありますよ,"Instead, I have some candies."
 SAY.Flowchart_1.8.店員,,お、ほんと？何味？,"Oh, really? What flavor?"
-SAY.Flowchart_1.9.運転手,,ハッカです,Menthol.
-SAY.Flowchart_1.10.店員,,え！ほんと？ハッカキャンディ好きなんだよね〜！,What? Really? You like peppermint candy ~!
-SAY.Flowchart_1.11.店員,,一個ちょうだい！,Give me one!
+SAY.Flowchart_1.9.運転手,,ハッカです,Peppermint.
+SAY.Flowchart_1.10.店員,,え！ほんと？ハッカキャンディ好きなんだよね〜！,Really? I like peppermint candy~!
+SAY.Flowchart_1.11.店員,,一個ちょうだい！,Give me one~!
 SAY.Flowchart_1.12.運転手,,どうぞどうぞ,Here you are.
-SAY.Flowchart_1.13.店員,,ありがと〜！,Thanks ~!
-SAY.Flowchart_1.14.店員,,ちょっとスーッとするのがいいんだよね〜,It's good to feel a little cool ~
-SAY.Flowchart_1.15.店員,,ふう…,Phew ...
-SAY.Flowchart_1.16.店員,,相談、相談かぁ〜。,"Consultation … Ahh, What should I do ~."
-SAY.Flowchart_1.17.店員,,つい乗っちゃったけど、ボクそんなに悩みないんだよねぇ…,"I just got on, but I don't have to worry so much ..."
+SAY.Flowchart_1.13.店員,,ありがと〜！,Thanks~!
+SAY.Flowchart_1.14.店員,,ちょっとスーッとするのがいいんだよね〜,It's good to feel a little cool~
+SAY.Flowchart_1.15.店員,,ふう...,Phew...
+SAY.Flowchart_1.16.店員,,相談、相談かぁ〜。,"Consultation...Ahh, what should I do~."
+SAY.Flowchart_1.17.店員,,つい乗っちゃったけど、ボクそんなに悩みないんだよねぇ...,"I just got on, but I don't have to worry so much..."
 SAY.Flowchart_1.18.店員,,あ、そうだ！彼女にプレゼントしたいんだけど、アドバイスちょうだい！,"Oh, yeah! I want to give girlfriend a present, so please give me some advice!"
 SAY.Flowchart_1.25.運転手,,彼女さんはどんな方なんですか？,What kind of person is she?
-SAY.Flowchart_1.24.店員,,ん〜、いじっぱりで、自信がなくて、すぐ強がる子。,"Umm, she's all messed up, she's not confident, and she's tough."
-SAY.Flowchart_1.23.運転手,,な、なるほど…,"Oh, I see ..."
+SAY.Flowchart_1.24.店員,,ん〜、いじっぱりで、自信がなくて、すぐ強がる子。,"Umm, she's stubborn, she's not confident, and she's always acting tough."
+SAY.Flowchart_1.23.運転手,,な、なるほど...,"Oh, I see..."
 SAY.Flowchart_1.22.店員,,ま、そんなとこも可愛いんだけどね？,"Well, that's cute too, isn't it?"
-SAY.Flowchart_1.21.店員,,ん、なになに？もしかしてご存知な感じ？？,What? What? Do you know it?
-SAY.Flowchart_1.20.店員,,前にお客さんとして乗ったとか、そんなところかな？,Is it the place where I got on as a customer before?
-SAY.Flowchart_1.19.店員,,あー守秘義務あるんだっけ。じゃ、いいや。勝手にそう思っとくね〜。,"Oh, is it confidential? Just OK. I think so without asking ~."
-SAY.Flowchart_1.31.運転手,,お気遣いありがとうございます…,Thank you for your concern ...
-SAY.Flowchart_1.30.店員,,ボク、アパレル系？みたいなお仕事してるんだけど、いろんなお客さんくるんだよね。,"I belong to the apparel industry like that, so there are many customers."
-SAY.Flowchart_1.29.店員,,秘密にしないきゃいけないことは、ちゃんと守らないとだからさ。,I have to keep it a secret.
+SAY.Flowchart_1.21.店員,,ん、なになに？もしかしてご存知な感じ？？,What? What? Do you know her?
+SAY.Flowchart_1.20.店員,,前にお客さんとして乗ったとか、そんなところかな？,Has she ever got in this taxi before?
+SAY.Flowchart_1.19.店員,,あー守秘義務あるんだっけ。じゃ、いいや。勝手にそう思っとくね〜。,"Oh, is it confidential? Just OK. I think so without asking..."
+SAY.Flowchart_1.31.運転手,,お気遣いありがとうございます...,Thank you for your concern.
+SAY.Flowchart_1.30.店員,,ボク、アパレル系？みたいなお仕事してるんだけど、いろんなお客さんくるんだよね。,"I belong to the apparel industry like that, so there are various customers."
+SAY.Flowchart_1.29.店員,,秘密にしなきゃいけないことは、ちゃんと守らないとだからさ。,I will keep what I need to keep secret.
 SAY.Flowchart_1.28.店員,,仕事は違っても、お互いいろいろ大変だよねえ〜。,"Even though our jobs are different, we both have a lot of difficult."
 SAY.Flowchart_1.27.運転手,,ご理解いただけて、本当に助かります,Thank you for your understanding.
 SAY.Flowchart_1.26.店員,,まーとりあえず、ボクの彼女の話なんだけどさ。,"Well, anyway, it's about my girlfriend."
-SAY.Flowchart_1.38.店員,,可愛いもの好きなわけよ。,She likes cute things.
-SAY.Flowchart_1.37.店員,,でも本人は強くありたいとかそんなこと言ってるのね。,But she says she wants to be strong.
-SAY.Flowchart_1.36.店員,,彼女の意思は尊重したいんだけど、それでごちゃごちゃ悩むのはまた違うじゃん？,"I want to respect her will, but …"
+SAY.Flowchart_1.38.店員,,可愛いもの好きなわけよ。,She loves cute things.
+SAY.Flowchart_1.37.店員,,でも本人は強くありたいとかそんなこと言ってるのね。,But she says she doesn't want it to be known to others.
+SAY.Flowchart_1.36.店員,,彼女の意思は尊重したいんだけど、それでごちゃごちゃ悩むのはまた違うじゃん？,"I want to respect her will, but..."
 SAY.Flowchart_1.35.店員,,好きなものは好きなものでいいと思うんだけど、この前そう言ったら怒らせちゃってさ。,"I think she can use whatever she likes, but I made her angry the other day."
 SAY.Flowchart_1.34.店員,,ほんと女の子ってめんどくさいよね！,Girls are really annoying!
-SAY.Flowchart_1.33.運転手,,はは…,Hahaha ...
+SAY.Flowchart_1.33.運転手,,はは...,Hahaha...
 SAY.Flowchart_1.32.店員,,あ〜なんていうか、本心だけど本心じゃないというか。,"Oh, well, actually it is the truth, but not."
 SAY.Flowchart_1.44.店員,,そんなとこも好きなんだけど、めんどくさいものはめんどくさい、みたいな？,I like that part too.
-SAY.Flowchart_1.43.店員,,あは、ボクも超めんどくさいね！,"Aha, I'm so lazy!"
-SAY.Flowchart_1.42.店員,,ごめんごめん。,I'm sorry.
+SAY.Flowchart_1.43.店員,,あは、ボクも超めんどくさいね！,"Aha! I'm annoying, too!"
+SAY.Flowchart_1.42.店員,,ごめんごめん。,Sorry!
 SAY.Flowchart_1.41.運転手,,それで、プレゼントの相談でしたっけ？,"So, are you talking about a present?"
 SAY.Flowchart_1.40.店員,,そうそう！,"Yeah, yeah!"
-SAY.Flowchart_1.39.店員,,そんなこんなで、可愛いもの好きでいいじゃんって言うボクvs強くありたい彼女、みたいな構図でさ。,"I love cute things, but she wants to be strong."
+SAY.Flowchart_1.39.店員,,そんなこんなで、可愛いもの好きでいいじゃんって言うボクvs強くありたい彼女、みたいな構図でさ。,"She loves cute things, but she doesn't want anyone to think so."
 SAY.Flowchart_1.52.店員,,可愛いものあげていいのか迷ってるんだ。,I'm wondering if I should give her something cute.
 SAY.Flowchart_1.51.運転手,,そうなんですね,I see.
 SAY.Flowchart_1.50.店員,,ボクは、彼女に可愛いもの似合うし、持ってておかしくないと思ってるんだけどね。,I think she looks good with cute things and it's not strange to have.
@@ -48,30 +48,30 @@ SAY.Flowchart_1.49.店員,,喧嘩してちょっと反省した、というか�
 SAY.Flowchart_1.48.店員,,自分の考え押し付けすぎちゃったかなって。,Maybe I pushed my ideas too far.
 SAY.Flowchart_1.47.店員,,今までこんなことなかったから、ちょっとだけ困ってるんだ。,"I've never had such a thing before, so I'm in trouble a bit."
 SAY.Flowchart_1.46.運転手,,お客さんは、どんなものをあげたいんですか？,What kind of things do you want to give?
-SAY.Flowchart_1.45.店員,,それは可愛いものだよ…。好きなものあげたいと思うのは当然じゃん？,"That's cute, of cource ... I want to give her something she likes."
+SAY.Flowchart_1.45.店員,,それは可愛いものだよ...。好きなものあげたいと思うのは当然じゃん？,"That's a cute thing, of cource...I want to give her something she loves."
 SAY.Flowchart_1.57.店員,,でもそれが、彼女を傷つけることになるのは絶対に嫌だしね。,But I really don't want it to hurt her.
-SAY.Flowchart_1.55.店員,,う〜〜んどうしよう…。,What should I do …?
+SAY.Flowchart_1.55.店員,,う〜〜んどうしよう...。,What should I do...?
 SAY.Flowchart_1.54.店員,,運転手さんなら、こういうときどうする？,What would you do if you were?
 MENU.Flowchart_1.58,,可愛いもの,Cute thing
 MENU.Flowchart_1.59,,無難なもの,Low risk thing
-SAY.Flowchart_1.62.店員,,ちなみになんで？,"By the way, why?"
+SAY.Flowchart_1.62.店員,,ちなみになんで？,Why?
 MENU.Flowchart_1.70,,彼女も、喧嘩して考え直しているかもしれない,She may be reconsidering after quarreling.
-MENU.Flowchart_1.69,,好きなものをあげるのが一番,It is best to give what you like.
+MENU.Flowchart_1.69,,好きなものをあげるのが一番,It is best to give what she likes.
 SAY.Flowchart_1.63.店員,,あ〜そうする？なんで？,"Oh, really? Why?"
 MENU.Flowchart_1.71,,意思を尊重してあげるのがいいのでは？,Why don't you respect her will?
-MENU.Flowchart_1.72,,もらって困ることはない,No trouble to receive
+MENU.Flowchart_1.72,,もらって困ることはない,No trouble to receive it.
 SAY.Flowchart_1.74.店員,,なるほど〜。一理あるね。,I see. You have a point there.
-SAY.Flowchart_1.80.店員,,は〜むずかし！,Umm ~ difficult!
-SAY.Flowchart_1.79.店員,,ほんと、こういうとこが難しいよね。楽しいけどさ！,It's really difficult but fun!
+SAY.Flowchart_1.80.店員,,は〜むずかし！,Umm~difficult!
+SAY.Flowchart_1.79.店員,,ほんと、こういうとこが難しいよね。楽しいけどさ！,It's really difficult...but fun!
 SAY.Flowchart_1.91.運転手,,デパートに行ってみてから決めるのはどうでしょう？,How about deciding after going to the department store?
-SAY.Flowchart_1.94.店員,,確かに…。ここで悩んでるよりその方がいいかも？,Certainly ... It is better than worrying here.
+SAY.Flowchart_1.94.店員,,確かに...。ここで悩んでるよりその方がいいかも？,Certainly...It is better than worrying here.
 SAY.Flowchart_1.93.店員,,そうしよっかな。,Maybe I should.
 SAY.Flowchart_1.92.店員,,あ、そろそろ南エリア着くっぽい？,"Ah, will we arrive at the south area soon?"
 SAY.Flowchart_1.95.店員,,デパートまでお願い！,"Take me to the department store, please!"
 SAY.Flowchart_1.100.運転手,,中央エリアの百貨店に寄るのはどうでしょう？,How about stopping by a shopping mall in the central area?
-SAY.Flowchart_1.104.店員,,んー確かに、それもありだね…,"Yeah, that's a good idea ..."
-SAY.Flowchart_1.103.店員,,とりあえず南エリア歩いてみて、そのあと百貨店も覗いてみようかな。,I think I'll walk around the south area first and then take a look at the shopping mall.
-SAY.Flowchart_1.102.店員,,中央エリアの方がいろいろ置いてそうだし。,The central area has more variety.
+SAY.Flowchart_1.104.店員,,んー確かに、それもありだね...,"Yeah, that's a good idea..."
+SAY.Flowchart_1.103.店員,,とりあえず南エリア歩いてみて、そのあと百貨店も覗いてみようかな。,I'll walk around the south area first and then take a look at the shopping mall.
+SAY.Flowchart_1.102.店員,,中央エリアの方がいろいろ置いてそうだし。,The central area has more various things.
 SAY.Flowchart_1.101.店員,,そのあと中央エリアで用事もあるしね！,"After that, I have things to do in the central area!"
 SAY.Flowchart_1.106.店員,,早めに行くのもありかもな〜。,It might be a good idea to go early.
 SAY.Flowchart_1.105.店員,,とりあえず、南エリアのデパートまでお願い！,"First, please go to the department store in the south area!"

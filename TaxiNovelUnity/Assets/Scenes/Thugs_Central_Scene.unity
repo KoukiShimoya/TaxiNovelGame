@@ -536,7 +536,7 @@ MonoBehaviour:
   itemId: 4
   indentLevel: 0
   JP: "\u75C5\u9662\u3078\u5411\u304B\u3046"
-  EN: Go to the hospital
+  EN: go to the hospital
 --- !u!114 &912645001
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -624,7 +624,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 1
   JP: "\u897F\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to the bridge leading to the West Area
+  EN: go to the bridge leading to the West Area
 --- !u!114 &912645006
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -316,11 +316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 78.012634, y: 56.606987}
+  scrollPos: {x: 60.705452, y: 57.650833}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.76000017
+  zoom: 0.7000002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -328,9 +328,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 642108297}
+  - {fileID: 642108276}
   selectedCommands:
-  - {fileID: 642108318}
+  - {fileID: 642108290}
   variables:
   - {fileID: 642108293}
   description: 
@@ -656,7 +656,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   JP: "\u5973\u5B50\u9AD8\u751F\u5411\u3051\u306E\u5E97\u3078\u5411\u304B\u3046"
-  EN: Go to the store for High School Girl
+  EN: go to the store for high school girls
 --- !u!114 &642108291
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -785,7 +785,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 70.16171
     y: 246.63805
-    width: 123.6842
+    width: 129.99997
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   itemId: 41
   indentLevel: 0
   JP: "\u5357\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to the bridge leading to the South Area
+  EN: go to the bridge leading to the South Area
 --- !u!114 &642108319
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -43,7 +43,7 @@ PrefabInstance:
     - target: {fileID: 1931900078503530050, guid: 59bad0895a9407f47b8ff40e6d8062a4,
         type: 3}
       propertyPath: EN
-      value: Return to Title Screen
+      value: Return to the title
       objectReference: {fileID: 0}
     - target: {fileID: 3163263731286732599, guid: 59bad0895a9407f47b8ff40e6d8062a4,
         type: 3}

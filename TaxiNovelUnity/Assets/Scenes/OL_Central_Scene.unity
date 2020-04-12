@@ -353,7 +353,7 @@ MonoBehaviour:
   itemId: 11
   indentLevel: 0
   JP: "\u6771\u30A8\u30EA\u30A2\u3078\u7D9A\u304F\u6A4B\u306B\u5411\u304B\u3046"
-  EN: Go to the bridge leading to the East Area
+  EN: go to the bridge leading to the East Area
 --- !u!114 &309922751
 MonoBehaviour:
   m_ObjectHideFlags: 2
