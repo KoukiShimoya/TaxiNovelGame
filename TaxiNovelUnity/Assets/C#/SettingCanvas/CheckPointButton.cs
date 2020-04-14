@@ -28,8 +28,27 @@ public class CheckPointButton : MonoBehaviour
 
     [SerializeField] private Image checkPointCharaImage;
     
-    private void Start()
+    private void Awake()
     {
+        //他のエンドを経験していない場合、すべてのボタンのinteractive = false
+        if (!IsAchieveAnyEnd())
+        {
+            button_JK.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(true);
+            button_JK.GetComponent<Button>().interactable = false;
+            button_Element.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(true);
+            button_Element.GetComponent<Button>().interactable = false;
+            button_OL.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(true);
+            button_OL.GetComponent<Button>().interactable = false;
+            button_Thugs.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(true);
+            button_Thugs.GetComponent<Button>().interactable = false;
+            button_Clerk.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(true);
+            button_Clerk.GetComponent<Button>().interactable = false;
+            button_Worker.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(true);
+            button_Worker.GetComponent<Button>().interactable = false;
+            return;
+        }
+
+        //他のエンドを経験している場合
         if (IsCheckPointAchieved(QuestKey.JK))
         {
             button_JK.transform.GetChild(0).GetComponent<UILanguageChange>().SetHiddenElement(false);
@@ -100,6 +119,28 @@ public class CheckPointButton : MonoBehaviour
 
     private bool IsCheckPointAchieved(QuestKey questKey)
     {
+        if (questKey == QuestKey.Thugs)
+        {
+            List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
+
+            foreach (var choiceData in choiceDataList)
+            {
+                if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
+                {
+                    if (choiceData.choiceNumber == 1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
+                    break;
+                }
+            }
+        }
+        
         List<QuestData> questDataList = QuestDataHolder.Instance.questDataList;
 
         foreach (var questData in questDataList)
@@ -118,6 +159,21 @@ public class CheckPointButton : MonoBehaviour
         }
         
         EditorDebug.LogError("QuestDataのprogress値が異常です");
+        return false;
+    }
+
+    private bool IsAchieveAnyEnd()
+    {
+        List<EndingData> endingDataList = EndingDataHolder.Instance.endingDataList;
+        
+        foreach (var endingData in endingDataList)
+        {
+            if (endingData.progress == 1)
+            {
+                return true;
+            }
+        }
+
         return false;
     }
     

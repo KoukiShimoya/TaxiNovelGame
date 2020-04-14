@@ -37,25 +37,100 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
     private void SceneLoaded(Scene loadedScene, LoadSceneMode mode)
     {
-        if (
-            loadedScene.name == SceneName.StartScene.ToString() ||
-            loadedScene.name == SceneName.JK_North_Scene.ToString() ||
-            loadedScene.name == SceneName.Element_BeforeThugs_Scene.ToString() ||
-            loadedScene.name == SceneName.OL_Central_Scene.ToString() ||
-            loadedScene.name == SceneName.Thugs_Central_Scene.ToString() ||
-            loadedScene.name == SceneName.Clerk_Central_Scene.ToString() ||
-            loadedScene.name == SceneName.Worker_South_Scene.ToString()
-            )
+        if (loadedScene.name == SceneName.StartScene.ToString())
         {
             StopAllAudioSources();
             audioSources[0].Play();
-            PlayMusicByQuestKey();
+            PlayStartSceneMusic();
+        }
+        else if (loadedScene.name == SceneName.JK_North_Scene.ToString())
+        {
+            StopAllAudioSources();
+            audioSources[0].Play();
+        }
+        else if (loadedScene.name == SceneName.Element_BeforeThugs_Scene.ToString())
+        {
+            StopAllAudioSources();
+            audioSources[0].Play();
+            audioSources[1].Play();
+        }
+        else if (loadedScene.name == SceneName.OL_Central_Scene.ToString())
+        {
+            StopAllAudioSources();
+            audioSources[0].Play();
+            audioSources[1].Play();
+            audioSources[2].Play();
+        }
+        else if (loadedScene.name == SceneName.Thugs_Central_Scene.ToString())
+        {
+            StopAllAudioSources();
+            audioSources[0].Play();
+            audioSources[1].Play();
+            audioSources[2].Play();
+            audioSources[3].Play();
+        }
+        else if (loadedScene.name == SceneName.Clerk_Central_Scene.ToString())
+        {
+            StopAllAudioSources();
+            audioSources[0].Play();
+            audioSources[1].Play();
+            audioSources[2].Play();
+            audioSources[3].Play();
+            
+            List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
+            foreach (var choiceData in choiceDataList)
+            {
+                if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
+                {
+                    if (choiceData.choiceNumber == 1)
+                    {
+                        audioSources[4].Play();
+                    }
+                }
+            }
+        }
+        else if (loadedScene.name == SceneName.Worker_South_Scene.ToString())
+        {
+            StopAllAudioSources();
+            audioSources[0].Play();
+            audioSources[1].Play();
+            audioSources[2].Play();
+            audioSources[3].Play();
+            
+            List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
+            foreach (var choiceData in choiceDataList)
+            {
+                if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
+                {
+                    if (choiceData.choiceNumber == 1)
+                    {
+                        audioSources[4].Play();
+                    }
+                }
+            }
+            
+            audioSources[5].Play();
         }
         else if (loadedScene.name == SceneName.Worker_Central_Scene.ToString())
         {
-            StopAllAudioSources();
             audioSources[0].Play();
-            PlayMusicByQuestKey();
+            audioSources[1].Play();
+            audioSources[2].Play();
+            audioSources[3].Play();
+            
+            List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
+            foreach (var choiceData in choiceDataList)
+            {
+                if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
+                {
+                    if (choiceData.choiceNumber == 1)
+                    {
+                        audioSources[4].Play();
+                    }
+                }
+            }
+            
+            audioSources[5].Play();
             audioSources[6].Play();
         }
         else if (
@@ -87,47 +162,159 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     }
 
 
-    private void PlayMusicByQuestKey()
+    private void PlayStartSceneMusic()
     {
         List<QuestData> questDataList = QuestDataHolder.Instance.questDataList;
+        bool progressPoint = false;
+
+        //リーマン
+        foreach (var questData in questDataList)
+        {
+            if (questData.key == QuestKey.Worker)
+            {
+                if (questData.progress == 0)
+                {
+                    progressPoint = true;
+                    audioSources[5].Play();
+                }
+
+                break;
+            }
+        }
+
+        //店員
+        foreach (var questData in questDataList)
+        {
+            if (questData.key == QuestKey.Clerk)
+            {
+                if (questData.progress == 1)
+                {
+                    progressPoint = true;
+                    audioSources[5].Play();
+                }
+                else if (questData.progress == 0)
+                {
+                    if (progressPoint)
+                    {
+                        audioSources[5].Play();
+                    }
+                    else
+                    {
+                        progressPoint = true;
+                    }
+                }
+
+                break;
+            }
+        }
+
+        //チンピラ
+        foreach (var questData in questDataList)
+        {
+            if (questData.key == QuestKey.Thugs)
+            {
+                if (questData.progress == 1)
+                {
+                    progressPoint = true;
+                    audioSources[4].Play();
+                }
+                else if (questData.progress == 0)
+                {
+                    if (progressPoint)
+                    {
+                        audioSources[4].Play();
+                    }
+                    else
+                    {
+                        progressPoint = true;
+                    }
+                }
+
+                break;
+            }
+        }
+
+        //OL
+        foreach (var questData in questDataList)
+        {
+            if (questData.key == QuestKey.OL)
+            {
+                if (questData.progress == 1)
+                {
+                    progressPoint = true;
+                    audioSources[3].Play();
+                }
+                else if (questData.progress == 0)
+                {
+                    if (progressPoint)
+                    {
+                        audioSources[3].Play();
+                    }
+                    else
+                    {
+                        progressPoint = true;
+                    }
+                }
+
+                break;
+            }
+        }
+
+        //小学生
+        foreach (var questData in questDataList)
+        {
+            if (questData.key == QuestKey.Element)
+            {
+                if (questData.progress == 1)
+                {
+                    progressPoint = true;
+                    audioSources[2].Play();
+                }
+                else if (questData.progress == 0)
+                {
+                    if (progressPoint)
+                    {
+                        audioSources[2].Play();
+                    }
+                    else
+                    {
+                        progressPoint = true;
+                    }
+                }
+
+                break;
+            }
+        }
+        
+        //女子高生
         foreach (var questData in questDataList)
         {
             if (questData.key == QuestKey.JK)
             {
                 if (questData.progress == 1)
                 {
+                    progressPoint = true;
                     audioSources[1].Play();
                 }
-            }
-            else if (questData.key == QuestKey.Element)
-            {
-                if (questData.progress == 1)
+                else if (questData.progress == 0)
                 {
-                    audioSources[2].Play();
+                    if (progressPoint)
+                    {
+                        audioSources[1].Play();
+                    }
+                    else
+                    {
+                        progressPoint = true;
+                    }
                 }
-            }
-            else if (questData.key == QuestKey.OL)
-            {
-                if (questData.progress == 1)
-                {
-                    audioSources[3].Play();
-                }
-            }
-            else if (questData.key == QuestKey.Thugs)
-            {
-                if (questData.progress == 1)
-                {
-                    audioSources[4].Play();
-                }
-            }
-            else if (questData.key == QuestKey.Clerk)
-            {
-                if (questData.progress == 1)
-                {
-                    audioSources[5].Play();
-                }
+
+                break;
             }
         }
+
+        EditorDebug.Log(audioSources[0].isPlaying.ToString() + audioSources[1].isPlaying.ToString() +
+                        audioSources[2].isPlaying.ToString() + audioSources[3].isPlaying.ToString() +
+                        audioSources[4].isPlaying.ToString() + audioSources[5].isPlaying.ToString());
     }
 
     public float GetBgmValue()

@@ -6,9 +6,13 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
 {
 
     private const string END1_Stats = "END1_Stats";
-    private const string END6_Stats = "END6_Stats";
+    private const string END2_Stats = "END2_Stats";
+    private const string END3_Stats = "END3-Stats";
+    private const string END4_Stats = "END4_Stats";
+    private const string END5_Stats = "END5_Stats";
+    private const string END6_1_Stats = "END6-1_Stats";
+    private const string END6_2_Stats = "END6-2_Stats";
     private const string END6_3_Stats = "End6-3_Stats";
-    private const string AnyEnd_Stats = "AnyEnd_Stats";
     private const string AllEnd_Stats = "AllEnd_Stats";
     
     private void Start() {
@@ -21,17 +25,28 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
             //SteamUserStats.ResetAllStats(true);
             //SteamUserStats.RequestCurrentStats();
             bool end1Achieved = false;
-            bool end6Achieved = false;
+            bool end2Achieved = false;
+            bool end3Achieved = false;
+            bool end4Achieved = false;
+            bool end5Achieved = false;
+            bool end6_1Achieved = false;
+            bool end6_2Achieved = false;
             bool end6_3Achieved = false;
-            bool anyendAchieved = false;
             bool allEndAchieved = false;
+            
             SteamUserStats.GetAchievement(END1_Stats, out end1Achieved);
-            SteamUserStats.GetAchievement(END6_Stats, out end6Achieved);
+            SteamUserStats.GetAchievement(END2_Stats, out end2Achieved);
+            SteamUserStats.GetAchievement(END3_Stats, out end3Achieved);
+            SteamUserStats.GetAchievement(END4_Stats, out end4Achieved);
+            SteamUserStats.GetAchievement(END5_Stats, out end5Achieved);
+            SteamUserStats.GetAchievement(END6_1_Stats, out end6_1Achieved);
+            SteamUserStats.GetAchievement(END6_2_Stats, out end6_2Achieved);
             SteamUserStats.GetAchievement(END6_3_Stats, out end6_3Achieved);
-            SteamUserStats.GetAchievement(AnyEnd_Stats, out anyendAchieved);
             SteamUserStats.GetAchievement(AllEnd_Stats, out allEndAchieved);
-            EditorDebug.Log("End1 : " + end1Achieved + ", End6 : " + end6Achieved + ", End6_3 : " + end6_3Achieved +
-                            ", AnyEnd :" + anyendAchieved + ", AllEnd : " + allEndAchieved);
+            EditorDebug.Log("End1 : " + end1Achieved + ", End2 : " + end2Achieved + ", End3 : " + end3Achieved +
+                            ", End4 : " + end4Achieved + ", End5 : " + end5Achieved + ", End6_1 : " + end6_1Achieved +
+                            "End6_2 : " + end6_2Achieved + ", End6_3 : " + end6_3Achieved +
+                            ", AllEnd : " + allEndAchieved);
         }
         
     }
@@ -47,14 +62,69 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         }
     }
 
-    public void Save_End6()
+    public void Save_End2()
     {
         bool isAchieved = false;
-        SteamUserStats.GetAchievement(END6_Stats, out isAchieved);
+        SteamUserStats.GetAchievement(END2_Stats, out isAchieved);
         if (!isAchieved)
         {
-            EditorDebug.Log("End6実績を解放");
-            SteamUserStats.SetAchievement(END6_Stats);
+            EditorDebug.Log("End2実績を解放");
+            SteamUserStats.SetAchievement(END2_Stats);
+        }
+    }
+    
+    public void Save_End3()
+    {
+        bool isAchieved = false;
+        SteamUserStats.GetAchievement(END3_Stats, out isAchieved);
+        if (!isAchieved)
+        {
+            EditorDebug.Log("End3実績を解放");
+            SteamUserStats.SetAchievement(END3_Stats);
+        }
+    }
+    
+    public void Save_End4()
+    {
+        bool isAchieved = false;
+        SteamUserStats.GetAchievement(END4_Stats, out isAchieved);
+        if (!isAchieved)
+        {
+            EditorDebug.Log("End4実績を解放");
+            SteamUserStats.SetAchievement(END4_Stats);
+        }
+    }
+    
+    public void Save_End5()
+    {
+        bool isAchieved = false;
+        SteamUserStats.GetAchievement(END5_Stats, out isAchieved);
+        if (!isAchieved)
+        {
+            EditorDebug.Log("End5実績を解放");
+            SteamUserStats.SetAchievement(END5_Stats);
+        }
+    }
+
+    public void Save_End6_1()
+    {
+        bool isAchieved = false;
+        SteamUserStats.GetAchievement(END6_1_Stats, out isAchieved);
+        if (!isAchieved)
+        {
+            EditorDebug.Log("End6-1実績を解放");
+            SteamUserStats.SetAchievement(END6_1_Stats);
+        }
+    }
+    
+    public void Save_End6_2()
+    {
+        bool isAchieved = false;
+        SteamUserStats.GetAchievement(END6_2_Stats, out isAchieved);
+        if (!isAchieved)
+        {
+            EditorDebug.Log("End6-2実績を解放");
+            SteamUserStats.SetAchievement(END6_2_Stats);
         }
     }
 
@@ -66,17 +136,6 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
         {
             EditorDebug.Log("End6_3実績を解放");
             SteamUserStats.SetAchievement(END6_3_Stats);
-        }
-    }
-
-    public void Save_AnyEnd()
-    {
-        bool isAchieved = false;
-        SteamUserStats.GetAchievement(AnyEnd_Stats, out isAchieved);
-        if (!isAchieved)
-        {
-            EditorDebug.Log("AnyEnd実績を解放");
-            SteamUserStats.SetAchievement(AnyEnd_Stats);
         }
     }
 

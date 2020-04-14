@@ -20,14 +20,26 @@ namespace Fungus
                 case StatsType.End1:
                     saveSteamStats.Save_End1();
                     break;
-                case StatsType.End6:
-                    saveSteamStats.Save_End6();
+                case StatsType.End2:
+                    saveSteamStats.Save_End2();
+                    break;
+                case StatsType.End3:
+                    saveSteamStats.Save_End3();
+                    break;
+                case StatsType.End4:
+                    saveSteamStats.Save_End4();
+                    break;
+                case StatsType.End5:
+                    saveSteamStats.Save_End5();
+                    break;
+                case StatsType.End6_1:
+                    saveSteamStats.Save_End6_1();
+                    break;
+                case StatsType.End6_2:
+                    saveSteamStats.Save_End6_2();
                     break;
                 case StatsType.End6_3:
                     saveSteamStats.Save_END6_3();
-                    break;
-                case StatsType.AnyEnd:
-                    saveSteamStats.Save_AnyEnd();
                     break;
                 case StatsType.AllEnd:
                     List<EndingData> endingDataList = EndingDataHolder.Instance.endingDataList;
@@ -70,9 +82,13 @@ namespace Fungus
         private enum StatsType
         {
             End1,
-            End6,
+            End2,
+            End3,
+            End4,
+            End5,
+            End6_1,
+            End6_2,
             End6_3,
-            AnyEnd,
             AllEnd
         }
     }
