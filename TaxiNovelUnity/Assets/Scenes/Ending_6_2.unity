@@ -607,7 +607,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 293042584}
   selectedCommands:
-  - {fileID: 293042614}
+  - {fileID: 293042641}
   variables:
   - {fileID: 293042613}
   description: 
@@ -1612,7 +1612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 0
-  statsType: 3
+  statsType: 8
 --- !u!114 &293042642
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1627,7 +1627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 0
-  statsType: 1
+  statsType: 6
 --- !u!114 &293042647
 MonoBehaviour:
   m_ObjectHideFlags: 2

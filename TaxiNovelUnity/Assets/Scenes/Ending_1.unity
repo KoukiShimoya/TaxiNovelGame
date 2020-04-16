@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -821,7 +821,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 940326944}
   selectedCommands:
-  - {fileID: 940326965}
+  - {fileID: 940326983}
   variables:
   - {fileID: 940326964}
   description: 
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 77
   indentLevel: 0
-  statsType: 3
+  statsType: 8
 --- !u!114 &940326984
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 586845210}
   - component: {fileID: 586845213}
   - component: {fileID: 586845215}
+  - component: {fileID: 586845196}
   m_Layer: 0
   m_Name: Flowchart_1
   m_TagString: Untagged
@@ -354,6 +355,7 @@ MonoBehaviour:
   - {fileID: 586845191}
   - {fileID: 586845190}
   - {fileID: 586845213}
+  - {fileID: 586845196}
   - {fileID: 586845189}
   - {fileID: 586845215}
   - {fileID: 586845188}
@@ -384,7 +386,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 586845168}
   selectedCommands:
-  - {fileID: 586845188}
+  - {fileID: 586845196}
   variables:
   - {fileID: 586845171}
   description: 
@@ -1032,6 +1034,21 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 1
+--- !u!114 &586845196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586845167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf93c58f94ab90549b90414ceced472d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 80
+  indentLevel: 0
+  statsType: 8
 --- !u!114 &586845210
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1098,7 +1115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 0
-  statsType: 3
+  statsType: 1
 --- !u!114 &586845215
 MonoBehaviour:
   m_ObjectHideFlags: 2

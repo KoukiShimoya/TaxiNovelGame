@@ -174,141 +174,79 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
             {
                 if (questData.progress == 0)
                 {
-                    progressPoint = true;
-                    audioSources[5].Play();
-                }
-
-                break;
-            }
-        }
-
-        //店員
-        foreach (var questData in questDataList)
-        {
-            if (questData.key == QuestKey.Clerk)
-            {
-                if (questData.progress == 1)
-                {
-                    progressPoint = true;
-                    audioSources[5].Play();
-                }
-                else if (questData.progress == 0)
-                {
-                    if (progressPoint)
-                    {
-                        audioSources[5].Play();
-                    }
-                    else
-                    {
-                        progressPoint = true;
-                    }
-                }
-
-                break;
-            }
-        }
-
-        //チンピラ
-        foreach (var questData in questDataList)
-        {
-            if (questData.key == QuestKey.Thugs)
-            {
-                if (questData.progress == 1)
-                {
-                    progressPoint = true;
-                    audioSources[4].Play();
-                }
-                else if (questData.progress == 0)
-                {
-                    if (progressPoint)
-                    {
-                        audioSources[4].Play();
-                    }
-                    else
-                    {
-                        progressPoint = true;
-                    }
-                }
-
-                break;
-            }
-        }
-
-        //OL
-        foreach (var questData in questDataList)
-        {
-            if (questData.key == QuestKey.OL)
-            {
-                if (questData.progress == 1)
-                {
-                    progressPoint = true;
-                    audioSources[3].Play();
-                }
-                else if (questData.progress == 0)
-                {
-                    if (progressPoint)
-                    {
-                        audioSources[3].Play();
-                    }
-                    else
-                    {
-                        progressPoint = true;
-                    }
-                }
-
-                break;
-            }
-        }
-
-        //小学生
-        foreach (var questData in questDataList)
-        {
-            if (questData.key == QuestKey.Element)
-            {
-                if (questData.progress == 1)
-                {
-                    progressPoint = true;
-                    audioSources[2].Play();
-                }
-                else if (questData.progress == 0)
-                {
-                    if (progressPoint)
-                    {
-                        audioSources[2].Play();
-                    }
-                    else
-                    {
-                        progressPoint = true;
-                    }
-                }
-
-                break;
-            }
-        }
-        
-        //女子高生
-        foreach (var questData in questDataList)
-        {
-            if (questData.key == QuestKey.JK)
-            {
-                if (questData.progress == 1)
-                {
-                    progressPoint = true;
                     audioSources[1].Play();
+                    audioSources[2].Play();
+                    audioSources[3].Play();
+            
+                    List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
+                    foreach (var choiceData in choiceDataList)
+                    {
+                        if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
+                        {
+                            if (choiceData.choiceNumber == 1)
+                            {
+                                audioSources[4].Play();
+                            }
+                        }
+                    }
+            
+                    audioSources[5].Play();
+                    
+                    break;
                 }
-                else if (questData.progress == 0)
+            }
+            else if (questData.key == QuestKey.Clerk)
+            {
+                if (questData.progress == 0)
                 {
-                    if (progressPoint)
+                    audioSources[1].Play();
+                    audioSources[2].Play();
+                    audioSources[3].Play();
+            
+                    List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
+                    foreach (var choiceData in choiceDataList)
                     {
-                        audioSources[1].Play();
+                        if (choiceData.key == ChoiceKey.NoMeetThugs_MeetThugs)
+                        {
+                            if (choiceData.choiceNumber == 1)
+                            {
+                                audioSources[4].Play();
+                            }
+                        }
                     }
-                    else
-                    {
-                        progressPoint = true;
-                    }
-                }
 
-                break;
+                    break;
+                }
+            }
+            else if (questData.key == QuestKey.Thugs)
+            {
+                if (questData.progress == 0)
+                {
+                    audioSources[1].Play();
+                    audioSources[2].Play();
+                    audioSources[3].Play();
+
+                    break;
+                }
+            }
+            else if (questData.key == QuestKey.OL)
+            {
+                if (questData.progress == 0)
+                {
+                    audioSources[1].Play();
+                    audioSources[2].Play();
+
+                    break;
+                }
+            }
+            else if (questData.key == QuestKey.Element)
+            {
+                if (questData.progress == 0)
+                {
+                    audioSources[1].Play();
+
+                    break;
+                }
             }
         }
 

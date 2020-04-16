@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using ConstValues;
+using UnityEngine.SceneManagement;
 
 public class CheckPointButton : MonoBehaviour
 {
@@ -119,6 +120,7 @@ public class CheckPointButton : MonoBehaviour
 
     private bool IsCheckPointAchieved(QuestKey questKey)
     {
+        /*
         if (questKey == QuestKey.Thugs)
         {
             List<ChoiceData> choiceDataList = ChoiceDataHolder.Instance.choiceDataList;
@@ -140,6 +142,7 @@ public class CheckPointButton : MonoBehaviour
                 }
             }
         }
+        */
         
         List<QuestData> questDataList = QuestDataHolder.Instance.questDataList;
 
@@ -181,22 +184,27 @@ public class CheckPointButton : MonoBehaviour
     {
         if (clickedButton == button_JK)
         {
+            CheckSelectedPartPosition(SceneName.JK_North_Scene);
             SceneChange.Instance.SceneChangeFunction(SceneName.JK_North_Scene);
         }
         else if (clickedButton == button_Element)
         {
+            CheckSelectedPartPosition(SceneName.Element_BeforeThugs_Scene);
             SceneChange.Instance.SceneChangeFunction(SceneName.Element_BeforeThugs_Scene);
         }
         else if (clickedButton == button_OL)
         {
+            CheckSelectedPartPosition(SceneName.OL_Central_Scene);
             SceneChange.Instance.SceneChangeFunction(SceneName.OL_Central_Scene);
         }
         else if (clickedButton == button_Thugs)
         {
+            CheckSelectedPartPosition(SceneName.Thugs_Central_Scene);
             SceneChange.Instance.SceneChangeFunction(SceneName.Thugs_Central_Scene);
         }
         else if (clickedButton == button_Clerk)
         {
+            CheckSelectedPartPosition(SceneName.Clerk_Central_Scene);
             SceneChange.Instance.SceneChangeFunction(SceneName.Clerk_Central_Scene);
         }
         else if (clickedButton == button_Worker)
@@ -206,6 +214,63 @@ public class CheckPointButton : MonoBehaviour
         else
         {
             EditorDebug.LogError("設定されたチェックポイントボタンが異なります");
+        }
+    }
+
+    private void CheckSelectedPartPosition(SceneName sceneName)
+    {
+        if (sceneName == SceneName.JK_North_Scene)
+        {
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Element, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.OL, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Thugs, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Clerk, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Worker, -1));
+            
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Something_Book, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.NoMeetThugs_MeetThugs, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Letter_Courage, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.JapaneseSweets_Cake, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.TastyCandy_SaveCandy, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Cute_LowRisk, -1));
+        }
+        else if (sceneName == SceneName.Element_BeforeThugs_Scene)
+        {
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.OL, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Thugs, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Clerk, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Worker, -1));
+            
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.NoMeetThugs_MeetThugs, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Letter_Courage, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.JapaneseSweets_Cake, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.TastyCandy_SaveCandy, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Cute_LowRisk, -1));
+        }
+        else if (sceneName == SceneName.OL_Central_Scene)
+        {
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Thugs, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Clerk, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Worker, -1));
+            
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.JapaneseSweets_Cake, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.TastyCandy_SaveCandy, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Cute_LowRisk, -1));
+        }
+        else if (sceneName == SceneName.Thugs_Central_Scene)
+        {
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Clerk, -1));
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Worker, -1));
+            
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.TastyCandy_SaveCandy, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Cute_LowRisk, -1));
+        }
+        else if (sceneName == SceneName.Clerk_Central_Scene)
+        {
+            SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Worker, -1));
+            
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.TastyCandy_SaveCandy, -1));
+            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Cute_LowRisk, -1));
         }
     }
 
