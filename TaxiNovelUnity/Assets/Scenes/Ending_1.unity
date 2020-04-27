@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 940326944}
-  waitForFrames: 1
+  waitForFrames: 2
 --- !u!114 &940326944
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -820,8 +820,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 940326944}
-  selectedCommands:
-  - {fileID: 940326983}
+  selectedCommands: []
   variables:
   - {fileID: 940326964}
   description: 

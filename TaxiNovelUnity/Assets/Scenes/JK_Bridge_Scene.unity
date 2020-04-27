@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 1815920245}
 --- !u!4 &48659367
 Transform:
   m_ObjectHideFlags: 1
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1815920244}
-  waitForFrames: 1
+  waitForFrames: 2
 --- !u!114 &1815920244
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1170,9 +1170,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1815920250}
-  selectedCommands:
-  - {fileID: 1815920247}
+  - {fileID: 1815920244}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2520,7 +2519,7 @@ MonoBehaviour:
   fadeFinishPosition: 0
 --- !u!114 &1815920299
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

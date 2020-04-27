@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using ConstValues;
-using UnityEditor.UI;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : SingletonMonoBehaviour<AudioManager>
 {
@@ -250,9 +248,11 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
             }
         }
 
+        /*
         EditorDebug.Log(audioSources[0].isPlaying.ToString() + audioSources[1].isPlaying.ToString() +
                         audioSources[2].isPlaying.ToString() + audioSources[3].isPlaying.ToString() +
                         audioSources[4].isPlaying.ToString() + audioSources[5].isPlaying.ToString());
+                        */
     }
 
     public float GetBgmValue()
