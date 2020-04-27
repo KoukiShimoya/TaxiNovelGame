@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class UILanguageChange : MonoBehaviour
 {
-    [SerializeField] private string JA;
-    [SerializeField] private string EN;
+    [SerializeField] [TextArea] private string JA;
+    [SerializeField] [TextArea] private string EN;
     private bool hiddenElement = false;
     private const string hiddenWord = "???";
 

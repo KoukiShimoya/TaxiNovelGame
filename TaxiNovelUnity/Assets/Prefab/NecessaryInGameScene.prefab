@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JA: "\u8A2D\u5B9A\u753B\u9762\u3092\u958B\u304F"
-  EN: Open Setting
+  EN: Open Settings
 --- !u!1 &4171835216977351314
 GameObject:
   m_ObjectHideFlags: 0
