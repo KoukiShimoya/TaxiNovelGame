@@ -7,7 +7,7 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
 
     private const string END1_Stats = "END1_Stats";
     private const string END2_Stats = "END2_Stats";
-    private const string END3_Stats = "END3-Stats";
+    private const string END3_Stats = "END3_Stats";
     private const string END4_Stats = "END4_Stats";
     private const string END5_Stats = "END5_Stats";
     private const string END6_1_Stats = "END6-1_Stats";

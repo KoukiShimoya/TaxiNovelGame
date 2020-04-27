@@ -552,9 +552,9 @@ MonoBehaviour:
   - {fileID: 519693928}
   - {fileID: 519693927}
   - {fileID: 519693951}
+  - {fileID: 519693954}
   - {fileID: 519693933}
   - {fileID: 519693926}
-  - {fileID: 519693954}
   - {fileID: 519693925}
 --- !u!114 &519693910
 MonoBehaviour:
@@ -1106,7 +1106,6 @@ MonoBehaviour:
   itemId: 72
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: ac97513f0111e4d409bb2cf66fef49d3, type: 3}
-  volume: 0.7
   waitUntilFinished: 1
 --- !u!114 &519693948
 MonoBehaviour:

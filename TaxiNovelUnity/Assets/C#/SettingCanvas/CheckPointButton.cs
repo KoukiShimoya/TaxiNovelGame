@@ -269,7 +269,6 @@ public class CheckPointButton : MonoBehaviour
         {
             SaveLoadCsvFile.SaveQuest(new QuestData(QuestKey.Worker, -1));
             
-            SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.TastyCandy_SaveCandy, -1));
             SaveLoadCsvFile.SaveChoice(new ChoiceData(ChoiceKey.Cute_LowRisk, -1));
         }
     }
