@@ -11,6 +11,7 @@ public class SettingPanelUniqueOpen : MonoBehaviour
     [SerializeField] private GameObject settingCanvas;
     private WorldStateHolder worldStateHolder;
     private SettingToStartScene settingToStartScene;
+    private GameClose gameClose;
 
     /// <summary>
     /// 設定画面でボタンを押した際、開かれる画面を一意にする挙動
@@ -47,6 +48,11 @@ public class SettingPanelUniqueOpen : MonoBehaviour
         {
             worldStateHolder.GetSetWorldState = WorldStateHolder.WorldState.Standard;
             settingToStartScene.GetReturnStartPanel.SetActive(false);
+            gameClose.GetGameClosePanel.SetActive(false);
+        }
+        else if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == SceneName.StartScene.ToString())
+        {
+            gameClose.GetGameClosePanel.SetActive(false);
         }
     }
 
@@ -61,6 +67,11 @@ public class SettingPanelUniqueOpen : MonoBehaviour
         {
             worldStateHolder = WorldStateHolder.Instance;
             settingToStartScene = SettingToStartScene.Instance;
+            gameClose = GameClose.Instance;
+        }
+        else if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == SceneName.StartScene.ToString())
+        {
+            gameClose = GameClose.Instance;
         }
     }
 }

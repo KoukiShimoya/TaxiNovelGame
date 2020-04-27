@@ -22,6 +22,7 @@ public class SaveSteamStats :SingletonMonoBehaviour<SaveSteamStats>
             string name = SteamFriends.GetPersonaName();
             EditorDebug.Log(SteamUtils.GetAppID());
             
+            //実績をリセットする場合は、下の二行をアクティブにする
             //SteamUserStats.ResetAllStats(true);
             //SteamUserStats.RequestCurrentStats();
             bool end1Achieved = false;

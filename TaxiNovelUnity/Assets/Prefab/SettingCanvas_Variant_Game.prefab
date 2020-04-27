@@ -82,6 +82,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3870650529601932456, guid: 59bad0895a9407f47b8ff40e6d8062a4,
         type: 3}
+      propertyPath: buttonPanelSetList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870650529601932456, guid: 59bad0895a9407f47b8ff40e6d8062a4,
+        type: 3}
       propertyPath: buttonPanelSetList.Array.data[3].Panel
       value: 
       objectReference: {fileID: 6063674169013024617}
@@ -204,11 +209,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2008376330251001399}
+      objectReference: {fileID: 1311692413440549634}
     - target: {fileID: 3870650530423953652, guid: 59bad0895a9407f47b8ff40e6d8062a4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeActivePanel
+      value: OnOpenReturnStartPanelButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870650530423953652, guid: 59bad0895a9407f47b8ff40e6d8062a4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870650530423953652, guid: 59bad0895a9407f47b8ff40e6d8062a4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870650530423953652, guid: 59bad0895a9407f47b8ff40e6d8062a4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3870650530423953654, guid: 59bad0895a9407f47b8ff40e6d8062a4,
         type: 3}
@@ -237,18 +257,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59bad0895a9407f47b8ff40e6d8062a4, type: 3}
---- !u!114 &2008376330251001399 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3870650529601932456, guid: 59bad0895a9407f47b8ff40e6d8062a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3344062943291511455}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a475c5ba6cec634fab122e22830e188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2008376331039459945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3870650530423953654, guid: 59bad0895a9407f47b8ff40e6d8062a4,

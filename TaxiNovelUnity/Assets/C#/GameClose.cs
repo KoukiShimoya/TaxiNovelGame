@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class GameClose : MonoBehaviour
+public class GameClose : SingletonMonoBehaviour<GameClose>
 {
-    [CanBeNull] [SerializeField] private GameObject checkPanel;
+    [SerializeField] private GameObject checkPanel;
+
+    public GameObject GetGameClosePanel
+    {
+        get { return checkPanel; }
+    }
     
     public void OnClick_NoCheck()
     {
