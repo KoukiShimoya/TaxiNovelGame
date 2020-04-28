@@ -30,7 +30,7 @@ public class CheckPointReleasePanel : MonoBehaviour
         {
             if (questData.progress == 0 || questData.progress == 1)
             {
-                achievedEndingType++;
+                achievedQuestDataType++;
             }
         }
 

@@ -789,10 +789,10 @@ MonoBehaviour:
   - {fileID: 940326960}
   - {fileID: 940326959}
   - {fileID: 940326958}
+  - {fileID: 940326947}
   - {fileID: 940326984}
   - {fileID: 940326987}
   - {fileID: 940326983}
-  - {fileID: 940326947}
   - {fileID: 940326965}
 --- !u!114 &940326945
 MonoBehaviour:
@@ -820,7 +820,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 940326944}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 940326947}
   variables:
   - {fileID: 940326964}
   description: 
