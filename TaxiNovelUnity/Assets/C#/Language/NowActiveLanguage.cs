@@ -6,7 +6,7 @@ using System.Linq;
 
 public static class NowActiveLanguage
 {
-    private static LanguageCode languageCode = LanguageCode.JP;
+    private static LanguageCode languageCode = LanguageCode.JA;
 
     public static LanguageCode GetSetLanguageCode
     {
@@ -38,7 +38,7 @@ public static class NowActiveLanguage
 
     public enum LanguageCode
     {
-        JP,
+        JA,
         EN
     }
 }

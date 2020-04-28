@@ -1,0 +1,32 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.ナレーション,,話し声にうっすらと目を開けると、白い天井が見えた。,"When I opened my eyes dimly at the sound of talking, I saw a white ceiling."
+SAY.Flowchart_1.7.ナレーション,,どうやらあのあと、病院に運ばれたようだ。,It seems I was taken to the hospital after that.
+SAY.Flowchart_1.6.女子高生,,あ！運転手さんが...！,Ah! The driver...!
+SAY.Flowchart_1.5.ナレーション,,慌てたような声が聞こえる。,I hear a hurried voice.
+SAY.Flowchart_1.4.女子高生,,よかった！目が覚めたんだね！,"Oh, thank God! You're awake!"
+SAY.Flowchart_1.3.ナレーション,,病室の中には、今日の客たちが並んでいた。,Today's customers were lining up in the hospital room.
+SAY.Flowchart_1.13.女子高生,,女子高生、,"The high school girl,"
+SAY.Flowchart_1.15.小学生,,小学生、,"The elementary school student,"
+SAY.Flowchart_1.17.チンピラ,,怪我をしたチンピラ、,"The injured hooligan,"
+SAY.Flowchart_1.18.OL,,OL、,"The business person,"
+SAY.Flowchart_1.20.店員,,男性店員、,"The male clerk,"
+SAY.Flowchart_1.19.サラリーマン,,そしてサラリーマンまで...,Even the office worker...
+SAY.Flowchart_1.21.ナレーション,,皆心配して駆けつけてくれたようだ。,Everyone seemed to be worried and rushed to the scene.
+SAY.Flowchart_1.22.ナレーション,,心配した、と口々に言う彼らにお礼を言いつつ、やっと実感が湧いてくる心地がした。,"As I thanked them for saying that I was worried about them, I felt real yet."
+SAY.Flowchart_1.30.ナレーション,,なんだか、長い1日だった気がする。,It seems like a long day.
+SAY.Flowchart_1.29.ナレーション,,彼らの相談や、自分のとった様々な行動を思い起こす。,I recall their counsel and the various actions I took.
+SAY.Flowchart_1.28.ナレーション,,あのとき、自分が違う選択をしていたら...,"At that time, if I had made a different choice..."
+SAY.Flowchart_1.27.ナレーション,,少しの選択の違いが、悲惨な結末を生み出していたかもしれない。,A little choice might have had a disastrous outcome.
+SAY.Flowchart_1.26.ナレーション,,そう考えると、ゾクリと背筋に冷たいものが走るのを感じた。,"When I thought about it, I felt something cold running down my spine."
+SAY.Flowchart_1.25.小学生,,運転手さん...？どうしたの？,Driver...? What's wrong?
+SAY.Flowchart_1.24.ナレーション,,小学生が不安そうに顔を見上げてくる。その頭を優しくなでて、安心させようと微笑む。,The elementary school student looked up anxiously. I gently caress her head and smile to reassure her.
+SAY.Flowchart_1.23.ナレーション,,運転手の業務に戻るには、少し時間はかかってしまうかもしれない。,It may take some time to get back to being a driver.
+SAY.Flowchart_1.32.ナレーション,,それでも、なんとか助かったと言っていいのだろう。,"Even so, I think it's fair to say that I managed to save the day."
+SAY.Flowchart_1.31.ナレーション,,業務が再開できるまで、ゆっくりと休みをとることにした。,I decided to take a good rest until I could resume my work.
+CHARACTER.小学生,,小学生,Elementary School Student
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.女子高生,,女子高生,High School Girl
+CHARACTER.店員,,店員,Clerk
+CHARACTER.チンピラ,,チンピラ,Hooligan
+CHARACTER.OL,,OL,Business Person
+CHARACTER.サラリーマン,,サラリーマン,Office Worker

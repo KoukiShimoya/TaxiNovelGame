@@ -589,6 +589,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1022176167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1022176169}
+  - component: {fileID: 1022176168}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1022176168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022176167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeLanguage: 
+  localizationFile: {fileID: 4900000, guid: 810b16bb819454c44b3536e90157f659, type: 3}
+--- !u!4 &1022176169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022176167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1111945737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -859,9 +904,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1469437387}
-  selectedCommands:
-  - {fileID: 1469437403}
+  - {fileID: 1469437383}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1090,8 +1134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  JP: "\u30C7\u30D1\u30FC\u30C8\u3078\u5411\u304B\u304A\u3046"
-  EN: Go to Department Store
+  JP: "\u30C7\u30D1\u30FC\u30C8\u3078\u5411\u304B\u3046"
+  EN: go to the department store
 --- !u!114 &1469437395
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1105,7 +1149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1469437383}
-  waitForFrames: 1
+  waitForFrames: 2
 --- !u!114 &1469437396
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1194,7 +1238,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1469437401
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1212,7 +1256,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1469437402
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1230,7 +1274,7 @@ MonoBehaviour:
   fadeFinishPosition: 1
 --- !u!114 &1469437403
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

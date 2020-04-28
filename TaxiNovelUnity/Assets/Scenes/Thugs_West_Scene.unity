@@ -823,6 +823,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1865170437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1865170439}
+  - component: {fileID: 1865170438}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1865170438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865170437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeLanguage: 
+  localizationFile: {fileID: 4900000, guid: 3cd10d9e5fe7bc24195a8ddc768521ed, type: 3}
+--- !u!4 &1865170439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865170437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2021219276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1057,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 117.9272, y: 27.043306}
+  scrollPos: {x: 53.221336, y: 42.337425}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1069,9 +1114,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2080655916}
-  selectedCommands:
-  - {fileID: 2080655914}
+  - {fileID: 2080655885}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1137,7 +1181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 2080655885}
-  waitForFrames: 1
+  waitForFrames: 2
 --- !u!114 &2080655890
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1563,7 +1607,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2080655907
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1584,7 +1628,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2080655908
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1620,7 +1664,7 @@ MonoBehaviour:
   playerState: 1
 --- !u!114 &2080655910
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1638,7 +1682,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2080655911
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1683,11 +1727,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
-  JP: "\u5C0F\u5B66\u6821\u524D\u304B\u4E2D\u5B66\u6821\u524D\u306B\u9023\u308C\u3066\u884C\u3053\u3046"
-  EN: Go to Elementary School or Juniour High School
+  JP: "\u5C0F\u5B66\u6821\u524D\u304B\u4E2D\u5B66\u6821\u524D\u306B\u9023\u308C\u3066\u884C\u304F"
+  EN: go to the elementary school or the junior high school
 --- !u!114 &2080655914
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1702,7 +1746,7 @@ MonoBehaviour:
   nextScene: 15
 --- !u!114 &2080655915
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1783,7 +1827,7 @@ MonoBehaviour:
   fadeFinishPosition: 0
 --- !u!114 &2080655919
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1801,7 +1845,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2080655920
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1818,7 +1862,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2080655921
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1836,7 +1880,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2080655922
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

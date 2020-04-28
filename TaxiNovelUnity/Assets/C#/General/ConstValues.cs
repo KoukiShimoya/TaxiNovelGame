@@ -78,7 +78,14 @@ namespace ConstValues
             public const string PlayTime = "PlayTime";
             public const string ChoiceData = "ChoiceData";
             public const string QuestData = "QuestData";
+            public const string EndingData = "EndingData";
+            public const string AudioVolumeData = "AudioVolumeData";
         }
     }
 
+    public struct AudioTag
+    {
+        public const string BGM = "BGM";
+        public const string SE = "SE";
+    }
 }

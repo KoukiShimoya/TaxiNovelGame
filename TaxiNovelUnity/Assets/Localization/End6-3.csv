@@ -1,0 +1,33 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.3.ナレーション,,話し声にうっすらと目を開けると、白い天井が見えた。,"When I opened my eyes dimly at the sound of talking, I saw a white ceiling."
+SAY.Flowchart_1.12.ナレーション,,どうやらあのあと、病院に運ばれたようだ。,It seems I was taken to the hospital after that.
+SAY.Flowchart_1.11.女子高生,,あ！運転手さんが...！,Ah! The driver...!
+SAY.Flowchart_1.10.ナレーション,,慌てたような声が聞こえる。,I hear a hurried voice.
+SAY.Flowchart_1.9.OL,,よかった！目が覚めたんだね！,"Oh, thank God! You're awake!"
+SAY.Flowchart_1.8.ナレーション,,病室の中には、今日の客たちが並んでいた。,Today's customers were lining up in the hospital room.
+SAY.Flowchart_1.14.女子高生,,女子高生、,"The high school girl,"
+SAY.Flowchart_1.16.小学生,,小学生、,"The elementary school student,"
+SAY.Flowchart_1.18.チンピラ,,怪我をしたチンピラ、,"The injured hooligan,"
+SAY.Flowchart_1.20.OL,,OL、,"The business person,"
+SAY.Flowchart_1.21.店員,,男性店員、,"The male clerk,"
+SAY.Flowchart_1.22.サラリーマン,,そしてサラリーマンまで...,Even the office worker...
+SAY.Flowchart_1.7.ナレーション,,皆心配して駆けつけてくれたようだ。,Everyone seemed to be worried and rushed to the scene.
+SAY.Flowchart_1.6.ナレーション,,心配した、と口々に言う彼らにお礼を言いつつ、やっと実感が湧いてくる心地がした。,"As I thanked them for saying that I was worried about them, I felt real yet."
+SAY.Flowchart_1.5.ナレーション,,なんだか、長い1日だった気がする。,It seems like a long day.
+SAY.Flowchart_1.4.ナレーション,,彼らの相談や、自分のとった様々な行動を思い起こす。,I recall their counsel and the various actions I took.
+SAY.Flowchart_1.27.ナレーション,,あのとき、自分が違う選択をしていたら...,"At that time, if I had made a different choice..."
+SAY.Flowchart_1.26.ナレーション,,自分の行動一つで、今の状況が、自分の世界が変わっていたかもしれない。,My actions may have changed our future.
+SAY.Flowchart_1.25.ナレーション,,少しの選択の違いが、悲惨な結末を生み出していたかもしれない。,A little choice might have had a disastrous outcome.
+SAY.Flowchart_1.24.ナレーション,,そう考えると、ゾクリと背筋に冷たいものが走るのを感じた。,"When I thought about it, I felt something cold running down my spine."
+SAY.Flowchart_1.23.小学生,,運転手さん...？どうしたの？,Driver...? What's wrong?
+SAY.Flowchart_1.31.ナレーション,,小学生が不安そうに顔を見上げてくる。その頭を優しくなでて、安心させようと微笑む。,The elementary school student looked up anxiously. I gently caress her head and smile to reassure her.
+SAY.Flowchart_1.30.ナレーション,,何はともあれ、これは最善の結果だったに違いない。,"At any rate, this must have been the best result."
+SAY.Flowchart_1.29.ナレーション,,すぐに業務は再開できそうだ。明日はどんな客が来て、どんな相談をしていくのだろうか。,It looks like the work will resume soon. What kind of customers will come tomorrow and what kind of consultation will they have?
+SAY.Flowchart_1.28.ナレーション,,まだ見ぬ客の来訪と彼らの不思議な相談ごとを考えると、つい笑みがこぼれた。,I couldn't help smiling when I thought of all the strange consultions the future costomers have.
+CHARACTER.小学生,,小学生,Elementary School Student
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.女子高生,,女子高生,High School Girl
+CHARACTER.店員,,店員,Clerk
+CHARACTER.チンピラ,,チンピラ,Hooligan
+CHARACTER.OL,,OL,Business Person
+CHARACTER.サラリーマン,,サラリーマン,Office Worker

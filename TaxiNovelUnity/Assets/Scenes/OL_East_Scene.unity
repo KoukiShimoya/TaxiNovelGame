@@ -120,6 +120,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18068813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18068815}
+  - component: {fileID: 18068814}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &18068814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18068813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeLanguage: 
+  localizationFile: {fileID: 4900000, guid: 3a206a81e4d51ce4eb03e2da449a0a21, type: 3}
+--- !u!4 &18068815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18068813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &25890403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -934,11 +979,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 67.7069, y: -34.82258}
+  scrollPos: {x: 38.728153, y: -0.6523726}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1067,7 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1603527265}
-  waitForFrames: 1
+  waitForFrames: 2
 --- !u!114 &1603527272
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1112,8 +1157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 1
-  JP: "\u30B1\u30FC\u30AD\u5C4B\u304B\u548C\u83D3\u5B50\u5C4B\u3078\u9023\u308C\u3066\u884C\u3053\u3046"
-  EN: Got to Cake Shop or Japanese Sweets Shop
+  JP: "\u30B1\u30FC\u30AD\u5C4B\u304B\u548C\u83D3\u5B50\u5C4B\u3078\u9023\u308C\u3066\u884C\u304F"
+  EN: go to the cake shop or the Japanese sweets shop
 --- !u!114 &1603527275
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1690,7 +1735,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.956041
     y: 178.30219
-    width: 144
+    width: 146.8085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

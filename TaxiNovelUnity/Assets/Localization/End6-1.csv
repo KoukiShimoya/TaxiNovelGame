@@ -1,0 +1,18 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.3.ナレーション,,話し声にうっすらと目を開けると、白い天井が見えた。,"When I opened my eyes dimly at the sound of talking, I saw a white ceiling."
+SAY.Flowchart_1.10.ナレーション,,どうやらあのあと、病院に運ばれたようだ。,It seems I was taken to the hospital after that.
+SAY.Flowchart_1.9.女子高生,,あ！運転手さんが...！,Ah! The driver...!
+SAY.Flowchart_1.8.ナレーション,,慌てたような声が聞こえる。,I hear a hurried voice.
+SAY.Flowchart_1.7.ナレーション,,体を動かそうとしても、手足は動かない。,"When I try to move my body, my hands and feet can't move."
+SAY.Flowchart_1.6.ナレーション,,重症ではあるが一命はとりとめたらしい。,"Although it was serious, but I survived."
+SAY.Flowchart_1.5.ナレーション,,でも...,But...
+SAY.Flowchart_1.4.ナレーション,,これからはもう、タクシー運転手として働くことはできないのだろう。,I can't work as a taxi driver anymore.
+SAY.Flowchart_1.15.ナレーション,,あのとき、あの選択をしていれば...。,If I had made different choice at that time...
+SAY.Flowchart_1.14.ナレーション,,そんな後悔がいくつも浮かんでくる。,A number of such regrets come to mind.
+SAY.Flowchart_1.13.ナレーション,,皆が助かる道は、どこかにあったのかもしれない。,There must have been a way for everyone to happy.
+SAY.Flowchart_1.12.ナレーション,,だが、今はただ、少し眠りたい...。,"But now, I just want to sleep a little..."
+CHARACTER.サラリーマン,,サラリーマン,Office Worker
+CHARACTER.OL,,OL,Bussiness Person
+CHARACTER.店員,,店員,Clerk
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.女子高生,,女子高生,High School Girl

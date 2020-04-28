@@ -1,0 +1,9 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.ナレーション,,そろそろ、チンピラのいる病院に向かってみよう。,It's time to go to the hospital where the hooligan is.
+SAY.Flowchart_1.7.チンピラ,,お、悪いな。,"Oh, I'm sorry."
+SAY.Flowchart_1.8.チンピラ,,財布忘れちまって、取り行かなきゃいけねえんだ,"I forgot my wallet, I have to get it."
+SAY.Flowchart_1.9.チンピラ,,あー。西エリア行ってくれるか？,"So, can you go to the west area?"
+SAY.Flowchart_1.10.チンピラ,,また病院戻んのは面倒だが、仕方ねえよな...,"It is troublesome to go back to the hospital, but there is no way..."
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.チンピラ,,チンピラ,Hooligan

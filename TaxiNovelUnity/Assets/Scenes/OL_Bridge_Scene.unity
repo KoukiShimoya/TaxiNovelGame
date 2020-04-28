@@ -918,7 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1480607529}
-  waitForFrames: 1
+  waitForFrames: 2
 --- !u!114 &1480607529
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -993,9 +993,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1480607589}
-  selectedCommands:
-  - {fileID: 1480607544}
+  - {fileID: 1480607529}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1161,7 +1160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 1
-  storyText: "\u3042\u306F\u306F\u3001\u306A\u3093\u304B\u30C6\u30F3\u30B7\u30E7\u30F3\u3042\u304C\u3063\u3061\u3083\u3063\u305F\u3002"
+  storyText: "\u3042\u306F\u306F\u3001\u306A\u3093\u304B\u30C6\u30F3\u30B7\u30E7\u30F3\u3042\u304C\u3063\u3061\u3083\u3063\u305F\u3002\u3069\u3053\u304B\u5BC4\u308A\u9053\u3067\u3082\u3057\u3088\u3046\u304B\u306A\uFF1F"
   description: 
   character: {fileID: 1777853389}
   portrait: {fileID: 21300000, guid: abd860abecae9c2458e56d649f61f2d7, type: 3}
@@ -3764,6 +3763,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1878372252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1878372254}
+  - component: {fileID: 1878372253}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1878372253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878372252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeLanguage: 
+  localizationFile: {fileID: 4900000, guid: 1f162a394c6813649b9b825924d471a3, type: 3}
+--- !u!4 &1878372254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878372252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890131835
 PrefabInstance:
   m_ObjectHideFlags: 0

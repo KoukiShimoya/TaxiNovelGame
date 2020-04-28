@@ -1,0 +1,59 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.チンピラ,,じゃ、ちょっと相談でも乗ってもらうか...,"So, can you give me some advice...?"
+SAY.Flowchart_1.9.運転手,,なんでもお聞きしますよ,I'll ask you anything.
+SAY.Flowchart_1.8.チンピラ,,あー...なんていうかさ。,Uh...How should I say...
+SAY.Flowchart_1.7.チンピラ,,俺はこんなナリだろ？,"I'm look like this, right?"
+SAY.Flowchart_1.6.チンピラ,,まあ見た通り、真っ当なことして生きてるワケじゃねえんだよ。,"Well, as you can see, I'm not doing proper things."
+SAY.Flowchart_1.5.チンピラ,,だけどよ？全部が全部悪いことしてるってワケでもねえ。,But you know what? It's not like we're doing everything wrong.
+SAY.Flowchart_1.4.チンピラ,,根っからの悪党なんてほんの一握りだし、やることが全て悪いってやつもそういねえんだ。,There are few completely bad person. And there are few people to do everything bad.
+SAY.Flowchart_1.3.チンピラ,,ただ...,Just...
+SAY.Flowchart_1.2.チンピラ,,普通の「正しい」ことをしてるとき、それが本当に正しいのかわかんねえ。,"I don't know if it's really right when I'm doing normal ""right"" things."
+SAY.Flowchart_1.13.チンピラ,,いやなんていうか、俺がそれをやっていいのか悩むっつーかな...,"No, I don't know if I'm allowed to do that or not..."
+SAY.Flowchart_1.12.チンピラ,,偽善者、ってやつになっちまってるんじゃないかってさ。,I'm turning into a hypocrite.
+SAY.Flowchart_1.11.運転手,,偽善者ですか...,A hypocrite...
+SAY.Flowchart_1.10.チンピラ,,おう。,Yes.
+SAY.Flowchart_1.17.チンピラ,,いつも悪いことばっかやってるからよ、それを隠すためだけに良い奴ぶって動く、みたいなさ。,"I'm always doing bad things, and I guess I acts like a good guy just to hide it."
+SAY.Flowchart_1.16.チンピラ,,なんかもう、わかんなくなっちまって...,I don't know what to do...
+SAY.Flowchart_1.15.チンピラ,,俺みたいなのがゴミ拾ってたら、あんたはどう思う？,What would you think if someone like me were picking up trash?
+MENU.Flowchart_1.18,,単純にえらいと思う,Simply admire.
+MENU.Flowchart_1.19,,ちょっと怖いと思ってしまうかも,I might be a little scared.
+SAY.Flowchart_1.22.チンピラ,,ほんとか？あんた悪いやつにだまされないといいな...。,Really? I hope you don't fall for the bad guys...
+SAY.Flowchart_1.24.チンピラ,,まあ、そうなるよな...。,"Well, I guess so..."
+SAY.Flowchart_1.27.チンピラ,,大体のやつはビビるんだよ。,Most people are scared.
+SAY.Flowchart_1.31.チンピラ,,俺はどうしたらいいんだろうな...。,What should I do...?
+SAY.Flowchart_1.30.チンピラ,,いろんな人に恩義があるもんで、この仕事はやめらんねえんだけどな。,"I'm indebted to so many people, I can't stop doing this job."
+SAY.Flowchart_1.29.チンピラ,,ただ俺が、何も考えずに正しいことが出来なくなるだけで。,It's just that I can't do the right thing without thinking about it.
+SAY.Flowchart_1.28.チンピラ,,俺みたいな人間は...正しいことしちゃいけないと思うか？,Do you think people like me can't do the right thing on...?
+MENU.Flowchart_1.32,,「正しさ」は一つではないから、気にしなくていい,"""Correctness"" is not one, so don't worry about it."
+MENU.Flowchart_1.33,,自分が正しいと思うことを止める必要はない,You don't have to stop what you think is right.
+SAY.Flowchart_1.41.チンピラ,,正しさは一つではない...確かにそうだな。,There is more than one correctness...certainly.
+SAY.Flowchart_1.42.チンピラ,,あんたいいこと言うじゃねえか。,What a nice thing to say.
+SAY.Flowchart_1.43.チンピラ,,そういう考え方もあんのか...なるほどな。,"So, that's one way of looking at it... I see."
+SAY.Flowchart_1.38.チンピラ,,まあそうなのかもしれないけどな...何せ見た目がこれだからよ。,"Well, maybe true, ...but my looks like this."
+SAY.Flowchart_1.40.チンピラ,,俺が思う正しさも曲げられちまうんだよ。,The truth that I think is also distorted.
+MENU.Flowchart_1.45,,理解してくれる人はいるはず,There must be someone who understands.
+MENU.Flowchart_1.44,,意外とみんな見た目を気にしてない,People who care about the way you look are less than you assume.
+SAY.Flowchart_1.48.チンピラ,,いてくれりゃいいけどな。,I hope there's someone who understands me.
+SAY.Flowchart_1.49.チンピラ,,今の時代、いろんなやつがいるもんな。,"In this day and age, there are several thoughts."
+SAY.Flowchart_1.54.チンピラ,,あんた、悩み相談をうたうだけはあんだな。,"You do a good job of counseling your worries, don't you?"
+SAY.Flowchart_1.55.チンピラ,,あんま信用してなかったけどよ？,I didn't trust you first.
+SAY.Flowchart_1.60.チンピラ,,意外と面白いやつだな。,You're more interesting than I thought.
+SAY.Flowchart_1.62.チンピラ,,どうだ、俺の組に入るか？口利きしてやるぜ？,How about start working in my organization? I can mediate for you.
+MENU.Flowchart_1.64,,ぜひお願いします,"Yes, I want to work with you."
+MENU.Flowchart_1.63,,遠慮させていただきます,"No, thank you."
+SAY.Flowchart_1.67.チンピラ,,アッハハ、そりゃそうだよな。,"Ahaha, that's true."
+SAY.Flowchart_1.68.チンピラ,,あんたはタクシー運転手が一番似合うよ。,You look best in a taxi driver.
+SAY.Flowchart_1.72.チンピラ,,俺の仲間にも教えとくわ、おもしろいタクシーあったってさ。,I'll tell my friends that there was an interesting taxi.
+SAY.Flowchart_1.75.チンピラ,,悩んでるやつ多いんだよ。,There's a lot of people who are troubled.
+SAY.Flowchart_1.74.チンピラ,,あと普通のやつには言えない事情抱えてるやつとかな...。,"Also, I think they have a trouble that can't be told to an ordinary guy..."
+SAY.Flowchart_1.78.運転手,,お客様の秘密はお守りしますので...,I will keep customer's secret...
+SAY.Flowchart_1.77.チンピラ,,ありがてえこった。,Thanks.
+SAY.Flowchart_1.76.チンピラ,,なんだ、お礼した方がいいんだったか？,"So, should I give you a token of thanks?"
+SAY.Flowchart_1.80.チンピラ,,いま持ってんのは...あー、こんなんでいいか？,"The one I have now is...Ah, is this OK?"
+SAY.Flowchart_1.79.ナレーション,,チンピラは、ハッカキャンディを差し出した。,The hooligan offered peppermint candy.
+SAY.Flowchart_1.83.運転手,,ありがとうございます,Thank you.
+MENU.Flowchart_1.84,,その場で飴をなめる,Lick the candy here
+MENU.Flowchart_1.85,,ポケットにしまっておく,Keep candy in my pocket
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.チンピラ,,チンピラ,Hooligan

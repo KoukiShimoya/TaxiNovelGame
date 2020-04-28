@@ -1,0 +1,26 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.ナレーション,,今日は中央エリアから乗る客が多いようだ。,There seem to be many passengers from the central area today.
+SAY.Flowchart_1.2.ナレーション,,中央エリアに行って客を探そう。,Let's go to the central area to find customers.
+SAY.Flowchart_1.3.店員,,お、噂のタクシー？ラッキー！,"Oh, is it the taxi that everyone is talking about? Lucky!"
+SAY.Flowchart_1.4.店員,,ね、乗せてくれる？,"Hey, can I get a ride?"
+SAY.Flowchart_1.5.運転手,,もちろんですよ,Of course.
+SAY.Flowchart_1.6.運転手,,どちらに向かいますか？,Where are you going?
+SAY.Flowchart_1.7.店員,,ん〜ちょっと中央エリア内を回って欲しいな。,"Hmm, I'd like to go around the central area."
+SAY.Flowchart_1.9.店員,,雑貨店に寄りたいんだよね。,I'd like to go to a miscellaneous store.
+SAY.Flowchart_1.8.店員,,最近の女子高生のトレンドとかわかりそうなところ！,The store I can understand the recent trend of high school girls!
+SAY.Flowchart_1.10.運転手,,承知しました,"Yes, sir."
+SAY.Flowchart_1.19.運転手,,到着しました,Here we are.
+SAY.Flowchart_1.21.店員,,お！まさにこういう店に来たかったの！,Oh! I just wanted to come to a shop like this!
+SAY.Flowchart_1.22.店員,,運転手さんありがとー！,"Thank you, driver!"
+SAY.Flowchart_1.26.運転手,,到着しました,Here we are.
+SAY.Flowchart_1.28.店員,,んん？？なんかちょ〜っと思ってたのと違う店…,Hm? The shop is different from what I was thinking...
+SAY.Flowchart_1.27.店員,,ま、たまにはこういうのを見るのもアリかな？,"Well, is it okay to see this once in a while?"
+SAY.Flowchart_1.33.店員,,ちょっとだけ見てくるから、数分後に戻ってきてもらえる？,Can you come back in a few minutes? I'm just going to look in this store.
+SAY.Flowchart_1.34.運転手,,わかりました,All right.
+SAY.Flowchart_1.35.ナレーション,,少し周囲をドライブして、戻ってこよう。,Let's drive around and come back.
+SAY.Flowchart_1.38.店員,,おまたせ〜！ありがとね！,Sorry to keep you waiting~! Thanks!
+SAY.Flowchart_1.40.店員,,えっとそしたら、南エリアまでお願い！,"Well, then, to the south area, please!"
+SAY.Flowchart_1.39.運転手,,かしこまりました,"Yes, sir."
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.店員,,店員,Clerk

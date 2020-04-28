@@ -1,0 +1,26 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.53.OL,,このあたりで大丈夫だよ。,Let me out here please.
+SAY.Flowchart_1.1.OL,,東エリア、確かお菓子屋さん2つあったかな...,I think there are 2 sweet stores in the east area...
+SAY.Flowchart_1.3.OL,,どっちでもいいから、お店の前までお願い！,"Either way, please go to the front of the store!"
+SAY.Flowchart_1.2.ナレーション,,お客さんをケーキ屋か和菓子屋に連れて行こう。,Let's take customer to a cake shop or a Japanese sweets shop.
+SAY.Flowchart_1.19.運転手,,到着しました,Here we are.
+SAY.Flowchart_1.20.OL,,ありがとう！,Thank you!
+SAY.Flowchart_1.24.OL,,ここ、島の中でも有名店なんだよね。,This is a famous store in the island.
+SAY.Flowchart_1.23.OL,,手軽に食べられる洋菓子も多くて、結構忙しい身にはありがたいんだ。,"There are many sweets that I can eat easily, so it's good for busy people."
+SAY.Flowchart_1.22.OL,,イベント前に食べるつもりでいたから、ぴったりだよ。,"I was going to eat before the event, so it's perfect."
+SAY.Flowchart_1.21.OL,,ここのお菓子美味しいから、いっぱい買っちゃうかも。なんてね！,"The sweets here are delicious, so I might buy a lot. Oh, my God!"
+SAY.Flowchart_1.26.OL,,でも、さすが運転手さんだね！,You're good!
+SAY.Flowchart_1.10.運転手,,到着しました,Here we are.
+SAY.Flowchart_1.9.OL,,お、和菓子屋さん！,"Oh, Japanese sweets shop!"
+SAY.Flowchart_1.15.OL,,和菓子なんて久しぶりだな〜,It's been a long time since I've had Japanese sweets.
+SAY.Flowchart_1.14.OL,,最近だと結構かわいいのも多いよね。,There are many cute ones these days.
+SAY.Flowchart_1.13.OL,,イベント前に食べるのはちょっと大変かな...？,Is it a little hard to eat before the event...?
+SAY.Flowchart_1.63.OL,,これだったら、先にどこかで食べてから会場に行った方がいいかもね。,"In this case, it might be better to eat somewhere first and then go to the venue."
+SAY.Flowchart_1.12.OL,,うん、ありがとう！,"Yes, thank you!"
+SAY.Flowchart_1.40.OL,,いろいろ話聞いてくれて、ありがと！,Thank you for listening to me!
+SAY.Flowchart_1.42.OL,,自分で話してて整理がついたよ。,"Talking by myself, I could organized."
+SAY.Flowchart_1.41.OL,,またどこかでお世話になるかもね！,Maybe we'll meet again somewhere!
+SAY.Flowchart_1.43.運転手,,またのご乗車をお待ちしております。,I look forward to seeing you again.
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration
+CHARACTER.OL,,OL,Business Person

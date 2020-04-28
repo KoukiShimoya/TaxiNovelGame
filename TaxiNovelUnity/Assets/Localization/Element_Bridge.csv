@@ -1,0 +1,57 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.小学生,,...,...
+SAY.Flowchart_1.2.運転手,,大丈夫ですか？,Are you all right?
+SAY.Flowchart_1.3.小学生,,突然変なこと言っちゃってごめんなさい...。,Sorry for saying such a strange thing suddenly...
+SAY.Flowchart_1.4.小学生,,えっと、相談したいことがあるんです。,There is something I'd like to talk to you about.
+SAY.Flowchart_1.5.運転手,,なんでもお聞きしますよ,I'll ask you anything.
+SAY.Flowchart_1.6.小学生,,ありがとうございます。わたしの家族のことなんですけど...,Thank you. About my family...
+SAY.Flowchart_1.7.小学生,,みんな、わたしのことが嫌いなんじゃないかって。,I think they don't like me.
+SAY.Flowchart_1.8.小学生,,家族の邪魔なんじゃないかって...,I...I think I'm disturbing my family.
+SAY.Flowchart_1.9.運転手,,どうしてそんなことを？,Why would you think?
+SAY.Flowchart_1.10.小学生,,わたしのおとうさんとおかあさんは、お医者さんなんです。,My father and mother are doctors.
+SAY.Flowchart_1.11.小学生,,家が病院なんですけど、いつも二人とも忙しそうで...,"My house is the hospital, so father and mother are busy all the time."
+SAY.Flowchart_1.12.運転手,,お医者さんは忙しいですよね,I feel the same.
+SAY.Flowchart_1.13.小学生,,わかってはいるんです...。二人とも、わたしのために頑張ってくれてるんだって。,I know they're both working hard for me.
+SAY.Flowchart_1.14.小学生,,でもときどき、わたしに隠しごとしてるみたいで...。,But sometimes it seems like they're keeping secrets from me...
+SAY.Flowchart_1.15.小学生,,わたしに聞こえないように、二人でこそこそ話してるんです。,They're whispering so I can't hear them.
+SAY.Flowchart_1.16.運転手,,そうなんですか...,Really?
+SAY.Flowchart_1.17.小学生,,そんなところを見ると、わたしはこの家にいて欲しくないのかなって思っちゃって…。,"When I see it, I wonder if I don't need in this house..."
+SAY.Flowchart_1.18.小学生,,怖くなって、飛び出してきちゃったんです。,I got scared and ran out.
+SAY.Flowchart_1.19.小学生,,わたし、本当に何してるんだろう...,What...what am I really doing...?
+SAY.Flowchart_1.20.ナレーション,,車内にすすり上げるような声が響く,Hear a sob in the car
+MENU.Flowchart_1.21,,ハンカチを渡す,Give a handkerchief
+MENU.Flowchart_1.22,,黙って話し始めるのを待つ,Wait to start talking in silence
+SAY.Flowchart_1.24.小学生,,ごめんなさい、こんなこと話されても困りますよね。,"I'm sorry, You are troubling aren't you?"
+SAY.Flowchart_1.25.運転手,,いえいえ、大丈夫ですよ,"No, I'm fine."
+SAY.Flowchart_1.26.小学生,,ありがとうございます...運転手さんは、優しいんですね。,Thank you...You are so kind.
+SAY.Flowchart_1.27.運転手,,ご両親があなたを邪魔に思ってるんじゃないかって心配なんですよね。,You are worried that your parents might be bothering you.
+SAY.Flowchart_1.28.小学生,,...はい。でも...。,...Yes. But...
+SAY.Flowchart_1.29.運転手,,お客さん自身は、どうしたいと思うんですか？,What do you want to do?
+SAY.Flowchart_1.30.小学生,,えっと...わたしは...,Um...I'm...
+SAY.Flowchart_1.31.小学生,,...,...
+SAY.Flowchart_1.32.小学生,,家族と仲良くしたいです。,I want to get along with my family.
+SAY.Flowchart_1.33.運転手,,ふふ、そうですよね。,I see.
+SAY.Flowchart_1.34.運転手,,ご両親は、きっとお客さんのことを大事に思っていますよ。,Your parents must care about you.
+SAY.Flowchart_1.35.小学生,,そうなんでしょうか...？,Is that really so...?
+SAY.Flowchart_1.36.運転手,,自分がどう思っているかを、伝えたことはありますか？,Have you ever told them how you feel?
+SAY.Flowchart_1.37.小学生,,あんまり...ないかもしれないです。,It may not be...very often.
+SAY.Flowchart_1.38.小学生,,自分の気持ちを伝えるのが、得意じゃなくて...。,I'm not good at expressing my feelings.
+SAY.Flowchart_1.39.小学生,,いつも話してみようとすると、ドキドキしちゃうんです。,"Whenever I try to talk, I get nervous."
+SAY.Flowchart_1.40.小学生,,それで、頭が真っ白になっちゃって。,And my mind went blank.
+SAY.Flowchart_1.41.小学生,,言いたいことがほとんど言えなくなっちゃうから...,I can hardly say what I want to say...
+SAY.Flowchart_1.42.小学生,,もともと、話すのが苦手なんです。,"Originally, I am not good at speaking."
+MENU.Flowchart_1.43,,手紙を使ってみるのもいいかもしれませんね,It might be a good idea to use a letter
+MENU.Flowchart_1.46,,勇気を出して、ちゃんと話し合ってみてはいかがですか？,Why don't you have courage and talk about it properly?
+SAY.Flowchart_1.47.小学生,,手紙...考えたこともありませんでした。,Letter...Never thought of it.
+SAY.Flowchart_1.48.小学生,,手紙だったら、言えるかも。,"If it's a letter, maybe I can say it."
+SAY.Flowchart_1.49.小学生,,やっぱりそうですよね...。,I should have thought like that...
+SAY.Flowchart_1.55.運転手,,こうやって私に相談できたんですから、きっとご両親にも気持ちが伝わると思いますよ,"Since you were able to consult with me like this, I'm sure your feelings will be conveyed to your parents."
+SAY.Flowchart_1.56.小学生,,そうだといいなあ...。,I hope so...
+SAY.Flowchart_1.57.小学生,,あ、もうそろそろ西エリアについちゃう...。,"Ah, It's almost in the west area..."
+SAY.Flowchart_1.58.小学生,,あの、運転手さん。お話聞いてくれて、ありがとうございました。,"Kindness driver, Thank you for listening to me."
+SAY.Flowchart_1.59.小学生,,気持ちがちょっと楽になりました。,I feel a little better.
+SAY.Flowchart_1.60.小学生,,あとは、わたしが自分でがんばってみます！,"After that, I will do my best by myself!"
+SAY.Flowchart_1.61.運転手,,きっと伝わりますよ。,I'm sure you'll convey your feeling.
+CHARACTER.小学生,,小学生,Elementary School Student
+CHARACTER.運転手,,運転手,Driver
+CHARACTER.ナレーション,,ナレーション,Narration

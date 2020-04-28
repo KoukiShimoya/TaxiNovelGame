@@ -43,7 +43,7 @@ public class PanelSizeChangeByte : MonoBehaviour
 
     private int CheckByte()
     {
-        if (NowActiveLanguage.GetSetLanguageCode == NowActiveLanguage.LanguageCode.JP)
+        if (NowActiveLanguage.GetSetLanguageCode == NowActiveLanguage.LanguageCode.JA)
         {
            return backPanelText.text.Length * 2;
         }

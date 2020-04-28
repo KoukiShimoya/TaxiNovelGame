@@ -2,7 +2,7 @@
 
 namespace Fungus
 {
-    [CommandInfo("Variable", 
+    [CommandInfo("Save", 
                  "Save Quest Data", 
                  "クエストのクリア状況を保存する")]
     [AddComponentMenu("")]
@@ -29,7 +29,7 @@ namespace Fungus
 
         public override Color GetButtonColor()
         {
-            return new Color32(235, 191, 217, 255);
+            return new Color32(94, 200, 150, 255);
         }
         
         public override string GetSummary()

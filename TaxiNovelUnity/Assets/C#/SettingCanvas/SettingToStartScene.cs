@@ -13,11 +13,6 @@ public class SettingToStartScene : SingletonMonoBehaviour<SettingToStartScene>
         get { return returnStartPanel; }
     }
 
-    private void Start()
-    {
-        returnStartPanel.SetActive(false);
-    }
-
     public void OnOpenReturnStartPanelButtonClick()
     {
         returnStartPanel.SetActive(true);

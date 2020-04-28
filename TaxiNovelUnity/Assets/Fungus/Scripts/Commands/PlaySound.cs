@@ -17,10 +17,6 @@ namespace Fungus
         [Tooltip("Sound effect clip to play")]
         [SerializeField] protected AudioClip soundClip;
 
-        [Range(0,1)]
-        [Tooltip("Volume level of the sound effect")]
-        [SerializeField] protected float volume = 1;
-
         [Tooltip("Wait until the sound has finished playing before continuing execution.")]
         [SerializeField] protected bool waitUntilFinished;
 
@@ -40,6 +36,8 @@ namespace Fungus
             }
 
             var musicManager = FungusManager.Instance.MusicManager;
+
+            float volume = AudioManager.Instance.GetSeValue();
 
             musicManager.PlaySound(soundClip, volume);
 

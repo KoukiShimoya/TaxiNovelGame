@@ -1,0 +1,14 @@
+﻿Key,Description,JA,EN
+SAY.Flowchart_1.1.ナレーション,,大きな爆発音とともに、衝撃が体に走った。,There was a loud explosion and a shock.
+SAY.Flowchart_1.5.ナレーション,,どうやら、時間までに間に合わなかったらしい。,"Apparently, I was not in time."
+SAY.Flowchart_1.4.ナレーション,,薄れる意識の中で、今日の客たちが頭によぎる。,"In a faded consciousness, today's customers come to mind."
+SAY.Flowchart_1.8.ナレーション,,図書館にいる女子高生。,The high school girl in the library.
+SAY.Flowchart_1.10.ナレーション,,自宅の病院にいる小学生。,The elementary school student in her hospital.
+SAY.Flowchart_1.13.ナレーション,,イベント会場にいるOL。,The business person at the event venue.
+SAY.Flowchart_1.16.ナレーション,,病院に戻ったチンピラ。,The hooligan returned to the hospital.
+SAY.Flowchart_1.19.ナレーション,,イベント会場に向かった男性店員。,The male clerk went to the event venue.
+SAY.Flowchart_1.21.ナレーション,,きっとこの爆発に巻き込まれてしまっただろう。,I'm sure they got involved in this explosion.
+SAY.Flowchart_1.24.ナレーション,,どこで選択を間違えたんだろうか。,Where did I make the wrong choice?
+SAY.Flowchart_1.23.ナレーション,,サラリーマンの彼を含めて、皆を救う方法があったのだろうか...。,"I wonder if there was a way to save everyone, including the office worker..."
+SAY.Flowchart_1.22.ナレーション,,後悔の念に駆られつつ、ゆっくりと目が閉じていった。,"With regret, I gradually lost consciousness."
+CHARACTER.ナレーション,,ナレーション,Narration
